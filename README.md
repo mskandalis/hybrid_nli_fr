@@ -45,8 +45,9 @@ python scripts/convert_grail_output_to_langpro_input.py
 ```
 
 With this pipeline from the beginning until the end, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+
 | Metric (%)       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully       | Number of sentences failed to be parsed     |  Percentage of failures in parsing     | 
-| :------------- | :----------: | -----------: | :------------- | :----------: |  :----------: |
+| :------------- | :----------: | -----------: | :------------- | :----------: |  :----------: |  :----------: |
 |  SICK-FR | 19680  | 11059    | 10347 |  93,56 | 712 |   6,44 |
 
 
