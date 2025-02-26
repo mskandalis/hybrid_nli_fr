@@ -44,6 +44,7 @@ swipl -q -t main -f grail_light_nd.pl superpos.pl
 python scripts/convert_grail_output_to_langpro_input.py
 ```
 
+#### Score
 With this pipeline from the beginning until the end, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
