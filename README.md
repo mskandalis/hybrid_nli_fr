@@ -92,4 +92,4 @@ More to come.
 
 This work was supported by the Defence Innovation Agency (AID) of the Directorate General of Armament (DGA) of the French Ministry of Armed Forces, and by the ICO, _Institut Cybersécurité Occitanie_, funded by Région Occitanie, France. 
 
-Part of this research was carried out during a research stay in Utrecht University with the Erasmus+ programme.
+Part of the research was carried out during a research stay in Utrecht University with the support of the Erasmus+ programme.
