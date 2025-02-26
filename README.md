@@ -13,7 +13,7 @@ This repository contains:
 
 You need to have the following installed in your machine:
 - [Prolog](https://www.swi-prolog.org/download/stable);
-- TreeTagger (either the [original repository](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) alone, or the original repository + a [Python interface](https://github.com/miotto/treetagger-python) or a [TreeTagger Python Wrapper](https://treetaggerwrapper.readthedocs.io/en/latest)), or RNNTagger. Here I use the [third option mentioned](https://treetaggerwrapper.readthedocs.io/en/latest). After downloading the TreeTagger, you will need to add the path to its bin to the PATH environment variable. This is done
+- TreeTagger (either the [original repository](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) alone, or the original repository + a [Python interface](https://github.com/miotto/treetagger-python) or a [TreeTagger Python Wrapper](https://treetaggerwrapper.readthedocs.io/en/latest)), or RNNTagger. Here I use the [third option mentioned](https://treetaggerwrapper.readthedocs.io/en/latest). After downloading TreeTagger, you will need to add the path to its bin to the PATH environment variable. This is done
 ```set PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in windows, or
 ```export PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in Linux.
 For the Python Wrapper,
