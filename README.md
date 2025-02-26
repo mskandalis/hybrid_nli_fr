@@ -50,6 +50,10 @@ With this pipeline from the beginning until the end, the number and percentage o
 | :------------- | :----------: | -----------: | :------------- | :----------: |  :----------: |  :----------: |   :----------: |
 |  SICK-FR | 19680 (9840*2)  | 11059    | 10347 |  93,56 | 712 |   6,44 |0 |
 
+### Remarks
+
+- For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d'; some other don't. Make sure whatever the choice, it's kept the same throughout the process.
+- The big loss of sentences between the initial number of sentences and the number of sentences fed to Graillight occurs, for the moment, simply at step 4, with the second command that adds lemmas in the prolog file.
 
 ### Predicting the label (two options)
 
