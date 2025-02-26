@@ -16,11 +16,8 @@ You need to have the following installed in your machine:
 - TreeTagger (either the [original repository](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) alone, or the original repository + a [Python interface](https://github.com/miotto/treetagger-python) or a [TreeTagger Python Wrapper](https://treetaggerwrapper.readthedocs.io/en/latest)), or RNNTagger. Here I use the [third option mentioned](https://treetaggerwrapper.readthedocs.io/en/latest). After downloading the TreeTagger, you will need to add the path to its bin to the PATH environment variable. This is done
 ```set PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in windows, or
 ```export PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in Linux.
-Then, for the Python Wrapper:
-```
-pip install treetaggerwrapper
-#set for Windows, or# export #for Linux# TAGDIR=<your-path-to-TreeTagger's-folder>/TreeTagger
-```
+Then, for the Python Wrapper,
+```pip install treetaggerwrapper```, ```set```, for Windows, or ```export```, for Linux, ```TAGDIR=<your-path-to-TreeTagger's-folder>/TreeTagger```
 
 ## Instructions
 ### Preparing the data and obtaining the lambda-terms (half deep learning, half prolog programme)
