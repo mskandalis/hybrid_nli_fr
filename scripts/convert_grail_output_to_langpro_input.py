@@ -7,7 +7,7 @@ import json
 import ast
 
 def extract_rules_to_csv(xml_file, output_csv,sentences_txt):
-    with open(xml_file, 'r') as infile, open(output_csv, 'w', newline='') as outfile, open(sentences_txt, 'r') as sentencefile:
+    with open(xml_file, 'r') as infile, open(output_csv, 'w', newline='', encoding='utf-8') as outfile, open(sentences_txt, 'r', encoding='utf-8') as sentencefile:
         lines = infile.readlines()  # Read all lines from the XML file
         sentences = sentencefile.readlines()
         csv_writer = csv.writer(outfile, delimiter='\t')  # Create a CSV writer
@@ -25,7 +25,7 @@ def extract_rules_to_csv(xml_file, output_csv,sentences_txt):
 
             	pattern = r'\b\d+\b'
             	integerindex = re.search(pattern, lines[i-2].strip()).group()
-            	csv_writer.writerow([integerindex, sentences[int(integerindex)-1].strip(), pros.strip('"'), formula.strip('">').replace('lit(s(main))-', '').replace('lit(np(A,B,C))-', '').replace('lit(txt)-', '')])  # Write to CSV
+            	csv_writer.writerow([integerindex, sentences[int(integerindex)-1].strip(), pros.strip('"'), formula.strip('">').replace('lit(s(main))-', '').replace('lit(np(A,B,C))-', '').replace('lit(txt)-', '').replace('lit(np(B,C,D))-', '')])  # Write to CSV
 
 
 # Provide the XML file path (replace with the actual file path)
@@ -152,49 +152,71 @@ def parse_appl(expression):
 # Function to replace word(N) with tlp(<N-th word in the list>)
 def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
     data = input_csv
-    tokensfile= pd.read_json(path_or_buf=tokens_list, lines=True)
+    #lemmafile= pd.read_json(path_or_buf=tokens_list, lines=True) for lemmas et POS tags from spaCy
     supertags_tsv = pd.read_csv(supertags_file, sep='\t')
 
     # Define a pattern to match word(N), where N is a number inside parentheses
     pattern = r'word\((\d+)\)'
     pattern_variables = r'@([A-Z])\)'
 
-    for index, value in enumerate(data['id']):
-        cg=ast.literal_eval(supertags_tsv['cg_supertags'][value-1])
-        input_str = data['intermediate_conversion_for_langpro'][index]
+    with open('superpos.txt', 'r') as tokensl, open('aligned_tags.txt', 'r', encoding='utf-8') as aligned_tags:
+        tokensfile= tokensl.readlines()
+        aligned_lemma = aligned_tags.readlines()
+        number_of_lines = sum(1 for line in tokensfile)
+        for index, value in enumerate(data['id']):
+            cg=ast.literal_eval(supertags_tsv['cg_supertags'][value-1])
 
-        # Function to replace each match
-        def replacement(match):
-            # Extract the number inside the parentheses
-            number = int(match.group(1)) 
-            for idex, valeur in enumerate(tokensfile['pos_lemma'][value-1]):
-                # Check if the number is within the bounds of the list
-                if 0 <= number <= len(tokensfile['pos_lemma'][value-1]):
-                    # Replace with the corresponding word from the list
-                    mot = tokensfile['pos_lemma'][value-1][number][0]
-                    if re.search(r"[',.]", mot):
-                        mot = mot.replace("'", "\\'")
-                        mot = f"'{mot}'"
-                    lemma = tokensfile['pos_lemma'][value-1][number][1] 
-                    if re.search(r"[',.]", lemma):
-                        lemma = lemma.replace("'", "\\'")
-                        lemma = f"'{lemma}'"
-                    pos = tokensfile['pos_lemma'][value-1][number][2]
-                    supertags = cg[number]
-                    if len(pos)==1 and pos.isupper():
-                        pos = f"'{pos}'"
-                    # return f'(tlp({mot}, {lemma}, {pos}, 0, O), \'{supertags}\')' if for use by LangPro's visualiser: https://naturallogic.pro/LangPro/vis_utils
-                    # return f'(tlp({mot}, {lemma}, {pos}, 0, O), {supertags})' #if for use directly by LangPro theorem prover
-                    return f"tlp({mot}, {lemma}, {pos}, 0, O)" #if for use directly by LangPro theorem prover
-                else:
-                    # If the number is out of bounds, return the original word
-                    return match.group(0)
+            input_str = data['intermediate_conversion_for_langpro'][index]
+            processed_list = []
+            for texte in tokensfile:
+                # Split by '|1 ' first, which will separate the tokens
+                parts = texte.strip().split('|1 ')
+                # Now split each part by '|', and store them as lists of lists
+                split_parts = [part.split('|') for part in parts if part]  # Check if part is non-empty
 
-        # Apply the regex and replacement to the input string
-        transformed_str = re.sub(pattern, replacement, input_str)
-        transformed_str = re.sub(pattern_variables, r'@\1', transformed_str)
-        data.at[index, 'intermediate_conversion_for_langpro'] = transformed_str
-    return data 
+                processed_list.append(split_parts)
+
+            if len(processed_list[value-1]) != len(cg):
+                cg = [x for x in cg if x != 'dl(0,s,txt)']
+                assert len(processed_list[value-1]) == len(cg), f"Lists have different lengths: {len(cg)} != {len(processed_list[value-1])}, index: {index}\nsentence: {processed_list[value-1]}\nCG tags list: {cg}"
+
+            # Function to replace each match
+            def replacement(match):
+                # Extract the number inside the parentheses
+                number = int(match.group(1)) 
+                for idex, valeur in enumerate(processed_list[value-1]):
+                    # Check if the number is within the bounds of the list
+                    if 0 <= number <= len(processed_list[value-1]):
+
+                        # Replace with the corresponding word from the list
+                        mot = processed_list[value-1][number][0]
+
+                        if re.search(r"[',.]", mot):
+                            mot = mot.replace("'", "\\'")
+                            mot = f"'{mot}'"
+                        lemmaline= ast.literal_eval(aligned_lemma[value-1])
+                        assert len(processed_list[value-1]) == len(lemmaline) == len(cg), f"For sentence id {index}, lists have different lengths:\nlemmas {len(lemmaline)}, tokens & POStags {len(processed_list[value-1])}, CGs {len(cg)}."
+                        lemma = lemmaline[number][2] 
+                        if re.search(r"[',.]", lemma):
+                            lemma = lemma.replace("'", "\\'")
+                            lemma = f"'{lemma}'"
+                        pos = processed_list[value-1][number][1]
+                        supertags = cg[number]
+                        if len(pos)==1 and pos.isupper():
+                            pos = f"'{pos}'"
+                        # return f'(tlp({mot}, {lemma}, {pos}, 0, O), \'{supertags}\')' if for use by LangPro's visualiser: https://naturallogic.pro/LangPro/vis_utils
+                        # return f'(tlp({mot}, {lemma}, {pos}, 0, O), {supertags})' #if for use directly by LangPro theorem prover
+                        return f"tlp({mot}, {lemma}, {pos}, 0, O)" #if for use directly by LangPro theorem prover
+                    else:
+                        # If the number is out of bounds, return the original word
+                        return match.group(0)
+
+            # Apply the regex and replacement to the input string
+            transformed_str = re.sub(pattern, replacement, input_str)
+            transformed_str = re.sub(pattern_variables, r'@\1', transformed_str)
+            print('sentence with id ', value, ' processed, out of ', str(number_of_lines), ' lines.')
+            data.at[index, 'intermediate_conversion_for_langpro'] = transformed_str
+        return data 
 
 
 # Example usage
@@ -213,19 +235,58 @@ intermediate_conversion_appl = pd.DataFrame(intermediate_conversion_appl, column
 #Add the CG category for every rule in the formula 
 def transform_appl(expression, allrules):
     replacements = {}
-    pattern_abst = r"abst\(([A-Z]),|@([A-Z])\)"
-
+    pattern_abst = r"abst\(([A-Z]|[A-Z][0-9]),|@([A-Z]|[A-Z][0-9])\)"
+    another_pattern = r'[A-Z][0-9]?'
+    all_mappings = []
     # Collect all replacements first without modifying expression on the fly
     for _, row in allrules.iterrows():
-        formulae = re.sub(pattern_abst, lambda match: 'abst(A,' if match.group(1) else '@A)', row['Converted_rules'])
-        if len(formulae) == 1 and formulae.isupper() and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
-            formulae = 'A'
+        formulae = row['Converted_rules']
+        
+        if formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx] and len(formulae)>2:
+            #formulae = row['Converted_rules']
+            interm = re.sub(r'[A-Z][0-9]?', 'Z', intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx])
+            formulo = re.sub(r'[A-Z][0-9]?', 'Z', formulae)
+
+            start_index = interm.find(formulo)
+            capitals_whole_expr = re.findall(another_pattern, intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx][start_index:start_index+len(formulae)])
+            capitals_sub = re.findall(another_pattern, formulae)
+            
+            existing_row = next((item for item in all_mappings if item['Proof Number'] == row['Proof Number']), None)
+      
+            if existing_row:
+                # If the row already exists, just add the new mappings to the existing dictionary
+                for i in range(len(capitals_sub)):
+                   existing_row['Mappings'][capitals_sub[i]] = capitals_whole_expr[i]
+
+            else:
+                # If the row does not exist, create a new row with the mappings
+                mapping = {capitals_sub[i]: capitals_whole_expr[i] for i in range(len(capitals_sub))}
+                all_mappings.append({'Proof Number': row['Proof Number'], 'Mappings': mapping})
+
+            for key, value in mapping.items():
+                formulae = re.sub(fr'{key}|{key}[0-9]', f'{value}', formulae)
+
+        
+        if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
+            mapping_row = next((item for item in all_mappings if item['Proof Number'] == row['Proof Number']), None)
+
+            formulae = mapping_row['Mappings'][formulae]
+
+                #if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
+                #    formulae = 'O'
+                #    if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
+                 #       formulae = 'B'
+                 #       if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
+                 #           formulae = 'E'
+                  #          if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
+                  #              formulae = 'M'
+
 
         formula, category = formulae, row['Cg_category']
 
         # Replace matches with "A"
         replacements[formula] = category
-    
+
     # Replace expressions from longest to shortest (to prevent partial replacements)
     sorted_replacements = sorted(replacements.keys(), key=len, reverse=True)
     
@@ -252,7 +313,7 @@ for indx, valu in enumerate(intermediate_conversion_appl['id']):
 intermediate_conversion_appl['intermediate_conversion_for_langpro'] = la_liste
 
 # Perform the replacement
-result = replace_word_with_tlp(intermediate_conversion_appl, "input_for_langpro.tsv", "deepgrail_tagger/postagged_lemma_validation.jsonl", "deepgrail_tagger/deepgrail_supertagged_validation_dataset.tsv")
+result = replace_word_with_tlp(intermediate_conversion_appl, "input_for_langpro.tsv", "deepgrail_tagger/lemma_sick.jsonl", "deepgrail_tagger/deepgrail_supertagged_sick_dataset.tsv")
 conversion_appl = pd.DataFrame(result)
 conversion_appl = conversion_appl.rename(columns={'intermediate_conversion_for_langpro': 'langpro_input'})
 
@@ -261,5 +322,5 @@ conversion_appl.to_csv('input_for_langpro.tsv', index=False, sep="\t")
 with open('langpro_input_prolog_format.pl', 'w', encoding='utf-8') as prol:
     for index, value in enumerate(conversion_appl['id']):
         prolog_term = re.sub(r'(\b\w*[A-Z]+\w+(?!\\\')\b)|(\b\w*[\u00C0-\u017F]+\w*\b)', r"'\1\2'", conversion_appl['langpro_input'][index])
-        comment_sentence = conversion_appl['sentence'][index].replace("'", " ").lower()
+        comment_sentence = conversion_appl['sentence'][index].replace("'", " ").replace("’", " ").lower()
         prol.write(f"% {comment_sentence}\ncg_term({conversion_appl['id'][index]}, {prolog_term}).\n\n")  # Each entry as a Prolog fact
