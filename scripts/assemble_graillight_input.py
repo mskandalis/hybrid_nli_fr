@@ -32,7 +32,7 @@ with open('input.txt', 'r', encoding='utf-8') as input_text, open('postags_lemma
 
 corpus = pd.read_csv("./deepgrail_tagger/deepgrail_supertagged_sick_dataset.tsv", sep='\t')
 
-with open('superpos.txt', 'w') as output_file, open('postags_lemmas_tt.txt', 'r', encoding='utf-8') as tags:
+with open('superpos.txt', 'w') as output_file, open('postags_lemmas_tt.txt', 'r', encoding='utf-8') as tags, open('aligned_tags.txt', 'w', encoding='utf-8') as corrected:
     tags_file = tags.readlines()
     tags_corrected=[]
     for liney in tags_file:
@@ -55,11 +55,11 @@ with open('superpos.txt', 'w') as output_file, open('postags_lemmas_tt.txt', 'r'
                 elif lines[i-1][0] == 'L':
                     lines[i-1][0] += lines[i][0]
                     lines[i-1][1] = 'DET:ART'
-                    lines[i-1][2] = 'Le'
+                    lines[i-1][2] = 'le'
                 elif lines[i-1][0] == 'D':
                     lines[i-1][0] += lines[i][0]
                     lines[i-1][1] ='PRP'
-                    lines[i-1][2] = 'De'
+                    lines[i-1][2] = 'de'
                 else:
                     lines[i-1][0] += lines[i][0]
                     lines[i-1][2] += lines[i][2]
@@ -80,8 +80,8 @@ with open('superpos.txt', 'w') as output_file, open('postags_lemmas_tt.txt', 'r'
         if len(cg) != len(tags_corrected[index]):
             #print(f"Index: {index}")
             #print(f"Lists have different lengths: {len(cg)} != {len(tags_corrected[index])}")
-            print(cg)
-            print(tags_corrected[index])
+            #print(cg)
+            #print(tags_corrected[index])
             cg = list(filter(lambda x: x != 'dl(0,s,txt)', cg))
             if len(cg) != len(tags_corrected[index]):
                 tags_corrected[index] = [[elem.split('\t') for elem in tagger.tag_text(part)] for item in tags_corrected[index] for part in (item[0].split('-') if '-' in item[0] and item[0]!='au-dessus' else [item[0]])]
@@ -95,7 +95,8 @@ with open('superpos.txt', 'w') as output_file, open('postags_lemmas_tt.txt', 'r'
 
         if len(cg) == len(tags_corrected[index]):
             for indy, valval in enumerate(cg):  
-                print(index, tags_corrected[index], tags_corrected[index][indy][0], tags_corrected[index][indy][1], cg[indy])
+                #print(index, tags_corrected[index], tags_corrected[index][indy][0], tags_corrected[index][indy][1], cg[indy])
                 print((tags_corrected[index][indy][0]+"|"+tags_corrected[index][indy][1]+"|1|"+cg[indy]+"|1"), file=output_file, end = " ")
 
         print("", file=output_file)   
+        print(tags_corrected[index], file=corrected)
