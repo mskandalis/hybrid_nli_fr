@@ -30,7 +30,7 @@ python scripts/extract_sentences_to_raw.py
 ```
 tclsh tokenize.tcl raw.txt > input.txt
 # python scripts/POStag-Lemma.ipynb (if you want to use lemmas from spaCy and not from TreeTagger or RNNTagger, later.)
-TreeTagger\bin\tag-french C:\Users\maxim\AppData\Roaming\MobaXterm\home\doctorat\GrailLight\input.txt tt_tags.tsv
+TreeTagger\bin\tag-french <your-parth-to>\input.txt tt_tags.tsv
 ```
 3. Obtain the TLG (Type-Logical Grammar) label of every token in the sentences with DeepGrail, and then put this all together for the input to Graillight:
 ```
