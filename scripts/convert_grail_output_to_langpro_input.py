@@ -29,15 +29,15 @@ def extract_rules_to_csv(xml_file, output_csv,sentences_txt):
 
 
 # Provide the XML file path (replace with the actual file path)
-xml_file = './proofs.xml'
+xml_file = './sick_proofs.xml'
 output_csv = 'rules_output.tsv'
-sentences_txt = 'raw.txt'
+sentences_txt = 'sick_raw.txt'
 
 import re
 import pandas as pd
 
 # Sample text (your Prolog file content)
-with open('proofs.xml', 'r', encoding='utf-8') as xml_proof:
+with open('sick_proofs.xml', 'r', encoding='utf-8') as xml_proof:
     xml_proofs = xml_proof.read()
     # Regex to find the comment number    
     proof_pattern = re.compile(r'<!-- (\d+)\.')
@@ -159,7 +159,7 @@ def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
     pattern = r'word\((\d+)\)'
     pattern_variables = r'@([A-Z])\)'
 
-    with open('superpos.txt', 'r') as tokensl, open('aligned_tags.txt', 'r', encoding='utf-8') as aligned_tags:
+    with open('sick_superpos.txt', 'r') as tokensl, open('sick_aligned_tags.txt', 'r', encoding='utf-8') as aligned_tags:
         tokensfile= tokensl.readlines()
         aligned_lemma = aligned_tags.readlines()
         number_of_lines = sum(1 for line in tokensfile)
@@ -191,18 +191,18 @@ def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
                         # Replace with the corresponding word from the list
                         mot = processed_list[value-1][number][0]
 
-                        if re.search(r"[',.]", mot):
+                        if re.search(r"[',.]", mot) or '@' in mot or '%' in mot or re.search(r"\w*[A-Z]+\w*", mot) or re.search(r"\w*[\u00C0-\u017F]+\w*", mot):
                             mot = mot.replace("'", "\\'")
                             mot = f"'{mot}'"
                         lemmaline= ast.literal_eval(aligned_lemma[value-1])
                         assert len(processed_list[value-1]) == len(lemmaline) == len(cg), f"For sentence id {index}, lists have different lengths:\nlemmas {len(lemmaline)}, tokens & POStags {len(processed_list[value-1])}, CGs {len(cg)}."
                         lemma = lemmaline[number][2] 
-                        if re.search(r"[',.]", lemma):
+                        if re.search(r"[',.]", lemma) or '@' in lemma or '%' in lemma or re.search(r"\w*[A-Z]+\w*", lemma)or re.search(r"\w*[\u00C0-\u017F]+\w*", lemma):
                             lemma = lemma.replace("'", "\\'")
                             lemma = f"'{lemma}'"
                         pos = processed_list[value-1][number][1]
                         supertags = cg[number]
-                        if len(pos)==1 and pos.isupper():
+                        if len(pos)==1 and pos.isupper() or '@' in pos or '%' in pos or re.search(r"\w*[A-Z]+\w*", pos) or re.search(r"\w*[\u00C0-\u017F]+\w*", pos):
                             pos = f"'{pos}'"
                         # return f'(tlp({mot}, {lemma}, {pos}, 0, O), \'{supertags}\')' if for use by LangPro's visualiser: https://naturallogic.pro/LangPro/vis_utils
                         # return f'(tlp({mot}, {lemma}, {pos}, 0, O), {supertags})' #if for use directly by LangPro theorem prover
@@ -313,7 +313,7 @@ for indx, valu in enumerate(intermediate_conversion_appl['id']):
 intermediate_conversion_appl['intermediate_conversion_for_langpro'] = la_liste
 
 # Perform the replacement
-result = replace_word_with_tlp(intermediate_conversion_appl, "input_for_langpro.tsv", "deepgrail_tagger/lemma_sick.jsonl", "deepgrail_tagger/deepgrail_supertagged_sick_dataset.tsv")
+result = replace_word_with_tlp(intermediate_conversion_appl, "input_for_langpro.tsv", "deepgrail_tagger/lemma_sick.jsonl", "deepgrail_tagger/sick_cg_tags.tsv")
 conversion_appl = pd.DataFrame(result)
 conversion_appl = conversion_appl.rename(columns={'intermediate_conversion_for_langpro': 'langpro_input'})
 
@@ -321,6 +321,6 @@ conversion_appl = conversion_appl.rename(columns={'intermediate_conversion_for_l
 conversion_appl.to_csv('input_for_langpro.tsv', index=False, sep="\t")
 with open('langpro_input_prolog_format.pl', 'w', encoding='utf-8') as prol:
     for index, value in enumerate(conversion_appl['id']):
-        prolog_term = re.sub(r'(\b\w*[A-Z]+\w+(?!\\\')\b)|(\b\w*[\u00C0-\u017F]+\w*\b)', r"'\1\2'", conversion_appl['langpro_input'][index])
+        prolog_term = re.sub(r'(\b\w*[\u00C0-\u017F]+\w*\b)', r"\1", conversion_appl['langpro_input'][index])
         comment_sentence = conversion_appl['sentence'][index].replace("'", " ").replace("’", " ").lower()
         prol.write(f"% {comment_sentence}\ncg_term({conversion_appl['id'][index]}, {prolog_term}).\n\n")  # Each entry as a Prolog fact
