@@ -24,18 +24,18 @@ For the Python Wrapper,
 The steps you need to follow in order to obtain the input for [LangPro theorem Prover](https://github.com/kovvalsky/LangPro/tree/nl) are the following:
 1. In order to extract the sentences from huggingface in a txt file (format: premise\n hypthesis\n premise\n hypothesis, etc.):
 ```
-python Scripts/extraire_phrases.py
+python scripts/extract_sentences_to_raw.py
 ```
 2. POS-tagging and lemmatisation with [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) or [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger):
 ```
 tclsh tokenize.tcl raw.txt > input.txt
-python scripts/POStag-Lemma.ipynb
-bin\tag-french C:\Users\maxim\AppData\Roaming\MobaXterm\home\doctorat\GrailLight\input.txt tt_tags.tsv
+# python scripts/POStag-Lemma.ipynb (if you want to use lemmas from spaCy and not from TreeTagger or RNNTagger, later.)
+TreeTagger\bin\tag-french C:\Users\maxim\AppData\Roaming\MobaXterm\home\doctorat\GrailLight\input.txt tt_tags.tsv
 ```
 3. Obtain the TLG (Type-Logical Grammar) label of every token in the sentences with DeepGrail, and then put this all together for the input to Graillight:
 ```
 python deepgrail_tagger/predict.py
-python scripts/get_right_format_for_graillight.py
+python scripts/assemble_graillight_input.py
 ```
 4. Obtain [lambda-terms](https://en.wikipedia.org/wiki/Lambda_calculus), proofs and [DRS](https://en.wikipedia.org/wiki/Discourse_representation_theory) with [Graillight](https://github.com/RichardMoot/GrailLight):
 ```
