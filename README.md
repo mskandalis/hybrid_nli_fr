@@ -54,6 +54,7 @@ With this pipeline from the beginning until the end, the number and percentage o
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
 |  SICK-FR | 19680 (9840*2)  | 11059    | 10347 |  93,56 | 712 |   6,44 |0 |
+|  GQNLI-FR | 600 (300*2)  | 247    | 171 |  69,23 | 76 |   30,77 |0 |
 
 #### Remarks
 
