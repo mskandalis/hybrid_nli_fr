@@ -1,0 +1,703 @@
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Certains chiens sont assis .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Certains chiens ne courent pas .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Tout chien court .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Plus d' un chien est assis .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Tous les chiens courent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Plus de deux chiens courent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Plus de quatre chiens sont assis .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Plus de 3 chiens ne sont pas assis .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Moins de six chiens courent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Un chien est assis .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Trois chiens courent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Entre six et sept chiens courent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Entre un et deux chiens noirs courent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+La moitié des chiens sont assis .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Un chien rouge court .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+60 % des chiens courent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+40 % des chiens sont assis .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Plus de 40 % des chiens courent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Un chien brun et un chien rouge se poursuivent .
+Il y a six chiens .
+Trois chiens bruns , un chien noir et un chien blanc courent le long de l' herbe verte .
+Deux chiens rouges se poursuivent l' un l' autre .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+Certains villageois et tous les citadins se détestent .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+Un villageois et un citadin se détestent .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+Tous les villageois et tous les citadins se détestent .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+Tous les villageois et certains citadins se détestent .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+Plus de cinq villageois et certains citadins se détestent .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+Plus de cinq villageois et tous les citadins se détestent .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+50 % des villageois et 50 % des citadins se détestent .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+La moitié des villageois et la plupart des citadins se détestent .
+Il y a 100 villageois et 100 citadins .
+La plupart des villageois et la plupart des citadins se détestent .
+Peu de villageois et peu de citadins ne se détestent pas .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+La plupart des garçons ont poursuivi deux filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Certains garçons ont poursuivi la plupart des filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Aucun garçon n' a poursuivi la plupart des filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Pas moins de quatre garçons ont poursuivi deux filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Plusieurs garçons ont poursuivi deux filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Plusieurs garçons ont poursuivi plus de trois filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Plusieurs garçons ont poursuivi moins de trois filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Moins de cinq garçons ont poursuivi toutes les filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Deux garçons ont poursuivi deux filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+100 % des garçons ont poursuivi deux filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Les deux tiers des garçons ont poursuivi deux filles dans la salle de classe .
+Plus de cinq garçons ont poursuivi deux filles dans la salle de classe .
+Quelques garçons n' ont pas poursuivi les filles dans la salle de classe .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Au moins la moitié des Américains ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Moins de 60 % des Américains s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Deux tiers des Américains s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent les uns des autres .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Deux Américains s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Plus de 30 % des Américains s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Quelques personnes d' Amérique ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Plus de la moitié des Américains ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Américains s' inquiètent du réchauffement climatique .
+Moins de trois Américains ne s' inquiètent pas du réchauffement climatique .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Six enfants portant des hauts rouges se tiennent debout au sommet d' une montagne .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Plus de la moitié des enfants portent des hauts verts et se tiennent debout au sommet d' une montagne jaune .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Moins de la moitié des enfants portent des hauts rouges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Quatre enfants portent des hauts rouges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+La plupart des enfants ne portent pas de hauts roses .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Tous les enfants portent des hauts .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Un cinquième des enfants portent des hauts rouges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Moins de cinq enfants portent des hauts rouges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Entre 5 et 6 enfants portent des hauts rouges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Entre 80 % et 90 % des enfants ne portent pas de hauts rouges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Beaucoup d' enfants ne portent pas de hauts rouges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts rouges et un tiers portent des hauts verts .
+Certains enfants ont les cheveux roux .
+Il y a douze chanteurs sur une scène , moins de la moitié originaires d' Argentine et un du Cap-Vert .
+Plus de 4 chanteurs sont originaires d' Argentine .
+Il y a douze chanteurs sur une scène , moins de la moitié d' Argentine et un du Cap-Vert .
+Les deux tiers des chanteurs sont originaires d' Argentine .
+Il y a douze chanteurs sur une scène , moins de la moitié originaires d' Argentine et un du Cap-Vert .
+Deux chanteurs viennent d' Argentine .
+Il y a douze chanteurs sur une scène , moins de la moitié originaires d' Argentine et un du Cap-Vert .
+La plupart des chanteurs viennent d' Argentine .
+Il y a douze chanteurs sur une scène , moins de la moitié originaires d' Argentine et un du Cap-Vert .
+Plusieurs chanteurs ne viennent pas du Chili .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+La plupart de la population vit dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Certaines personnes en Afrique ne vivent pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Plus de 36 % de la population africaine vit dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Moins de 20 % de la population africaine ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Au moins 400 millions de personnes en Afrique ne vivent pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+La majorité de la population ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Au moins la moitié de la population africaine vit au-dessus du seuil de pauvreté extrême .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Tous les Africains ne vivent pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Les quatre cinquièmes de la population africaine vivent dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Les deux tiers de la population africaine vivent dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Plus d' un tiers de la population africaine ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Un tiers de la population africaine ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Afrique vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+36 % de la population africaine vit dans la richesse .
+En 2020 , le ratio hommes-femmes en Ukraine était de 86,33 hommes pour 100 femmes .
+Il y avait plus de femmes que d' hommes en Ukraine .
+En 2020 , le ratio hommes-femmes en Ukraine était de 86,33 hommes pour 100 femmes .
+Le ratio hommes-femmes pour 100 femmes en Ukraine se situait entre 86 et 87 .
+En 2020 , le ratio hommes-femmes en Ukraine était de 86,33 hommes pour 100 femmes .
+Il y avait plus de femmes que d' hommes dans le monde .
+En 2020 , le ratio hommes-femmes en Ukraine était de 86,33 hommes pour 100 femmes .
+Il y avait plus d' hommes que de femmes en Ukraine .
+En 2020 , le ratio hommes-femmes en Ukraine était de 86,33 hommes pour 100 femmes .
+Les hommes ne sont pas plus que les femmes en Ukraine .
+Deux jeunes hommes en bleu se tiennent au-dessus d' un poêle et regardent la caméra tandis qu' un autre jeune homme en rouge se tient derrière eux .
+Au moins la moitié des hommes portent du rouge .
+Deux jeunes hommes en bleu se tiennent au-dessus d' un poêle et regardent la caméra tandis qu' un autre jeune homme en rouge se tient derrière eux .
+Certains hommes ne portent pas de bleu .
+Deux jeunes hommes en bleu se tiennent au-dessus d' un poêle et regardent la caméra tandis qu' un autre jeune homme en rouge se tient derrière eux .
+Entre deux et trois hommes portent du rouge .
+Deux jeunes hommes en bleu se tiennent au-dessus d' un poêle et regardent la caméra tandis qu' un autre jeune homme en rouge se tient derrière eux .
+Entre trois et quatre hommes portent du bleu .
+Deux jeunes hommes en bleu se tiennent au-dessus d' un poêle et regardent la caméra tandis qu' un autre jeune homme en rouge se tient derrière eux .
+La plupart des hommes portent du bleu .
+Deux jeunes hommes en bleu se tiennent au-dessus d' un poêle et regardent la caméra tandis qu' un autre jeune homme en rouge se tient derrière eux .
+Au moins deux hommes portent du rouge .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+Moins de cinq nettoyeurs balaient les excréments des animaux du zoo .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+Entre quatre et cinq nettoyeurs balayent les excréments des animaux .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+Moins de deux nettoyeurs balayent les excréments des animaux .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+Trois nettoyeurs balaient tous les excréments des animaux .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+Trois nettoyeurs balayent les excréments des animaux du zoo .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+60 % des nettoyeurs balaient les excréments des animaux .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+Plus de 30 % des nettoyeurs balayent les excréments des animaux .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+Plus de 40 % des nettoyeurs balayent les excréments des animaux .
+Seulement la moitié des six nettoyeurs balaient les excréments d' animaux de la rue lors d' un défilé .
+Au moins quatre nettoyeurs balaient les excréments des animaux .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Certains chats s' assoient .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Certains chats ne courent pas .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Tout chat court .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Plus d' un chat est assis .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Tous les chats courent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Plus de deux chats courent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Plus de quatre chats sont assis .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Plus de 3 chats ne s' assoient pas .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Moins de six chats courent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Un chat est assis .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Trois chats courent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Entre six et sept chats courent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Entre un et deux chats noirs courent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+La moitié des chats sont assis .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Un chat orange court .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+60 % des chats courent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+40 % des chats sont assis .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Plus de 40 % des chats courent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Un chat violet et un chat orange se poursuivent .
+Il y a six chats , trois chats violets , un chat noir et un chat blanc qui courent le long de l' herbe grise .
+Deux chats orange se poursuivent .
+Il y a 100 paysans et 100 villes .
+La plupart des paysans et la plupart des citadins se détestent .
+Certains paysans et toutes les villes se détestent .
+Il y a 100 paysans et 100 citadins .
+La plupart des paysans et la plupart des citadins se détestent .
+Un villageois et un citadin se détestent .
+Il y a 100 paysans et 100 citadins .
+La plupart des paysans et la plupart des citadins se détestent .
+Tous les paysans et tous les citadins se détestent .
+Il y a 100 paysans et 100 citadins .
+La plupart des paysans et la plupart des citadins se détestent .
+Tous les paysans et certains citadins se détestent .
+Il y a 100 paysans et 100 citadins .
+La plupart des paysans et la plupart des citadins se détestent .
+Plus de cinq paysans et certains citadins se détestent .
+Il y a 100 paysans et 100 citadins .
+La plupart des paysans et la plupart des citadins se détestent .
+Plus de cinq paysans et tous les citadins se détestent .
+Il y a 100 paysans et 100 citadins .
+La plupart des paysans et la plupart des citadins se détestent .
+50 % des paysans et 50 % des citadins se détestent .
+Il y a 100 paysans et 100 citadins .
+La plupart des paysans et la plupart des citadins se détestent .
+La moitié des paysans et la plupart des citadins se détestent .
+Il y a 100 paysans et 100 citadins .
+La plupart des paysans et la plupart des citadins se détestent .
+Peu de paysans et peu de citadins ne se détestent pas .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+La plupart des mecs ont poursuivi deux dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Certains mecs ont poursuivi la plupart des dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Aucun mec n' a poursuivi la plupart des dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Pas moins de quatre mecs ont poursuivi deux dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Plusieurs mecs ont poursuivi deux dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Plusieurs mecs ont poursuivi plus de trois dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Plusieurs mecs ont poursuivi moins de trois dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Moins de cinq mecs ont poursuivi toutes les dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Deux mecs ont poursuivi deux dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+100 % des mecs ont poursuivi deux dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Les deux tiers des mecs ont poursuivi deux dames dans la salle de classe .
+Plus de cinq mecs ont poursuivi deux dames dans la salle de classe .
+Quelques mecs n' ont pas poursuivi les dames dans la salle de classe .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Au moins la moitié des Européens ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Moins de 60 % des Européens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Deux tiers des Européens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent les uns des autres .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Deux Européens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Plus de 30 % des Européens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Quelques personnes d' Amérique ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Plus de la moitié des Européens ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Européens s' inquiètent du réchauffement climatique .
+Moins de trois Européens ne s' inquiètent pas du réchauffement climatique .
+Il y a 12 enfants debout au sommet d' une montagne jaune .
+Un tiers portent des hauts orange , un tiers portent des hauts gris et un tiers portent des hauts noirs .
+Six enfants portant des hauts orange se tiennent au sommet d' une montagne .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Plus de la moitié des enfants portent des hauts gris et se tiennent au sommet d' une montagne jaune .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Moins de la moitié des enfants portent des hauts orange .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Quatre enfants portent des hauts orange .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+La plupart des enfants ne portent pas de hauts roses .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Tous les enfants portent des hauts .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Un cinquième des enfants portent des hauts orange .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Moins de cinq enfants portent des hauts orange .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Entre 5 et 6 enfants portent des hauts orange .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Entre 80 % et 90 % des enfants ne portent pas de hauts orange .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Beaucoup d' enfants ne portent pas de hauts orange .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts orange et un tiers portent des hauts gris .
+Certains enfants ont les cheveux orange .
+Il y a douze chanteurs sur scène , moins de la moitié du Brésil et un de Papouasie-Nouvelle-Guinée .
+Plus de 4 chanteurs sont originaires du Brésil .
+Il y a douze chanteurs sur scène , moins de la moitié viennent du Brésil et un de Papouasie-Nouvelle-Guinée .
+Les deux tiers des chanteurs viennent du Brésil .
+Il y a douze chanteurs sur scène , moins de la moitié viennent du Brésil et un de Papouasie-Nouvelle-Guinée .
+Deux chanteurs viennent du Brésil .
+Il y a douze chanteurs sur scène , moins de la moitié du Brésil et un de Papouasie-Nouvelle-Guinée .
+La plupart des chanteurs viennent du Brésil .
+Il y a douze chanteurs sur scène , moins de la moitié du Brésil et un de Papouasie-Nouvelle-Guinée .
+Plusieurs chanteurs ne viennent pas du Chili .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+La majorité de la population vit dans une extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Certaines personnes en Amérique latine ne vivent pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Plus de 36 % de la population d' Amérique latine vit dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Moins de 20 % de la population d' Amérique latine ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Au moins 400 millions de personnes en Amérique latine ne vivent pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+La plupart de la population ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Au moins la moitié de la population d' Amérique latine vit au-dessus du seuil d' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Tous les habitants d' Amérique latine ne vivent pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Les quatre cinquièmes de la population d' Amérique latine vivent dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Les deux tiers de la population d' Amérique latine vivent dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Plus d' un tiers de la population d' Amérique latine ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Un tiers de la population d' Amérique latine ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Amérique latine vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+36 % de la population d' Amérique latine vit dans la richesse .
+En 2020 , le ratio garçons / filles en Ukraine était de 86,33 garçons pour 100 filles .
+Il y avait plus de filles que de garçons en Ukraine .
+En 2020 , le ratio garçons / filles en Ukraine était de 86,33 garçons pour 100 filles .
+Le ratio garçons / filles pour 100 filles en Ukraine se situait entre 86 et 87 .
+En 2020 , le ratio garçons / filles en Ukraine était de 86,33 garçons pour 100 filles .
+Il y avait plus de filles que de garçons dans le monde .
+En 2020 , le ratio garçons / filles en Ukraine était de 86,33 garçons pour 100 filles .
+Il y avait plus de garçons que de filles en Ukraine .
+En 2020 , le ratio garçons / filles en Ukraine était de 86,33 garçons pour 100 filles .
+Les garçons ne sont pas plus que les filles en Ukraine .
+Deux hommes âgés en bleu se tiennent au-dessus d' un poêle et regardent la table tandis qu' un autre homme âgé en orange se tient derrière eux .
+Au moins la moitié des hommes portent de l' orange .
+Deux hommes âgés en bleu se tiennent au-dessus d' un poêle et regardent la table tandis qu' un autre homme âgé en orange se tient derrière eux .
+Certains hommes ne portent pas de bleu .
+Deux hommes âgés en bleu se tiennent au-dessus d' un poêle et regardent la table tandis qu' un autre homme âgé en orange se tient derrière eux .
+Entre deux et trois hommes portent de l' orange .
+Deux hommes âgés en bleu se tiennent au-dessus d' un poêle et regardent la table tandis qu' un autre homme âgé en orange se tient derrière eux .
+Entre trois et quatre hommes portent du bleu .
+Deux hommes âgés en bleu se tiennent au-dessus d' un poêle et regardent la table tandis qu' un autre homme âgé en orange se tient derrière eux .
+La plupart des hommes portent du bleu .
+Deux hommes âgés en bleu se tiennent au-dessus d' un poêle et regardent la table tandis qu' un autre homme âgé en orange se tient derrière eux .
+Au moins deux hommes portent de l' orange .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+Moins de cinq assistants balaient les déchets d' animaux du zoo .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+Entre quatre et cinq assistants balayent les déchets d' animaux .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+Moins de deux assistants balayent les déchets d' animaux .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+Trois assistants balaient tous les déchets d' animaux .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+Trois assistants balayent les déchets d' animaux du zoo .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+60 % des assistants balaient les déchets d' animaux .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+Plus de 30 % des assistants balaient les déchets d' animaux .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+Plus de 40 % des assistants balaient les déchets d' animaux .
+Seulement la moitié des six assistants balaient les déchets d' animaux dans la rue lors d' un défilé .
+Au moins quatre assistants balayent les déchets d' animaux .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Certains ours s' assoient .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Certains ours ne courent pas .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Tout ours court .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Plus d' un ours est assis .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Tous les ours courent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Plus de deux ours courent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Plus de quatre ours sont assis .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Plus de 3 ours ne s' assoient pas .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Moins de six ours courent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Un ours est assis .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Trois ours courent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Entre six et sept ours courent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Entre un et deux ours noirs courent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+La moitié des ours sont assis .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Un ours beige court .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+60 % des ours courent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+40 % des ours sont assis .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Plus de 40 % des ours courent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Un ours brun et un ours beige se poursuivent .
+Il y a six ours .
+Trois ours marron , un ours noir et un ours blanc courent le long de l' herbe cyan .
+Deux ours beiges se poursuivent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+Certains footballeurs et tous les nageurs se détestent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+Un villageois et un citadin se détestent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+Tous les footballeurs et tous les nageurs se détestent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+Tous les footballeurs et certains nageurs se détestent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+Plus de cinq footballeurs et certains nageurs se détestent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+Plus de cinq footballeurs et tous les nageurs se détestent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+50 % des footballeurs et 50 % des nageurs se détestent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+La moitié des footballeurs et la plupart des nageurs se détestent .
+Il y a 100 footballeurs et 100 nageurs .
+La plupart des footballeurs et la plupart des nageurs se détestent .
+Peu de footballeurs et peu de nageurs ne se détestent pas .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+La plupart des gars ont pourchassé deux écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Certains gars ont pourchassé la plupart des écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Aucun gars n' a pourchassé la plupart des écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Pas moins de quatre gars ont pourchassé deux écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Plusieurs gars ont poursuivi deux écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Plusieurs gars ont poursuivi plus de trois écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Plusieurs gars ont pourchassé moins de trois écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Moins de cinq gars ont pourchassé toutes les écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Deux types ont pourchassé deux écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+100 % des gars ont pourchassé deux écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Les deux tiers des gars ont pourchassé deux écolières dans la salle de classe .
+Plus de cinq gars ont pourchassé deux écolières dans la salle de classe .
+Quelques gars n' ont pas pourchassé des écolières dans la salle de classe .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Au moins la moitié des Canadiens ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Moins de 60 % des Canadiens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Les deux tiers des Canadiens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent les uns des autres .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Deux Canadiens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Plus de 30 % des Canadiens s' inquiètent du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Quelques personnes d' Amérique ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Plus de la moitié des Canadiens ne s' inquiètent pas du réchauffement climatique .
+Plus de 50 % mais moins de 65 % des Canadiens s' inquiètent du réchauffement climatique .
+Moins de trois Canadiens ne s' inquiètent pas du réchauffement climatique .
+Il y a 12 enfants debout au sommet d' une montagne jaune .
+Un tiers portent des hauts beiges , un tiers portent des hauts cyan et un tiers portent des hauts noirs .
+Six enfants portant des hauts beiges sont debout au sommet d' une montagne .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Plus de la moitié des enfants portent des hauts cyan et se tiennent au sommet d' une montagne jaune .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Moins de la moitié des enfants portent des hauts beiges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Quatre enfants portent des hauts beiges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+La plupart des enfants ne portent pas de hauts roses .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Tous les enfants portent des tops .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Un cinquième des enfants portent des hauts beiges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Moins de cinq enfants portent des hauts beiges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Entre 5 et 6 enfants portent des hauts beiges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Entre 80 % et 90 % des enfants ne portent pas de hauts beiges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Beaucoup d' enfants ne portent pas de hauts beiges .
+Il y a six enfants debout au sommet d' une montagne jaune .
+Les deux tiers portent des hauts beiges et un tiers portent des hauts cyan .
+Certains enfants ont les cheveux beiges .
+Il y a douze chanteurs sur scène , moins de la moitié venant d' Allemagne et un d' Indonésie .
+Plus de 4 chanteurs sont allemands .
+Il y a douze chanteurs sur scène , moins de la moitié venant d' Allemagne et un d' Indonésie .
+Les deux tiers des chanteurs sont allemands .
+Il y a douze chanteurs sur scène , moins de la moitié venant d' Allemagne et un d' Indonésie .
+Deux chanteurs viennent d' Allemagne .
+Il y a douze chanteurs sur scène , moins de la moitié venant d' Allemagne et un d' Indonésie .
+La plupart des chanteurs viennent d' Allemagne .
+Il y a douze chanteurs sur scène , moins de la moitié venant d' Allemagne et un d' Indonésie .
+Plusieurs chanteurs ne viennent pas du Chili .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+La majorité de la population vit dans une extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Certaines personnes en Australie ne vivent pas dans la pauvreté extrême .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Plus de 36 % de la population australienne vit dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Moins de 20 % de la population australienne ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Au moins 400 millions de personnes en Australie ne vivent pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+La majorité de la population ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de sa population totale .
+Au moins la moitié de la population australienne vit au-dessus du seuil de pauvreté extrême .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Tous les Australiens ne vivent pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Les quatre cinquièmes des Australiens vivent dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Les deux tiers de la population australienne vivent dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Plus d' un tiers de la population australienne ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+Un tiers de la population australienne ne vit pas dans l' extrême pauvreté .
+En 2021,490 millions de personnes en Australie vivent dans l' extrême pauvreté , soit 36 % de la population totale .
+36 % de la population australienne vit dans la richesse .
+En 2020 , le ratio hommes-femmes pour l' Ouzbékistan était de 86,33 hommes pour 100 femmes .
+Il y avait plus de femmes que d' hommes en Ouzbékistan .
+En 2020 , le ratio hommes-femmes pour l' Ouzbékistan était de 86,33 hommes pour 100 femmes .
+Le ratio hommes / femmes pour 100 femmes se situait entre 86 et 87 .
+En 2020 , le ratio hommes-femmes pour l' Ouzbékistan était de 86,33 hommes pour 100 femmes .
+Il y avait plus de femmes que d' hommes dans le monde .
+En 2020 , le ratio hommes-femmes pour l' Ouzbékistan était de 86,33 hommes pour 100 femmes .
+Il y avait plus d' hommes que de femmes en Ouzbékistan .
+En 2020 , le ratio hommes-femmes pour l' Ouzbékistan était de 86,33 hommes pour 100 femmes .
+Les hommes ne sont pas plus que les femmes en Ouzbékistan .
+Deux hommes adultes en bleu se tiennent au-dessus d' un poêle et regardent la porte tandis qu' un autre homme adulte en beige se tient derrière eux .
+Au moins la moitié des hommes portent du beige .
+Deux hommes adultes en bleu se tiennent au-dessus d' un poêle et regardent la porte tandis qu' un autre homme adulte en beige se tient derrière eux .
+Certains hommes ne portent pas de bleu .
+Deux hommes adultes en bleu se tiennent au-dessus d' un poêle et regardent la porte tandis qu' un autre homme adulte en beige se tient derrière eux .
+Entre deux et trois hommes portent du beige .
+Deux hommes adultes en bleu se tiennent au-dessus d' un poêle et regardent la porte tandis qu' un autre homme adulte en beige se tient derrière eux .
+Entre trois et quatre hommes portent du bleu .
+Deux hommes adultes en bleu se tiennent au-dessus d' un poêle et regardent la porte tandis qu' un autre homme adulte en beige se tient derrière eux .
+La plupart des hommes portent du bleu .
+Deux hommes adultes en bleu se tiennent au-dessus d' un poêle et regardent la porte tandis qu' un autre homme adulte en beige se tient derrière eux .
+Au moins deux hommes portent du beige .
+Seulement la moitié des six bénévoles balaient les canettes de bière de la rue lors d' un défilé .
+Moins de cinq bénévoles balayent les canettes de bière du zoo .
+Seulement la moitié des six bénévoles balaient les canettes de bière de la rue lors d' un défilé .
+Entre quatre et cinq bénévoles balayent les canettes de bière .
+Seulement la moitié des six bénévoles balayent les canettes de bière de la rue lors d' un défilé .
+Moins de deux bénévoles balaient les canettes de bière .
+Seulement la moitié des six bénévoles balaient les canettes de bière de la rue lors d' un défilé .
+Trois bénévoles balaient toutes les canettes de bière .
+Seulement la moitié des six bénévoles balaient les canettes de bière de la rue lors d' un défilé .
+Trois bénévoles balayent les canettes de bière du zoo .
+Seulement la moitié des six bénévoles balayent les canettes de bière de la rue lors d' un défilé .
+60 % des bénévoles balayent les canettes de bière .
+Seulement la moitié des six bénévoles balaient les canettes de bière de la rue lors d' un défilé .
+Plus de 30 % des bénévoles balayent les canettes de bière .
+Seulement la moitié des six bénévoles balaient les canettes de bière de la rue lors d' un défilé .
+Plus de 40 % des bénévoles balayent les canettes de bière .
+Seulement la moitié des six bénévoles balaient les canettes de bière de la rue lors d' un défilé .
+Au moins quatre bénévoles sont en train de balayer les canettes de bière .
