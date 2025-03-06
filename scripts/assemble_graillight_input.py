@@ -21,7 +21,7 @@ import re
 
 tagger = treetaggerwrapper.TreeTagger(TAGLANG='fr')
 tttags=[]
-with open('raw.txt', 'r', encoding='utf-8') as input_text, open('postags_lemmas_tt.txt', 'w', encoding='utf-8') as output_tags:
+with open('daccord_input.txt', 'r', encoding='utf-8') as input_text, open('daccord_postags_lemmas_tt.txt', 'w', encoding='utf-8') as output_tags:
     for index, line in enumerate(input_text):
         line = line.replace("’", "'")
         tags = tagger.tag_text(line)
@@ -32,9 +32,9 @@ with open('raw.txt', 'r', encoding='utf-8') as input_text, open('postags_lemmas_
         output_tags.write(repr(sousliste)+'\n')
 
 
-corpus = pd.read_csv("./deepgrail_tagger/gqnli_fr_cg_tags.tsv", sep='\t')
+corpus = pd.read_csv("./deepgrail_tagger/daccord_cg_tags_separated_in_sentences.tsv", sep='\t')
 
-with open('superpos.txt', 'w') as output_file, open('postags_lemmas_tt.txt', 'r', encoding='utf-8') as tags, open('aligned_tags.txt', 'w', encoding='utf-8') as corrected:
+with open('daccord_superpos.txt', 'w') as output_file, open('daccord_postags_lemmas_tt.txt', 'r', encoding='utf-8') as tags, open('daccord_aligned_tags.txt', 'w', encoding='utf-8') as corrected:
     tags_file = tags.readlines()
     tags_corrected=[]
     for liney in tags_file:
@@ -89,28 +89,31 @@ with open('superpos.txt', 'w') as output_file, open('postags_lemmas_tt.txt', 'r'
     for index, value in enumerate(corpus['id']):
         cg=ast.literal_eval(corpus['cg_supertags'][index])
         if len(cg) != len(tags_corrected[index]):
-            #print(f"Index: {index}")
-            #print(f"Lists have different lengths: {len(cg)} != {len(tags_corrected[index])}")
-            #print(cg)
-            #print(tags_corrected[index])
-            cg = list(filter(lambda x: x != 'dl(0,s,txt)', cg)) if not '.' in tags_corrected[index][-1][0]:
+            print(f"Index: {index}")
+            print(f"Lists have, for the moment, different lengths: {len(cg)} != {len(tags_corrected[index])}")
+            
+            cg = list(filter(lambda x: x != 'dl(0,s,txt)', cg)) if '.' not in tags_corrected[index][-1][0] else cg
+
             if len(cg) != len(tags_corrected[index]):
-            tags_corrected[index] = [[elem.split('\t') for elem in tagger.tag_text(part)] for item in tags_corrected[index] for part in (item[0].split('-') if '-' in item[0] and item[0]!='au-dessus' else [item[0]])]
-            tags_corrected[index] = [inner[0] for inner in tags_corrected[index]]
-            if len(cg) != len(tags_corrected[index]):
+                tags_corrected[index] = [[elem.split('\t') for elem in tagger.tag_text(part)] for item in tags_corrected[index] for part in (item[0].split('-') if '-' in item[0] and item[0]!='au-dessus' else [item[0]])]
+                tags_corrected[index] = [inner[0] for inner in tags_corrected[index]]
+                if len(cg) != len(tags_corrected[index]):
 
-                for i in range(len(tags_corrected[index]) -1, 0, -1):
+                    for i in range(len(tags_corrected[index]) -1, 0, -1):
 
-                    if tags_corrected[index][i][1] == 'PRO:PER' and tags_corrected[index][i][2] == 'se' and 'VER' in tags_corrected[index][i+1][1] and cg[i] != 'cl_r':
-                        cg.insert(i, 'cl_r')
-                        break
-                    if tags_corrected[index][i-1][1] == 'ADJ' and tags_corrected[index][i][1] == 'VER:ppre' or tags_corrected[index][i][1] == 'ADJ':
-                        cg.insert(i, cg[i-1]) 
-                        break
+                        if tags_corrected[index][i][1] == 'PRO:PER' and tags_corrected[index][i][2] == 'se' and 'VER' in tags_corrected[index][i+1][1] and cg[i] != 'cl_r':
+                            cg.insert(i, 'cl_r')
+                            break
+                        if tags_corrected[index][i-1][1] == 'ADJ' and (tags_corrected[index][i][1] == 'VER:ppre' or tags_corrected[index][i][1] == 'ADJ'):
+                            cg.insert(i, cg[i-1]) 
+                            break
+                        if tags_corrected[index][i-1][1] == 'NUM' and tags_corrected[index][i][2] == ',' and tags_corrected[index][i+1][1] == 'NUM':
+                            cg.insert(i, cg[i-1]) 
+                            cg.insert(i, 'dr(0,dl(0,np,np),np)')
+                            print(cg)
+                            break
 
-                print(cg)
-                print(tags_corrected[index])
-                assert len(cg) == len(tags_corrected[index]), f"Lists have different lengths: {len(cg)} != {len(tags_corrected[index])}, index: {index}"
+                    assert len(cg) == len(tags_corrected[index]), f"Lists have different lengths: {len(cg)} != {len(tags_corrected[index])}, index: {index}\n{cg}\n{tags_corrected[index]}"
 
         if len(cg) == len(tags_corrected[index]):
             for indy, valval in enumerate(cg):  
