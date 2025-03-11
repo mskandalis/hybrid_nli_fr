@@ -58,7 +58,15 @@ With this pipeline from the beginning until the end, with Treetagger for POS-tag
 |  GQNLI-FR | 703 (premises separated to sentences if multiple sentences in it)  | 350    | 328 |  93,71 | 22 |   6,29 |0 |
 |  GQNLI-FR | 600 (300*2) (every premise given as a whole single input, whatever the number of sentences in it)  | 247    | 171 |  69,23 | 76 |   30,77 |0 |
 
-With the same pipeline but with DeepGrailv1's POS-tagger, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+
+| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
+| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
+|  SICK-FR |   |     |  |   |  |    | |
+|  FraCaS-FR |   |     |  |   |  |    | |
+|  GQNLI-FR |   |     |  |   |  |    | |
+
+With the same pipeline but with DeepGrailv1's POS-tagger and DeepGrailv2's Supertagger, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
