@@ -49,7 +49,7 @@ python scripts/convert_grail_output_to_langpro_input.py
 ```
 
 #### Score
-With this pipeline from the beginning until the end, with Treetagger for POS-tagging, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+With this pipeline from the beginning until the end, with Treetagger for POS-tagging and DeepGrailv2's for Supertagging, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
@@ -62,7 +62,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger, the nu
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
-|  SICK-FR |   |     |  |   |  |    | |
+|  SICK-FR | 19680 (9840*2)  |  11059  | 10047 | 90,85  | 1012 |  9,15  | 0 |
 |  FraCaS-FR |   |     |  |   |  |    | |
 |  GQNLI-FR |   |     |  |   |  |    | |
 
