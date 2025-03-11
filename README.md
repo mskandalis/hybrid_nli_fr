@@ -64,7 +64,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger, and Le
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
 |  SICK-FR | 19680 (9840*2)  |  11059  | 10047 | 90,85  | 1012 |  9,15  | 0 |
 |  FraCaS-FR | 881  |  314   | 268 | 85,35  | 46 |  14,65  | 0|
-|  GQNLI-FR |   |     |  |   |  |    | |
+|  GQNLI-FR |  703 |  350   | 307 | 87,71  | 43 | 12,29   | 0 |
 
 With the same pipeline but with DeepGrailv1's POS-tagger, DeepGrailv2's Supertagger, and Lefff lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
