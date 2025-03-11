@@ -49,7 +49,7 @@ python scripts/convert_grail_output_to_langpro_input.py
 ```
 
 #### Score
-With this pipeline from the beginning until the end, with Treetagger for POS-tagging and DeepGrailv2's for Supertagging, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+With this pipeline from the beginning until the end, with Treetagger for POS-tagging, DeepGrailv2's for Supertagging, and Lefff for lemmatisation, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
@@ -58,15 +58,15 @@ With this pipeline from the beginning until the end, with Treetagger for POS-tag
 |  GQNLI-FR | 703 (premises separated to sentences if multiple sentences in it)  | 350    | 328 |  93,71 | 22 |   6,29 |0 |
 |  GQNLI-FR | 600 (300*2) (every premise given as a whole single input, whatever the number of sentences in it)  | 247    | 171 |  69,23 | 76 |   30,77 |0 |
 
-With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger, and Lefff lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
 |  SICK-FR | 19680 (9840*2)  |  11059  | 10047 | 90,85  | 1012 |  9,15  | 0 |
-|  FraCaS-FR |   |     |  |   |  |    | |
+|  FraCaS-FR | 881  |  314   | 268 | 85,35  | 46 |  14,65  | 0|
 |  GQNLI-FR |   |     |  |   |  |    | |
 
-With the same pipeline but with DeepGrailv1's POS-tagger and DeepGrailv2's Supertagger, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+With the same pipeline but with DeepGrailv1's POS-tagger, DeepGrailv2's Supertagger, and Lefff lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
