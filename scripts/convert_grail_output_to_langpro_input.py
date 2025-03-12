@@ -160,7 +160,7 @@ def parse_appl(expression):
 # Function to replace word(N) with tlp(<N-th word in the list>)
 def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
     data = input_csv
-    print(data)
+
     #lemmafile= pd.read_json(path_or_buf=tokens_list, lines=True) for lemmas et POS tags from spaCy
     supertags_tsv = pd.read_csv(supertags_file, sep='\t')
     lemma_by_id = load_lemmas_by_id(tokens_list)
