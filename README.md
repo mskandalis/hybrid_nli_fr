@@ -74,6 +74,14 @@ With the same pipeline but with DeepGrailv1's POS-tagger, DeepGrailv2's Supertag
 |  FraCaS-FR |   |     |  |   |  |    | |
 |  GQNLI-FR |   |     |  |   |  |    | |
 
+With the same pipeline but with DeepGrailv1's POS-tagger, DeepGrailv2's Supertagger, and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+
+| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
+| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
+|  SICK-FR | 19680 (9840*2)  |  19678    | 18292 | 92,96  | 1386 |  7,04  | |
+|  FraCaS-FR |   |     |  |   |  |    | |
+|  GQNLI-FR |   |     |  |   |  |    | |
+
 #### Remarks
 
 - For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d', or English terms used in French like half-pipe (in skateboard); some other don't. Make sure whatever your choice, it's kept the same throughout the process. Here I make sure to verify this with the code itself.
