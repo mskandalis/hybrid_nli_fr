@@ -26,7 +26,7 @@ The steps you need to follow in order to obtain the input for [LangPro theorem P
 ```
 python scripts/extract_sentences_to_raw.py
 ```
-2. POS-tagging and lemmatisation with [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger), [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger), or [1st DeepGrail's ELMo/LSTM](https://github.com/RichardMoot/DeepGrail2021):
+2. POS-tagging with [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger), or [1st DeepGrail's ELMo/LSTM](https://github.com/RichardMoot/DeepGrail2021) (advised), and lemmatisation with [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger), or [spaCy](https://spacy.io/models/fr#fr_dep_news_trf) (advised):
 ```
 tclsh tokenize.tcl raw.txt > input.txt
 # python scripts/POStag-Lemma.ipynb (if you want to use lemmas from spaCy and not from TreeTagger or RNNTagger, later.)
