@@ -5,9 +5,11 @@ import re
 import csv
 import json
 import ast
+import unicodedata
+
 
 def extract_rules_to_csv(xml_file, output_csv,sentences_txt):
-    with open(xml_file, 'r') as infile, open(output_csv, 'w', newline='', encoding='utf-8') as outfile, open(sentences_txt, 'r', encoding='utf-8') as sentencefile:
+    with open(xml_file, 'r', encoding='utf-8') as infile, open(output_csv, 'w', newline='', encoding='utf-8') as outfile, open(sentences_txt, 'r', encoding='utf-8') as sentencefile:
         lines = infile.readlines()  # Read all lines from the XML file
         sentences = sentencefile.readlines()
         csv_writer = csv.writer(outfile, delimiter='\t')  # Create a CSV writer
@@ -29,15 +31,12 @@ def extract_rules_to_csv(xml_file, output_csv,sentences_txt):
 
 
 # Provide the XML file path (replace with the actual file path)
-xml_file = './sick_proofs.xml'
+xml_file = './proofs.xml'
 output_csv = 'rules_output.tsv'
 sentences_txt = 'sick_raw.txt'
 
-import re
-import pandas as pd
-
 # Sample text (your Prolog file content)
-with open('sick_proofs.xml', 'r', encoding='utf-8') as xml_proof:
+with open('proofs.xml', 'r', encoding='utf-8') as xml_proof:
     xml_proofs = xml_proof.read()
     # Regex to find the comment number    
     proof_pattern = re.compile(r'<!-- (\d+)\.')
@@ -85,8 +84,17 @@ with open('sick_proofs.xml', 'r', encoding='utf-8') as xml_proof:
 
 extract_rules_to_csv(xml_file, output_csv, sentences_txt)
 
+def load_lemmas_by_id(jsonl_file):
+    """Load lemmas from JSONL and return a dictionary with sentence ID as the key."""
+    lemma_dict = {}
+    with open(jsonl_file, 'r', encoding='utf-8') as f:
+        for line in f:
+            data = json.loads(line)  # Parse JSON line
+            lemma_dict[data["id"]] = {entry[0]: entry[1] for entry in data["pos_lemma"]}
+    return lemma_dict
+
+
 # appl(word(1), word(2)) -> (word(1)@word(2)), taking also into account nested structures like appl(word(8),appl(word(6),word(7))), and keeping lambda() as it is.
-import re
 
 def find_matching_paren(s, start):
     stack = 1
@@ -152,19 +160,25 @@ def parse_appl(expression):
 # Function to replace word(N) with tlp(<N-th word in the list>)
 def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
     data = input_csv
+    print(data)
     #lemmafile= pd.read_json(path_or_buf=tokens_list, lines=True) for lemmas et POS tags from spaCy
     supertags_tsv = pd.read_csv(supertags_file, sep='\t')
+    lemma_by_id = load_lemmas_by_id(tokens_list)
 
     # Define a pattern to match word(N), where N is a number inside parentheses
     pattern = r'word\((\d+)\)'
     pattern_variables = r'@([A-Z])\)'
 
-    with open('sick_superpos.txt', 'r') as tokensl, open('sick_aligned_tags.txt', 'r', encoding='utf-8') as aligned_tags:
+    with open('sick_new_superpos.txt', 'r', encoding='utf-8') as tokensl: #open('sick_aligned_tags.txt', 'r', encoding='utf-8') as aligned_tags:
         tokensfile= tokensl.readlines()
-        aligned_lemma = aligned_tags.readlines()
+        #aligned_lemma = aligned_tags.readlines()
         number_of_lines = sum(1 for line in tokensfile)
         for index, value in enumerate(data['id']):
-            cg=ast.literal_eval(supertags_tsv['cg_supertags'][value-1])
+#            cg=ast.literal_eval(supertags_tsv['cg_supertags'][value-1])
+
+            lemma_dict = lemma_by_id.get(value, {})
+            lemma_dict = {key + "'" if len(key) == 1 and key.islower() and key in 'cdjlmnst' else key: (str(value) + 'e' if len(key) == 1 and key.islower() and len(value)==1 else value)
+            for key, value in lemma_dict.items()}
 
             input_str = data['intermediate_conversion_for_langpro'][index]
             processed_list = []
@@ -176,9 +190,10 @@ def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
 
                 processed_list.append(split_parts)
 
-            if len(processed_list[value-1]) != len(cg):
-                cg = [x for x in cg if x != 'dl(0,s,txt)']
-                assert len(processed_list[value-1]) == len(cg), f"Lists have different lengths: {len(cg)} != {len(processed_list[value-1])}, index: {index}\nsentence: {processed_list[value-1]}\nCG tags list: {cg}"
+#            if len(processed_list[value-1]) != len(cg):
+#                cg = list(filter(lambda x: x != 'dl(0,s,txt)', cg)) if '.' not in processed_list[value-1] else cg
+
+#                assert len(processed_list[value-1]) == len(cg), f"Lists have different lengths: {len(cg)} != {len(processed_list[value-1])}, index: {index}\nsentence: {processed_list[value-1]}\nCG tags list: {cg}"
 
             # Function to replace each match
             def replacement(match):
@@ -190,19 +205,24 @@ def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
 
                         # Replace with the corresponding word from the list
                         mot = processed_list[value-1][number][0]
-
-                        if re.search(r"[',.]", mot) or '@' in mot or '%' in mot or re.search(r"\w*[A-Z]+\w*", mot) or re.search(r"\w*[\u00C0-\u017F]+\w*", mot):
+                        if mot in lemma_dict:
+                            lemma= lemma_dict[mot]
+                        else:
+                            lemma = mot 
+                        if re.search(r"[',.]", mot) or '@' in mot or '%' in mot or '-' in mot or '|' in mot or re.search(r"\w*[A-Z]+\w*", mot) or re.search(r"\w*[\u00C0-\u017F]+\w*", mot):
                             mot = mot.replace("'", "\\'")
                             mot = f"'{mot}'"
-                        lemmaline= ast.literal_eval(aligned_lemma[value-1])
-                        assert len(processed_list[value-1]) == len(lemmaline) == len(cg), f"For sentence id {index}, lists have different lengths:\nlemmas {len(lemmaline)}, tokens & POStags {len(processed_list[value-1])}, CGs {len(cg)}."
-                        lemma = lemmaline[number][2] 
-                        if re.search(r"[',.]", lemma) or '@' in lemma or '%' in lemma or re.search(r"\w*[A-Z]+\w*", lemma)or re.search(r"\w*[\u00C0-\u017F]+\w*", lemma):
+                        #lemmaline= ast.literal_eval(aligned_lemma[value-1])
+                        #assert len(processed_list[value-1]) == len(cg), f"For sentence id {index}, lists have different lengths:\nlemmas {len(lemmaline)}, tokens & POStags {len(processed_list[value-1])}, CGs {len(cg)}."
+
+                        #lemma = lemmaline[number][2] 
+                        if re.search(r"[',.]", lemma) or '@' in lemma or '%' in lemma or '-' in lemma or '|' in lemma or re.search(r"\w*[A-Z]+\w*", lemma)or re.search(r"\w*[\u00C0-\u017F]+\w*", lemma):
                             lemma = lemma.replace("'", "\\'")
                             lemma = f"'{lemma}'"
                         pos = processed_list[value-1][number][1]
-                        supertags = cg[number]
-                        if len(pos)==1 and pos.isupper() or '@' in pos or '%' in pos or re.search(r"\w*[A-Z]+\w*", pos) or re.search(r"\w*[\u00C0-\u017F]+\w*", pos):
+                        supertags = processed_list[value-1][number][3]
+                        
+                        if len(pos)==1 and pos.isupper() or '@' in pos or '%' in pos or '-' in pos or '|' in pos or re.search(r"\w*[A-Z]+\w*", pos) or re.search(r"\w*[\u00C0-\u017F]+\w*", pos):
                             pos = f"'{pos}'"
                         # return f'(tlp({mot}, {lemma}, {pos}, 0, O), \'{supertags}\')' if for use by LangPro's visualiser: https://naturallogic.pro/LangPro/vis_utils
                         # return f'(tlp({mot}, {lemma}, {pos}, 0, O), {supertags})' #if for use directly by LangPro theorem prover
@@ -272,19 +292,9 @@ def transform_appl(expression, allrules):
 
             formulae = mapping_row['Mappings'][formulae]
 
-                #if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
-                #    formulae = 'O'
-                #    if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
-                 #       formulae = 'B'
-                 #       if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
-                 #           formulae = 'E'
-                  #          if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
-                  #              formulae = 'M'
-
-
         formula, category = formulae, row['Cg_category']
 
-        # Replace matches with "A"
+        # Replace matches
         replacements[formula] = category
 
     # Replace expressions from longest to shortest (to prevent partial replacements)
@@ -313,7 +323,7 @@ for indx, valu in enumerate(intermediate_conversion_appl['id']):
 intermediate_conversion_appl['intermediate_conversion_for_langpro'] = la_liste
 
 # Perform the replacement
-result = replace_word_with_tlp(intermediate_conversion_appl, "input_for_langpro.tsv", "deepgrail_tagger/lemma_sick.jsonl", "deepgrail_tagger/sick_cg_tags.tsv")
+result = replace_word_with_tlp(intermediate_conversion_appl, "input_for_langpro.tsv", "lemma_sick.jsonl", "deepgrail_tagger/sick_cg_tags.tsv")
 conversion_appl = pd.DataFrame(result)
 conversion_appl = conversion_appl.rename(columns={'intermediate_conversion_for_langpro': 'langpro_input'})
 

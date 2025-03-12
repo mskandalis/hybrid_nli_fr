@@ -115,6 +115,7 @@ def process_prolog_file(pl_file, lemma_file, output_file):
         updated_lines.append(new_line)
 
     with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(':- dynamic sent/2.\n\n')
         f.writelines(updated_lines)
 
     print(f"Processed file saved as: {output_file}")
