@@ -120,4 +120,4 @@ def process_prolog_file(pl_file, lemma_file, output_file):
     print(f"Processed file saved as: {output_file}")
 
 # Example usage
-process_prolog_file("superpos_nolem_elmo.pl", "lemma_sick.jsonl", "output_lemmasi.pl")
+process_prolog_file("sick_new_superpos_nolem.pl", "lemma_sick.jsonl", "output_lemmasi_new.pl")
