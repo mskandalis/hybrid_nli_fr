@@ -84,7 +84,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger, DeepGrailv2's Supertag
 |  RTE3-TEST | 1828  |   1828  | 1496 |  81,84 | 332 |  18,16  | 0|
 |  RTE3-DEV | 1959  |   1959  | 1594 | 81,37  | 365 |  18,63  | 0|
 |  XNLI-TEST |   |     |  |   |  |    | 0|
-|  XNLI-DEV |   |     |  |   |  |    | 0|
+|  XNLI-DEV |  5151 |  5151   | 3956 |  76,8 | 1195 |  23,2  | 0|
 |  DACCORD |   |     |  |   |  |    | 0|
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger, and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
