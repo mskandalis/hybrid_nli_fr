@@ -55,9 +55,9 @@ def replace_in_line(line, replacements):
         # Reassemble the line with the replaced values
     return new_line
 
-supertags_tsv = pd.read_csv("deepgrail_tagger/sick_cg_tags.tsv", sep='\t')
+supertags_tsv = pd.read_csv("deepgrail_tagger/daccord_cg_tags_separated_in_sentences.tsv", sep='\t')
 replacement_list= supertags_tsv['cg_supertags']
-with open('sick_super_elmo.txt', 'r', encoding='utf-8') as file, open('sick_new_superpos.txt', 'w', encoding='utf-8') as output_file:
+with open('DeepGrail2021/daccord_super_elmo.txt', 'r', encoding='utf-8') as file, open('daccord_new_superpos.txt', 'w', encoding='utf-8') as output_file:
     lines = file.readlines()
     for index, line in enumerate(lines):
         # Process the line

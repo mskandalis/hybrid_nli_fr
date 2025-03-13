@@ -63,7 +63,7 @@ def replace_second_occurrence(content, lemma_dict):
             count_first_word += 1
             if count_first_word == 2:
                 if first_word in lemma_dict:
-                    replaced_content.append(lemma_dict[first_word])  # replace second occurrence
+                    replaced_content.append(f"'{lemma_dict[first_word]}'" if any(char.isupper() for char in lemma_dict[first_word]) and not (lemma_dict[first_word].startswith("'") and lemma_dict[first_word].endswith("'")) and ("'" != replaced_content[-1] and "'" != replaced_content[-2]) else lemma_dict[first_word])  # replace second occurrence
                 else:
                     replaced_content.append(token)  # leave as is
             else:
@@ -121,4 +121,4 @@ def process_prolog_file(pl_file, lemma_file, output_file):
     print(f"Processed file saved as: {output_file}")
 
 # Example usage
-process_prolog_file("sick_new_superpos_nolem.pl", "lemma_sick.jsonl", "output_lemmasi_new.pl")
+process_prolog_file("daccord_new_superpos_nolem.pl", "spacy/daccord_postags_lemmas_spacy.jsonl", "output_lemmasi_new_daccord.pl")
