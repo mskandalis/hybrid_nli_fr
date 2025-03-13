@@ -79,7 +79,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger, DeepGrailv2's Supertag
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
 |  SICK-FR | 19680 (9840*2)  |  19680    | 18294 | 92,96  | 1386 |  7,04  | 0 |
-|  FraCaS-FR |   |     |  |   |  |    | |
+|  FraCaS-FR | 881  |   881  | 836 |  94,82 | 45 |  5,11  | 0|
 |  GQNLI-FR |   |     |  |   |  |    | |
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger, and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
