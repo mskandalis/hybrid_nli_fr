@@ -29,18 +29,21 @@ python scripts/extract_sentences_to_raw.py
 2. POS-tagging with [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger), or [1st DeepGrail's ELMo/LSTM](https://github.com/RichardMoot/DeepGrail2021) (advised), and lemmatisation with [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger), or [spaCy](https://spacy.io/models/fr#fr_dep_news_trf) (advised):
 ```
 tclsh tokenize.tcl raw.txt > input.txt
-# python scripts/POStag-Lemma.ipynb (if you want to use lemmas from spaCy and not from TreeTagger or RNNTagger, later.)
-TreeTagger\bin\tag-french <your-path-to>\input.txt tt_tags.tsv
+python scripts/POStag-Lemma.ipynb #(if you want to use lemmas from spaCy and not from TreeTagger or RNNTagger, later.)
+# TreeTagger\bin\tag-french <your-path-to>\input.txt tt_tags.tsv
+python DeepGrail2021/super.py
 ```
 3. Obtain the TLG (Type-Logical Grammar) label of every token in the sentences with DeepGrail, and then put this all together for the input to Graillight:
 ```
 python deepgrail_tagger/predict.py
 python scripts/assemble_graillight_input.py
+python replace_with_new_deepgrail_tags.py
 ```
 4. Obtain [lambda-terms](https://en.wikipedia.org/wiki/Lambda_calculus), proofs and [DRS](https://en.wikipedia.org/wiki/Discourse_representation_theory) with [Graillight](https://github.com/RichardMoot/GrailLight):
 ```
 tclsh supertag2pl superpos.txt > superpos_nolem.pl
-swipl -q -g lemmatize -f lefff.pl superpos_nolem.pl
+python add_lemmas_to_prolog_file.py
+# swipl -q -g lemmatize -f lefff.pl superpos_nolem.pl
 swipl -q -t main -f grail_light_nd.pl superpos.pl
 ```
 5. Convert the output of Graillight to a compatible form for LangPro theorem prover:
