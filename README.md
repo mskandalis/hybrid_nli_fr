@@ -101,7 +101,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger, and sp
 #### Remarks
 
 - For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d', or English terms used in French like half-pipe (in skateboard); some other don't. Make sure whatever your choice, it's kept the same throughout the process. Here I make sure to verify this with the code itself.
-- The big loss of sentences between the initial number of sentences and the number of sentences fed to Graillight occurs, for the moment, simply at step 4, with the second command that adds lemmas in the prolog file. **To be addressed shortly**.
+- In the first tables, the big loss of sentences between the initial number of sentences and the number of sentences fed to Graillight occurs, for the moment, simply at step 4, with the second command that adds lemmas with Lefff in the prolog file. We replaced Lefff's lemmatisation with spaCy and the problem no longer reproduced.
 
 ### Predicting the label (two options)
 
