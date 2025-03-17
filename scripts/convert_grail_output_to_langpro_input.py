@@ -177,7 +177,7 @@ def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
 #            cg=ast.literal_eval(supertags_tsv['cg_supertags'][value-1])
 
             lemma_dict = lemma_by_id.get(value, {})
-            lemma_dict = {key + "'" if len(key) == 1 and key.islower() and key in 'cdjlmnst' else key: (str(value) + 'e' if len(key) == 1 and key.islower() and len(value)==1 else value)
+            lemma_dict = {key + "'" if len(key) == 1 and key.islower() and key in 'cdjlmnst' else key: (str(value) + 'e' if len(key) == 1 and key.islower() and len(value)==1 and key in 'cdjlmnst' else value)
             for key, value in lemma_dict.items()}
 
             input_str = data['intermediate_conversion_for_langpro'][index]
@@ -216,7 +216,7 @@ def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
                         #assert len(processed_list[value-1]) == len(cg), f"For sentence id {index}, lists have different lengths:\nlemmas {len(lemmaline)}, tokens & POStags {len(processed_list[value-1])}, CGs {len(cg)}."
 
                         #lemma = lemmaline[number][2] 
-                        if re.search(r"[',.]", lemma) or '@' in lemma or '%' in lemma or '-' in lemma or '|' in lemma or re.search(r"\w*[A-Z]+\w*", lemma)or re.search(r"\w*[\u00C0-\u017F]+\w*", lemma):
+                        if re.search(r"[',.]", lemma) or '@' in lemma or '%' in lemma or '-' in lemma or '|' in lemma or re.search(r"\w*[A-Z]+\w*", lemma) or re.search(r"\w*[\u00C0-\u017F]+\w*", lemma):
                             lemma = lemma.replace("'", "\\'")
                             lemma = f"'{lemma}'"
                         pos = processed_list[value-1][number][1]
@@ -224,6 +224,7 @@ def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
                         
                         if len(pos)==1 and pos.isupper() or '@' in pos or '%' in pos or '-' in pos or '|' in pos or re.search(r"\w*[A-Z]+\w*", pos) or re.search(r"\w*[\u00C0-\u017F]+\w*", pos):
                             pos = f"'{pos}'"
+
                         # return f'(tlp({mot}, {lemma}, {pos}, 0, O), \'{supertags}\')' if for use by LangPro's visualiser: https://naturallogic.pro/LangPro/vis_utils
                         # return f'(tlp({mot}, {lemma}, {pos}, 0, O), {supertags})' #if for use directly by LangPro theorem prover
                         return f"tlp({mot}, {lemma}, {pos}, 0, O)" #if for use directly by LangPro theorem prover
@@ -234,6 +235,7 @@ def replace_word_with_tlp(input_csv, output_csv, tokens_list, supertags_file):
             # Apply the regex and replacement to the input string
             transformed_str = re.sub(pattern, replacement, input_str)
             transformed_str = re.sub(pattern_variables, r'@\1', transformed_str)
+            print(transformed_str)
             print('sentence with id ', value, ' processed, out of ', str(number_of_lines), ' lines.')
             data.at[index, 'intermediate_conversion_for_langpro'] = transformed_str
         return data 
@@ -256,7 +258,7 @@ intermediate_conversion_appl = pd.DataFrame(intermediate_conversion_appl, column
 def transform_appl(expression, allrules):
     replacements = {}
     pattern_abst = r"abst\(([A-Z]|[A-Z][0-9]),|@([A-Z]|[A-Z][0-9])\)"
-    another_pattern = r'[A-Z][0-9]?'
+    another_pattern = r'\b[A-Z][0-9]?\b'
     all_mappings = []
     # Collect all replacements first without modifying expression on the fly
     for _, row in allrules.iterrows():
@@ -264,8 +266,8 @@ def transform_appl(expression, allrules):
         
         if formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx] and len(formulae)>2:
             #formulae = row['Converted_rules']
-            interm = re.sub(r'[A-Z][0-9]?', 'Z', intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx])
-            formulo = re.sub(r'[A-Z][0-9]?', 'Z', formulae)
+            interm = re.sub(r'\b[A-Z][0-9]?\b', '~', intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx])
+            formulo = re.sub(r'\b[A-Z][0-9]?\b', '~', formulae)
 
             start_index = interm.find(formulo)
             capitals_whole_expr = re.findall(another_pattern, intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx][start_index:start_index+len(formulae)])
@@ -284,7 +286,7 @@ def transform_appl(expression, allrules):
                 all_mappings.append({'Proof Number': row['Proof Number'], 'Mappings': mapping})
 
             for key, value in mapping.items():
-                formulae = re.sub(fr'{key}|{key}[0-9]', f'{value}', formulae)
+                formulae = re.sub(fr'\b{key}[0-9]?\b', f'{value}', formulae)
 
         
         if re.match(another_pattern, formulae) and (formulae not in intermediate_conversion_appl['intermediate_conversion_for_langpro'][indx]):
@@ -296,12 +298,16 @@ def transform_appl(expression, allrules):
 
         # Replace matches
         replacements[formula] = category
+        replacements[formula] = re.sub(r"(\w*[\u00C0-\u017F]+\w*)", r"'\1'", replacements[formula])
 
     # Replace expressions from longest to shortest (to prevent partial replacements)
     sorted_replacements = sorted(replacements.keys(), key=len, reverse=True)
     
     for formula in sorted_replacements:
-        expression = expression.replace(formula, f'({formula}, {replacements[formula]})')
+        if len(formula)<3:
+            expression = re.sub(fr'(?<=\W){formula}(?=\W)', fr'({formula}, {replacements[formula]})', expression)
+        else:
+            expression = expression.replace(formula, f'({formula}, {replacements[formula]})')
     
     return expression
 
