@@ -102,8 +102,6 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
-|  GQNLI-FR | 703  |   703  | 635 |  90,33 | 68 |  9,67  | 0 |
-|  DACCORD | 2341  |   2341  | 89,41 | 2093  | 10,34 | 242   | 6 (0,26%) |
 |  SICK-FR | 19680 (9840*2)  |  19680    | 19409 | 98,62  | 271 |  1,37  | 0 |
 |  FraCaS-FR | 881  |   881  |  |   | |    | 0|
 |  GQNLI-FR | 703  |   703  |  |  |  |    | 0|
