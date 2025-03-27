@@ -119,7 +119,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  FraCaS-FR | 881  |   881  | 847 | 96,14  | 34| 3,86   | 0|
 |  GQNLI-FR | 703  |   703  | 635 | 90,33 | 68 |  9,67  | 0|
 |  RTE3-TEST | 1828  |   1828  | 1723 |  94,26 | 105 |  5,74  | 0|
-|  RTE3-DEV | 1959  |   1959  |  |   |  |    | 0|
+|  RTE3-DEV | 1959  |   1959  | 1799 | 91,83  | 158 |  8,07  | 2 (0,1%) |
 |  XNLI-TEST |  10409 |  10409   |  |   |  |    | 0|
 |  XNLI-DEV |  5151 |  5151   |  |   |  |    | 0|
 |  DACCORD | 2341  |   2341  |  |   |  |    | 0|
@@ -131,7 +131,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  SICK-FR | 19680 (9840*2)  |  19680    | 19604 | 99,61  | 73 |  0,39  | 0 |
 |  FraCaS-FR | 881  |   881  | 871 | 98,86  | 10 |  1,14  | 0|
 |  GQNLI-FR | 703  |   703  | 650 | 92,46 | 53 |  7,54  | 0|
-|  RTE3-TEST | 1828  |   1828  | 1765 | 96,55  | 49 | 2,68   | 14 (0,77)|
+|  RTE3-TEST | 1828  |   1828  | 1765 | 96,55  | 49 | 2,68   | 14 (0,77%)|
 |  RTE3-DEV | 1959  |   1959  |  |   |  |    | 0|
 |  XNLI-TEST |  10409 |  10409   |  |   |  |    | 0|
 |  XNLI-DEV |  5151 |  5151   |  |   |  |    | 0|
