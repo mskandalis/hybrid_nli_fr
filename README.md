@@ -98,6 +98,19 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  FraCaS-FR |  881 |  881   | 787 |  89,33 | 94 |  10,67  | 0 |
 |  GQNLI-FR | 703  |   703  | 611 |  86,91 | 92 |  13,09  | 0 |
 
+With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.1), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+
+| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
+| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
+|  SICK-FR | 19680 (9840*2)  |  19680    | 18602 | 94,52  | 1078 |  5,48  | 0 |
+|  FraCaS-FR | 881  |   881  |  |   | |    | 0|
+|  GQNLI-FR | 703  |   703  |  |  |  |    | 0|
+|  RTE3-TEST | 1828  |   1828  |  |   |  |    | 0|
+|  RTE3-DEV | 1959  |   1959  |  |   |  |    | 0|
+|  XNLI-TEST |  10409 |  10409   |  |   |  |    | 0|
+|  XNLI-DEV |  5151 |  5151   |  |   |  |    | 0|
+|  DACCORD | 2341  |   2341  |  |   |  |    | 0|
+
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.01), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
@@ -116,7 +129,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
 |  SICK-FR | 19680 (9840*2)  |  19680    | 19604 | 99,61  | 73 |  0,39  | 0 |
-|  FraCaS-FR | 881  |   881  |  |   | |    | 0|
+|  FraCaS-FR | 881  |   881  | 871 | 98,86  | 10 |  1,14  | 0|
 |  GQNLI-FR | 703  |   703  |  |  |  |    | 0|
 |  RTE3-TEST | 1828  |   1828  |  |   |  |    | 0|
 |  RTE3-DEV | 1959  |   1959  |  |   |  |    | 0|
