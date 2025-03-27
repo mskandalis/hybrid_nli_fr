@@ -105,7 +105,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  SICK-FR | 19680 (9840*2)  |  19680    | 18602 | 94,52  | 1078 |  5,48  | 0 |
 |  FraCaS-FR | 881  |   881  | 822 |  93,30 | 59| 6,70   | 0|
 |  GQNLI-FR | 703  |   703  | 622 | 88,48 | 81 | 11,52   | 0|
-|  RTE3-TEST | 1828  |   1828  |  |   |  |    | 0|
+|  RTE3-TEST | 1828  |   1828  | 1601 | 87,58  | 227 | 12,42   | 0|
 |  RTE3-DEV | 1959  |   1959  |  |   |  |    | 0|
 |  XNLI-TEST |  10409 |  10409   |  |   |  |    | 0|
 |  XNLI-DEV |  5151 |  5151   |  |   |  |    | 0|
