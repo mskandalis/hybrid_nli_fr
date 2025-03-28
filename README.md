@@ -137,7 +137,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  FraCaS-FR | 881  |   881  | 871 | 98,86  | 10 |  1,14  | 0|
 |  GQNLI-FR | 703  |   703  | 650 | 92,46 | 53 |  7,54  | 0|
 |  RTE3-TEST | 1828  |   1828  | 1765 | 96,55  | 49 | 2,68   | 14 (0,77%)|
-|  RTE3-DEV | 1959  |   1959  |  |   |  |    | 0|
+|  RTE3-DEV | 1959  |   1959  | 1869 | 95,41  | 68 |  3,47  | 22 (1,12%)|
 |  XNLI-TEST |  10409 |  10409   |  |   |  |    | 0|
 |  XNLI-DEV |  5151 |  5151   |  |   |  |    | 0|
 |  DACCORD | 2341  |   2341  |  |   |  |    | 0|
