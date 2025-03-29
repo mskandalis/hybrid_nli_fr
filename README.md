@@ -139,7 +139,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  RTE3-TEST | 1828  |   1828  | 1765 | 96,55  | 49 | 2,68   | 14 (0,77%)|
 |  RTE3-DEV | 1959  |   1959  | 1869 | 95,41  | 68 |  3,47  | 22 (1,12%)|
 |  XNLI-TEST |  10409 |  10409   |  |   |  |    | 0|
-|  XNLI-DEV |  5151 |  5151   | 4835  | 93,87  |284  |   5,51 | 32 (0,62%)| (run from 08:55 until 18:31 29/03/2025)
+|  XNLI-DEV |  5151 |  5151   | 4835  | 93,87  |284  |   5,51 | 32 (0,62%)| 
 |  DACCORD | 2341  |   2341  | 2213 | 94,53  | 106 |  4,53  | 22 (0,94%)|
 
 
@@ -148,6 +148,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 
 - For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d', or English terms used in French like half-pipe (in skateboard); some other don't. Make sure whatever your choice, it's kept the same throughout the process. Here I make sure to verify this with the code itself.
 - In the first tables, the big loss of sentences between the initial number of sentences and the number of sentences fed to Graillight occurs, for the moment, simply at step 4, with the second command that adds lemmas with Lefff in the prolog file. We replaced Lefff's lemmatisation with spaCy and the problem no longer reproduced.
+- Fro XNLI_dev wtih beta value set to 0,001, Graillight needed to run from 08:55 until 18:31 29/03/2025.
 
 ### Predicting the label (two options)
 
