@@ -11,6 +11,21 @@ def load_lemmas_by_id(jsonl_file):
             lemma_dict[data["id"]] = {entry[0]: entry[1] for entry in data["pos_lemma"]}
     return lemma_dict
 
+def extract_si_elements(text):
+    # Find all occurrences of si() and their content
+    si_pattern = re.compile(r'si\((.*?)\)(?=\s*,\s*si|$|\s*],\s*Result)', re.DOTALL)
+    
+    # Extract the content inside each si()
+    si_elements = si_pattern.findall(text)
+    
+    # Split the content of each si() by commas
+    result_list = []
+    for element in si_elements:
+        elements = [item.strip() for item in element.split(", ")]
+        result_list.append(elements)
+    
+    return result_list
+
 def replace_second_occurrence(content, lemma_dict):
     """Replace the second occurrence of the first word inside an `ex_si(...)` block with its lemma."""
     # We need to correctly tokenize the content while keeping nested parentheses intact
@@ -56,21 +71,46 @@ def replace_second_occurrence(content, lemma_dict):
     replaced_content = []
     count_first_word = 0
 
-    for token in tokens:
-        if first_word is None and token.isalpha():
+    for idr, token in enumerate(tokens):
+        if first_word is None and token.lstrip("'").isalpha():
             first_word = token
         if token == first_word:
             count_first_word += 1
+
+            tok=first_word.strip("'")
+            mod_tok= first_word.lstrip("'")
+            modified_tok = tok+"'"
+
+            first_word_value = lemma_dict.get(first_word)
+            mod_tok_value = lemma_dict.get(mod_tok)
+            modified_tok_value = lemma_dict.get(modified_tok)
+            tok_value = lemma_dict.get(tok)
+            complex_word = first_word+tokens[idr+1]
+            complex_word2 = first_word+tokens[idr+1]+tokens[idr+2]
+            complex_word_value = lemma_dict.get(complex_word, lemma_dict.get(complex_word.strip("'"), lemma_dict.get(complex_word.strip("'").replace("\\", ""))))
+            complex_word2_value = lemma_dict.get(complex_word2, lemma_dict.get(complex_word2.strip("'"), lemma_dict.get(complex_word2.strip("'").replace("\\", ""))))
+
+            # Fallback to first_word if no value is found
+            replacement_value = first_word_value or mod_tok_value or modified_tok_value or tok_value or complex_word_value or complex_word2_value or first_word
+
             if count_first_word == 2:
-                if first_word in lemma_dict:
-                    replaced_content.append(f"'{lemma_dict[first_word]}'" if any(char.isupper() for char in lemma_dict[first_word]) and not (lemma_dict[first_word].startswith("'") and lemma_dict[first_word].endswith("'")) and ("'" != replaced_content[-1] and "'" != replaced_content[-2]) else lemma_dict[first_word])  # replace second occurrence
+                if replacement_value:
+                    if any(char.isupper() for char in replacement_value) and not (replacement_value.startswith("'") and replacement_value.endswith("'")) and ("'" != replaced_content[-1] and "'" != replaced_content[-2]):
+                        replaced_content.append(f"'{replacement_value}'")
+
+                    else:
+                        replaced_content.append(replacement_value)  # replace second occurrence
                 else:
-                    replaced_content.append(token)  # leave as is
+                    replaced_content.append(token)
+
             else:
+
                 replaced_content.append(token)
+
         else:
             replaced_content.append(token)
-    
+    repla = text = re.sub(r"(?<!\\)'(?=(\w|\\))", "", "".join(replaced_content))
+
     return "".join(replaced_content)
 
 def process_prolog_file(pl_file, lemma_file, output_file):
@@ -91,28 +131,48 @@ def process_prolog_file(pl_file, lemma_file, output_file):
             continue  # Next line contains `ex_si(...)`
 
         lemma_dict = lemma_by_id.get(current_sentence_id, {})  # Get lemma mappings for this sentence
+        lemma_dict = {key+ "'" if (len(key) == 1 and ((key.lower() in 'djlmnst') or (key.lower() in 'c' and "°" not in lemma_dict.keys()))) or (key.lower() =='qu') else key: (str(value) + 'e' if (len(key) == 1 and len(value)==1 and (key.lower() in 'djlmnst' or (key.lower() in 'c' and "°" not in lemma_dict.keys())) and key.lower()==value.lower()) or value.lower=='qu' else value)
+        for key, value in lemma_dict.items()}
 
         # Replace `ex_si` with `si`
         line = line.replace("ex_si", "si")
+        run = extract_si_elements(line)
+        modified_text=line
+        for i, elements in enumerate(run, 1):
 
-        # Process each `si(...)` block separately
-        new_line = ""
-        last_idx = 0
+            #print(f"si {i}: {elements}")
+            modified_elements = elements.copy()
+            # Example: Change the third element of each si
+            tok=elements[2].strip("'")
+            mod_tok= elements[2].lstrip("'")
+            modified_tok = tok+"'"
+            complex_word = mod_tok.rstrip("\\''")
+            complex_word2 = tok.replace("\\", "'")
+            stripped_text = re.sub(r'[\W]', '', elements[2])
 
-        # Find all `si(...)` blocks
-        for match in re.finditer(r"si\((.*?)\)", line):
-            full_match = match.group(0)  # Entire `si(...)`
-            content = match.group(1)  # Inside `si(...)`
+            first_word_value = lemma_dict.get(elements[2])
+            mod_tok_value = lemma_dict.get(mod_tok)
+            modified_tok_value = lemma_dict.get(modified_tok)
+            tok_value = lemma_dict.get(tok)
+            complex_word_value = lemma_dict.get(complex_word)
+            complex_word2_value = lemma_dict.get(complex_word2)
+            stripped_text_value = lemma_dict.get(stripped_text)
 
-            # Replace second occurrence in this `si(...)`
-            new_si_expr = replace_second_occurrence(content, lemma_dict)
+            # Fallback to first_word if no value is found
+            replacement_value = first_word_value or mod_tok_value or modified_tok_value or tok_value or complex_word_value or complex_word2_value or stripped_text_value or elements[2]
 
-            # Keep everything before this match + replace the match
-            new_line += line[last_idx:match.start()] + f"si({new_si_expr})"
-            last_idx = match.end()
-
-        new_line += line[last_idx:]  # Append remaining part of line
-        updated_lines.append(new_line)
+            modified_elements[2] = replacement_value  # Replace the third element with its lemma from lemma_dict
+            if "'" in modified_elements[2] and not(modified_elements[2].startswith("'") and modified_elements[2].endswith("'")):
+                modified_elements[2] = re.sub(r"(?<!\\)'", r"\\'", modified_elements[2])
+            if not re.fullmatch(r"[a-z]+", modified_elements[2]) and not(modified_elements[2].startswith("'") and modified_elements[2].endswith("'")):
+                modified_elements[2] = f"'{modified_elements[2]}'"            
+            # Reconstruct the `si()` string with the modified elements
+            modified_si = f"si({', '.join(modified_elements)})"
+            initial_si = f"si({', '.join(run[i-1])})"
+            
+            # Replace the old `si()` string in the original text with the modified one
+            modified_text = modified_text.replace(initial_si, modified_si)
+        updated_lines.append(modified_text)
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(':- dynamic sent/2.\n\n')
@@ -121,4 +181,4 @@ def process_prolog_file(pl_file, lemma_file, output_file):
     print(f"Processed file saved as: {output_file}")
 
 # Example usage
-process_prolog_file("daccord_new_superpos_nolem.pl", "spacy/daccord_postags_lemmas_spacy.jsonl", "output_lemmasi_new_daccord.pl")
+process_prolog_file("daccord_0_3_superpos_nolem.pl", "spacy/daccord_postags_lemmas_spacy.jsonl", "output_lemmasi_daccord_0_3.pl")
