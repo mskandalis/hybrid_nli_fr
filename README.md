@@ -162,6 +162,7 @@ If you use any part of this repository, kindly ask to cite all the following pap
 
 **BibTeX:**
 
+For the datasets:
 ````BibTeX
 @inproceedings{skandalis-etal-2024-new-datasets,
     title = "New Datasets for Automatic Detection of Textual Entailment and of Contradictions between Sentences in {F}rench",
@@ -184,7 +185,10 @@ If you use any part of this repository, kindly ask to cite all the following pap
     pages = "12173--12186",
     abstract = "This paper introduces DACCORD, an original dataset in French for automatic detection of contradictions between sentences. It also presents new, manually translated versions of two datasets, namely the well known dataset RTE3 and the recent dataset GQNLI, from English to French, for the task of natural language inference / recognising textual entailment, which is a sentence-pair classification task. These datasets help increase the admittedly limited number of datasets in French available for these tasks. DACCORD consists of 1034 pairs of sentences and is the first dataset exclusively dedicated to this task and covering among others the topic of the Russian invasion in Ukraine. RTE3-FR contains 800 examples for each of its validation and test subsets, while GQNLI-FR is composed of 300 pairs of sentences and focuses specifically on the use of generalised quantifiers. Our experiments on these datasets show that they are more challenging than the two already existing datasets for the mainstream NLI task in French (XNLI, FraCaS). For languages other than English, most deep learning models for NLI tasks currently have only XNLI available as a training set. Additional datasets, such as ours for French, could permit different training and evaluation strategies, producing more robust results and reducing the inevitable biases present in any single dataset.",
 }
+````
 
+And, for the method:
+````BibTeX
 @misc{skandalis:hal-05002405,
   TITLE = {{Hybrid AI with LLMs and Theorem Provers for Semantic Parsing and Natural Language Inference for French}},
   AUTHOR = {Skandalis, Maximos and Abzianidze, Lasha and Moot, Richard and Robillard, Simon},
@@ -202,15 +206,13 @@ If you use any part of this repository, kindly ask to cite all the following pap
 
 **ACL:**
 
+For the datasets:
 Maximos Skandalis, Richard Moot, Christian Retoré, and Simon Robillard. 2024. [New Datasets for Automatic Detection of Textual Entailment and of Contradictions between Sentences in French](https://aclanthology.org/2024.lrec-main.1065). In *Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)*, pages 12173–12186, Torino, Italy. ELRA and ICCL.
 
-And
+And, for the method:
 
 Maximos Skandalis, Lasha Abzianidze, Richard Moot, Simon Robillard. Hybrid AI with LLMs and Theorem Provers for Semantic Parsing and Natural Language Inference for French. *FoMo 2025 - ELLIS Winter School on Foundation Models*, Mar 2025, Amsterdam, Netherlands. , 2025. [⟨hal-05002405⟩](https://hal.science/hal-05002405v1)
 
-And
-
-More to come.
 
 # Acknowledgements
 
