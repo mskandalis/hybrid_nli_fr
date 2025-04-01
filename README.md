@@ -186,9 +186,29 @@ If you use any part of this repository, kindly ask to cite all the following pap
 }
 ````
 
+````BibTeX
+@misc{skandalis:hal-05002405,
+  TITLE = {{Hybrid AI with LLMs and Theorem Provers for Semantic Parsing and Natural Language Inference for French}},
+  AUTHOR = {Skandalis, Maximos and Abzianidze, Lasha and Moot, Richard and Robillard, Simon},
+  URL = {https://hal.science/hal-05002405},
+  NOTE = {Poster},
+  HOWPUBLISHED = {{FoMo 2025 - ELLIS Winter School on Foundation Models}},
+  ORGANIZATION = {{ELLIS Unit Amsterdam and University of Amsterdam}},
+  YEAR = {2025},
+  MONTH = Mar,
+  PDF = {https://hal.science/hal-05002405v1/file/Natural_language_inference_neurosymbolic_ai.pdf},
+  HAL_ID = {hal-05002405},
+  HAL_VERSION = {v1},
+}
+````
+
 **ACL:**
 
 Maximos Skandalis, Richard Moot, Christian Retoré, and Simon Robillard. 2024. [New Datasets for Automatic Detection of Textual Entailment and of Contradictions between Sentences in French](https://aclanthology.org/2024.lrec-main.1065). In *Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)*, pages 12173–12186, Torino, Italy. ELRA and ICCL.
+
+And
+
+Maximos Skandalis, Lasha Abzianidze, Richard Moot, Simon Robillard. Hybrid AI with LLMs and Theorem Provers for Semantic Parsing and Natural Language Inference for French. *FoMo 2025 - ELLIS Winter School on Foundation Models*, Mar 2025, Amsterdam, Netherlands. , 2025. [⟨hal-05002405⟩](https://hal.science/hal-05002405v1)
 
 And
 
