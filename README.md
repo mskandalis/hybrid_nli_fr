@@ -13,11 +13,18 @@ This repository contains:
 
 You need to have the following installed in your machine:
 - [Prolog](https://www.swi-prolog.org/download/stable);
-- TreeTagger (either the [original repository](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) alone, or the original repository + a [Python interface](https://github.com/miotto/treetagger-python) or a [TreeTagger Python Wrapper](https://treetaggerwrapper.readthedocs.io/en/latest)), or RNNTagger. Here I use the [third option mentioned](https://treetaggerwrapper.readthedocs.io/en/latest). After downloading TreeTagger, you will need to add the path to its bin to the PATH environment variable. This is done with
+- For Part-of-Speech Tagging:
+  - the [ELMO POS-tagger](https://github.com/HIT-SCIR/ELMoForManyLangs) that you can use with [1st DeepGrail LSTM version](https://github.com/RichardMoot/DeepGrail2021)
+  - TreeTagger (either the [original repository](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) alone, or the original repository + a [Python interface](https://github.com/miotto/treetagger-python) or a [TreeTagger Python Wrapper](https://treetaggerwrapper.readthedocs.io/en/latest)), or [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger). Here I use the [third option mentioned](https://treetaggerwrapper.readthedocs.io/en/latest). After downloading TreeTagger, you will need to add the path to its bin to the PATH environment variable. This is done with
 ```set PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in Windows, or
 ```export PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in Linux.
 For the Python Wrapper,
 ```pip install treetaggerwrapper```, then ```set```, for Windows, or ```export```, for Linux, ```TAGDIR=<your-path-to-TreeTagger's-folder>/TreeTagger```.
+- For lemmatisation:
+  - [spaCy](https://spacy.io/models/fr#fr_dep_news_trf), or 
+  - [spacy-lefff](https://spacy.io/universe/project/spacy-lefff), or
+  - [Stanza](https://stanfordnlp.github.io/stanza), or
+  - [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), or [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger) (see above).
 
 ## Instructions
 ### Preparing the data and obtaining the lambda-terms (half deep learning, half prolog programme)
