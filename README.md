@@ -14,7 +14,7 @@ This repository contains:
 You need to have the following installed in your machine:
 - [Prolog](https://www.swi-prolog.org/download/stable);
 - For Part-of-Speech Tagging:
-  - the [ELMO POS-tagger](https://github.com/HIT-SCIR/ELMoForManyLangs) that you can use with [1st DeepGrail LSTM version](https://github.com/RichardMoot/DeepGrail2021)
+  - the [ELMO POS-tagger](https://github.com/HIT-SCIR/ELMoForManyLangs) that you can use with [1st DeepGrail LSTM version](https://github.com/RichardMoot/DeepGrail2021), or
   - TreeTagger (either the [original repository](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) alone, or the original repository + a [Python interface](https://github.com/miotto/treetagger-python) or a [TreeTagger Python Wrapper](https://treetaggerwrapper.readthedocs.io/en/latest)), or [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger). Here I use the [third option mentioned](https://treetaggerwrapper.readthedocs.io/en/latest). After downloading TreeTagger, you will need to add the path to its bin to the PATH environment variable. This is done with
 ```set PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in Windows, or
 ```export PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in Linux.
@@ -33,7 +33,7 @@ The steps you need to follow in order to obtain the input for [LangPro theorem P
 ```
 python scripts/extract_sentences_to_raw.py
 ```
-2. POS-tagging with [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger), or [1st DeepGrail's ELMo/LSTM](https://github.com/RichardMoot/DeepGrail2021) (advised), and lemmatisation with [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger), [spaCy](https://spacy.io/models/fr#fr_dep_news_trf) (advised), [spacy-lefff](https://spacy.io/universe/project/spacy-lefff), or [Stanza](https://stanfordnlp.github.io/stanza):
+2. POS-tagging and lemmatisation:
 ```
 tclsh tokenize.tcl raw.txt > input.txt
 python scripts/POStag-Lemma.ipynb #(if you want to use lemmas from spaCy and not from TreeTagger or RNNTagger, later.)
