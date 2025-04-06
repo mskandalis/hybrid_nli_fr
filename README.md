@@ -4,7 +4,7 @@ This repository contains:
 - [datasets](https://huggingface.co/maximoss) for the task of [Natural Language Inference (NLI / RTE)](https://en.wikipedia.org/wiki/Textual_entailment) in French,
   - with sentence pairs,
   - a label ("yes" for entailment, "unknown" for neutral, or "no" for contradiction) for each sentence pair, and
-  - their logical reprsentation (both lambda-terms and FOL expressions, in different files and for use by different models afterwards).
+  - their logical reprsentation (both lambda-terms and FOL expressions, in different files and for use by different models and theorem provers afterwards).
 - the whole pipeline :
   - for obtaining this logical representation from the raw sentences, and
   - for predicting the label attributed to every sentence pair.
