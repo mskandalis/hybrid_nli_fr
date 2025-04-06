@@ -39,8 +39,7 @@ python scripts/extract_sentences_to_raw.py
 2. POS-tagging and lemmatisation:
 ```
 tclsh tokenize.tcl raw.txt > input.txt
-python scripts/lemmatise_with_spacy_stanza_lefff.py #(if you want to use lemmas from spaCy or Stanza, and not from TreeTagger or RNNTagger, later.)
-# TreeTagger\bin\tag-french <your-path-to>\input.txt tt_tags.tsv
+python scripts/lemmatise_with_spacy_stanza_lefff.py #if you want to use lemmas from spaCy or Stanza (advised), and not from TreeTagger or RNNTagger, later, otherwise: TreeTagger\bin\tag-french <your-path-to>\input.txt tt_tags.tsv
 python DeepGrail2021/super.py
 ```
 3. Obtain the TLG (Type-Logical Grammar) label of every token in the sentences with DeepGrail, and then put this all together for the input to Graillight:
@@ -53,7 +52,6 @@ python replace_with_new_deepgrail_tags.py
 ```
 tclsh supertag2pl superpos.txt > superpos_nolem.pl
 python add_lemmas_to_prolog_file.py
-# swipl -q -g lemmatize -f lefff.pl superpos_nolem.pl
 swipl -q -t main -f grail_light_nd.pl superpos.pl
 ```
 5. Convert the output of Graillight to a compatible form for LangPro theorem prover:
