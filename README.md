@@ -39,7 +39,7 @@ python scripts/extract_sentences_to_raw.py
 2. POS-tagging and lemmatisation:
 ```
 tclsh tokenize.tcl raw.txt > input.txt
-python scripts/POStag-Lemma.ipynb #(if you want to use lemmas from spaCy and not from TreeTagger or RNNTagger, later.)
+python scripts/lemmatise_with_spacy_stanza_lefff.py #(if you want to use lemmas from spaCy or Stanza, and not from TreeTagger or RNNTagger, later.)
 # TreeTagger\bin\tag-french <your-path-to>\input.txt tt_tags.tsv
 python DeepGrail2021/super.py
 ```
