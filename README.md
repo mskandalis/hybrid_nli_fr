@@ -27,7 +27,7 @@ For the Python Wrapper,
   - [spaCy](https://spacy.io/models/fr#fr_dep_news_trf), or 
   - [spacy-lefff](https://spacy.io/universe/project/spacy-lefff), or
   - [Stanza](https://stanfordnlp.github.io/stanza) (advised), or
-  - [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), or [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger) (see above).
+  - [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), or [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger) (see above for these two).
 
 ## Instructions
 ### Preparing the data and obtaining the lambda-terms (half deep learning, half prolog programme)
