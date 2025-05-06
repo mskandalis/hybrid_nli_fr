@@ -1,10 +1,10 @@
 from SuperTagger.SuperTagger import SuperTagger
 from SuperTagger.Utils.helpers import categorical_accuracy_str
 
-from datasets import load_dataset
 import pandas as pd
 
 #### DATA ####
+# from datasets import load_dataset
 # ds = load_dataset("maximoss/sick-fr-mt", split="validation")
 
 #### POS-Tagging ####
