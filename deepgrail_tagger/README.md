@@ -1,4 +1,4 @@
-The implementation of DeepGrail in this repository includes the possibility for a beta value assignment, as in Clark and Curran's supertagger.
+The implementation of DeepGrail in this repository includes the possibility for a beta value assignment and adjustment, as in Clark and Curran's supertagger.
 
 # DeepGrail
 
