@@ -1,3 +1,5 @@
+The implementation of DeepGrail in this repository includes the possibility for a beta value assignment, as in Clark and Curran's supertagger.
+
 # DeepGrail
 
 This repository contains a Python implementation of BertForTokenClassification using TLGbank data to develop
