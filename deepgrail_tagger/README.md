@@ -1,4 +1,4 @@
-The implementation of DeepGrail in this repository, in particular, includes the option to assign and adjust a beta value, as in Clark and Curran's supertagger.
+This DeepGrail repository, in particular, implements [beta value](https://github.com/RichardMoot/DeepGrail2021/?tab=readme-ov-file#beta-value) assignment, as in Clark and Curran's supertagger.
 
 # DeepGrail
 
