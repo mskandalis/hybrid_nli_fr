@@ -19,7 +19,7 @@ You need to have the following installed in your machine:
   - the [ELMO POS-tagger](https://github.com/HIT-SCIR/ELMoForManyLangs) that you can use with [1st DeepGrail LSTM version](https://github.com/RichardMoot/DeepGrail2021) (advised), or
   - TreeTagger:
     - either the [original repository](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) alone, or
-    - the original repository + a [Python interface](https://github.com/miotto/treetagger-python) or a [TreeTagger Python Wrapper](https://treetaggerwrapper.readthedocs.io/en/latest). Here I use the [last option mentioned](https://treetaggerwrapper.readthedocs.io/en/latest). For this, after downloading TreeTagger, you will need to add the path to its bin to the PATH environment variable. This is done with
+    - the original repository + a [Python interface](https://github.com/miotto/treetagger-python) or a [TreeTagger Python Wrapper](https://treetaggerwrapper.readthedocs.io/en/latest). Here, among these 3 options for TreeTagger, I would suggest the [last one mentioned](https://treetaggerwrapper.readthedocs.io/en/latest). For this, after downloading TreeTagger, you will need to add the path to its bin to the PATH environment variable. This is done with
 ```set PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in Windows, or
 ```export PATH=<your-path-to-TreeTagger's-folder>/bin;%PATH%``` in Linux.
 For the Python Wrapper,
