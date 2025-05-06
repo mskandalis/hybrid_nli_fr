@@ -1,6 +1,6 @@
 # Hybrid AI for NLI in French
 
-<p align="center">Attention, this is an ongoing project constantly updated.</p>
+<p align="center">Attention, this is an ongoing project constantly updated for the moment.</p>
 
 This repository contains: 
 - [datasets](https://huggingface.co/maximoss) for the task of [Natural Language Inference (NLI / RTE)](https://en.wikipedia.org/wiki/Textual_entailment) in French,
