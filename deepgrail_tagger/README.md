@@ -32,7 +32,7 @@ Download already trained models or prepare data for **your** train.
 ## How To use
 
 **predict.py** and **train.py** show simple examples of how to use the model, feel free to look at them before using the
-SupperTagger
+SupperTagger.
 
 ### Utils
 
