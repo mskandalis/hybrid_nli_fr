@@ -78,3 +78,9 @@ preds_all = pd.DataFrame(preds_all, columns=['id', 'sentence', 'cg_supertags'])
 
 filename = f"deepgrail_supertagged_gqnli_dataset_{str(beta_value).replace('.', '_')}.tsv"
 preds_all.to_csv(filename, index=False, sep="\t")
+
+preds_all['count_formulas_per_token'] = preds_all['cg_supertags'].apply(lambda row: sum(len(inner) for inner in row))
+preds_all['count_tokens'] = preds_all['cg_supertags'].apply(lambda row: len(row))
+average = preds_all['count_formulas_per_token'].sum() / preds_all['count_tokens'].sum()
+
+print("Average number of formulas per token: ", average)
