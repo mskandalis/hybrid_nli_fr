@@ -29,9 +29,8 @@ def extract_si_elements(text):
 def replace_second_occurrence(content, lemma_dict):
     """Replace the second occurrence of the first word inside an `ex_si(...)` block with its lemma."""
     # We need to correctly tokenize the content while keeping nested parentheses intact
-    # To handle this properly, we will manually process the content
     
-    tokens = []  # This will store the actual tokens
+    tokens = []  # Store the actual tokens
     current_token = ""
     count = 0
     first_word = None
@@ -181,4 +180,4 @@ def process_prolog_file(pl_file, lemma_file, output_file):
     print(f"Processed file saved as: {output_file}")
 
 # Example usage
-process_prolog_file("daccord_0_3_superpos_nolem.pl", "spacy/daccord_postags_lemmas_spacy.jsonl", "output_lemmasi_daccord_0_3.pl")
+process_prolog_file("gqnli_new_superpos_bert_deepgrail_nolem.pl", "spacy/gqnli_fr_postags_lemmas_spacy.jsonl", "output_lemmasi_gqnli_0_0001_bert.pl")
