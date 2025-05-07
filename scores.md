@@ -139,4 +139,4 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 
 - For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d', or English terms used in French like half-pipe (in skateboard); some other don't. Make sure whatever your choice, it's kept the same throughout the process. Here I make sure to verify this with the code itself.
 - In the first tables, the big loss of sentences between the initial number of sentences and the number of sentences fed to Graillight occurs, for the moment, simply at step 4, with the second command that adds lemmas with Lefff in the prolog file. We replaced Lefff's lemmatisation with spaCy and the problem no longer reproduced.
-- Fro XNLI_dev wtih beta value set to 0,001, Graillight needed to run from 08:55 until 18:31 29/03/2025.
+- Fro XNLI_dev wtih beta value set to 0,001 with DeepGrailv1, Graillight needed to run from 08:55 until 18:31 29/03/2025.
