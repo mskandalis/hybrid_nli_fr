@@ -36,12 +36,12 @@ SupperTagger
 
 ### Utils
 
-For load **m2_dataset.csv**, you can use `SuperTagger.Utils.utils.read_csv_pgbar(...)`. This function return a pandas
+To load **m2_dataset.csv**, you can use `SuperTagger.Utils.utils.read_csv_pgbar(...)`. This function return a pandas
 dataframe.
 
 ### Prediction
 
-For predict on your data you need to load a model (save with this code).
+To make predictions on your data, you need to load a model (save with this code).
 
 ```
 df = read_csv_pgbar(file_path,20)
