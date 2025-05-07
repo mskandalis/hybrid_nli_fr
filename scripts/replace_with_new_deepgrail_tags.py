@@ -14,9 +14,14 @@ def replace_in_line(line, replacements):
         new_parts.append(parts[0]+'|')
         new_parts.append(parts[1]+'|')
         if i < len(repl):
-            new_parts.append('1|')
-            new_parts.append(repl[i]+'|')
-            new_parts.append('1')
+            if all(isinstance(inner, list) for inner in repl[i]):
+                new_parts.append(str(len(repl[i]))+'|')
+                bert_supertags = ('|'.join(str(item) for inner in repl[i] for item in inner))
+                new_parts.append(bert_supertags)
+            else: 
+                new_parts.append('1|')
+                new_parts.append(repl[i]+'|')
+                new_parts.append('1')
         else:
             new_parts.append('1|')
             new_parts.append(parts[3]+'|')
@@ -55,9 +60,9 @@ def replace_in_line(line, replacements):
         # Reassemble the line with the replaced values
     return new_line
 
-supertags_tsv = pd.read_csv("deepgrail_tagger/daccord_cg_tags_separated_in_sentences.tsv", sep='\t')
+supertags_tsv = pd.read_csv("deepgrail_tagger/deepgrail_supertagged_daccord_dataset_0_0001.tsv", sep='\t')
 replacement_list= supertags_tsv['cg_supertags']
-with open('DeepGrail2021/daccord_super_elmo.txt', 'r', encoding='utf-8') as file, open('daccord_new_superpos.txt', 'w', encoding='utf-8') as output_file:
+with open('DeepGrail2021/daccord_super_0.3.txt', 'r', encoding='utf-8') as file, open('daccord_new_superpos_bert_deepgrail.txt', 'w', encoding='utf-8') as output_file:
     lines = file.readlines()
     for index, line in enumerate(lines):
         # Process the line
