@@ -2,10 +2,9 @@ This DeepGrail repository, in particular, implements [beta value](https://github
 
 # DeepGrail
 
-This repository contains a Python implementation of BertForTokenClassification using TLGbank data to develop
-part-of-speech taggers and supertaggers.
+This repository contains [DeepGrail Supertagger](https://gitlab.irit.fr/pnria/global-helper/deepgrail_tagger), which is a Python implementation of BertForTokenClassification using TLGbank data to develop part-of-speech taggers and supertaggers.
 
-This code was designed to work with the [DeepGrail Linker](https://gitlab.irit.fr/pnria/global-helper/deepgrail-linker)
+It was designed to work with the [DeepGrail Linker](https://gitlab.irit.fr/pnria/global-helper/deepgrail-linker)
 to provide a wide coverage syntactic and semantic parser for French. But the Tagger is independent, you can use it for your own tags.
 
 ## Usage
