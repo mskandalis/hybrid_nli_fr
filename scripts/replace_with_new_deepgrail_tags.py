@@ -23,46 +23,16 @@ def replace_in_line(line, replacements):
                 new_parts.append(repl[i]+'|')
                 new_parts.append('1')
         else:
-            new_parts.append('1|')
-            new_parts.append(parts[3]+'|')
-            new_parts.append('1')
-            # Check if parts[5] and parts[6] exist and add them
-#            if len(parts) >= 5:  # Check if parts[5] and parts[6] exist
-#                new_parts.append('2|')
-#                new_parts.append(parts[3]+'|')
-#                new_parts.append(parts[4])
-#                new_parts.append('|' + parts[5] + '|')
-#                new_parts.append(parts[6])
-                
-                # Check if parts[7] and parts[8] exist and add them
-#            if len(parts) >= 8:
-#                new_parts.append('3|')
-#                new_parts.append(parts[3]+'|')
-#                new_parts.append(parts[4])
-#                new_parts.append('|' + parts[5] + '|')
-#                new_parts.append(parts[6])
-#                new_parts.append('|' + parts[7] + '|')
-#                new_parts.append(parts[8]) 
-                    
-                    # Check if parts[9] and parts[10] exist and add them
-#            if len(parts) >= 10:
-#                new_parts.append('4|')
-#                new_parts.append(parts[3]+'|')
-#                new_parts.append(parts[4])
-#                new_parts.append('|' + parts[5] + '|')
-#                new_parts.append(parts[6])
-#                new_parts.append('|' + parts[7] + '|')
-#                new_parts.append(parts[8]) 
-#                new_parts.append('|' + parts[9] + '|')
- #               new_parts.append(parts[10]) 
+            new_parts.append('|'.join(str(item) for item in parts[2:]))
+
         new_parts.append(' ')
     new_line = ''.join(new_parts).strip()
         # Reassemble the line with the replaced values
     return new_line
 
-supertags_tsv = pd.read_csv("deepgrail_tagger/deepgrail_supertagged_daccord_dataset_0_0001.tsv", sep='\t')
+supertags_tsv = pd.read_csv("deepgrail_tagger/deepgrail_supertagged_xnli_test_dataset_0_0001.tsv", sep='\t')
 replacement_list= supertags_tsv['cg_supertags']
-with open('DeepGrail2021/daccord_super_0.3.txt', 'r', encoding='utf-8') as file, open('daccord_new_superpos_bert_deepgrail.txt', 'w', encoding='utf-8') as output_file:
+with open('DeepGrail2021/xnli_test_super_0.3.txt', 'r', encoding='utf-8') as file, open('xnli_test_new_superpos_bert_deepgrail.txt', 'w', encoding='utf-8') as output_file:
     lines = file.readlines()
     for index, line in enumerate(lines):
         # Process the line
