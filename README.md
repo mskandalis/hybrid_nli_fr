@@ -49,7 +49,7 @@ python DeepGrail2021/super.py
 ```
 python deepgrail_tagger/predict.py
 python scripts/assemble_graillight_input.py
-python replace_with_new_deepgrail_tags.py
+python scripts/replace_with_new_deepgrail_tags.py
 ```
 4. Obtain [lambda-terms](https://en.wikipedia.org/wiki/Lambda_calculus), proofs and [DRS](https://en.wikipedia.org/wiki/Discourse_representation_theory) with [Graillight](https://github.com/RichardMoot/GrailLight):
 ```
