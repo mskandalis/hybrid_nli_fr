@@ -30,9 +30,9 @@ def replace_in_line(line, replacements):
         # Reassemble the line with the replaced values
     return new_line
 
-supertags_tsv = pd.read_csv("deepgrail_tagger/deepgrail_supertagged_xnli_test_dataset_0_0001.tsv", sep='\t')
+supertags_tsv = pd.read_csv("deepgrail_tagger/deepgrail_supertagged_gqnli_dataset_0_0001.tsv", sep='\t')
 replacement_list= supertags_tsv['cg_supertags']
-with open('DeepGrail2021/xnli_test_super_0.3.txt', 'r', encoding='utf-8') as file, open('xnli_test_new_superpos_bert_deepgrail.txt', 'w', encoding='utf-8') as output_file:
+with open('DeepGrail2021/gqnli_fr_super_0.3.txt', 'r', encoding='utf-8') as file, open('gqnli_new_superpos_bert_deepgrail.txt', 'w', encoding='utf-8') as output_file:
     lines = file.readlines()
     for index, line in enumerate(lines):
         # Process the line
