@@ -1,5 +1,5 @@
 #### Score
-With this pipeline from the beginning until the end, with DeepGrailv1's POS-tagger, DeepGrailv2's Supertagger, and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
+With this pipeline from the beginning until the end, with DeepGrailv1's POS-tagger, DeepGrailv2's Supertagger (beta value set to 1.0), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
