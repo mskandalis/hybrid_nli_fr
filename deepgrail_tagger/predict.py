@@ -28,7 +28,7 @@ model = "models/flaubert_super_98%_V2_50e/flaubert_super_98%_V2_50e.pt"
 
 tagger.load_weights(model)
 
-beta_value = 1
+beta_value = 1.0
 
 #### TEST FOR CGs ####
 a_s = "( 1 ) parmi les huit \" partants \" acquis ou potentiels , MM. Lacombe , Koehler et Laroze ne sont pas membres " \
@@ -65,7 +65,7 @@ preds_all = []
 #    preds_all.append((str(ds['pair_ID'][index])+"p", premise, pred_convert_p[0]))
 #    preds_all.append((str(ds['pair_ID'][index])+"h", hypothesis, pred_convert_h[0]))
 
-with open('../gqnli_fr_input.txt', 'r', encoding='utf-8') as file, open('../gqnli_fr_input.txt', 'r', encoding='utf-8') as dfil:
+with open('../rte3_dev_input.txt', 'r', encoding='utf-8') as file, open('../rte3_dev_input.txt', 'r', encoding='utf-8') as dfil:
     initial_sentences = dfil.readlines()
     # Iterate over each line with its index using enumerate
     for index, line in enumerate(file):
@@ -76,11 +76,12 @@ with open('../gqnli_fr_input.txt', 'r', encoding='utf-8') as file, open('../gqnl
 
 preds_all = pd.DataFrame(preds_all, columns=['id', 'sentence', 'cg_supertags'])
 
-filename = f"deepgrail_supertagged_gqnli_dataset_{str(beta_value).replace('.', '_')}.tsv"
+filename = f"deepgrail_supertagged_rte3_dev_dataset_{str(beta_value).replace('.', '_')}.tsv"
 preds_all.to_csv(filename, index=False, sep="\t")
 
-preds_all['count_formulas_per_token'] = preds_all['cg_supertags'].apply(lambda row: sum(len(inner) for inner in row))
-preds_all['count_tokens'] = preds_all['cg_supertags'].apply(lambda row: len(row))
-average = preds_all['count_formulas_per_token'].sum() / preds_all['count_tokens'].sum()
+if beta_value < 1.0:
+    preds_all['count_formulas_per_token'] = preds_all['cg_supertags'].apply(lambda row: sum(len(inner) for inner in row))
+    preds_all['count_tokens'] = preds_all['cg_supertags'].apply(lambda row: len(row))
+    average = preds_all['count_formulas_per_token'].sum() / preds_all['count_tokens'].sum()
 
-print("Average number of formulas per token: ", average)
+    print("Average number of formulas per token: ", average)
