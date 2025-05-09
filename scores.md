@@ -66,55 +66,55 @@ With the same pipeline but with DeepGrailv2's Supertagger beta value set to 0.00
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.3), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
-| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
-| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
-|  SICK-FR |  19680 |   19680   | 17573 | 89,29  | 2107 |  10,71  | 0 |
-|  FraCaS-FR |  881 |  881   | 787 |  89,33 | 94 |  10,67  | 0 |
-|  GQNLI-FR | 703  |   703  | 611 |  86,91 | 92 |  13,09  | 0 |
-|  RTE3-TEST | 1828  |   1828  | 1504 | 82,28  | 324 |  17,72  | 0|
-|  RTE3-DEV | 1959  |   1959  | 1568 | 80,04  | 391 |  19,96  | 0|
-|  XNLI-TEST |  10409 |  10409   | 7472 | 71,78  | 2937 |  28,22  | 0|
-|  XNLI-DEV |  5151 |  5151   | 3677 | 71,38  | 1474 |  28,62  | 0|
-|  DACCORD | 2341  |   2341  | 1755 |  74,97 | 582 |  24,86  | 4 (0,17%)|
+| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |Average number of formulas per token|
+| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |----------:|
+|  SICK-FR |  19680 |   19680   | 17573 | 89,29  | 2107 |  10,71  | 0 | |
+|  FraCaS-FR |  881 |  881   | 787 |  89,33 | 94 |  10,67  | 0 | |
+|  GQNLI-FR | 703  |   703  | 611 |  86,91 | 92 |  13,09  | 0 | |
+|  RTE3-TEST | 1828  |   1828  | 1504 | 82,28  | 324 |  17,72  | 0| |
+|  RTE3-DEV | 1959  |   1959  | 1568 | 80,04  | 391 |  19,96  | 0| |
+|  XNLI-TEST |  10409 |  10409   | 7472 | 71,78  | 2937 |  28,22  | 0| |
+|  XNLI-DEV |  5151 |  5151   | 3677 | 71,38  | 1474 |  28,62  | 0| |
+|  DACCORD | 2341  |   2341  | 1755 |  74,97 | 582 |  24,86  | 4 (0,17%)| |
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.1), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
-| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
-| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
-|  SICK-FR | 19680 (9840*2)  |  19680    | 18602 | 94,52  | 1078 |  5,48  | 0 |
-|  FraCaS-FR | 881  |   881  | 822 |  93,30 | 59| 6,70   | 0|
-|  GQNLI-FR | 703  |   703  | 622 | 88,48 | 81 | 11,52   | 0|
-|  RTE3-TEST | 1828  |   1828  | 1601 | 87,58  | 227 | 12,42   | 0|
-|  RTE3-DEV | 1959  |   1959  | 1670 |  85,25 | 289 |  14,75  | 0|
-|  XNLI-TEST |  10409 |  10409   | 8090 |  77,72 | 2316 | 22,25   | 3 (0,03%)|
-|  XNLI-DEV |  5151 |  5151   | 4011 |  77,87 | 1140 |  22,13  | 0|
-|  DACCORD | 2341  |   2341  | 1893 |  80,86 | 444 |  18,97  | 4 (0,17%)|
+| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |Average number of formulas per token|
+| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |----------:|
+|  SICK-FR | 19680 (9840*2)  |  19680    | 18602 | 94,52  | 1078 |  5,48  | 0 | |
+|  FraCaS-FR | 881  |   881  | 822 |  93,30 | 59| 6,70   | 0| |
+|  GQNLI-FR | 703  |   703  | 622 | 88,48 | 81 | 11,52   | 0| |
+|  RTE3-TEST | 1828  |   1828  | 1601 | 87,58  | 227 | 12,42   | 0| |
+|  RTE3-DEV | 1959  |   1959  | 1670 |  85,25 | 289 |  14,75  | 0| |
+|  XNLI-TEST |  10409 |  10409   | 8090 |  77,72 | 2316 | 22,25   | 3 (0,03%)| |
+|  XNLI-DEV |  5151 |  5151   | 4011 |  77,87 | 1140 |  22,13  | 0| |
+|  DACCORD | 2341  |   2341  | 1893 |  80,86 | 444 |  18,97  | 4 (0,17%)| |
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.01), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
-| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
-| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
-|  SICK-FR | 19680 (9840*2)  |  19680    | 19409 | 98,62  | 271 |  1,37  | 0 |
-|  FraCaS-FR | 881  |   881  | 847 | 96,14  | 34| 3,86   | 0|
-|  GQNLI-FR | 703  |   703  | 635 | 90,33 | 68 |  9,67  | 0|
-|  RTE3-TEST | 1828  |   1828  | 1723 |  94,26 | 105 |  5,74  | 0|
-|  RTE3-DEV | 1959  |   1959  | 1799 | 91,83  | 158 |  8,07  | 2 (0,1%) |
-|  XNLI-TEST |  10409 |  10409   | 9207 |  88,45 | 1196 | 11,49   | 6 (0,06%)|
-|  XNLI-DEV |  5151 |  5151   | 4550 | 88,33  | 601 |  11,67  | 0|
-|  DACCORD | 2341  |   2341  | 2094 |  89,45 | 240 | 10,25   | 7 (0,30%)|
+| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |Average number of formulas per token|
+| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |----------:|
+|  SICK-FR | 19680 (9840*2)  |  19680    | 19409 | 98,62  | 271 |  1,37  | 0 | |
+|  FraCaS-FR | 881  |   881  | 847 | 96,14  | 34| 3,86   | 0| |
+|  GQNLI-FR | 703  |   703  | 635 | 90,33 | 68 |  9,67  | 0| |
+|  RTE3-TEST | 1828  |   1828  | 1723 |  94,26 | 105 |  5,74  | 0| |
+|  RTE3-DEV | 1959  |   1959  | 1799 | 91,83  | 158 |  8,07  | 2 (0,1%) | |
+|  XNLI-TEST |  10409 |  10409   | 9207 |  88,45 | 1196 | 11,49   | 6 (0,06%)| |
+|  XNLI-DEV |  5151 |  5151   | 4550 | 88,33  | 601 |  11,67  | 0| |
+|  DACCORD | 2341  |   2341  | 2094 |  89,45 | 240 | 10,25   | 7 (0,30%)| |
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.001), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
-| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
-| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
-|  SICK-FR | 19680 (9840*2)  |  19680    | 19604 | 99,61  | 73 |  0,39  | 0 |
-|  FraCaS-FR | 881  |   881  | 871 | 98,86  | 10 |  1,14  | 0|
-|  GQNLI-FR | 703  |   703  | 650 | 92,46 | 53 |  7,54  | 0|
-|  RTE3-TEST | 1828  |   1828  | 1765 | 96,55  | 49 | 2,68   | 14 (0,77%)|
-|  RTE3-DEV | 1959  |   1959  | 1869 | 95,41  | 68 |  3,47  | 22 (1,12%)|
-|  XNLI-TEST |  10409 |  10409   |  |   |  |    | |
-|  XNLI-DEV |  5151 |  5151   | 4835  | 93,87  |284  |   5,51 | 32 (0,62%)| 
-|  DACCORD | 2341  |   2341  | 2213 | 94,53  | 106 |  4,53  | 22 (0,94%)|
+| Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |Average number of formulas per token|
+| ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |----------:|
+|  SICK-FR | 19680 (9840*2)  |  19680    | 19604 | 99,61  | 73 |  0,39  | 0 | |
+|  FraCaS-FR | 881  |   881  | 871 | 98,86  | 10 |  1,14  | 0| |
+|  GQNLI-FR | 703  |   703  | 650 | 92,46 | 53 |  7,54  | 0| |
+|  RTE3-TEST | 1828  |   1828  | 1765 | 96,55  | 49 | 2,68   | 14 (0,77%)| |
+|  RTE3-DEV | 1959  |   1959  | 1869 | 95,41  | 68 |  3,47  | 22 (1,12%)| |
+|  XNLI-TEST |  10409 |  10409   |  |   |  |    | | |
+|  XNLI-DEV |  5151 |  5151   | 4835  | 93,87  |284  |   5,51 | 32 (0,62%)| | 
+|  DACCORD | 2341  |   2341  | 2213 | 94,53  | 106 |  4,53  | 22 (0,94%)| |
 
 With Treetagger for POS-tagging, DeepGrailv2's for Supertagging, and Graillight's integrated version of Lefff for lemmatisation, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
