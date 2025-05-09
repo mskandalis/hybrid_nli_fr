@@ -54,7 +54,7 @@ with open('rte3_test_postags_lemmas_spacy.jsonl', 'w', encoding='utf-8') as f, o
   initial_sentences = dfil.readlines()
   for index, line in enumerate(ds):
     premise = nlp(line.strip())
-    result=[[w.text, w.lemma_, w.pos_, w.tag_, w.dep_] for w in premise if w.text!="'"]
+    result=[[w.text, w.lemma_, w.pos_, w.morph, w.tag_, w.dep_] for w in premise if w.text!="'"]
     json.dump({'id': (index+1), 'sentence': initial_sentences[index].strip(), 'pos_lemma': result}, f)
     f.write("\n")
 
