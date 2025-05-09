@@ -75,7 +75,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  RTE3-DEV | 1959  |   1959  | 1568 | 80,04  | 391 |  19,96  | 0| 1,0294|
 |  XNLI-TEST |  10409 |  10409   | 7472 | 71,78  | 2937 |  28,22  | 0| 1,0498|
 |  XNLI-DEV |  5151 |  5151   | 3677 | 71,38  | 1474 |  28,62  | 0| |
-|  DACCORD | 2341  |   2341  | 1755 |  74,97 | 582 |  24,86  | 4 (0,17%)| |
+|  DACCORD | 2341  |   2341  | 1755 |  74,97 | 582 |  24,86  | 4 (0,17%)| 1,0295|
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.1), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
@@ -88,7 +88,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  RTE3-DEV | 1959  |   1959  | 1670 |  85,25 | 289 |  14,75  | 0| 1,0752|
 |  XNLI-TEST |  10409 |  10409   | 8090 |  77,72 | 2316 | 22,25   | 3 (0,03%)| 1,1387|
 |  XNLI-DEV |  5151 |  5151   | 4011 |  77,87 | 1140 |  22,13  | 0| |
-|  DACCORD | 2341  |   2341  | 1893 |  80,86 | 444 |  18,97  | 4 (0,17%)| |
+|  DACCORD | 2341  |   2341  | 1893 |  80,86 | 444 |  18,97  | 4 (0,17%)| 1,0792 |
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.01), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
@@ -101,7 +101,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  RTE3-DEV | 1959  |   1959  | 1799 | 91,83  | 158 |  8,07  | 2 (0,1%) | 1,3084|
 |  XNLI-TEST |  10409 |  10409   | 9207 |  88,45 | 1196 | 11,49   | 6 (0,06%)| 1,7347|
 |  XNLI-DEV |  5151 |  5151   | 4550 | 88,33  | 601 |  11,67  | 0| |
-|  DACCORD | 2341  |   2341  | 2094 |  89,45 | 240 | 10,25   | 7 (0,30%)| |
+|  DACCORD | 2341  |   2341  | 2094 |  89,45 | 240 | 10,25   | 7 (0,30%)| 1,3431|
 
 With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta value set to 0.001), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
@@ -114,7 +114,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 |  RTE3-DEV | 1959  |   1959  | 1869 | 95,41  | 68 |  3,47  | 22 (1,12%)| 2,0422|
 |  XNLI-TEST |  10409 |  10409   |  |   |  |    | | 3,4439|
 |  XNLI-DEV |  5151 |  5151   | 4835  | 93,87  |284  |   5,51 | 32 (0,62%)| | 
-|  DACCORD | 2341  |   2341  | 2213 | 94,53  | 106 |  4,53  | 22 (0,94%)| |
+|  DACCORD | 2341  |   2341  | 2213 | 94,53  | 106 |  4,53  | 22 (0,94%)| 2,0154|
 
 With Treetagger for POS-tagging, DeepGrailv2's for Supertagging, and Graillight's integrated version of Lefff for lemmatisation, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
