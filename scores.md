@@ -69,7 +69,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |Average number of formulas per token|
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |----------:|
 |  SICK-FR |  19680 |   19680   | 17573 | 89,29  | 2107 |  10,71  | 0 |1,0473 |
-|  FraCaS-FR |  881 |  881   | 787 |  89,33 | 94 |  10,67  | 0 | 1,0271|
+|  FraCaS-FR |  881 |  881   | 787 |  89,33 | 94 |  10,67  | 0 | 1,0261|
 |  GQNLI-FR | 703  |   703  | 611 |  86,91 | 92 |  13,09  | 0 | 1,0207|
 |  RTE3-TEST | 1828  |   1828  | 1504 | 82,28  | 324 |  17,72  | 0| 1,0286|
 |  RTE3-DEV | 1959  |   1959  | 1568 | 80,04  | 391 |  19,96  | 0| 1,0294|
@@ -95,7 +95,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |Average number of formulas per token|
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |----------:|
 |  SICK-FR | 19680 (9840*2)  |  19680    | 19409 | 98,62  | 271 |  1,37  | 0 | 1,5795|
-|  FraCaS-FR | 881  |   881  | 847 | 96,14  | 34| 3,86   | 0| 1,3396 |
+|  FraCaS-FR | 881  |   881  | 847 | 96,14  | 34| 3,86   | 0| 1,3459 |
 |  GQNLI-FR | 703  |   703  | 635 | 90,33 | 68 |  9,67  | 0| 1,1127|
 |  RTE3-TEST | 1828  |   1828  | 1723 |  94,26 | 105 |  5,74  | 0| 1,2724 |
 |  RTE3-DEV | 1959  |   1959  | 1799 | 91,83  | 158 |  8,07  | 2 (0,1%) | 1,3084|
@@ -108,7 +108,7 @@ With the same pipeline but with DeepGrailv1's POS-tagger and Supertagger (beta v
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |Average number of formulas per token|
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |----------:|
 |  SICK-FR | 19680 (9840*2)  |  19680    | 19604 | 99,61  | 73 |  0,39  | 0 | 2,8835|
-|  FraCaS-FR | 881  |   881  | 871 | 98,86  | 10 |  1,14  | 0| 2,0141|
+|  FraCaS-FR | 881  |   881  | 871 | 98,86  | 10 |  1,14  | 0| 2,0420|
 |  GQNLI-FR | 703  |   703  | 650 | 92,46 | 53 |  7,54  | 0| 1,3964|
 |  RTE3-TEST | 1828  |   1828  | 1765 | 96,55  | 49 | 2,68   | 14 (0,77%)| 1,8998 |
 |  RTE3-DEV | 1959  |   1959  | 1869 | 95,41  | 68 |  3,47  | 22 (1,12%)| 2,0422|
