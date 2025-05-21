@@ -24,15 +24,16 @@ def replace_in_line(line, replacements):
                 new_parts.append('1')
         else:
             new_parts.append('|'.join(str(item) for item in parts[2:]))
+            print("In example No "+str(index)+", TLG tag from DeepGrail2021 was kept.")
 
         new_parts.append(' ')
     new_line = ''.join(new_parts).strip()
         # Reassemble the line with the replaced values
     return new_line
 
-supertags_tsv = pd.read_csv("deepgrail_tagger/deepgrail_supertagged_gqnli_dataset_0_0001.tsv", sep='\t')
+supertags_tsv = pd.read_csv("deepgrail_tagger/deepgrail_supertagged_rte3_test_dataset_0_0001.tsv", sep='\t')
 replacement_list= supertags_tsv['cg_supertags']
-with open('DeepGrail2021/gqnli_fr_super_0.3.txt', 'r', encoding='utf-8') as file, open('gqnli_new_superpos_bert_deepgrail.txt', 'w', encoding='utf-8') as output_file:
+with open('DeepGrail2021/rte3_test_super_0.001.txt', 'r', encoding='utf-8') as file, open('rte3_test_new_superpos_bert_deepgrail.txt', 'w', encoding='utf-8') as output_file:
     lines = file.readlines()
     for index, line in enumerate(lines):
         # Process the line

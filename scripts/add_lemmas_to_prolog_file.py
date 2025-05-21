@@ -8,7 +8,7 @@ def load_lemmas_by_id(jsonl_file):
     with open(jsonl_file, 'r', encoding='utf-8') as f:
         for line in f:
             data = json.loads(line)  # Parse JSON line
-            lemma_dict[data["id"]] = {entry[0]: entry[1] for entry in data["pos_lemma"]}
+            lemma_dict[data["id"]] = {entry[0]: entry[1] if entry[1] is not None else entry[0] for entry in data["pos_lemma"]}
     return lemma_dict
 
 def extract_si_elements(text):
@@ -130,7 +130,8 @@ def process_prolog_file(pl_file, lemma_file, output_file):
             continue  # Next line contains `ex_si(...)`
 
         lemma_dict = lemma_by_id.get(current_sentence_id, {})  # Get lemma mappings for this sentence
-        lemma_dict = {key+ "'" if (len(key) == 1 and ((key.lower() in 'djlmnst') or (key.lower() in 'c' and "°" not in lemma_dict.keys()))) or (key.lower() =='qu') else key: (str(value) + 'e' if (len(key) == 1 and len(value)==1 and (key.lower() in 'djlmnst' or (key.lower() in 'c' and "°" not in lemma_dict.keys())) and key.lower()==value.lower()) or value.lower=='qu' else value)
+
+        lemma_dict = {key+ "'" if (len(key) == 1 and ((key.lower() in 'djlmnst') or (key.lower() in 'c' and "°" not in lemma_dict.keys()))) or (key.lower() =='qu') else key: (str(value) + 'e' if (len(key) == 1 and len(value)==1 and (key.lower() in 'djlmnst' or (key.lower() in 'c' and "°" not in lemma_dict.keys())) and key.lower()==value.lower()) or value.lower()=='qu' else value)
         for key, value in lemma_dict.items()}
 
         # Replace `ex_si` with `si`
@@ -180,4 +181,4 @@ def process_prolog_file(pl_file, lemma_file, output_file):
     print(f"Processed file saved as: {output_file}")
 
 # Example usage
-process_prolog_file("gqnli_new_superpos_bert_deepgrail_nolem.pl", "spacy/gqnli_fr_postags_lemmas_spacy.jsonl", "output_lemmasi_gqnli_0_0001_bert.pl")
+process_prolog_file("rte3_dev_new_superpos_bert_deepgrail_nolem.pl", "stanza/rte3_dev_postags_lemmas_stanza.jsonl", "output_lemmasi_rte3_dev_0_0001_bert.pl")
