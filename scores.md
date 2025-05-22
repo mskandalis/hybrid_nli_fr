@@ -3,14 +3,14 @@ With this pipeline from the beginning until the end, with DeepGrailv1's POS-tagg
 
 | **Dataset**       | **Total sentences of the dataset** | **Number of sentences parsed successfully**    |  **Percentage of the sentences parsed successfully (%)**       | **Number of sentences failed to be parsed**     |  
 | ------------- | ----------: | -------------: | ----------: |  ----------: | 
-|  **SICK-FR** | 19680 (9840*2)  |   18294 | **92,96**  | 1386 | 
-|  **FraCaS-FR** | 882  |    838 |  **95,01** | 44 |  
-|  **GQNLI-FR** | 703  |    667 |  **94,88** | 36 |  
-|  **RTE3-TEST** | 1828  |   1496 |  81,84 | 332 |  
-|  **RTE3-DEV** | 1959  |    1593 | 81,32  | 366 | 
-|  **XNLI-TEST** |  10409 |   8128 | 78,09  | 2281 | 
-|  **XNLI-DEV** |  5151 |   3956 |  76,8 | 1195 |  
-|  **DACCORD** | 2341  |   1773 | 75,74  | 568 | 
+|  SICK-FR | 19680 (9840*2)  |   18294 | **92,96**  | 1386 | 
+|  FraCaS-FR | 882  |    838 |  **95,01** | 44 |  
+|  GQNLI-FR | 703  |    667 |  **94,88** | 36 |  
+|  RTE3-TEST | 1828  |   1496 |  81,84 | 332 |  
+|  RTE3-DEV | 1959  |    1593 | 81,32  | 366 | 
+|  XNLI-TEST |  10409 |   8128 | 78,09  | 2281 | 
+|  XNLI-DEV |  5151 |   3956 |  76,8 | 1195 |  
+|  DACCORD | 2341  |   1773 | 75,74  | 568 | 
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
