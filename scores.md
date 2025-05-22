@@ -1,7 +1,7 @@
 #### Score
 With this pipeline from the beginning until the end, with DeepGrailv1's POS-tagger, DeepGrailv2's Supertagger (beta value set to 1.0), and spaCy's lemmatiser, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
-| **Dataset**       | **Total sentences of the dataset** | **Number of sentences parsed successfully**    |  **Percentage of the sentences parsed successfully <br>(%)**       | **Number of sentences failed to be parsed**     |  
+| **Dataset**       | **Total sentences of the dataset** | **Number of sentences <br>parsed successfully**    |  **Percentage of the sentences parsed successfully <br>(%)**       | **Number of sentences failed to be parsed**     |  
 | ------------- | ----------: | -------------: | ----------: |  ----------: | 
 |  SICK‑FR | 19680 (9840*2)  |   18294 | **92,96**  | 1386 | 
 |  FraCaS‑FR | 882  |    838 |  **95,01** | 44 |  
