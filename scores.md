@@ -3,14 +3,14 @@ With this pipeline from the beginning until the end, with DeepGrailv1's POS-tagg
 
 | &nbsp;&nbsp;&nbsp;&nbsp;**Dataset**&nbsp;&nbsp;&nbsp;&nbsp;       | **Total sentences <br>of the dataset** | **Number of sentences <br>parsed successfully**    |  **Percentage of the sentences <br>parsed successfully <br>(%)**       | **Number of sentences <br>failed to be parsed**     |  
 | ------------- | ----------: | -------------: | ----------: |  ----------: | 
-|  SICK‑FR&nbsp;&nbsp; | 19680 (9840*2)  |   18294 | **92,96**  | 1386 | 
-|  FraCaS‑FR&nbsp;&nbsp; | 882  |    838 |  **95,01** | 44 |  
-|  GQNLI‑FR&nbsp;&nbsp; | 703  |    667 |  **94,88** | 36 |  
-|  RTE3‑TEST&nbsp;&nbsp; | 1828  |   1496 |  81,84 | 332 |  
-|  RTE3‑DEV&nbsp;&nbsp; | 1959  |    1593 | 81,32  | 366 | 
-|  XNLI‑TEST&nbsp;&nbsp; |  10409 |   8128 | 78,09  | 2281 | 
-|  XNLI‑DEV&nbsp;&nbsp; |  5151 |   3956 |  76,8 | 1195 |  
-|  DACCORD&nbsp;&nbsp; | 2341  |   1773 | 75,74  | 568 | 
+|  &nbsp;SICK‑FR&nbsp;&nbsp; | 19680 (9840*2)  |   18294 | **92,96**  | 1386 | 
+|  &nbsp;FraCaS‑FR&nbsp;&nbsp; | 882  |    838 |  **95,01** | 44 |  
+|  &nbsp;GQNLI‑FR&nbsp;&nbsp; | 703  |    667 |  **94,88** | 36 |  
+|  &nbsp;RTE3‑TEST&nbsp;&nbsp; | 1828  |   1496 |  81,84 | 332 |  
+|  &nbsp;RTE3‑DEV&nbsp;&nbsp; | 1959  |    1593 | 81,32  | 366 | 
+|  &nbsp;XNLI‑TEST&nbsp;&nbsp; |  10409 |   8128 | 78,09  | 2281 | 
+|  &nbsp;XNLI‑DEV&nbsp;&nbsp; |  5151 |   3956 |  76,8 | 1195 |  
+|  &nbsp;DACCORD&nbsp;&nbsp; | 2341  |   1773 | 75,74  | 568 | 
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
