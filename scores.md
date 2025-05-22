@@ -6,7 +6,7 @@ With this pipeline from the beginning until the end, with DeepGrailv1's POS-tagg
 |  SICK-FR | 19680 (9840*2)  |   18294 | **92,96**  | 1386 | 
 |  FraCaS-FR | 882  |    838 |  **95,01** | 44 |  
 |  GQNLI-FR | 703  |    667 |  **94,88** | 36 |  
-|  RTE3-TEST | 1828  |   1496 |  81,84 | 332 |  
+|  RTE3‑TEST | 1828  |   1496 |  81,84 | 332 |  
 |  RTE3-DEV | 1959  |    1593 | 81,32  | 366 | 
 |  XNLI-TEST |  10409 |   8128 | 78,09  | 2281 | 
 |  XNLI-DEV |  5151 |   3956 |  76,8 | 1195 |  
