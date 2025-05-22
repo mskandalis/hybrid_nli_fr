@@ -3,9 +3,9 @@ With this pipeline from the beginning until the end, with DeepGrailv1's POS-tagg
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits |
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: |
-|  SICK-FR | 19680 (9840*2)  |  19680    | 18294 | 92,96  | 1386 |  7,04  | 0 |
-|  FraCaS-FR | 882  |   882  | 838 |  95,01 | 44 |  4,99  | 0|
-|  GQNLI-FR | 703  |   703  | 667 |  94,88 | 36 |  5,12  | 0|
+|  SICK-FR | 19680 (9840*2)  |  19680    | 18294 | **92,96**  | 1386 |  7,04  | 0 |
+|  FraCaS-FR | 882  |   882  | 838 |  **95,01** | 44 |  4,99  | 0|
+|  GQNLI-FR | 703  |   703  | 667 |  **94,88** | 36 |  5,12  | 0|
 |  RTE3-TEST | 1828  |   1828  | 1496 |  81,84 | 332 |  18,16  | 0|
 |  RTE3-DEV | 1959  |   1959  | 1593 | 81,32  | 366 |  18,68  | 0|
 |  XNLI-TEST |  10409 |  10409   | 8128 | 78,09  | 2281 | 21,91   | 0|
