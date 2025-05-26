@@ -27,7 +27,7 @@ With the same pipeline but with DeepGrailv2's Supertagger beta value set to 0.1,
 
 | Dataset       | Total sentences of the dataset | Total sentences given to Graillight | Number of sentences parsed successfully     |  Percentage of the sentences parsed successfully (%)       | Number of sentences failed to be parsed     |  Percentage of failures in parsing (%)    |  Resource limits | Average number of formulas per token|
 | ------------- | ----------: | -----------: | -------------: | ----------: |  ----------: |  ----------: |   ----------: | ----------:|
-|  SICK‑FR | 19680 (9840*2)  |  19680    |  |   |  |    | 0 | 1,0256|
+|  SICK‑FR | 19680 (9840*2)  |  19680    | 19285 | 97,99  | 395 | 2,01   | 0 | 1,0256|
 |  FraCaS‑FR | 881  |   881  |  |   |  |    | 0| 1,0266 |
 |  GQNLI‑FR | 703  |   703  |  |   |  |    | 0| 1,0318|
 |  RTE3‑TEST | 1828  |   1828  |  |   |  |    | 0| 1,0528|
