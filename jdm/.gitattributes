@@ -1,0 +1,2 @@
+*.pl filter=lfs diff=lfs merge=lfs -text
+isa_strictsyn_anto_jdm_knowledge_2024.pl filter=lfs diff=lfs merge=lfs -text
