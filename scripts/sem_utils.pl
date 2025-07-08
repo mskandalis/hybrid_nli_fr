@@ -27,8 +27,7 @@
 		       melt_bound_variables/2,
 		       relabel_sem_vars/2,
 		       get_drs_types/2,
-		       translate_dynamics/3,
-		       drs_to_fol/2]).
+		       translate_dynamics/3]).
 
 % =
 
@@ -1968,11 +1967,11 @@ drs_to_fol(drs(Vars,Conds), Fol) :-
 	add_quantifiers(Vars, exists, Fol0, Fol),
 	drs_conditions_to_fol(Conds, Fol0).
 
-% Handle bare presup structures (not wrapped in drs)
+% Handle bare presup structures at top level
 drs_to_fol(presup(Background, Main), bool(F1,&,F2)) :-
-    !,
-    drs_to_fol(Background, F1),
-    drs_to_fol(Main, F2).
+	!,
+	drs_to_fol(Background, F1),
+	drs_to_fol(Main, F2).
 
 add_quantifiers([], _, F, F).
 add_quantifiers([X|Xs], Q, F0, F) :-

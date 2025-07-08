@@ -75,6 +75,21 @@ test_specific(Number) :-
 test_19680 :-
     test_specific(19680).
 
+% Quick test for presup conversion
+quick_presup_test :-
+    TestDRS = presup(drs([variable(B),variable(C)],[appl(femme,B),appl(couteau,C),appl(appl(avec,C),B)]),drs([event(A),variable(D)],[appl(poivre,D),appl(appl(appl(trancher,D),B),A),bool(appl(temps,A),overlaps,maintenant)])),
+    writeln('Testing presup conversion...'),
+    (   drs_to_fol(TestDRS, FOL) ->
+        (   writeln('SUCCESS!'),
+            portray(FOL), nl,
+            (   FOL = bool(_, &, _) ->
+                writeln('Presup correctly converted to conjunction!')
+            ;   writeln('WARNING: Result is not a conjunction')
+            )
+        )
+    ;   writeln('FAILED!')
+    ).
+
 % Debug test to see what's happening with presup conversion
 debug_presup_test :-
     writeln('=== DEBUG: Testing presup conversion ==='),
@@ -127,27 +142,5 @@ test_basic_drs :-
     (   drs_to_fol(BasicDRS, FOL) ->
         (writeln('Output:'), portray(FOL), nl)
     ;   writeln('FAILED')
-    ).
-
-% Quick test for the actual problem
-quick_presup_test :-
-    writeln('=== QUICK PRESUP TEST ==='),
-    % Use the exact structure from semantics 19680
-    TestDRS = presup(drs([variable(B),variable(C)],[appl(femme,B),appl(couteau,C),appl(appl(avec,C),B)]),drs([event(A),variable(D)],[appl(poivre,D),appl(appl(appl(trancher,D),B),A),bool(appl(temps,A),overlaps,maintenant)])),
-    
-    writeln('Testing presup DRS conversion:'),
-    portray(TestDRS), nl,
-    
-    (   drs_to_fol(TestDRS, Result) ->
-        (   writeln('SUCCESS! Result:'),
-            portray(Result), nl,
-            % Check if it contains conjunction at top level
-            (   Result = bool(_, &, _) ->
-                writeln('✓ Presup correctly converted to conjunction')
-            ;   writeln('✗ Presup NOT converted to conjunction'),
-                format('Top level structure: ~w~n', [functor(Result)])
-            )
-        )
-    ;   writeln('FAILED: Conversion returned false')
     ).
 
