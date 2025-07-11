@@ -1,4 +1,5 @@
 import pandas as pd
+from datasets import load_dataset
 
 sick_train = load_dataset("maximoss/sick-fr-mt", split="train").to_pandas()
 sick_test = load_dataset("maximoss/sick-fr-mt", split="test").to_pandas()
