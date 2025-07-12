@@ -1440,1315 +1440,1317 @@ sen_id(1033, 406, 'p', 'TRIAL', 'yes', 'Toutes les lettres de l\'alphabet cyrill
 sen_id(1034, 406, 'h', 'TRIAL', 'yes', 'Le cyrillique est un alphabet utilisé pour certaines langues slaves, comme le russe.').
 %problem id = 407
 sen_id(1035, 407, 'p', 'TRIAL', 'no', 'Elizabeth Alexandra Mary est née le 21 avril 1926 à Londres, en Angleterre.').
-sen_id(1036, 407, 'p', 'TRIAL', 'no', 'Son père, le prince Albert, duc d\'York, était le deuxième fils du roi George V. Sa mère, l\'ancienne Elizabeth Bowes-Lyon, était la fille d\'un comte écossais.').
-sen_id(1037, 407, 'p', 'TRIAL', 'no', 'La princesse Elizabeth est leur premier enfant.').
-sen_id(1038, 407, 'p', 'TRIAL', 'no', 'Sa seule sœur, Margaret Rose, est née en 1930.').
-sen_id(1039, 407, 'h', 'TRIAL', 'no', 'Le père d\'Elizabeth II était George VI.').
+sen_id(1036, 407, 'p', 'TRIAL', 'no', 'Son père, le prince Albert, duc d\'York, était le deuxième fils du roi George V.').
+sen_id(1037, 407, 'p', 'TRIAL', 'no', 'Sa mère, l\'ancienne Elizabeth Bowes-Lyon, était la fille d\'un comte écossais.').
+sen_id(1038, 407, 'p', 'TRIAL', 'no', 'La princesse Elizabeth est leur premier enfant.').
+sen_id(1039, 407, 'p', 'TRIAL', 'no', 'Sa seule sœur, Margaret Rose, est née en 1930.').
+sen_id(1040, 407, 'h', 'TRIAL', 'no', 'Le père d\'Elizabeth II était George VI.').
 %problem id = 408
-sen_id(1040, 408, 'p', 'TRIAL', 'yes', 'Sa Majesté la reine Elizabeth II est née à Londres le 21 avril 1926, premier enfant du duc et de la duchesse d\'York, devenus par la suite le roi George VI et la reine Elizabeth.').
-sen_id(1041, 408, 'p', 'TRIAL', 'yes', 'Cinq semaines plus tard, elle est baptisée dans la chapelle du palais de Buckingham et reçoit les noms d\'Elizabeth Alexandra Mary Windsor.').
-sen_id(1042, 408, 'p', 'TRIAL', 'yes', 'La Reine monte sur le trône le 6 février 1952 à la mort de son père, le roi George VI. Son couronnement suit le 2 juin 1953.').
-sen_id(1043, 408, 'h', 'TRIAL', 'yes', 'Le père d\'Elizabeth II était George VI.').
+sen_id(1041, 408, 'p', 'TRIAL', 'yes', 'Sa Majesté la reine Elizabeth II est née à Londres le 21 avril 1926, premier enfant du duc et de la duchesse d\'York, devenus par la suite le roi George VI et la reine Elizabeth.').
+sen_id(1042, 408, 'p', 'TRIAL', 'yes', 'Cinq semaines plus tard, elle est baptisée dans la chapelle du palais de Buckingham et reçoit les noms d\'Elizabeth Alexandra Mary Windsor.').
+sen_id(1043, 408, 'p', 'TRIAL', 'yes', 'La Reine monte sur le trône le 6 février 1952 à la mort de son père, le roi George VI.').
+sen_id(1044, 408, 'p', 'TRIAL', 'yes', 'Son couronnement suit le 2 juin 1953.').
+sen_id(1045, 408, 'h', 'TRIAL', 'yes', 'Le père d\'Elizabeth II était George VI.').
 %problem id = 409
-sen_id(1044, 409, 'p', 'TRIAL', 'yes', 'George H.W.').
-sen_id(1045, 409, 'p', 'TRIAL', 'yes', 'Bush a servi ce pays non seulement en tant que président, mais aussi en tant que vice-président, membre du Congrès, ambassadeur des Nations unies, chef du bureau de liaison des États-Unis auprès de la République populaire de Chine, directeur de la Central Intelligence Agency et aussi, en tant qu\'aviateur naval pendant la Seconde Guerre mondiale.').
-sen_id(1046, 409, 'p', 'TRIAL', 'yes', 'En revenant de la guerre, il a épousé sa dulcinée, Barbara Pierce de Rye, New York, et plus tard cette année-là, il a pris sa première décision d\'adulte civil en faisant le choix approprié de déménager au Texas, où il a vécu le reste de sa vie.').
-sen_id(1047, 409, 'h', 'TRIAL', 'yes', 'Le nom de la femme de George H.W.').
-sen_id(1048, 409, 'h', 'TRIAL', 'yes', 'Bush est Barbara.').
+sen_id(1046, 409, 'p', 'TRIAL', 'yes', 'George H.W.').
+sen_id(1047, 409, 'p', 'TRIAL', 'yes', 'Bush a servi ce pays non seulement en tant que président, mais aussi en tant que vice-président, membre du Congrès, ambassadeur des Nations unies, chef du bureau de liaison des États-Unis auprès de la République populaire de Chine, directeur de la Central Intelligence Agency et aussi, en tant qu\'aviateur naval pendant la Seconde Guerre mondiale.').
+sen_id(1048, 409, 'p', 'TRIAL', 'yes', 'En revenant de la guerre, il a épousé sa dulcinée, Barbara Pierce de Rye, New York, et plus tard cette année-là, il a pris sa première décision d\'adulte civil en faisant le choix approprié de déménager au Texas, où il a vécu le reste de sa vie.').
+sen_id(1049, 409, 'h', 'TRIAL', 'yes', 'Le nom de la femme de George H.W.').
+sen_id(1050, 409, 'h', 'TRIAL', 'yes', 'Bush est Barbara.').
 %problem id = 410
-sen_id(1049, 410, 'p', 'TRIAL', 'yes', 'Bush et son épouse, Laura, ont quitté la Maison Blanche jeudi après-midi pour passer quatre jours dans la retraite présidentielle de cabanes rustiques en bois dans les montagnes du Maryland.').
-sen_id(1050, 410, 'p', 'TRIAL', 'yes', 'Avec la mère de la première dame, Jenna Welch, le rassemblement du week-end comprend les parents du président, l\'ancien président George H.W.').
-sen_id(1051, 410, 'p', 'TRIAL', 'yes', 'Bush et sa femme, Barbara, sa sœur Doro Koch et son mari, Bobby, et son frère, Marvin, et sa femme, Margaret.').
-sen_id(1052, 410, 'h', 'TRIAL', 'yes', 'Le nom de la femme de George H.W.').
-sen_id(1053, 410, 'h', 'TRIAL', 'yes', 'Bush est Barbara.').
+sen_id(1051, 410, 'p', 'TRIAL', 'yes', 'Bush et son épouse, Laura, ont quitté la Maison Blanche jeudi après-midi pour passer quatre jours dans la retraite présidentielle de cabanes rustiques en bois dans les montagnes du Maryland.').
+sen_id(1052, 410, 'p', 'TRIAL', 'yes', 'Avec la mère de la première dame, Jenna Welch, le rassemblement du week-end comprend les parents du président, l\'ancien président George H.W.').
+sen_id(1053, 410, 'p', 'TRIAL', 'yes', 'Bush et sa femme, Barbara, sa sœur Doro Koch et son mari, Bobby, et son frère, Marvin, et sa femme, Margaret.').
+sen_id(1054, 410, 'h', 'TRIAL', 'yes', 'Le nom de la femme de George H.W.').
+sen_id(1055, 410, 'h', 'TRIAL', 'yes', 'Bush est Barbara.').
 %problem id = 411
-sen_id(1054, 411, 'p', 'TRIAL', 'yes', 'Bien que je tombe assez souvent sur Borges et Calvino, aussi, je dois admettre que Gabriel Garcia Marquez est le seul des autres auteurs que je connaisse un tant soit peu, donc je ne suis pas sûr de la différence que cela pourrait faire.').
-sen_id(1055, 411, 'p', 'TRIAL', 'yes', 'Je serais cependant curieux de savoir à quoi cette différence pourrait ressembler pour les personnes qui écrivent sur l\'art médiatique et l\'architecture en espagnol, par exemple.').
-sen_id(1056, 411, 'h', 'TRIAL', 'yes', 'Gabriel Garcia Marquez est un écrivain.').
+sen_id(1056, 411, 'p', 'TRIAL', 'yes', 'Bien que je tombe assez souvent sur Borges et Calvino, aussi, je dois admettre que Gabriel Garcia Marquez est le seul des autres auteurs que je connaisse un tant soit peu, donc je ne suis pas sûr de la différence que cela pourrait faire.').
+sen_id(1057, 411, 'p', 'TRIAL', 'yes', 'Je serais cependant curieux de savoir à quoi cette différence pourrait ressembler pour les personnes qui écrivent sur l\'art médiatique et l\'architecture en espagnol, par exemple.').
+sen_id(1058, 411, 'h', 'TRIAL', 'yes', 'Gabriel Garcia Marquez est un écrivain.').
 %problem id = 412
-sen_id(1057, 412, 'p', 'TRIAL', 'unknown', 'Le Royaume-Uni, la Turquie, les "anciennes" forces du Commonwealth britannique (Nouvelle-Zélande, Australiens, Canadiens, Gurkhas, Inde), l\'Allemagne, la Pologne, le Vietnam, certaines unités des EU, de la Russie, de la France, de la Chine (mais seulement certaines) le Japon serait inclus mais je suis mal à l\'aise à l\'idée d\'utiliser le mot respecté pour les soldats japonais pour des raisons évidentes.').
-sen_id(1058, 412, 'h', 'TRIAL', 'unknown', 'Les Gurkhas viennent du Népal.').
+sen_id(1059, 412, 'p', 'TRIAL', 'unknown', 'Le Royaume-Uni, la Turquie, les "anciennes" forces du Commonwealth britannique (Nouvelle-Zélande, Australiens, Canadiens, Gurkhas, Inde), l\'Allemagne, la Pologne, le Vietnam, certaines unités des EU, de la Russie, de la France, de la Chine (mais seulement certaines) le Japon serait inclus mais je suis mal à l\'aise à l\'idée d\'utiliser le mot respecté pour les soldats japonais pour des raisons évidentes.').
+sen_id(1060, 412, 'h', 'TRIAL', 'unknown', 'Les Gurkhas viennent du Népal.').
 %problem id = 413
-sen_id(1059, 413, 'p', 'TRIAL', 'unknown', 'La ville se trouve le long de la partie de côte désignée comme Gold Beach lors du débarquement du jour J, l\'une des plages utilisées par les troupes britanniques lors de l\'invasion alliée.').
-sen_id(1060, 413, 'p', 'TRIAL', 'unknown', 'Arromanches a été choisi comme l\'un des sites des deux ports Mulberry construits sur la côte normande, l\'autre étant construit plus à l\'ouest à Omaha Beach.').
-sen_id(1061, 413, 'h', 'TRIAL', 'unknown', 'Le débarquement de Normandie a eu lieu en juin 1944.').
+sen_id(1061, 413, 'p', 'TRIAL', 'unknown', 'La ville se trouve le long de la partie de côte désignée comme Gold Beach lors du débarquement du jour J, l\'une des plages utilisées par les troupes britanniques lors de l\'invasion alliée.').
+sen_id(1062, 413, 'p', 'TRIAL', 'unknown', 'Arromanches a été choisi comme l\'un des sites des deux ports Mulberry construits sur la côte normande, l\'autre étant construit plus à l\'ouest à Omaha Beach.').
+sen_id(1063, 413, 'h', 'TRIAL', 'unknown', 'Le débarquement de Normandie a eu lieu en juin 1944.').
 %problem id = 414
-sen_id(1062, 414, 'p', 'TRIAL', 'yes', 'Après des mois de planification et de mise en place, le commandant suprême Dwight Eisenhower fixe l\'opération Overlord au 6 juin 1944 : quelque 7000 navires des îles britanniques prennent la mer et traversent la Manche et, sous la direction du maréchal Bernard Montgomery, 135.000 soldats débarquent et prennent d\'assaut les positions allemandes du Feldmarschal Erwin Rommel sur 80 km de la côte normande.').
-sen_id(1063, 414, 'h', 'TRIAL', 'yes', 'Le débarquement de Normandie a eu lieu en juin 1944.').
+sen_id(1064, 414, 'p', 'TRIAL', 'yes', 'Après des mois de planification et de mise en place, le commandant suprême Dwight Eisenhower fixe l\'opération Overlord au 6 juin 1944 : quelque 7000 navires des îles britanniques prennent la mer et traversent la Manche et, sous la direction du maréchal Bernard Montgomery, 135.000 soldats débarquent et prennent d\'assaut les positions allemandes du Feldmarschal Erwin Rommel sur 80 km de la côte normande.').
+sen_id(1065, 414, 'h', 'TRIAL', 'yes', 'Le débarquement de Normandie a eu lieu en juin 1944.').
 %problem id = 415
-sen_id(1064, 415, 'p', 'TRIAL', 'unknown', 'L\'ancien chancelier Helmut Kohl, qui a stupéfié les Allemands en admettant qu\'il avait utilisé des comptes bancaires illégaux pour acheminer de l\'argent secret au parti chrétien-démocrate, invoque son honneur personnel pour refuser de divulguer les noms des personnes qui ont donné plus d\'un million de dollars entre 1993 et 1998 ; le scandale menace de réduire à néant la place de Kohl dans l\'histoire pour avoir réunifié l\'Allemagne et conduit l\'Europe vers une monnaie commune.').
-sen_id(1065, 415, 'h', 'TRIAL', 'unknown', 'Le nom du parti politique d\'Helmut Kohl est l\'Union chrétienne-démocrate.').
+sen_id(1066, 415, 'p', 'TRIAL', 'unknown', 'L\'ancien chancelier Helmut Kohl, qui a stupéfié les Allemands en admettant qu\'il avait utilisé des comptes bancaires illégaux pour acheminer de l\'argent secret au parti chrétien-démocrate, invoque son honneur personnel pour refuser de divulguer les noms des personnes qui ont donné plus d\'un million de dollars entre 1993 et 1998 ; le scandale menace de réduire à néant la place de Kohl dans l\'histoire pour avoir réunifié l\'Allemagne et conduit l\'Europe vers une monnaie commune.').
+sen_id(1067, 415, 'h', 'TRIAL', 'unknown', 'Le nom du parti politique d\'Helmut Kohl est l\'Union chrétienne-démocrate.').
 %problem id = 416
-sen_id(1066, 416, 'p', 'TRIAL', 'unknown', 'Depuis 1982 Chancelier fédéral (élu par "vote constructif de défiance" contre l\'ancien chancelier Helmut Schmidt, Parti social-démocrate (SPD) ; réélu en 1983, 1987, 1991 et 1994).').
-sen_id(1067, 416, 'p', 'TRIAL', 'unknown', 'Helmut Kohl devient ainsi le plus ancien chancelier de la République fédérale, passant devant Konrad Adenauer, le premier chancelier, en octobre dernier.').
-sen_id(1068, 416, 'h', 'TRIAL', 'unknown', 'Le nom du parti politique d\'Helmut Kohl est l\'Union chrétienne-démocrate.').
+sen_id(1068, 416, 'p', 'TRIAL', 'unknown', 'Depuis 1982 Chancelier fédéral (élu par "vote constructif de défiance" contre l\'ancien chancelier Helmut Schmidt, Parti social-démocrate (SPD) ; réélu en 1983, 1987, 1991 et 1994).').
+sen_id(1069, 416, 'p', 'TRIAL', 'unknown', 'Helmut Kohl devient ainsi le plus ancien chancelier de la République fédérale, passant devant Konrad Adenauer, le premier chancelier, en octobre dernier.').
+sen_id(1070, 416, 'h', 'TRIAL', 'unknown', 'Le nom du parti politique d\'Helmut Kohl est l\'Union chrétienne-démocrate.').
 %problem id = 417
-sen_id(1069, 417, 'p', 'TRIAL', 'yes', 'Lorsque l\'on compare Michele Granger et Brian Goodell, Brian doit être le grand gagnant.').
-sen_id(1070, 417, 'p', 'TRIAL', 'yes', 'En 1976, alors qu\'il était encore élève à Mission Viejo High, Brian a remporté deux médailles d\'or olympiques à Montréal, battant ses propres records du monde dans les épreuves de 400 et de 1.500 mètres en nage libre.').
-sen_id(1071, 417, 'p', 'TRIAL', 'yes', 'Il a ensuite remporté trois médailles d\'or aux Jeux panaméricains de 1979.').
-sen_id(1072, 417, 'h', 'TRIAL', 'yes', 'Brian Goodell a remporté trois médailles d\'or aux Jeux panaméricains de 1979.').
+sen_id(1071, 417, 'p', 'TRIAL', 'yes', 'Lorsque l\'on compare Michele Granger et Brian Goodell, Brian doit être le grand gagnant.').
+sen_id(1072, 417, 'p', 'TRIAL', 'yes', 'En 1976, alors qu\'il était encore élève à Mission Viejo High, Brian a remporté deux médailles d\'or olympiques à Montréal, battant ses propres records du monde dans les épreuves de 400 et de 1.500 mètres en nage libre.').
+sen_id(1073, 417, 'p', 'TRIAL', 'yes', 'Il a ensuite remporté trois médailles d\'or aux Jeux panaméricains de 1979.').
+sen_id(1074, 417, 'h', 'TRIAL', 'yes', 'Brian Goodell a remporté trois médailles d\'or aux Jeux panaméricains de 1979.').
 %problem id = 418
-sen_id(1073, 418, 'p', 'TRIAL', 'yes', 'Il y a plus de dix ans, Carl Lewis se trouvait au seuil de ce qui allait devenir la plus grande carrière d\'athlète de l\'histoire.').
-sen_id(1074, 418, 'p', 'TRIAL', 'yes', 'Il venait de battre deux des records universitaires du légendaire Jesse Owens, mais n\'aurait jamais cru qu\'il deviendrait une icône corporative, le point de mire de centaines de millions de dollars de publicité.').
-sen_id(1075, 418, 'p', 'TRIAL', 'yes', 'Son sport est encore nominalement amateur.').
-sen_id(1076, 418, 'p', 'TRIAL', 'yes', 'Dix-huit médailles d\'or olympiques et de championnat du monde et 21 records du monde plus tard, Lewis est devenu l\'homme le plus riche de l\'histoire de l\'athlétisme -- un multimillionnaire.').
-sen_id(1077, 418, 'h', 'TRIAL', 'yes', 'Carl Lewis a remporté dix-huit médailles d\'or et établi 21 records du monde.').
+sen_id(1075, 418, 'p', 'TRIAL', 'yes', 'Il y a plus de dix ans, Carl Lewis se trouvait au seuil de ce qui allait devenir la plus grande carrière d\'athlète de l\'histoire.').
+sen_id(1076, 418, 'p', 'TRIAL', 'yes', 'Il venait de battre deux des records universitaires du légendaire Jesse Owens, mais n\'aurait jamais cru qu\'il deviendrait une icône corporative, le point de mire de centaines de millions de dollars de publicité.').
+sen_id(1077, 418, 'p', 'TRIAL', 'yes', 'Son sport est encore nominalement amateur.').
+sen_id(1078, 418, 'p', 'TRIAL', 'yes', 'Dix-huit médailles d\'or olympiques et de championnat du monde et 21 records du monde plus tard, Lewis est devenu l\'homme le plus riche de l\'histoire de l\'athlétisme -- un multimillionnaire.').
+sen_id(1079, 418, 'h', 'TRIAL', 'yes', 'Carl Lewis a remporté dix-huit médailles d\'or et établi 21 records du monde.').
 %problem id = 419
-sen_id(1078, 419, 'p', 'TRIAL', 'yes', 'La découverte du quark supérieur, si elle est confirmée, complète un ensemble de blocs de construction subatomiques dont l\'existence est prévue par la théorie dominante, appelée modèle standard, des particules et des forces qui déterminent la nature fondamentale de la matière et de l\'énergie.').
-sen_id(1079, 419, 'p', 'TRIAL', 'yes', 'Dans le lexique fantaisiste de la physique moderne, les particules élémentaires sont appelées quarks, leptons et bosons.').
-sen_id(1080, 419, 'h', 'TRIAL', 'yes', 'Les quarks, les leptons et les bosons sont les trois particules élémentaires de la physique selon le Modèle standard.').
+sen_id(1080, 419, 'p', 'TRIAL', 'yes', 'La découverte du quark supérieur, si elle est confirmée, complète un ensemble de blocs de construction subatomiques dont l\'existence est prévue par la théorie dominante, appelée modèle standard, des particules et des forces qui déterminent la nature fondamentale de la matière et de l\'énergie.').
+sen_id(1081, 419, 'p', 'TRIAL', 'yes', 'Dans le lexique fantaisiste de la physique moderne, les particules élémentaires sont appelées quarks, leptons et bosons.').
+sen_id(1082, 419, 'h', 'TRIAL', 'yes', 'Les quarks, les leptons et les bosons sont les trois particules élémentaires de la physique selon le Modèle standard.').
 %problem id = 420
-sen_id(1081, 420, 'p', 'TRIAL', 'yes', 'Le navigateur Melvyn Percy en a tellement eu marre du niveau de service lors de la préparation de son bateau pour la traversée de l\'Atlantique soit 3000 miles qu\'il a décidé de créer sa propre entreprise sur la Clyde pour fournir aux marins écossais des conseils professionnels et une assistance pratique.').
-sen_id(1082, 420, 'p', 'TRIAL', 'yes', 'Minerva Rigging, basée à Kip Marina, juste au sud de Gourock, emploie maintenant cinq personnes à temps plein et est l\'agent écossais de Kemp, l\'un des principaux fabricants européens d\'espars et de mâts pour yachts.').
-sen_id(1083, 420, 'h', 'TRIAL', 'yes', 'Melvyn Percy a installé Minerva Rigging à Kip Marina.').
+sen_id(1083, 420, 'p', 'TRIAL', 'yes', 'Le navigateur Melvyn Percy en a tellement eu marre du niveau de service lors de la préparation de son bateau pour la traversée de l\'Atlantique soit 3000 miles qu\'il a décidé de créer sa propre entreprise sur la Clyde pour fournir aux marins écossais des conseils professionnels et une assistance pratique.').
+sen_id(1084, 420, 'p', 'TRIAL', 'yes', 'Minerva Rigging, basée à Kip Marina, juste au sud de Gourock, emploie maintenant cinq personnes à temps plein et est l\'agent écossais de Kemp, l\'un des principaux fabricants européens d\'espars et de mâts pour yachts.').
+sen_id(1085, 420, 'h', 'TRIAL', 'yes', 'Melvyn Percy a installé Minerva Rigging à Kip Marina.').
 %problem id = 421
-sen_id(1084, 421, 'p', 'TRIAL', 'yes', 'De tous les parcs nationaux des États-Unis, aucun n\'est plus proche d\'une grande zone urbaine ou plus assailli de problèmes que les Everglades, une rivière d\'herbes peu profonde et large de 50 miles qui coule vers le sud du lac Okeechobee jusqu\'à la baie de Floride.').
-sen_id(1085, 421, 'p', 'TRIAL', 'yes', 'Pendant plus d\'une génération, cette merveille naturelle fragile a été prise en otage par un réseau d\'intérêts particuliers -- agriculteurs, sportifs et environ 6 millions de résidents du sud de la Floride ayant besoin d\'eau potable et de contrôle des inondations -- aussi complexe que l\'écosystème lui-même.').
-sen_id(1086, 421, 'h', 'TRIAL', 'yes', 'Les Everglades font 50 miles de large.').
+sen_id(1086, 421, 'p', 'TRIAL', 'yes', 'De tous les parcs nationaux des États-Unis, aucun n\'est plus proche d\'une grande zone urbaine ou plus assailli de problèmes que les Everglades, une rivière d\'herbes peu profonde et large de 50 miles qui coule vers le sud du lac Okeechobee jusqu\'à la baie de Floride.').
+sen_id(1087, 421, 'p', 'TRIAL', 'yes', 'Pendant plus d\'une génération, cette merveille naturelle fragile a été prise en otage par un réseau d\'intérêts particuliers -- agriculteurs, sportifs et environ 6 millions de résidents du sud de la Floride ayant besoin d\'eau potable et de contrôle des inondations -- aussi complexe que l\'écosystème lui-même.').
+sen_id(1088, 421, 'h', 'TRIAL', 'yes', 'Les Everglades font 50 miles de large.').
 %problem id = 422
-sen_id(1087, 422, 'p', 'TRIAL', 'yes', 'Eschyle est souvent appelé le père de la tragédie grecque ; il a écrit les premières pièces complètes qui survivent de la Grèce antique.').
-sen_id(1088, 422, 'p', 'TRIAL', 'yes', 'On sait qu\'il a écrit plus de 90 pièces, mais seules sept ont survécu.').
-sen_id(1089, 422, 'p', 'TRIAL', 'yes', 'Les plus célèbres d\'entre elles sont la trilogie connue sous le nom d\'Orestie.').
-sen_id(1090, 422, 'p', 'TRIAL', 'yes', 'Sont également connues Les Perses et Prométhée enchaîné.').
-sen_id(1091, 422, 'h', 'TRIAL', 'yes', '"Les Perses" a été écrit par Eschyle.').
+sen_id(1089, 422, 'p', 'TRIAL', 'yes', 'Eschyle est souvent appelé le père de la tragédie grecque ; il a écrit les premières pièces complètes qui survivent de la Grèce antique.').
+sen_id(1090, 422, 'p', 'TRIAL', 'yes', 'On sait qu\'il a écrit plus de 90 pièces, mais seules sept ont survécu.').
+sen_id(1091, 422, 'p', 'TRIAL', 'yes', 'Les plus célèbres d\'entre elles sont la trilogie connue sous le nom d\'Orestie.').
+sen_id(1092, 422, 'p', 'TRIAL', 'yes', 'Sont également connues Les Perses et Prométhée enchaîné.').
+sen_id(1093, 422, 'h', 'TRIAL', 'yes', '"Les Perses" a été écrit par Eschyle.').
 %problem id = 423
-sen_id(1092, 423, 'p', 'TRIAL', 'unknown', 'Le Canada est officiellement un pays bilingue mais, avec près de 60\% de la population parlant l\'anglais comme langue maternelle, et seulement 24\% parlant le français comme première langue, certains se demandent si le Canada est vraiment une nation bilingue ou plutôt, une nation bilingue sur papier seulement.').
-sen_id(1093, 423, 'p', 'TRIAL', 'unknown', 'Le français n\'est pas la seule minorité linguistique au Canada, et certaines des langues parlées, par ordre de popularité, sont le chinois, l\'italien, l\'allemand, le polonais, l\'espagnol, le portugais, le punjabi, l\'ukrainien, l\'arabe, le néerlandais, le tagalog, le grec, le vietnamien, le cri et l\'inuktitut.').
-sen_id(1094, 423, 'h', 'TRIAL', 'unknown', 'Le français est la langue la plus parlée au Québec.').
+sen_id(1094, 423, 'p', 'TRIAL', 'unknown', 'Le Canada est officiellement un pays bilingue mais, avec près de 60\% de la population parlant l\'anglais comme langue maternelle, et seulement 24\% parlant le français comme première langue, certains se demandent si le Canada est vraiment une nation bilingue ou plutôt, une nation bilingue sur papier seulement.').
+sen_id(1095, 423, 'p', 'TRIAL', 'unknown', 'Le français n\'est pas la seule minorité linguistique au Canada, et certaines des langues parlées, par ordre de popularité, sont le chinois, l\'italien, l\'allemand, le polonais, l\'espagnol, le portugais, le punjabi, l\'ukrainien, l\'arabe, le néerlandais, le tagalog, le grec, le vietnamien, le cri et l\'inuktitut.').
+sen_id(1096, 423, 'h', 'TRIAL', 'unknown', 'Le français est la langue la plus parlée au Québec.').
 %problem id = 424
-sen_id(1095, 424, 'p', 'TRIAL', 'unknown', 'Un an après le tsunami de l\'océan Indien, le chagrin et la compassion du monde entier sont revenus sur les côtes meurtries par le tsunami de l\'océan Indien, où au moins 216.000 personnes ont perdu la vie.').
-sen_id(1096, 424, 'p', 'TRIAL', 'unknown', 'Sous un ciel clair et devant une mer douce, le monde a commémoré ceux qui ont perdu la vie, dans l\'une des pires catastrophes naturelles que le monde moderne ait connues.').
-sen_id(1097, 424, 'h', 'TRIAL', 'unknown', 'Les tremblements de terre ont le potentiel de générer un tsunami.').
+sen_id(1097, 424, 'p', 'TRIAL', 'unknown', 'Un an après le tsunami de l\'océan Indien, le chagrin et la compassion du monde entier sont revenus sur les côtes meurtries par le tsunami de l\'océan Indien, où au moins 216.000 personnes ont perdu la vie.').
+sen_id(1098, 424, 'p', 'TRIAL', 'unknown', 'Sous un ciel clair et devant une mer douce, le monde a commémoré ceux qui ont perdu la vie, dans l\'une des pires catastrophes naturelles que le monde moderne ait connues.').
+sen_id(1099, 424, 'h', 'TRIAL', 'unknown', 'Les tremblements de terre ont le potentiel de générer un tsunami.').
 %problem id = 425
-sen_id(1098, 425, 'p', 'TRIAL', 'yes', 'Le cardinal brésilien Dom Eusbio Oscar Scheid, archevêque de Rio de Janeiro, a sévèrement critiqué le président brésilien Luiz Inácio Lula da Silva après son arrivée à Rome mardi.').
-sen_id(1099, 425, 'h', 'TRIAL', 'yes', 'Le président brésilien est Luiz Inácio Lula da Silva.').
+sen_id(1100, 425, 'p', 'TRIAL', 'yes', 'Le cardinal brésilien Dom Eusbio Oscar Scheid, archevêque de Rio de Janeiro, a sévèrement critiqué le président brésilien Luiz Inácio Lula da Silva après son arrivée à Rome mardi.').
+sen_id(1101, 425, 'h', 'TRIAL', 'yes', 'Le président brésilien est Luiz Inácio Lula da Silva.').
 %problem id = 426
-sen_id(1100, 426, 'p', 'TRIAL', 'yes', 'Selon des membres de la Cour brésilienne, le président Luiz Inácio Lula da Silva pourrait être soumis à un processus de destitution, s\'il existe des preuves qu\'il est réellement impliqué dans certains scandales présumés, ou au cas où quelqu\'un peut prouver qu\'il a agi avec négligence.').
-sen_id(1101, 426, 'h', 'TRIAL', 'yes', 'Le président brésilien est Luiz Inácio Lula da Silva.').
+sen_id(1102, 426, 'p', 'TRIAL', 'yes', 'Selon des membres de la Cour brésilienne, le président Luiz Inácio Lula da Silva pourrait être soumis à un processus de destitution, s\'il existe des preuves qu\'il est réellement impliqué dans certains scandales présumés, ou au cas où quelqu\'un peut prouver qu\'il a agi avec négligence.').
+sen_id(1103, 426, 'h', 'TRIAL', 'yes', 'Le président brésilien est Luiz Inácio Lula da Silva.').
 %problem id = 427
-sen_id(1102, 427, 'p', 'TRIAL', 'unknown', 'Un rapport préparé par une commission de cinq membres de l\'ONU a constaté "des meurtres de civils, des disparitions forcées, des destructions de villages, des viols et d\'autres formes de violence sexuelle, des pillages et des déplacements forcés, dans tout le Darfour", et a désigné secrètement des criminels de guerre présumés qui devraient passer devant la CPI.').
-sen_id(1103, 427, 'h', 'TRIAL', 'unknown', 'Plus de 200.000 personnes ont été tuées lors de l\'attaque aérienne dans la région du Darfour.').
+sen_id(1104, 427, 'p', 'TRIAL', 'unknown', 'Un rapport préparé par une commission de cinq membres de l\'ONU a constaté "des meurtres de civils, des disparitions forcées, des destructions de villages, des viols et d\'autres formes de violence sexuelle, des pillages et des déplacements forcés, dans tout le Darfour", et a désigné secrètement des criminels de guerre présumés qui devraient passer devant la CPI.').
+sen_id(1105, 427, 'h', 'TRIAL', 'unknown', 'Plus de 200.000 personnes ont été tuées lors de l\'attaque aérienne dans la région du Darfour.').
 %problem id = 428
-sen_id(1104, 428, 'p', 'TRIAL', 'unknown', 'Le service des maréchaux des États-Unis, en collaboration avec près de 960 autres organismes d\'application de la loi, a récemment conclu une opération d\'une semaine, l\'opération FALCON, qui a permis l\'arrestation de 10.340 fugitifs à travers les États-Unis et ailleurs.').
-sen_id(1105, 428, 'p', 'TRIAL', 'unknown', 'D\'autres opérations de ratissage régionales ont déjà été menées ; mais celle-ci était la première du genre au niveau national et a permis le plus grand nombre d\'arrestations jamais enregistré en une seule opération.').
-sen_id(1106, 428, 'h', 'TRIAL', 'unknown', 'L\'opération Condor était un génocide et une campagne de contre-terrorisme mise en œuvre par les dictatures de droite qui ont dominé le Cône Sud en Amérique latine des années 1950 à 1980.').
+sen_id(1106, 428, 'p', 'TRIAL', 'unknown', 'Le service des maréchaux des États-Unis, en collaboration avec près de 960 autres organismes d\'application de la loi, a récemment conclu une opération d\'une semaine, l\'opération FALCON, qui a permis l\'arrestation de 10.340 fugitifs à travers les États-Unis et ailleurs.').
+sen_id(1107, 428, 'p', 'TRIAL', 'unknown', 'D\'autres opérations de ratissage régionales ont déjà été menées ; mais celle-ci était la première du genre au niveau national et a permis le plus grand nombre d\'arrestations jamais enregistré en une seule opération.').
+sen_id(1108, 428, 'h', 'TRIAL', 'unknown', 'L\'opération Condor était un génocide et une campagne de contre-terrorisme mise en œuvre par les dictatures de droite qui ont dominé le Cône Sud en Amérique latine des années 1950 à 1980.').
 %problem id = 429
-sen_id(1107, 429, 'p', 'TRIAL', 'unknown', 'L\'opération FALCON a été menée pendant une semaine, du 4 au 10 avril 2005, choisie pour coïncider avec la semaine nationale des droits des victimes de crimes, du 10 au 16 avril, les dates étant choisies pour "honorer les victimes" de crimes violents en Amérique.').
-sen_id(1108, 429, 'p', 'TRIAL', 'unknown', '"En retirant les fugitifs violents des rues et en les mettant derrière les barreaux, là où ils doivent être," a déclaré le procureur général Alberto Gonzales, "nous avons honoré les victimes et rendu nos rues plus sûres."').
-sen_id(1109, 429, 'h', 'TRIAL', 'unknown', 'L\'Opération Condor était un génocide et une campagne de contre-terrorisme mise en œuvre par les dictatures de droite qui ont dominé le Cône Sud en Amérique latine des années 1950 à 1980.').
+sen_id(1109, 429, 'p', 'TRIAL', 'unknown', 'L\'opération FALCON a été menée pendant une semaine, du 4 au 10 avril 2005, choisie pour coïncider avec la semaine nationale des droits des victimes de crimes, du 10 au 16 avril, les dates étant choisies pour "honorer les victimes" de crimes violents en Amérique.').
+sen_id(1110, 429, 'p', 'TRIAL', 'unknown', '"En retirant les fugitifs violents des rues et en les mettant derrière les barreaux, là où ils doivent être," a déclaré le procureur général Alberto Gonzales, "nous avons honoré les victimes et rendu nos rues plus sûres."').
+sen_id(1111, 429, 'h', 'TRIAL', 'unknown', 'L\'Opération Condor était un génocide et une campagne de contre-terrorisme mise en œuvre par les dictatures de droite qui ont dominé le Cône Sud en Amérique latine des années 1950 à 1980.').
 %problem id = 430
-sen_id(1110, 430, 'p', 'TRIAL', 'unknown', 'Des milliers de Roumains ont participé à des rassemblements lundi pour faire campagne pour la libération de trois journalistes roumains enlevés le mois dernier en Irak.').
-sen_id(1111, 430, 'p', 'TRIAL', 'unknown', 'Les foules ont gonflé en taille après un week-end de rassemblements plus petits parrainés par les travailleurs des médias roumains et la communauté arabe de Roumanie.').
-sen_id(1112, 430, 'h', 'TRIAL', 'unknown', 'La Roumanie a envoyé 730 soldats en Irak.').
+sen_id(1112, 430, 'p', 'TRIAL', 'unknown', 'Des milliers de Roumains ont participé à des rassemblements lundi pour faire campagne pour la libération de trois journalistes roumains enlevés le mois dernier en Irak.').
+sen_id(1113, 430, 'p', 'TRIAL', 'unknown', 'Les foules ont gonflé en taille après un week-end de rassemblements plus petits parrainés par les travailleurs des médias roumains et la communauté arabe de Roumanie.').
+sen_id(1114, 430, 'h', 'TRIAL', 'unknown', 'La Roumanie a envoyé 730 soldats en Irak.').
 %problem id = 431
-sen_id(1113, 431, 'p', 'TRIAL', 'unknown', '"Ces nouveaux résultats de Cassini pourraient être la première preuve de gaz provenant soit de la surface, soit éventuellement de l\'intérieur d\'Encelade", a déclaré Michele Dougherty, chercheur principal du magnétomètre de Cassini et professeur à l\'Imperial College de Londres.').
-sen_id(1114, 431, 'p', 'TRIAL', 'unknown', 'Les scientifiques ont soupçonné Encelade d\'être géologiquement active et de constituer une source possible de l\'anneau E glacé de Saturne.').
-sen_id(1115, 431, 'p', 'TRIAL', 'unknown', 'Encelade est l\'objet le plus réfléchissant du système solaire, reflétant environ 90 \% de la lumière solaire qui le frappe.').
-sen_id(1116, 431, 'h', 'TRIAL', 'unknown', 'Titan est le quinzième des satellites connus de Saturne.').
+sen_id(1115, 431, 'p', 'TRIAL', 'unknown', '"Ces nouveaux résultats de Cassini pourraient être la première preuve de gaz provenant soit de la surface, soit éventuellement de l\'intérieur d\'Encelade", a déclaré Michele Dougherty, chercheur principal du magnétomètre de Cassini et professeur à l\'Imperial College de Londres.').
+sen_id(1116, 431, 'p', 'TRIAL', 'unknown', 'Les scientifiques ont soupçonné Encelade d\'être géologiquement active et de constituer une source possible de l\'anneau E glacé de Saturne.').
+sen_id(1117, 431, 'p', 'TRIAL', 'unknown', 'Encelade est l\'objet le plus réfléchissant du système solaire, reflétant environ 90 \% de la lumière solaire qui le frappe.').
+sen_id(1118, 431, 'h', 'TRIAL', 'unknown', 'Titan est le quinzième des satellites connus de Saturne.').
 %problem id = 432
-sen_id(1117, 432, 'p', 'TRIAL', 'yes', 'Collection de témoignages réels par Klaus Pohl, l\'un des dramaturges les plus joués d\'Allemagne, sa puissance réside moins dans le sens conventionnel du mot drame que dans ce qu\'il révèle - un pays encore profondément en désaccord avec lui-même, un kaléidoscope d\'événements qui ne flatte aucun camp, ni le capitalisme occidental ni l\'ancien régime communiste.').
-sen_id(1118, 432, 'h', 'TRIAL', 'yes', 'Klaus Pohl est l\'un des dramaturges allemands les plus joués.').
+sen_id(1119, 432, 'p', 'TRIAL', 'yes', 'Collection de témoignages réels par Klaus Pohl, l\'un des dramaturges les plus joués d\'Allemagne, sa puissance réside moins dans le sens conventionnel du mot drame que dans ce qu\'il révèle - un pays encore profondément en désaccord avec lui-même, un kaléidoscope d\'événements qui ne flatte aucun camp, ni le capitalisme occidental ni l\'ancien régime communiste.').
+sen_id(1120, 432, 'h', 'TRIAL', 'yes', 'Klaus Pohl est l\'un des dramaturges allemands les plus joués.').
 %problem id = 433
-sen_id(1119, 433, 'p', 'TRIAL', 'yes', 'TWA passe par New York pour se rendre à Francfort.').
-sen_id(1120, 433, 'p', 'TRIAL', 'yes', 'Lufthansa, la compagnie aérienne allemande, offre des vols directs quotidiens de Los Angeles à Francfort, et la compagnie partage des vols avec Lauda Air, un transporteur autrichien, les mercredis, vendredis et dimanches pour se rendre directement à Munich.').
-sen_id(1121, 433, 'p', 'TRIAL', 'yes', 'Une autre compagnie aérienne allemande, Ltu, propose également des vols directs de Los Angeles à Düsseldorf et Munich les lundis et jeudis.').
-sen_id(1122, 433, 'p', 'TRIAL', 'yes', 'Francfort est la plaque tournante pour les voyages vers la plupart des petites villes du pays.').
-sen_id(1123, 433, 'h', 'TRIAL', 'yes', 'Lufthansa est la compagnie aérienne allemande.').
+sen_id(1121, 433, 'p', 'TRIAL', 'yes', 'TWA passe par New York pour se rendre à Francfort.').
+sen_id(1122, 433, 'p', 'TRIAL', 'yes', 'Lufthansa, la compagnie aérienne allemande, offre des vols directs quotidiens de Los Angeles à Francfort, et la compagnie partage des vols avec Lauda Air, un transporteur autrichien, les mercredis, vendredis et dimanches pour se rendre directement à Munich.').
+sen_id(1123, 433, 'p', 'TRIAL', 'yes', 'Une autre compagnie aérienne allemande, Ltu, propose également des vols directs de Los Angeles à Düsseldorf et Munich les lundis et jeudis.').
+sen_id(1124, 433, 'p', 'TRIAL', 'yes', 'Francfort est la plaque tournante pour les voyages vers la plupart des petites villes du pays.').
+sen_id(1125, 433, 'h', 'TRIAL', 'yes', 'Lufthansa est la compagnie aérienne allemande.').
 %problem id = 434
-sen_id(1124, 434, 'p', 'TRIAL', 'yes', 'Le 9 novembre 1989, le jour où le mur de Berlin est tombé et où le monde a changé à jamais.').
-sen_id(1125, 434, 'p', 'TRIAL', 'yes', 'Même les plus astucieux ne l\'avaient pas vu venir.').
-sen_id(1126, 434, 'p', 'TRIAL', 'yes', 'En tant que ministre des Affaires étrangères de la Hongrie à la fin de l\'été 1989, Gyula Horn a donné l\'ordre de laisser les Allemands de l\'Est en visite utiliser son pays pour faire un tour final de 400 miles autour du mur de Berlin, un mouvement maintenant considéré comme le début de la fin pour le communisme dur en Europe.').
-sen_id(1127, 434, 'h', 'TRIAL', 'yes', 'Le mur de Berlin a été démoli en 1989.').
+sen_id(1126, 434, 'p', 'TRIAL', 'yes', 'Le 9 novembre 1989, le jour où le mur de Berlin est tombé et où le monde a changé à jamais.').
+sen_id(1127, 434, 'p', 'TRIAL', 'yes', 'Même les plus astucieux ne l\'avaient pas vu venir.').
+sen_id(1128, 434, 'p', 'TRIAL', 'yes', 'En tant que ministre des Affaires étrangères de la Hongrie à la fin de l\'été 1989, Gyula Horn a donné l\'ordre de laisser les Allemands de l\'Est en visite utiliser son pays pour faire un tour final de 400 miles autour du mur de Berlin, un mouvement maintenant considéré comme le début de la fin pour le communisme dur en Europe.').
+sen_id(1129, 434, 'h', 'TRIAL', 'yes', 'Le mur de Berlin a été démoli en 1989.').
 %problem id = 435
-sen_id(1128, 435, 'p', 'TRIAL', 'unknown', 'Les marchés mondiaux devraient être "assez forts pour l\'absorber sans dommage durable", a-t-il dit.').
-sen_id(1129, 435, 'p', 'TRIAL', 'unknown', '"Je tiens à souligner que ces circonstances sont uniques à Barings et ne devraient pas s\'appliquer aux autres banques opérant à Londres".').
-sen_id(1130, 435, 'p', 'TRIAL', 'unknown', 'Barings a fait face à des pertes d\'au moins 600 millions dans des contrats sur trois bourses à Singapour, Osaka et Tokyo, a-t-il dit, mais "d\'autres pertes non quantifiables" étaient attendues.').
-sen_id(1131, 435, 'h', 'TRIAL', 'unknown', 'La société bancaire Barings s\'est effondrée en raison des spéculations faites par Nick Leeson.').
+sen_id(1130, 435, 'p', 'TRIAL', 'unknown', 'Les marchés mondiaux devraient être "assez forts pour l\'absorber sans dommage durable", a-t-il dit.').
+sen_id(1131, 435, 'p', 'TRIAL', 'unknown', '"Je tiens à souligner que ces circonstances sont uniques à Barings et ne devraient pas s\'appliquer aux autres banques opérant à Londres".').
+sen_id(1132, 435, 'p', 'TRIAL', 'unknown', 'Barings a fait face à des pertes d\'au moins 600 millions dans des contrats sur trois bourses à Singapour, Osaka et Tokyo, a-t-il dit, mais "d\'autres pertes non quantifiables" étaient attendues.').
+sen_id(1133, 435, 'h', 'TRIAL', 'unknown', 'La société bancaire Barings s\'est effondrée en raison des spéculations faites par Nick Leeson.').
 %problem id = 436
-sen_id(1132, 436, 'p', 'TRIAL', 'yes', 'C\'est un vote de confiance que la dynamique va continuer", a déclaré Doyle.').
-sen_id(1133, 436, 'p', 'TRIAL', 'yes', 'Cette dynamique semble également se déplacer vers le sud.').
-sen_id(1134, 436, 'p', 'TRIAL', 'yes', 'L\'élection mexicaine est la dernière indication que les réformes du marché libre qui ont balayé l\'Amérique latine au cours de la dernière décennie sont en train de gagner l\'acceptation politique.').
-sen_id(1135, 436, 'p', 'TRIAL', 'yes', 'Au Brésil, les prix ont fortement augmenté, réagissant au vote du Mexique et à de nouveaux sondages favorables au candidat présidentiel libre-échangiste Fernando Henrique Cardoso.').
-sen_id(1136, 436, 'h', 'TRIAL', 'yes', 'Fernando Henrique Cardoso est un candidat à la présidence.').
+sen_id(1134, 436, 'p', 'TRIAL', 'yes', 'C\'est un vote de confiance que la dynamique va continuer", a déclaré Doyle.').
+sen_id(1135, 436, 'p', 'TRIAL', 'yes', 'Cette dynamique semble également se déplacer vers le sud.').
+sen_id(1136, 436, 'p', 'TRIAL', 'yes', 'L\'élection mexicaine est la dernière indication que les réformes du marché libre qui ont balayé l\'Amérique latine au cours de la dernière décennie sont en train de gagner l\'acceptation politique.').
+sen_id(1137, 436, 'p', 'TRIAL', 'yes', 'Au Brésil, les prix ont fortement augmenté, réagissant au vote du Mexique et à de nouveaux sondages favorables au candidat présidentiel libre-échangiste Fernando Henrique Cardoso.').
+sen_id(1138, 436, 'h', 'TRIAL', 'yes', 'Fernando Henrique Cardoso est un candidat à la présidence.').
 %problem id = 437
-sen_id(1137, 437, 'p', 'TRIAL', 'yes', 'Bien qu\'il ait gagné avec la plus faible majorité jamais enregistrée par le parti au pouvoir, 48,7\% des voix, ses bulletins de vote ont presque doublé ceux de l\'outsider Diego Fernandez de Cevallos, le dauphin de la droite.').
-sen_id(1138, 437, 'p', 'TRIAL', 'yes', 'Et les initiés sont désormais favoris pour remporter d\'autres élections latino-américaines dans les mois à venir : au Brésil, Fernando Henrique Cardoso, un ancien leader du Sénat et ministre du Cabinet, devrait terminer devant l\'outsider Luis Inacio (Lula) da Silva, un ancien leader travailliste de gauche, au premier tour de la présidentielle.').
-sen_id(1139, 437, 'h', 'TRIAL', 'yes', 'Fernando Henrique Cardoso est un ancien leader du Sénat et ministre du Cabinet brésilien.').
+sen_id(1139, 437, 'p', 'TRIAL', 'yes', 'Bien qu\'il ait gagné avec la plus faible majorité jamais enregistrée par le parti au pouvoir, 48,7\% des voix, ses bulletins de vote ont presque doublé ceux de l\'outsider Diego Fernandez de Cevallos, le dauphin de la droite.').
+sen_id(1140, 437, 'p', 'TRIAL', 'yes', 'Et les initiés sont désormais favoris pour remporter d\'autres élections latino-américaines dans les mois à venir : au Brésil, Fernando Henrique Cardoso, un ancien leader du Sénat et ministre du Cabinet, devrait terminer devant l\'outsider Luis Inacio (Lula) da Silva, un ancien leader travailliste de gauche, au premier tour de la présidentielle.').
+sen_id(1141, 437, 'h', 'TRIAL', 'yes', 'Fernando Henrique Cardoso est un ancien leader du Sénat et ministre du Cabinet brésilien.').
 %problem id = 438
-sen_id(1140, 438, 'p', 'TRIAL', 'yes', 'Cela obligerait les pays de la région à choisir entre les États-Unis et le Japon, ou peut-être entre le Japon et la Chine.').
-sen_id(1141, 438, 'p', 'TRIAL', 'yes', 'Et cela réduirait à néant toutes les promesses de la toute nouvelle Coopération économique Asie-Pacifique (APEC) en tant que moyen d\'assurer l\'accès commercial des Américains aux marchés en plein essor du Pacifique.').
-sen_id(1142, 438, 'p', 'TRIAL', 'yes', 'Il est insensé de risquer tout cela au nom d\'un concept défectueux.').
-sen_id(1143, 438, 'p', 'TRIAL', 'yes', 'Il ne s\'agit pas de nier la frustration compréhensible de l\'administration face à la persistance d\'un énorme excédent commercial japonais.').
-sen_id(1144, 438, 'h', 'TRIAL', 'yes', 'L\'APEC est la toute nouvelle Coopération économique Asie-Pacifique.').
+sen_id(1142, 438, 'p', 'TRIAL', 'yes', 'Cela obligerait les pays de la région à choisir entre les États-Unis et le Japon, ou peut-être entre le Japon et la Chine.').
+sen_id(1143, 438, 'p', 'TRIAL', 'yes', 'Et cela réduirait à néant toutes les promesses de la toute nouvelle Coopération économique Asie-Pacifique (APEC) en tant que moyen d\'assurer l\'accès commercial des Américains aux marchés en plein essor du Pacifique.').
+sen_id(1144, 438, 'p', 'TRIAL', 'yes', 'Il est insensé de risquer tout cela au nom d\'un concept défectueux.').
+sen_id(1145, 438, 'p', 'TRIAL', 'yes', 'Il ne s\'agit pas de nier la frustration compréhensible de l\'administration face à la persistance d\'un énorme excédent commercial japonais.').
+sen_id(1146, 438, 'h', 'TRIAL', 'yes', 'L\'APEC est la toute nouvelle Coopération économique Asie-Pacifique.').
 %problem id = 439
-sen_id(1145, 439, 'p', 'TRIAL', 'yes', 'C\'est un mouvement d\'indépendance parmi les peuples tamouls du nord du Sri Lanka -- l\'ancien pays de Ceylan indépendant de la Grande-Bretagne en 1948 et qui a pris le nom de Sri Lanka, un mot cinghalais, en 1972.').
-sen_id(1146, 439, 'h', 'TRIAL', 'yes', 'Le nom actuel de Ceylan est Sri Lanka.').
+sen_id(1147, 439, 'p', 'TRIAL', 'yes', 'C\'est un mouvement d\'indépendance parmi les peuples tamouls du nord du Sri Lanka -- l\'ancien pays de Ceylan indépendant de la Grande-Bretagne en 1948 et qui a pris le nom de Sri Lanka, un mot cinghalais, en 1972.').
+sen_id(1148, 439, 'h', 'TRIAL', 'yes', 'Le nom actuel de Ceylan est Sri Lanka.').
 %problem id = 440
-sen_id(1147, 440, 'p', 'TRIAL', 'yes', 'L\'article 19 indique qu\'un correspondant du journal indépendant Narodnaya Volya, qui a tenté de déterminer combien de personnes impliquées dans les travaux d\'urgence dans la zone contaminée autour du réacteur nucléaire de Tchernobyl après la catastrophe de 1986 étaient encore en vie, s\'est vu répondre par le ministère des urgences que les journaux non étatiques pouvaient se voir refuser l\'accès à toute information.').
-sen_id(1148, 440, 'h', 'TRIAL', 'yes', 'La catastrophe de Tchernobyl s\'est produite en 1986.').
+sen_id(1149, 440, 'p', 'TRIAL', 'yes', 'L\'article 19 indique qu\'un correspondant du journal indépendant Narodnaya Volya, qui a tenté de déterminer combien de personnes impliquées dans les travaux d\'urgence dans la zone contaminée autour du réacteur nucléaire de Tchernobyl après la catastrophe de 1986 étaient encore en vie, s\'est vu répondre par le ministère des urgences que les journaux non étatiques pouvaient se voir refuser l\'accès à toute information.').
+sen_id(1150, 440, 'h', 'TRIAL', 'yes', 'La catastrophe de Tchernobyl s\'est produite en 1986.').
 %problem id = 441
-sen_id(1149, 441, 'p', 'TRIAL', 'yes', 'Après avoir quitté Time-Life, Shuker a rejoint le Public Broadcast Laboratory, précurseur de PBS, et a participé à deux films pionniers -- "The Chair", sur un avocat qui tente de sauver un condamné à mort, et "Free At Last", un documentaire de 90 minutes sur le Dr Martin Luther King Jr., qui, par hasard, était en cours de réalisation lorsque King a été assassiné en 1968.').
-sen_id(1150, 441, 'h', 'TRIAL', 'yes', 'Martin Luther King a été assassiné en 1968.').
+sen_id(1151, 441, 'p', 'TRIAL', 'yes', 'Après avoir quitté Time-Life, Shuker a rejoint le Public Broadcast Laboratory, précurseur de PBS, et a participé à deux films pionniers -- "The Chair", sur un avocat qui tente de sauver un condamné à mort, et "Free At Last", un documentaire de 90 minutes sur le Dr Martin Luther King Jr., qui, par hasard, était en cours de réalisation lorsque King a été assassiné en 1968.').
+sen_id(1152, 441, 'h', 'TRIAL', 'yes', 'Martin Luther King a été assassiné en 1968.').
 %problem id = 442
-sen_id(1151, 442, 'p', 'TRIAL', 'unknown', 'En attendant, lors d\'un festival Pouchkine-Goethe qui s\'est tenu récemment à Moscou pour célébrer les anniversaires des poètes (cette année, c\'est le 250e de Goethe), Dmitri Prigov, un poète post-moderniste et artiste conceptuel, a repris la première ligne d\'"Onéguine" ("Mon oncle - de grands idéaux l\'inspirent") et l\'a mise en musique avec des mantras bouddhistes et musulmans et des chants orthodoxes russes et grégoriens.').
-sen_id(1152, 442, 'h', 'TRIAL', 'unknown', 'Johann Wolfgang von Goethe est né en Allemagne.').
+sen_id(1153, 442, 'p', 'TRIAL', 'unknown', 'En attendant, lors d\'un festival Pouchkine-Goethe qui s\'est tenu récemment à Moscou pour célébrer les anniversaires des poètes (cette année, c\'est le 250e de Goethe), Dmitri Prigov, un poète post-moderniste et artiste conceptuel, a repris la première ligne d\'"Onéguine" ("Mon oncle - de grands idéaux l\'inspirent") et l\'a mise en musique avec des mantras bouddhistes et musulmans et des chants orthodoxes russes et grégoriens.').
+sen_id(1154, 442, 'h', 'TRIAL', 'unknown', 'Johann Wolfgang von Goethe est né en Allemagne.').
 %problem id = 443
-sen_id(1153, 443, 'p', 'TRIAL', 'unknown', 'Dans le cadre d\'une fonction organisée ici par la Commission nationale des droits de l\'homme (NHRC), M. Anand a déclaré que les défis les plus importants et les plus urgents des droits de l\'homme en Inde concernaient les soins maternels et infantiles, l\'éducation des enfants, le travail des enfants, la maltraitance des enfants et la protection des minorités et des sections les plus faibles.').
-sen_id(1154, 443, 'h', 'TRIAL', 'unknown', 'Amnesty International s\'occupe des droits de l\'homme.').
+sen_id(1155, 443, 'p', 'TRIAL', 'unknown', 'Dans le cadre d\'une fonction organisée ici par la Commission nationale des droits de l\'homme (NHRC), M. Anand a déclaré que les défis les plus importants et les plus urgents des droits de l\'homme en Inde concernaient les soins maternels et infantiles, l\'éducation des enfants, le travail des enfants, la maltraitance des enfants et la protection des minorités et des sections les plus faibles.').
+sen_id(1156, 443, 'h', 'TRIAL', 'unknown', 'Amnesty International s\'occupe des droits de l\'homme.').
 %problem id = 444
-sen_id(1155, 444, 'p', 'TRIAL', 'yes', 'Le président français Jacques Chirac, conservateur comme Kohl, et le Premier ministre Lionel Jospin, dont les camarades socialistes ont vu dans la victoire des sociaux-démocrates de Schroeder la poursuite d\'une tendance européenne qui a porté eux et le parti travailliste du Premier ministre britannique Tony Blairau au pouvoir l\'an dernier, ont rendu hommage à ces deux dans une mesure presque égale.').
-sen_id(1156, 444, 'h', 'TRIAL', 'yes', 'Tony Blair appartient au parti travailliste.').
+sen_id(1157, 444, 'p', 'TRIAL', 'yes', 'Le président français Jacques Chirac, conservateur comme Kohl, et le Premier ministre Lionel Jospin, dont les camarades socialistes ont vu dans la victoire des sociaux-démocrates de Schroeder la poursuite d\'une tendance européenne qui a porté eux et le parti travailliste du Premier ministre britannique Tony Blairau au pouvoir l\'an dernier, ont rendu hommage à ces deux dans une mesure presque égale.').
+sen_id(1158, 444, 'h', 'TRIAL', 'yes', 'Tony Blair appartient au parti travailliste.').
 %problem id = 445
-sen_id(1157, 445, 'p', 'TRIAL', 'yes', 'Les assistants du Premier ministre britannique Tony Blair, dont le Parti travailliste a remporté le pouvoir il y a 13 mois et qui est l\'actuel président de l\'UE, ont déclaré que les dirigeants ont reconnu conjointement - et sans chercher à se blâmer mutuellement - que la bureaucratie de l\'UE, basée en Belgique, est considérée comme à la fois distante et autoritaire.').
-sen_id(1158, 445, 'h', 'TRIAL', 'yes', 'Tony Blair appartient au parti travailliste.').
+sen_id(1159, 445, 'p', 'TRIAL', 'yes', 'Les assistants du Premier ministre britannique Tony Blair, dont le Parti travailliste a remporté le pouvoir il y a 13 mois et qui est l\'actuel président de l\'UE, ont déclaré que les dirigeants ont reconnu conjointement - et sans chercher à se blâmer mutuellement - que la bureaucratie de l\'UE, basée en Belgique, est considérée comme à la fois distante et autoritaire.').
+sen_id(1160, 445, 'h', 'TRIAL', 'yes', 'Tony Blair appartient au parti travailliste.').
 %problem id = 446
-sen_id(1159, 446, 'p', 'TRIAL', 'yes', 'Cette théorie, un concept proposé pour la première fois par Albert Einstein et souvent réitéré par l\'astrophysicien britannique Stephen Hawking, cherche à trouver un seul ensemble d\'équations pouvant expliquer toutes les forces fondamentales de l\'univers : la gravité, l\'électromagnétisme et les forces interactives fortes et faibles entre les particules subnucléaires.').
-sen_id(1160, 446, 'h', 'TRIAL', 'yes', 'Stephen Hawking est un physicien.').
+sen_id(1161, 446, 'p', 'TRIAL', 'yes', 'Cette théorie, un concept proposé pour la première fois par Albert Einstein et souvent réitéré par l\'astrophysicien britannique Stephen Hawking, cherche à trouver un seul ensemble d\'équations pouvant expliquer toutes les forces fondamentales de l\'univers : la gravité, l\'électromagnétisme et les forces interactives fortes et faibles entre les particules subnucléaires.').
+sen_id(1162, 446, 'h', 'TRIAL', 'yes', 'Stephen Hawking est un physicien.').
 %problem id = 447
-sen_id(1161, 447, 'p', 'TRIAL', 'unknown', 'Une affection appelée "trouble de l\'anxiété sociale" a rejoint cette semaine la longue liste des baisses de régime de la vie - dont l\'obésité, l\'impuissance, la dépression et la phobie - que les Américains considéraient autrefois communément comme des défis de volonté et de caractère, mais qui peuvent désormais être traités en avalant une pilule.').
-sen_id(1162, 447, 'h', 'TRIAL', 'unknown', 'La phobie est une peur extrême d\'une chose ou d\'une situation particulière.').
+sen_id(1163, 447, 'p', 'TRIAL', 'unknown', 'Une affection appelée "trouble de l\'anxiété sociale" a rejoint cette semaine la longue liste des baisses de régime de la vie - dont l\'obésité, l\'impuissance, la dépression et la phobie - que les Américains considéraient autrefois communément comme des défis de volonté et de caractère, mais qui peuvent désormais être traités en avalant une pilule.').
+sen_id(1164, 447, 'h', 'TRIAL', 'unknown', 'La phobie est une peur extrême d\'une chose ou d\'une situation particulière.').
 %problem id = 448
-sen_id(1163, 448, 'p', 'TRIAL', 'unknown', 'La FNP a déclaré que les jeunes qui présentent les premiers symptômes de la maladie de Parkinson ont des besoins particuliers, car ils ont souvent des enfants à élever, des emplois à conserver et d\'autres problèmes à régler qui sont différents de ceux des patients à l\'âge de la retraite.').
-sen_id(1164, 448, 'h', 'TRIAL', 'unknown', 'Les symptômes de la maladie de Parkinson sont les suivants : tremblement, rigidité (raideur ; augmentation du tonus musculaire), bradykinésie/akinésie, également "dysdiadokinésie", et instabilité posturale.').
+sen_id(1165, 448, 'p', 'TRIAL', 'unknown', 'La FNP a déclaré que les jeunes qui présentent les premiers symptômes de la maladie de Parkinson ont des besoins particuliers, car ils ont souvent des enfants à élever, des emplois à conserver et d\'autres problèmes à régler qui sont différents de ceux des patients à l\'âge de la retraite.').
+sen_id(1166, 448, 'h', 'TRIAL', 'unknown', 'Les symptômes de la maladie de Parkinson sont les suivants : tremblement, rigidité (raideur ; augmentation du tonus musculaire), bradykinésie/akinésie, également "dysdiadokinésie", et instabilité posturale.').
 %problem id = 449
-sen_id(1165, 449, 'p', 'TRIAL', 'yes', 'Des responsables olympiques familiers de la candidature de Salt Lake City pour les Jeux d\'hiver de 2002 ont décrit ces dernières semaines un processus par lequel les responsables olympiques de Salt Lake City ont ciblé les votes de 17 membres africains du CIO après avoir perdu par quatre voix contre Nagano, au Japon, pour le droit d\'accueillir les Jeux olympiques d\'hiver de 1998.').
-sen_id(1166, 449, 'h', 'TRIAL', 'yes', 'Avant Salt Lake City, les Jeux olympiques d\'hiver se déroulaient à Nagano.').
+sen_id(1167, 449, 'p', 'TRIAL', 'yes', 'Des responsables olympiques familiers de la candidature de Salt Lake City pour les Jeux d\'hiver de 2002 ont décrit ces dernières semaines un processus par lequel les responsables olympiques de Salt Lake City ont ciblé les votes de 17 membres africains du CIO après avoir perdu par quatre voix contre Nagano, au Japon, pour le droit d\'accueillir les Jeux olympiques d\'hiver de 1998.').
+sen_id(1168, 449, 'h', 'TRIAL', 'yes', 'Avant Salt Lake City, les Jeux olympiques d\'hiver se déroulaient à Nagano.').
 %problem id = 450
-sen_id(1167, 450, 'p', 'TRIAL', 'unknown', 'Hubble est l\'une des installations les plus remarquables de toute l\'histoire de la science.').
-sen_id(1168, 450, 'h', 'TRIAL', 'unknown', 'Hubulle est un télescope spatial.').
+sen_id(1169, 450, 'p', 'TRIAL', 'unknown', 'Hubble est l\'une des installations les plus remarquables de toute l\'histoire de la science.').
+sen_id(1170, 450, 'h', 'TRIAL', 'unknown', 'Hubulle est un télescope spatial.').
 %problem id = 451
-sen_id(1169, 451, 'p', 'TRIAL', 'yes', 'Jurassic Park est un roman écrit par Michael Crichton.').
-sen_id(1170, 451, 'p', 'TRIAL', 'yes', 'Jurassic Park a été publié en 1990.').
-sen_id(1171, 451, 'h', 'TRIAL', 'yes', 'Michael Crichton est l\'auteur du livre Jurassic Park.').
+sen_id(1171, 451, 'p', 'TRIAL', 'yes', 'Jurassic Park est un roman écrit par Michael Crichton.').
+sen_id(1172, 451, 'p', 'TRIAL', 'yes', 'Jurassic Park a été publié en 1990.').
+sen_id(1173, 451, 'h', 'TRIAL', 'yes', 'Michael Crichton est l\'auteur du livre Jurassic Park.').
 %problem id = 452
-sen_id(1172, 452, 'p', 'TRIAL', 'yes', 'Boris Becker est une véritable légende dans le sport du tennis.').
-sen_id(1173, 452, 'p', 'TRIAL', 'yes', 'À seulement dix-sept ans, il a remporté Wimbledon pour la première fois et est devenu par la suite le joueur de tennis le plus prolifique.').
-sen_id(1174, 452, 'h', 'TRIAL', 'yes', 'Boris Becker est un champion de Wimbledon.').
+sen_id(1174, 452, 'p', 'TRIAL', 'yes', 'Boris Becker est une véritable légende dans le sport du tennis.').
+sen_id(1175, 452, 'p', 'TRIAL', 'yes', 'À seulement dix-sept ans, il a remporté Wimbledon pour la première fois et est devenu par la suite le joueur de tennis le plus prolifique.').
+sen_id(1176, 452, 'h', 'TRIAL', 'yes', 'Boris Becker est un champion de Wimbledon.').
 %problem id = 453
-sen_id(1175, 453, 'p', 'TRIAL', 'unknown', 'Boris Becker est un ancien joueur de tennis professionnel allemand.').
-sen_id(1176, 453, 'h', 'TRIAL', 'unknown', 'Boris Becker est un champion de Wimbledon.').
+sen_id(1177, 453, 'p', 'TRIAL', 'unknown', 'Boris Becker est un ancien joueur de tennis professionnel allemand.').
+sen_id(1178, 453, 'h', 'TRIAL', 'unknown', 'Boris Becker est un champion de Wimbledon.').
 %problem id = 454
-sen_id(1177, 454, 'p', 'TRIAL', 'yes', 'Le 6 août 1945, une bombe atomique a explosé sur Hiroshima avec une force explosive équivalente estimée à 12.500 tonnes de TNT, suivie trois jours plus tard d\'une seconde bombe, plus puissante, sur Nagasaki.').
-sen_id(1178, 454, 'h', 'TRIAL', 'yes', 'En 1945, une bombe atomique a été larguée sur Hiroshima.').
+sen_id(1179, 454, 'p', 'TRIAL', 'yes', 'Le 6 août 1945, une bombe atomique a explosé sur Hiroshima avec une force explosive équivalente estimée à 12.500 tonnes de TNT, suivie trois jours plus tard d\'une seconde bombe, plus puissante, sur Nagasaki.').
+sen_id(1180, 454, 'h', 'TRIAL', 'yes', 'En 1945, une bombe atomique a été larguée sur Hiroshima.').
 %problem id = 455
-sen_id(1179, 455, 'p', 'TRIAL', 'yes', 'Il a interviewé Shigeko Sasamori en décembre 2004.').
-sen_id(1180, 455, 'p', 'TRIAL', 'yes', 'Mme Sasamori avait treize ans lorsque la bombe atomique a été larguée sur Hiroshima (6 août 1945).').
-sen_id(1181, 455, 'h', 'TRIAL', 'yes', 'En 1945, une bombe atomique a été larguée sur Hiroshima.').
+sen_id(1181, 455, 'p', 'TRIAL', 'yes', 'Il a interviewé Shigeko Sasamori en décembre 2004.').
+sen_id(1182, 455, 'p', 'TRIAL', 'yes', 'Mme Sasamori avait treize ans lorsque la bombe atomique a été larguée sur Hiroshima (6 août 1945).').
+sen_id(1183, 455, 'h', 'TRIAL', 'yes', 'En 1945, une bombe atomique a été larguée sur Hiroshima.').
 %problem id = 456
-sen_id(1182, 456, 'p', 'TRIAL', 'yes', 'Le 6 août 1945, la bombe atomique a été larguée sur la ville japonaise d\'Hiroshima.').
-sen_id(1183, 456, 'p', 'TRIAL', 'yes', 'L\'Enola Gay, piloté par le colonel Tibbetts, a été choisi pour effectuer la mission.').
-sen_id(1184, 456, 'p', 'TRIAL', 'yes', 'La mission a été enregistrée comme réussie par le capitaine William S. Parson à 9h20 du matin.').
-sen_id(1185, 456, 'h', 'TRIAL', 'yes', 'En 1945, une bombe atomique a été larguée sur Hiroshima.').
+sen_id(1184, 456, 'p', 'TRIAL', 'yes', 'Le 6 août 1945, la bombe atomique a été larguée sur la ville japonaise d\'Hiroshima.').
+sen_id(1185, 456, 'p', 'TRIAL', 'yes', 'L\'Enola Gay, piloté par le colonel Tibbetts, a été choisi pour effectuer la mission.').
+sen_id(1186, 456, 'p', 'TRIAL', 'yes', 'La mission a été enregistrée comme réussie par le capitaine William S. Parson à 9h20 du matin.').
+sen_id(1187, 456, 'h', 'TRIAL', 'yes', 'En 1945, une bombe atomique a été larguée sur Hiroshima.').
 %problem id = 457
-sen_id(1186, 457, 'p', 'TRIAL', 'yes', 'Même Homer réalise l\'intelligence de l\'action tendue de Jan De Bont.').
-sen_id(1187, 457, 'p', 'TRIAL', 'yes', 'Projections laser, "Speed", écran large avec Keanu Reeves, Dennis Hopper, Sandra Bullock.').
-sen_id(1188, 457, 'h', 'TRIAL', 'yes', 'Le film \'Speed\' a été réalisé par Jan De Bont.').
+sen_id(1188, 457, 'p', 'TRIAL', 'yes', 'Même Homer réalise l\'intelligence de l\'action tendue de Jan De Bont.').
+sen_id(1189, 457, 'p', 'TRIAL', 'yes', 'Projections laser, "Speed", écran large avec Keanu Reeves, Dennis Hopper, Sandra Bullock.').
+sen_id(1190, 457, 'h', 'TRIAL', 'yes', 'Le film \'Speed\' a été réalisé par Jan De Bont.').
 %problem id = 458
-sen_id(1189, 458, 'p', 'TRIAL', 'unknown', 'Selon le réalisateur Kim Ki-duk Le plus gros problème pour les Américains qui comprennent les films coréens est que tous les films d\'action ont la même intrigue.').
-sen_id(1190, 458, 'p', 'TRIAL', 'unknown', 'Par exemple, le film \'Speed\' avec Keanu Reeves.').
-sen_id(1191, 458, 'h', 'TRIAL', 'unknown', 'Le film \'Speed\' a été réalisé par Jan De Bont.').
+sen_id(1191, 458, 'p', 'TRIAL', 'unknown', 'Selon le réalisateur Kim Ki-duk Le plus gros problème pour les Américains qui comprennent les films coréens est que tous les films d\'action ont la même intrigue.').
+sen_id(1192, 458, 'p', 'TRIAL', 'unknown', 'Par exemple, le film \'Speed\' avec Keanu Reeves.').
+sen_id(1193, 458, 'h', 'TRIAL', 'unknown', 'Le film \'Speed\' a été réalisé par Jan De Bont.').
 %problem id = 459
-sen_id(1192, 459, 'p', 'TRIAL', 'unknown', 'Felipe González Márquez (né le 5 mars 1942) est un homme politique socialiste espagnol.').
-sen_id(1193, 459, 'p', 'TRIAL', 'unknown', 'Il a été le secrétaire général du Parti socialiste ouvrier espagnol (PSOE) de 1974 à 1997.').
-sen_id(1194, 459, 'h', 'TRIAL', 'unknown', 'Felipe González est le président de l\'Espagne.').
+sen_id(1194, 459, 'p', 'TRIAL', 'unknown', 'Felipe González Márquez (né le 5 mars 1942) est un homme politique socialiste espagnol.').
+sen_id(1195, 459, 'p', 'TRIAL', 'unknown', 'Il a été le secrétaire général du Parti socialiste ouvrier espagnol (PSOE) de 1974 à 1997.').
+sen_id(1196, 459, 'h', 'TRIAL', 'unknown', 'Felipe González est le président de l\'Espagne.').
 %problem id = 460
-sen_id(1195, 460, 'p', 'TRIAL', 'unknown', 'González Márquez, Felipe est un dirigeant politique espagnol.').
-sen_id(1196, 460, 'p', 'TRIAL', 'unknown', 'Après avoir rejoint ce qui était alors le parti socialiste ouvrier espagnol, González en est devenu le secrétaire général et l\'a fait renaître de la position moribonde dans laquelle il était tombé sous Franco.').
-sen_id(1197, 460, 'h', 'TRIAL', 'unknown', 'Felipe González est le président de l\'Espagne.').
+sen_id(1197, 460, 'p', 'TRIAL', 'unknown', 'González Márquez, Felipe est un dirigeant politique espagnol.').
+sen_id(1198, 460, 'p', 'TRIAL', 'unknown', 'Après avoir rejoint ce qui était alors le parti socialiste ouvrier espagnol, González en est devenu le secrétaire général et l\'a fait renaître de la position moribonde dans laquelle il était tombé sous Franco.').
+sen_id(1199, 460, 'h', 'TRIAL', 'unknown', 'Felipe González est le président de l\'Espagne.').
 %problem id = 461
-sen_id(1198, 461, 'p', 'TRIAL', 'yes', 'En tant que commandant du vaisseau spatial d\'Apollo XI, la première mission d\'alunissage habité, Armstrong a été le premier homme à marcher sur la Lune.').
-sen_id(1199, 461, 'p', 'TRIAL', 'yes', '"C\'est un petit pas pour un homme, un pas de géant pour l\'humanité".').
-sen_id(1200, 461, 'p', 'TRIAL', 'yes', 'Avec ces mots historiques, le rêve de l\'homme à travers les âges a été réalisé.').
-sen_id(1201, 461, 'h', 'TRIAL', 'yes', 'Neil Armstrong a été le premier homme à se poser sur la Lune.').
+sen_id(1200, 461, 'p', 'TRIAL', 'yes', 'En tant que commandant du vaisseau spatial d\'Apollo XI, la première mission d\'alunissage habité, Armstrong a été le premier homme à marcher sur la Lune.').
+sen_id(1201, 461, 'p', 'TRIAL', 'yes', '"C\'est un petit pas pour un homme, un pas de géant pour l\'humanité".').
+sen_id(1202, 461, 'p', 'TRIAL', 'yes', 'Avec ces mots historiques, le rêve de l\'homme à travers les âges a été réalisé.').
+sen_id(1203, 461, 'h', 'TRIAL', 'yes', 'Neil Armstrong a été le premier homme à se poser sur la Lune.').
 %problem id = 462
-sen_id(1202, 462, 'p', 'TRIAL', 'unknown', 'Le cyrillique est une forme d\'alphabet qui est dérivée de l\'alphabet grec.').
-sen_id(1203, 462, 'p', 'TRIAL', 'unknown', 'Les caractères de l\'écriture ont un aspect sensiblement différent de l\'alphabet latin, qui est utilisé dans toute l\'Europe occidentale.').
-sen_id(1204, 462, 'h', 'TRIAL', 'unknown', 'Le cyrillique est un alphabet utilisé pour certaines langues slaves, comme le russe.').
+sen_id(1204, 462, 'p', 'TRIAL', 'unknown', 'Le cyrillique est une forme d\'alphabet qui est dérivée de l\'alphabet grec.').
+sen_id(1205, 462, 'p', 'TRIAL', 'unknown', 'Les caractères de l\'écriture ont un aspect sensiblement différent de l\'alphabet latin, qui est utilisé dans toute l\'Europe occidentale.').
+sen_id(1206, 462, 'h', 'TRIAL', 'unknown', 'Le cyrillique est un alphabet utilisé pour certaines langues slaves, comme le russe.').
 %problem id = 463
-sen_id(1205, 463, 'p', 'TRIAL', 'yes', 'Qin Shi Huang, nom personnel Zheng, était le roi de l\'État chinois de Qin de 247 avant notre ère à 221 avant notre ère, puis le premier empereur d\'une Chine unifiée de 221 avant notre ère à 210 avant notre ère, régnant sous le nom de Premier Empereur.').
-sen_id(1206, 463, 'h', 'TRIAL', 'yes', 'Qin Shi Huang était le premier empereur de Chine.').
+sen_id(1207, 463, 'p', 'TRIAL', 'yes', 'Qin Shi Huang, nom personnel Zheng, était le roi de l\'État chinois de Qin de 247 avant notre ère à 221 avant notre ère, puis le premier empereur d\'une Chine unifiée de 221 avant notre ère à 210 avant notre ère, régnant sous le nom de Premier Empereur.').
+sen_id(1208, 463, 'h', 'TRIAL', 'yes', 'Qin Shi Huang était le premier empereur de Chine.').
 %problem id = 464
-sen_id(1207, 464, 'p', 'TRIAL', 'unknown', 'Les Qin (dont le nom Chine est dérivé) ont établi les frontières approximatives et le système administratif de base que toutes les dynasties suivantes devaient suivre.').
-sen_id(1208, 464, 'h', 'TRIAL', 'unknown', 'Qin Shi Huang était le premier empereur chinois.').
+sen_id(1209, 464, 'p', 'TRIAL', 'unknown', 'Les Qin (dont le nom Chine est dérivé) ont établi les frontières approximatives et le système administratif de base que toutes les dynasties suivantes devaient suivre.').
+sen_id(1210, 464, 'h', 'TRIAL', 'unknown', 'Qin Shi Huang était le premier empereur chinois.').
 %problem id = 465
-sen_id(1209, 465, 'p', 'TRIAL', 'yes', 'À la suite du traité de paix israélo-égyptien de 1979, Israël a accepté de se retirer de la péninsule du Sinaï, en échange de la paix avec son voisin.').
-sen_id(1210, 465, 'p', 'TRIAL', 'yes', 'Pendant plus de deux décennies, la péninsule du Sinaï a accueilli environ 7.000 Israéliens.').
-sen_id(1211, 465, 'h', 'TRIAL', 'yes', 'L\'accord de paix israélo-égyptien a été signé en 1979.').
+sen_id(1211, 465, 'p', 'TRIAL', 'yes', 'À la suite du traité de paix israélo-égyptien de 1979, Israël a accepté de se retirer de la péninsule du Sinaï, en échange de la paix avec son voisin.').
+sen_id(1212, 465, 'p', 'TRIAL', 'yes', 'Pendant plus de deux décennies, la péninsule du Sinaï a accueilli environ 7.000 Israéliens.').
+sen_id(1213, 465, 'h', 'TRIAL', 'yes', 'L\'accord de paix israélo-égyptien a été signé en 1979.').
 %problem id = 466
-sen_id(1212, 466, 'p', 'TRIAL', 'unknown', 'Le Canada et les États-Unis ont signé un accord le 30 janvier 1979 pour modifier le traité afin de permettre la chasse de subsistance des sauvagines.').
-sen_id(1213, 466, 'h', 'TRIAL', 'unknown', 'L\'accord de paix israélo-égyptien a été signé en 1979.').
+sen_id(1214, 466, 'p', 'TRIAL', 'unknown', 'Le Canada et les États-Unis ont signé un accord le 30 janvier 1979 pour modifier le traité afin de permettre la chasse de subsistance des sauvagines.').
+sen_id(1215, 466, 'h', 'TRIAL', 'unknown', 'L\'accord de paix israélo-égyptien a été signé en 1979.').
 %problem id = 467
-sen_id(1214, 467, 'p', 'TRIAL', 'yes', 'En 1979, les dirigeants signent le traité de paix Égypte-Israël sur la pelouse de la Maison Blanche.').
-sen_id(1215, 467, 'p', 'TRIAL', 'yes', 'Les présidents Begin et Sadate ont tous deux reçu le prix Nobel de la paix pour leur travail.').
-sen_id(1216, 467, 'p', 'TRIAL', 'yes', 'Les deux nations ont entretenu des relations pacifiques jusqu\'à ce jour.').
-sen_id(1217, 467, 'h', 'TRIAL', 'yes', 'L\'accord de paix israélo-égyptien a été signé en 1979.').
+sen_id(1216, 467, 'p', 'TRIAL', 'yes', 'En 1979, les dirigeants signent le traité de paix Égypte-Israël sur la pelouse de la Maison Blanche.').
+sen_id(1217, 467, 'p', 'TRIAL', 'yes', 'Les présidents Begin et Sadate ont tous deux reçu le prix Nobel de la paix pour leur travail.').
+sen_id(1218, 467, 'p', 'TRIAL', 'yes', 'Les deux nations ont entretenu des relations pacifiques jusqu\'à ce jour.').
+sen_id(1219, 467, 'h', 'TRIAL', 'yes', 'L\'accord de paix israélo-égyptien a été signé en 1979.').
 %problem id = 468
-sen_id(1218, 468, 'p', 'TRIAL', 'unknown', 'Le président George W. Bush, qui a prononcé le discours d\'ouverture et présenté son père, s\'est extasié sur le navire : "Elle est implacable, elle est inébranlable, elle est inflexible, elle est inarrêtable.').
-sen_id(1219, 468, 'p', 'TRIAL', 'unknown', 'En fait, il aurait dû s\'appeler le Barbara Bush."').
-sen_id(1220, 468, 'h', 'TRIAL', 'unknown', 'Le nom de la femme de George H.W.').
-sen_id(1221, 468, 'h', 'TRIAL', 'unknown', 'Bush est Barbara.').
+sen_id(1220, 468, 'p', 'TRIAL', 'unknown', 'Le président George W. Bush, qui a prononcé le discours d\'ouverture et présenté son père, s\'est extasié sur le navire : "Elle est implacable, elle est inébranlable, elle est inflexible, elle est inarrêtable.').
+sen_id(1221, 468, 'p', 'TRIAL', 'unknown', 'En fait, il aurait dû s\'appeler le Barbara Bush."').
+sen_id(1222, 468, 'h', 'TRIAL', 'unknown', 'Le nom de la femme de George H.W.').
+sen_id(1223, 468, 'h', 'TRIAL', 'unknown', 'Bush est Barbara.').
 %problem id = 469
-sen_id(1222, 469, 'p', 'TRIAL', 'yes', 'George Herbert Walker Bush (né le 12 juin 1924) est l\'ancien 41e président des États-Unis d\'Amérique.').
-sen_id(1223, 469, 'p', 'TRIAL', 'yes', 'Presque immédiatement après son retour de la guerre en décembre 1944, George Bush épouse Barbara Pierce.').
-sen_id(1224, 469, 'h', 'TRIAL', 'yes', 'Le nom de la femme de George H.W.').
-sen_id(1225, 469, 'h', 'TRIAL', 'yes', 'Bush est Barbara.').
+sen_id(1224, 469, 'p', 'TRIAL', 'yes', 'George Herbert Walker Bush (né le 12 juin 1924) est l\'ancien 41e président des États-Unis d\'Amérique.').
+sen_id(1225, 469, 'p', 'TRIAL', 'yes', 'Presque immédiatement après son retour de la guerre en décembre 1944, George Bush épouse Barbara Pierce.').
+sen_id(1226, 469, 'h', 'TRIAL', 'yes', 'Le nom de la femme de George H.W.').
+sen_id(1227, 469, 'h', 'TRIAL', 'yes', 'Bush est Barbara.').
 %problem id = 470
-sen_id(1226, 470, 'p', 'TRIAL', 'yes', 'Gabriel Garcia Marquez est l\'auteur de "Cent ans de solitude", "L\'automne du patriarche" et d\'autres romans.').
-sen_id(1227, 470, 'h', 'TRIAL', 'yes', 'Gabriel Garcia Marquez est un romancier et un écrivain.').
+sen_id(1228, 470, 'p', 'TRIAL', 'yes', 'Gabriel Garcia Marquez est l\'auteur de "Cent ans de solitude", "L\'automne du patriarche" et d\'autres romans.').
+sen_id(1229, 470, 'h', 'TRIAL', 'yes', 'Gabriel Garcia Marquez est un romancier et un écrivain.').
 %problem id = 471
-sen_id(1228, 471, 'p', 'TRIAL', 'no', 'Gabriel Garcia Marquez était un penseur libéral dont la politique de gauche a mis en colère de nombreux politiciens et chefs d\'État conservateurs.').
-sen_id(1229, 471, 'p', 'TRIAL', 'no', 'Son emploi de reporter pour l\'agence de presse cubaine Prensa Latina, en 1960, et son amitié avec Fidel Castro lui ont valu de se voir finalement refuser l\'entrée aux États-Unis pour des raisons politiques.').
-sen_id(1230, 471, 'h', 'TRIAL', 'no', 'Gabriel Garcia Marquez était un homme politique conservateur.').
+sen_id(1230, 471, 'p', 'TRIAL', 'no', 'Gabriel Garcia Marquez était un penseur libéral dont la politique de gauche a mis en colère de nombreux politiciens et chefs d\'État conservateurs.').
+sen_id(1231, 471, 'p', 'TRIAL', 'no', 'Son emploi de reporter pour l\'agence de presse cubaine Prensa Latina, en 1960, et son amitié avec Fidel Castro lui ont valu de se voir finalement refuser l\'entrée aux États-Unis pour des raisons politiques.').
+sen_id(1232, 471, 'h', 'TRIAL', 'no', 'Gabriel Garcia Marquez était un homme politique conservateur.').
 %problem id = 472
-sen_id(1231, 472, 'p', 'TRIAL', 'yes', 'En 1867, Nobel obtient un brevet sur un type spécial de nitroglycérine, qu\'il appelle "dynamite".').
-sen_id(1232, 472, 'p', 'TRIAL', 'yes', 'Cette invention a rapidement prouvé son utilité dans le bâtiment et la construction dans de nombreux pays.').
-sen_id(1233, 472, 'h', 'TRIAL', 'yes', 'Alfred Nobel est l\'inventeur de la dynamite.').
+sen_id(1233, 472, 'p', 'TRIAL', 'yes', 'En 1867, Nobel obtient un brevet sur un type spécial de nitroglycérine, qu\'il appelle "dynamite".').
+sen_id(1234, 472, 'p', 'TRIAL', 'yes', 'Cette invention a rapidement prouvé son utilité dans le bâtiment et la construction dans de nombreux pays.').
+sen_id(1235, 472, 'h', 'TRIAL', 'yes', 'Alfred Nobel est l\'inventeur de la dynamite.').
 %problem id = 473
-sen_id(1234, 473, 'p', 'TRIAL', 'yes', 'Expérimentant sur un radeau ancré sur l\'Elbe, Alfred Nobel tente de rendre la nitroglycérine plus sûre à manipuler.').
-sen_id(1235, 473, 'p', 'TRIAL', 'yes', 'Il découvre que l\'ajout de kieselguhr transforme la nitroglycérine en une pâte que l\'on peut pétrir, et l\'appelle "dynamite".').
-sen_id(1236, 473, 'h', 'TRIAL', 'yes', 'Alfred Nobel est l\'inventeur de la dynamite.').
+sen_id(1236, 473, 'p', 'TRIAL', 'yes', 'Expérimentant sur un radeau ancré sur l\'Elbe, Alfred Nobel tente de rendre la nitroglycérine plus sûre à manipuler.').
+sen_id(1237, 473, 'p', 'TRIAL', 'yes', 'Il découvre que l\'ajout de kieselguhr transforme la nitroglycérine en une pâte que l\'on peut pétrir, et l\'appelle "dynamite".').
+sen_id(1238, 473, 'h', 'TRIAL', 'yes', 'Alfred Nobel est l\'inventeur de la dynamite.').
 %problem id = 474
-sen_id(1237, 474, 'p', 'TRIAL', 'unknown', 'Une société britannique de dynamite (Ardeer, Écosse, Royaume-Uni) est fondée.').
-sen_id(1238, 474, 'p', 'TRIAL', 'unknown', 'En 1877, le nom de la société est changé en Nobel\'s Explosives Company.').
-sen_id(1239, 474, 'h', 'TRIAL', 'unknown', 'Alfred Nobel est l\'inventeur de la dynamite.').
+sen_id(1239, 474, 'p', 'TRIAL', 'unknown', 'Une société britannique de dynamite (Ardeer, Écosse, Royaume-Uni) est fondée.').
+sen_id(1240, 474, 'p', 'TRIAL', 'unknown', 'En 1877, le nom de la société est changé en Nobel\'s Explosives Company.').
+sen_id(1241, 474, 'h', 'TRIAL', 'unknown', 'Alfred Nobel est l\'inventeur de la dynamite.').
 %problem id = 475
-sen_id(1240, 475, 'p', 'TRIAL', 'unknown', 'Euro Disney est l\'un des parcs à thème les plus populaires des EU.').
-sen_id(1241, 475, 'h', 'TRIAL', 'unknown', 'Euro-Disney est un parc de divertissement.').
+sen_id(1242, 475, 'p', 'TRIAL', 'unknown', 'Euro Disney est l\'un des parcs à thème les plus populaires des EU.').
+sen_id(1243, 475, 'h', 'TRIAL', 'unknown', 'Euro-Disney est un parc de divertissement.').
 %problem id = 476
-sen_id(1242, 476, 'p', 'TRIAL', 'yes', 'Le Disneyland de l\'Europe est situé à 30 km à l\'est de Paris.').
-sen_id(1243, 476, 'p', 'TRIAL', 'yes', 'Euro Disney est un immense complexe comprenant des hôtels, des restaurants, des boutiques et un terrain de golf à proximité, en dehors du parc à thème proprement dit.').
-sen_id(1244, 476, 'p', 'TRIAL', 'yes', 'Il offre une expérience bien meilleure que son cousin américain grâce aux merveilles de l\'ingénierie moderne.').
-sen_id(1245, 476, 'h', 'TRIAL', 'yes', 'Euro-Disney est un parc de divertissement.').
+sen_id(1244, 476, 'p', 'TRIAL', 'yes', 'Le Disneyland de l\'Europe est situé à 30 km à l\'est de Paris.').
+sen_id(1245, 476, 'p', 'TRIAL', 'yes', 'Euro Disney est un immense complexe comprenant des hôtels, des restaurants, des boutiques et un terrain de golf à proximité, en dehors du parc à thème proprement dit.').
+sen_id(1246, 476, 'p', 'TRIAL', 'yes', 'Il offre une expérience bien meilleure que son cousin américain grâce aux merveilles de l\'ingénierie moderne.').
+sen_id(1247, 476, 'h', 'TRIAL', 'yes', 'Euro-Disney est un parc de divertissement.').
 %problem id = 477
-sen_id(1246, 477, 'p', 'TRIAL', 'yes', 'Charles de Gaulle est mort en 1970 à l\'âge de quatre-vingts ans.').
-sen_id(1247, 477, 'p', 'TRIAL', 'yes', 'Il avait donc cinquante ans lorsque, officier inconnu récemment promu au grade (temporaire) de général de brigade, il a prononcé depuis Londres sa célèbre émission rejetant la capitulation de la France devant les nazis après la débâcle de mai-juin 1940.').
-sen_id(1248, 477, 'h', 'TRIAL', 'yes', 'Charles de Gaulle est mort en 1970.').
+sen_id(1248, 477, 'p', 'TRIAL', 'yes', 'Charles de Gaulle est mort en 1970 à l\'âge de quatre-vingts ans.').
+sen_id(1249, 477, 'p', 'TRIAL', 'yes', 'Il avait donc cinquante ans lorsque, officier inconnu récemment promu au grade (temporaire) de général de brigade, il a prononcé depuis Londres sa célèbre émission rejetant la capitulation de la France devant les nazis après la débâcle de mai-juin 1940.').
+sen_id(1250, 477, 'h', 'TRIAL', 'yes', 'Charles de Gaulle est mort en 1970.').
 %problem id = 478
-sen_id(1249, 478, 'p', 'TRIAL', 'unknown', 'Charles de Gaulle prend sa retraite de comte et meurt en novembre.').
-sen_id(1250, 478, 'p', 'TRIAL', 'unknown', 'Il a souhaité des funérailles simples pour lui-même : il serait enterré dans son village dans un cercueil en chêne de soixante-douze dollars, porté sur sa tombe par ses concitoyens du village - un aide-boucher, un fromager et un valet de ferme.').
-sen_id(1251, 478, 'h', 'TRIAL', 'unknown', 'Charles de Gaulle est mort en 1970.').
+sen_id(1251, 478, 'p', 'TRIAL', 'unknown', 'Charles de Gaulle prend sa retraite de comte et meurt en novembre.').
+sen_id(1252, 478, 'p', 'TRIAL', 'unknown', 'Il a souhaité des funérailles simples pour lui-même : il serait enterré dans son village dans un cercueil en chêne de soixante-douze dollars, porté sur sa tombe par ses concitoyens du village - un aide-boucher, un fromager et un valet de ferme.').
+sen_id(1253, 478, 'h', 'TRIAL', 'unknown', 'Charles de Gaulle est mort en 1970.').
 %problem id = 479
-sen_id(1252, 479, 'p', 'TRIAL', 'unknown', 'Geneviève de Gaulle-Anthonics, 81 ans, nièce de défunt Charles de Gaulle, est décédée à Paris le 14 février 2002.').
-sen_id(1253, 479, 'p', 'TRIAL', 'unknown', 'Elle a rejoint la résistance française lorsque les Allemands ont occupé Paris.').
-sen_id(1254, 479, 'h', 'TRIAL', 'unknown', 'Charles de Gaulle est mort en 1970.').
+sen_id(1254, 479, 'p', 'TRIAL', 'unknown', 'Geneviève de Gaulle-Anthonics, 81 ans, nièce de défunt Charles de Gaulle, est décédée à Paris le 14 février 2002.').
+sen_id(1255, 479, 'p', 'TRIAL', 'unknown', 'Elle a rejoint la résistance française lorsque les Allemands ont occupé Paris.').
+sen_id(1256, 479, 'h', 'TRIAL', 'unknown', 'Charles de Gaulle est mort en 1970.').
 %problem id = 480
-sen_id(1255, 480, 'p', 'TRIAL', 'unknown', 'La propagande argentine faisait des Gurkhas des sauvages malfaisants qui mangeaient leurs prisonniers de guerre.').
-sen_id(1256, 480, 'p', 'TRIAL', 'unknown', 'Cependant, au lieu de faire combattre les conscrits argentins jusqu\'au bout, elle les a fait fuir, les Gurkhas n\'ont jamais vu plus qu\'une brève résistance symbolique.').
-sen_id(1257, 480, 'h', 'TRIAL', 'unknown', 'Les Gurkhas viennent du Népal.').
+sen_id(1257, 480, 'p', 'TRIAL', 'unknown', 'La propagande argentine faisait des Gurkhas des sauvages malfaisants qui mangeaient leurs prisonniers de guerre.').
+sen_id(1258, 480, 'p', 'TRIAL', 'unknown', 'Cependant, au lieu de faire combattre les conscrits argentins jusqu\'au bout, elle les a fait fuir, les Gurkhas n\'ont jamais vu plus qu\'une brève résistance symbolique.').
+sen_id(1259, 480, 'h', 'TRIAL', 'unknown', 'Les Gurkhas viennent du Népal.').
 %problem id = 481
-sen_id(1258, 481, 'p', 'TRIAL', 'yes', 'Les Gurkhas viennent du Népal montagneux et sont des guerriers extrêmement tenaces - en tant que fantassins, ils ne sont les meilleurs qu\'en combat rapproché jungle/montagne et en situation de type corps à corps.').
-sen_id(1259, 481, 'h', 'TRIAL', 'yes', 'Les Gurkhas viennent du Népal.').
+sen_id(1260, 481, 'p', 'TRIAL', 'yes', 'Les Gurkhas viennent du Népal montagneux et sont des guerriers extrêmement tenaces - en tant que fantassins, ils ne sont les meilleurs qu\'en combat rapproché jungle/montagne et en situation de type corps à corps.').
+sen_id(1261, 481, 'h', 'TRIAL', 'yes', 'Les Gurkhas viennent du Népal.').
 %problem id = 482
-sen_id(1260, 482, 'p', 'TRIAL', 'yes', 'Arromanches-les-Bains ou simplement Arromanches est une ville de Normandie, en France, située sur la côte au cœur de la zone où s\'est déroulé le débarquement de Normandie le jour J, le 6 juin 1944.').
-sen_id(1261, 482, 'h', 'TRIAL', 'yes', 'Le débarquement de Normandie a eu lieu en juin 1944.').
+sen_id(1262, 482, 'p', 'TRIAL', 'yes', 'Arromanches-les-Bains ou simplement Arromanches est une ville de Normandie, en France, située sur la côte au cœur de la zone où s\'est déroulé le débarquement de Normandie le jour J, le 6 juin 1944.').
+sen_id(1263, 482, 'h', 'TRIAL', 'yes', 'Le débarquement de Normandie a eu lieu en juin 1944.').
 %problem id = 483
-sen_id(1262, 483, 'p', 'TRIAL', 'unknown', 'Le D-Day est la plus grande force d\'invasion maritime jamais rassemblée qui s\'est dirigée vers la France le 6 juin 1944.').
-sen_id(1263, 483, 'h', 'TRIAL', 'unknown', 'Le débarquement en Normandie a eu lieu en juin 1944.').
+sen_id(1264, 483, 'p', 'TRIAL', 'unknown', 'Le D-Day est la plus grande force d\'invasion maritime jamais rassemblée qui s\'est dirigée vers la France le 6 juin 1944.').
+sen_id(1265, 483, 'h', 'TRIAL', 'unknown', 'Le débarquement en Normandie a eu lieu en juin 1944.').
 %problem id = 484
-sen_id(1264, 484, 'p', 'TRIAL', 'yes', 'Kohl a participé à la fin de la Seconde Guerre mondiale en tant que soldat adolescent.').
-sen_id(1265, 484, 'p', 'TRIAL', 'yes', 'Il a rejoint l\'Union chrétienne-démocrate (CDU) en 1947.').
-sen_id(1266, 484, 'h', 'TRIAL', 'yes', 'Le nom du parti politique d\'Helmut Kohl est l\'Union chrétienne-démocrate.').
+sen_id(1266, 484, 'p', 'TRIAL', 'yes', 'Kohl a participé à la fin de la Seconde Guerre mondiale en tant que soldat adolescent.').
+sen_id(1267, 484, 'p', 'TRIAL', 'yes', 'Il a rejoint l\'Union chrétienne-démocrate (CDU) en 1947.').
+sen_id(1268, 484, 'h', 'TRIAL', 'yes', 'Le nom du parti politique d\'Helmut Kohl est l\'Union chrétienne-démocrate.').
 %problem id = 485
-sen_id(1267, 485, 'p', 'TRIAL', 'unknown', 'Un journaliste américain d\'origine russe, Klebnikov a été abattu de quatre balles par au moins un assassin dans une voiture de passage alors qu\'il sortait de son bureau ce soir-là à Moscou.').
-sen_id(1268, 485, 'p', 'TRIAL', 'unknown', 'Il est mort peu après son arrivée à l\'hôpital municipal n° 20 de Moscou.').
-sen_id(1269, 485, 'h', 'TRIAL', 'unknown', 'Vladislav Listyev a été assassiné à Moscou.').
+sen_id(1269, 485, 'p', 'TRIAL', 'unknown', 'Un journaliste américain d\'origine russe, Klebnikov a été abattu de quatre balles par au moins un assassin dans une voiture de passage alors qu\'il sortait de son bureau ce soir-là à Moscou.').
+sen_id(1270, 485, 'p', 'TRIAL', 'unknown', 'Il est mort peu après son arrivée à l\'hôpital municipal n° 20 de Moscou.').
+sen_id(1271, 485, 'h', 'TRIAL', 'unknown', 'Vladislav Listyev a été assassiné à Moscou.').
 %problem id = 486
-sen_id(1270, 486, 'p', 'TRIAL', 'unknown', 'Un journaliste américain d\'origine russe, Klebnikov a été abattu de quatre balles par au moins un assassin dans une voiture de passage alors qu\'il sortait de son bureau ce soir-là à Moscou.').
-sen_id(1271, 486, 'h', 'TRIAL', 'unknown', 'Vladislav Listyev a été assassiné à Moscou.').
+sen_id(1272, 486, 'p', 'TRIAL', 'unknown', 'Un journaliste américain d\'origine russe, Klebnikov a été abattu de quatre balles par au moins un assassin dans une voiture de passage alors qu\'il sortait de son bureau ce soir-là à Moscou.').
+sen_id(1273, 486, 'h', 'TRIAL', 'unknown', 'Vladislav Listyev a été assassiné à Moscou.').
 %problem id = 487
-sen_id(1272, 487, 'p', 'TRIAL', 'yes', 'Le directeur de la télévision publique russe Vladislav Listyev est abattu d\'une balle dans le cœur par un inconnu devant son domicile à Moscou.').
-sen_id(1273, 487, 'p', 'TRIAL', 'yes', 'L\'attaque est liée aux opposants à une interdiction de la publicité qu\'il avait proposée pour la chaîne de télévision.').
-sen_id(1274, 487, 'h', 'TRIAL', 'yes', 'Vladislav Listyev a été assassiné à Moscou.').
+sen_id(1274, 487, 'p', 'TRIAL', 'yes', 'Le directeur de la télévision publique russe Vladislav Listyev est abattu d\'une balle dans le cœur par un inconnu devant son domicile à Moscou.').
+sen_id(1275, 487, 'p', 'TRIAL', 'yes', 'L\'attaque est liée aux opposants à une interdiction de la publicité qu\'il avait proposée pour la chaîne de télévision.').
+sen_id(1276, 487, 'h', 'TRIAL', 'yes', 'Vladislav Listyev a été assassiné à Moscou.').
 %problem id = 488
-sen_id(1275, 488, 'p', 'TRIAL', 'yes', 'La dernière pièce majeure de la comète Shoemaker-Levy 9 devait frapper juste après minuit, complétant un anneau de panaches en forme de cratères de gaz surchauffés tourbillonnants et de débris sur des milliers de kilomètres.').
-sen_id(1276, 488, 'p', 'TRIAL', 'yes', '"Elle a frappé Jupiter comme une série de balles de mitrailleuse", a déclaré Eugene Shoemaker, astronome à l\'observatoire Lowell de Flagstaff, en Arizona, qui a contribué à la découverte de la comète l\'année dernière.').
-sen_id(1277, 488, 'h', 'TRIAL', 'yes', 'La comète Shoemaker-Levy a frappé Jupiter.').
+sen_id(1277, 488, 'p', 'TRIAL', 'yes', 'La dernière pièce majeure de la comète Shoemaker-Levy 9 devait frapper juste après minuit, complétant un anneau de panaches en forme de cratères de gaz surchauffés tourbillonnants et de débris sur des milliers de kilomètres.').
+sen_id(1278, 488, 'p', 'TRIAL', 'yes', '"Elle a frappé Jupiter comme une série de balles de mitrailleuse", a déclaré Eugene Shoemaker, astronome à l\'observatoire Lowell de Flagstaff, en Arizona, qui a contribué à la découverte de la comète l\'année dernière.').
+sen_id(1279, 488, 'h', 'TRIAL', 'yes', 'La comète Shoemaker-Levy a frappé Jupiter.').
 %problem id = 489
-sen_id(1278, 489, 'p', 'TRIAL', 'yes', 'Vous fouillez dans votre mémoire visuelle et la voilà : Vermeer, l\'artiste néerlandais du 17e siècle qui a peint des portraits extraordinaires de femmes engagées dans l\'ordinaire -- écrire une lettre, faire de la dentelle ou mettre un collier de perles.').
-sen_id(1279, 489, 'h', 'TRIAL', 'yes', 'Vermeer est un artiste néerlandais du 17e siècle.').
+sen_id(1280, 489, 'p', 'TRIAL', 'yes', 'Vous fouillez dans votre mémoire visuelle et la voilà : Vermeer, l\'artiste néerlandais du 17e siècle qui a peint des portraits extraordinaires de femmes engagées dans l\'ordinaire -- écrire une lettre, faire de la dentelle ou mettre un collier de perles.').
+sen_id(1281, 489, 'h', 'TRIAL', 'yes', 'Vermeer est un artiste néerlandais du 17e siècle.').
 %problem id = 490
-sen_id(1280, 490, 'p', 'TRIAL', 'yes', 'Une collection de témoignages réels par Klaus Pohl, l\'un des dramaturges allemands les plus joués, sa puissance réside moins dans le sens conventionnel du mot drame que dans ce qu\'il révèle - un pays encore profondément en désaccord avec lui-même, un kaléidoscope d\'événements qui ne flatte aucun camp, ni le capitalisme occidental ni l\'ancien régime communiste.').
-sen_id(1281, 490, 'h', 'TRIAL', 'yes', 'Klaus Pohl est un dramaturge allemand.').
+sen_id(1282, 490, 'p', 'TRIAL', 'yes', 'Une collection de témoignages réels par Klaus Pohl, l\'un des dramaturges allemands les plus joués, sa puissance réside moins dans le sens conventionnel du mot drame que dans ce qu\'il révèle - un pays encore profondément en désaccord avec lui-même, un kaléidoscope d\'événements qui ne flatte aucun camp, ni le capitalisme occidental ni l\'ancien régime communiste.').
+sen_id(1283, 490, 'h', 'TRIAL', 'yes', 'Klaus Pohl est un dramaturge allemand.').
 %problem id = 491
-sen_id(1282, 491, 'p', 'TRIAL', 'yes', 'En Inde, les tapis sont surtout fabriqués dans l\'Uttar Pradesh, qui a adopté en 1986 une "loi sur l\'abolition et la réglementation du travail des enfants".').
-sen_id(1283, 491, 'h', 'TRIAL', 'yes', 'La loi sur l\'abolition et la réglementation du travail des enfants a été adoptée en 1986.').
+sen_id(1284, 491, 'p', 'TRIAL', 'yes', 'En Inde, les tapis sont surtout fabriqués dans l\'Uttar Pradesh, qui a adopté en 1986 une "loi sur l\'abolition et la réglementation du travail des enfants".').
+sen_id(1285, 491, 'h', 'TRIAL', 'yes', 'La loi sur l\'abolition et la réglementation du travail des enfants a été adoptée en 1986.').
 %problem id = 492
-sen_id(1284, 492, 'p', 'TRIAL', 'unknown', 'Victor Emmanuel est né le 11 novembre 1869 à Naples.').
-sen_id(1285, 492, 'p', 'TRIAL', 'unknown', 'Après l\'assassinat de son père, Umberto I, en 1900, Victor Emmanuel succède au trône.').
-sen_id(1286, 492, 'h', 'TRIAL', 'unknown', 'Victor Emmanuel III a été roi d\'Italie de 1900 à 1946.').
+sen_id(1286, 492, 'p', 'TRIAL', 'unknown', 'Victor Emmanuel est né le 11 novembre 1869 à Naples.').
+sen_id(1287, 492, 'p', 'TRIAL', 'unknown', 'Après l\'assassinat de son père, Umberto I, en 1900, Victor Emmanuel succède au trône.').
+sen_id(1288, 492, 'h', 'TRIAL', 'unknown', 'Victor Emmanuel III a été roi d\'Italie de 1900 à 1946.').
 %problem id = 493
-sen_id(1287, 493, 'p', 'TRIAL', 'yes', 'Le roi Victor Emmanuel III d\'Italie a régné de 1900 à 1946.').
-sen_id(1288, 493, 'h', 'TRIAL', 'yes', 'Victor Emmanuel III était roi d\'Italie de 1900 à 1946.').
+sen_id(1289, 493, 'p', 'TRIAL', 'yes', 'Le roi Victor Emmanuel III d\'Italie a régné de 1900 à 1946.').
+sen_id(1290, 493, 'h', 'TRIAL', 'yes', 'Victor Emmanuel III était roi d\'Italie de 1900 à 1946.').
 %problem id = 494
-sen_id(1289, 494, 'p', 'TRIAL', 'unknown', 'Victor Emmanuel III cède la plupart de ses pouvoirs à son fils Umberto II en 1944, lorsque ce dernier est nommé lieutenant général du royaume, et abdique finalement en 1946.').
-sen_id(1290, 494, 'h', 'TRIAL', 'unknown', 'Victor Emmanuel III a été roi d\'Italie de 1900 à 1946.').
+sen_id(1291, 494, 'p', 'TRIAL', 'unknown', 'Victor Emmanuel III cède la plupart de ses pouvoirs à son fils Umberto II en 1944, lorsque ce dernier est nommé lieutenant général du royaume, et abdique finalement en 1946.').
+sen_id(1292, 494, 'h', 'TRIAL', 'unknown', 'Victor Emmanuel III a été roi d\'Italie de 1900 à 1946.').
 %problem id = 495
-sen_id(1291, 495, 'p', 'TRIAL', 'yes', 'Victor Emmanuel III, 1869-1947, roi d\'Italie (1900-1946), empereur d\'Ethiopie (1936-43), roi d\'Albanie (1939-43), fils et successeur d\'Humbert I.').
-sen_id(1292, 495, 'h', 'TRIAL', 'yes', 'Victor Emmanuel III fut roi d\'Italie de 1900 à 1946.').
+sen_id(1293, 495, 'p', 'TRIAL', 'yes', 'Victor Emmanuel III, 1869-1947, roi d\'Italie (1900-1946), empereur d\'Ethiopie (1936-43), roi d\'Albanie (1939-43), fils et successeur d\'Humbert I.').
+sen_id(1294, 495, 'h', 'TRIAL', 'yes', 'Victor Emmanuel III fut roi d\'Italie de 1900 à 1946.').
 %problem id = 496
-sen_id(1293, 496, 'p', 'TRIAL', 'yes', 'Franz Liszt (hongrois : Liszt Ferenc) était un pianiste virtuose et compositeur hongrois/autrichien qui a vécu de 1811 à 1886.').
-sen_id(1294, 496, 'p', 'TRIAL', 'yes', 'Liszt est largement considéré comme l\'un des plus grands virtuoses du piano de tous les temps, et certainement le plus célèbre du XIXe siècle.').
-sen_id(1295, 496, 'h', 'TRIAL', 'yes', 'Franz Liszt a vécu de 1811 à 1886.').
+sen_id(1295, 496, 'p', 'TRIAL', 'yes', 'Franz Liszt (hongrois : Liszt Ferenc) était un pianiste virtuose et compositeur hongrois/autrichien qui a vécu de 1811 à 1886.').
+sen_id(1296, 496, 'p', 'TRIAL', 'yes', 'Liszt est largement considéré comme l\'un des plus grands virtuoses du piano de tous les temps, et certainement le plus célèbre du XIXe siècle.').
+sen_id(1297, 496, 'h', 'TRIAL', 'yes', 'Franz Liszt a vécu de 1811 à 1886.').
 %problem id = 497
-sen_id(1296, 497, 'p', 'TRIAL', 'unknown', 'L\'Altenburg est situé dans la rue Jenaer qui se trouve juste à l\'extérieur du centre-ville de Weimar, au-delà du parc Ilm.').
-sen_id(1297, 497, 'p', 'TRIAL', 'unknown', 'Il a été construit en 1810-1811 et pendant les années qui ont suivi 1848, la princesse Carolyne de Sayn Wittgenstein et son mari, Franz Liszt, y ont vécu.').
-sen_id(1298, 497, 'h', 'TRIAL', 'unknown', 'Franz Liszt a vécu de 1811 à 1886.').
+sen_id(1298, 497, 'p', 'TRIAL', 'unknown', 'L\'Altenburg est situé dans la rue Jenaer qui se trouve juste à l\'extérieur du centre-ville de Weimar, au-delà du parc Ilm.').
+sen_id(1299, 497, 'p', 'TRIAL', 'unknown', 'Il a été construit en 1810-1811 et pendant les années qui ont suivi 1848, la princesse Carolyne de Sayn Wittgenstein et son mari, Franz Liszt, y ont vécu.').
+sen_id(1300, 497, 'h', 'TRIAL', 'unknown', 'Franz Liszt a vécu de 1811 à 1886.').
 %problem id = 498
-sen_id(1299, 498, 'p', 'TRIAL', 'yes', 'Franz Liszt, un compositeur hongrois qui a vécu de 1811 à 1886 était l\'équivalent d\'une rock star à son époque.').
-sen_id(1300, 498, 'p', 'TRIAL', 'yes', 'Ses compositions pour piano étaient extrêmement populaires et il donnait souvent des concerts pour sa multitude de fans.').
-sen_id(1301, 498, 'p', 'TRIAL', 'yes', 'Liszt a également été le pionnier de nombreuses techniques musicales, notamment le poème symphonique et la technique de transformation des thèmes.').
-sen_id(1302, 498, 'h', 'TRIAL', 'yes', 'Franz Liszt a vécu de 1811 à 1886.').
+sen_id(1301, 498, 'p', 'TRIAL', 'yes', 'Franz Liszt, un compositeur hongrois qui a vécu de 1811 à 1886 était l\'équivalent d\'une rock star à son époque.').
+sen_id(1302, 498, 'p', 'TRIAL', 'yes', 'Ses compositions pour piano étaient extrêmement populaires et il donnait souvent des concerts pour sa multitude de fans.').
+sen_id(1303, 498, 'p', 'TRIAL', 'yes', 'Liszt a également été le pionnier de nombreuses techniques musicales, notamment le poème symphonique et la technique de transformation des thèmes.').
+sen_id(1304, 498, 'h', 'TRIAL', 'yes', 'Franz Liszt a vécu de 1811 à 1886.').
 %problem id = 499
-sen_id(1303, 499, 'p', 'TRIAL', 'yes', 'Eschyle est né en 525 avant JC, et a passé sa jeunesse comme soldat dans l\'armée athénienne.').
-sen_id(1304, 499, 'p', 'TRIAL', 'yes', 'Il a écrit Les Perses alors qu\'il avait 53 ans, mais c\'est sa plus ancienne œuvre conservée.').
-sen_id(1305, 499, 'h', 'TRIAL', 'yes', '"Les Perses" a été écrit par Eschyle.').
+sen_id(1305, 499, 'p', 'TRIAL', 'yes', 'Eschyle est né en 525 avant JC, et a passé sa jeunesse comme soldat dans l\'armée athénienne.').
+sen_id(1306, 499, 'p', 'TRIAL', 'yes', 'Il a écrit Les Perses alors qu\'il avait 53 ans, mais c\'est sa plus ancienne œuvre conservée.').
+sen_id(1307, 499, 'h', 'TRIAL', 'yes', '"Les Perses" a été écrit par Eschyle.').
 %problem id = 500
-sen_id(1306, 500, 'p', 'TRIAL', 'unknown', 'Pour écrire "Les Perses", qui débute jeudi au théâtre Aurora de Berkeley, Ellen McLaughlin a passé six jours.').
-sen_id(1307, 500, 'p', 'TRIAL', 'unknown', 'Compte tenu de l\'orientation de la politique étrangère américaine, dit McLaughlin, les leçons de "Les Perses" sont particulièrement cruciales aujourd\'hui, 2.500 ans après qu\'il a été écrit.').
-sen_id(1308, 500, 'h', 'TRIAL', 'unknown', '"Les Perses" a été écrit par Eschyle.').
+sen_id(1308, 500, 'p', 'TRIAL', 'unknown', 'Pour écrire "Les Perses", qui débute jeudi au théâtre Aurora de Berkeley, Ellen McLaughlin a passé six jours.').
+sen_id(1309, 500, 'p', 'TRIAL', 'unknown', 'Compte tenu de l\'orientation de la politique étrangère américaine, dit McLaughlin, les leçons de "Les Perses" sont particulièrement cruciales aujourd\'hui, 2.500 ans après qu\'il a été écrit.').
+sen_id(1310, 500, 'h', 'TRIAL', 'unknown', '"Les Perses" a été écrit par Eschyle.').
 %problem id = 501
-sen_id(1309, 501, 'p', 'TRIAL', 'unknown', 'Le beau-frère de Mohammad Oreibi al-Khalifa, le nouveau juge en chef du procès pour génocide de Saddam Hussein, a été abattu, a-t-on appris de sources policières.').
-sen_id(1310, 501, 'h', 'TRIAL', 'unknown', 'Le beau-père de Mohammad Khalifa est Oussama Ben Laden.').
+sen_id(1311, 501, 'p', 'TRIAL', 'unknown', 'Le beau-frère de Mohammad Oreibi al-Khalifa, le nouveau juge en chef du procès pour génocide de Saddam Hussein, a été abattu, a-t-on appris de sources policières.').
+sen_id(1312, 501, 'h', 'TRIAL', 'unknown', 'Le beau-père de Mohammad Khalifa est Oussama Ben Laden.').
 %problem id = 502
-sen_id(1311, 502, 'p', 'TRIAL', 'no', 'Une association caritative musulmane aux Philippines, soutenue par Ben Laden et dirigée par un beau-frère, Mohammad Jamal Khalifa, a financé Shah et les autres comploteurs.').
-sen_id(1312, 502, 'h', 'TRIAL', 'no', 'Le beau-père de Mohammad Khalifa est Oussama Ben Laden.').
+sen_id(1313, 502, 'p', 'TRIAL', 'no', 'Une association caritative musulmane aux Philippines, soutenue par Ben Laden et dirigée par un beau-frère, Mohammad Jamal Khalifa, a financé Shah et les autres comploteurs.').
+sen_id(1314, 502, 'h', 'TRIAL', 'no', 'Le beau-père de Mohammad Khalifa est Oussama Ben Laden.').
 %problem id = 503
-sen_id(1313, 503, 'p', 'TRIAL', 'yes', 'Spirou a été créé en 1938 par Rob-Vel, qui a vendu les droits aux éditions Dupuis au début des années \'40.').
-sen_id(1314, 503, 'p', 'TRIAL', 'yes', 'D\'autres artistes comme Jije (Joseph Gillain) se sont occupés de la bande dessinée.').
-sen_id(1315, 503, 'h', 'TRIAL', 'yes', 'Spirou a été créé par Rob-Vel.').
+sen_id(1315, 503, 'p', 'TRIAL', 'yes', 'Spirou a été créé en 1938 par Rob-Vel, qui a vendu les droits aux éditions Dupuis au début des années \'40.').
+sen_id(1316, 503, 'p', 'TRIAL', 'yes', 'D\'autres artistes comme Jije (Joseph Gillain) se sont occupés de la bande dessinée.').
+sen_id(1317, 503, 'h', 'TRIAL', 'yes', 'Spirou a été créé par Rob-Vel.').
 %problem id = 504
-sen_id(1316, 504, 'p', 'TRIAL', 'no', 'Tintin, les Schtroumpfs, Boule et Bill, Astérix, Natacha, Spirou et d\'autres personnages légendaires ont été créés par des artistes talentueux comme Hergé, Morris, Franquin et Walthéry.').
-sen_id(1317, 504, 'h', 'TRIAL', 'no', 'Spirou a été créé par Rob-Vel.').
+sen_id(1318, 504, 'p', 'TRIAL', 'no', 'Tintin, les Schtroumpfs, Boule et Bill, Astérix, Natacha, Spirou et d\'autres personnages légendaires ont été créés par des artistes talentueux comme Hergé, Morris, Franquin et Walthéry.').
+sen_id(1319, 504, 'h', 'TRIAL', 'no', 'Spirou a été créé par Rob-Vel.').
 %problem id = 505
-sen_id(1318, 505, 'p', 'TRIAL', 'yes', 'Mars est considérée comme la planète rouge en raison de sa couleur rouge vif.').
-sen_id(1319, 505, 'h', 'TRIAL', 'yes', 'Mars est appelée "la planète rouge".').
+sen_id(1320, 505, 'p', 'TRIAL', 'yes', 'Mars est considérée comme la planète rouge en raison de sa couleur rouge vif.').
+sen_id(1321, 505, 'h', 'TRIAL', 'yes', 'Mars est appelée "la planète rouge".').
 %problem id = 506
-sen_id(1320, 506, 'p', 'TRIAL', 'yes', 'La planète a probablement reçu ce nom en raison de sa couleur rouge ; Mars est parfois appelée "la planète rouge".').
-sen_id(1321, 506, 'h', 'TRIAL', 'yes', 'Mars est appelée "la planète rouge".').
+sen_id(1322, 506, 'p', 'TRIAL', 'yes', 'La planète a probablement reçu ce nom en raison de sa couleur rouge ; Mars est parfois appelée "la planète rouge".').
+sen_id(1323, 506, 'h', 'TRIAL', 'yes', 'Mars est appelée "la planète rouge".').
 %problem id = 507
-sen_id(1322, 507, 'p', 'TRIAL', 'unknown', 'On pense que la planète rouge n\'a pas de champ magnétique.').
-sen_id(1323, 507, 'p', 'TRIAL', 'unknown', 'Elle subit l\'effet de serre qui élève la température d\'environ 5 degrés.').
-sen_id(1324, 507, 'p', 'TRIAL', 'unknown', 'Elle possède une atmosphère très fine composée de 95,3\% de dioxyde de carbone, 2,7\% d\'azote, 1,6\% d\'argon, 0,15\% d\'oxygène et 0,03\% d\'eau.').
-sen_id(1325, 507, 'h', 'TRIAL', 'unknown', 'Mars est appelée la planète rouge.').
+sen_id(1324, 507, 'p', 'TRIAL', 'unknown', 'On pense que la planète rouge n\'a pas de champ magnétique.').
+sen_id(1325, 507, 'p', 'TRIAL', 'unknown', 'Elle subit l\'effet de serre qui élève la température d\'environ 5 degrés.').
+sen_id(1326, 507, 'p', 'TRIAL', 'unknown', 'Elle possède une atmosphère très fine composée de 95,3\% de dioxyde de carbone, 2,7\% d\'azote, 1,6\% d\'argon, 0,15\% d\'oxygène et 0,03\% d\'eau.').
+sen_id(1327, 507, 'h', 'TRIAL', 'unknown', 'Mars est appelée la planète rouge.').
 %problem id = 508
-sen_id(1326, 508, 'p', 'TRIAL', 'yes', 'Le bouddhisme theravada est la religion officielle de la Thaïlande et la religion d\'environ 95\% de sa population.').
-sen_id(1327, 508, 'p', 'TRIAL', 'yes', 'Le gouvernement autorise la diversité religieuse, et les autres grandes religions sont représentées.').
-sen_id(1328, 508, 'p', 'TRIAL', 'yes', 'Le culte des esprits et l\'animisme sont largement pratiqués.').
-sen_id(1329, 508, 'h', 'TRIAL', 'yes', 'La religion officielle de la Thaïlande est le bouddhisme Theravada.').
+sen_id(1328, 508, 'p', 'TRIAL', 'yes', 'Le bouddhisme theravada est la religion officielle de la Thaïlande et la religion d\'environ 95\% de sa population.').
+sen_id(1329, 508, 'p', 'TRIAL', 'yes', 'Le gouvernement autorise la diversité religieuse, et les autres grandes religions sont représentées.').
+sen_id(1330, 508, 'p', 'TRIAL', 'yes', 'Le culte des esprits et l\'animisme sont largement pratiqués.').
+sen_id(1331, 508, 'h', 'TRIAL', 'yes', 'La religion officielle de la Thaïlande est le bouddhisme Theravada.').
 %problem id = 509
-sen_id(1330, 509, 'p', 'TRIAL', 'unknown', 'La religion officielle de la Thaïlande est le bouddhisme, qui revendique l\'allégeance de la plupart des Thaïlandais.').
-sen_id(1331, 509, 'p', 'TRIAL', 'unknown', 'Leur identité culturelle semble presque indissociablement liée aux traditions bouddhistes.').
-sen_id(1332, 509, 'p', 'TRIAL', 'unknown', 'Le peuple pratique un bouddhisme folklorique qui comprend aussi un système élaboré de culte des esprits.').
-sen_id(1333, 509, 'h', 'TRIAL', 'unknown', 'La religion officielle de la Thaïlande est le bouddhisme Theravada.').
+sen_id(1332, 509, 'p', 'TRIAL', 'unknown', 'La religion officielle de la Thaïlande est le bouddhisme, qui revendique l\'allégeance de la plupart des Thaïlandais.').
+sen_id(1333, 509, 'p', 'TRIAL', 'unknown', 'Leur identité culturelle semble presque indissociablement liée aux traditions bouddhistes.').
+sen_id(1334, 509, 'p', 'TRIAL', 'unknown', 'Le peuple pratique un bouddhisme folklorique qui comprend aussi un système élaboré de culte des esprits.').
+sen_id(1335, 509, 'h', 'TRIAL', 'unknown', 'La religion officielle de la Thaïlande est le bouddhisme Theravada.').
 %problem id = 510
-sen_id(1334, 510, 'p', 'TRIAL', 'unknown', 'La religion officielle est le bouddhisme Theravada, qui est également pratiqué dans les pays voisins, le Laos, la Thaïlande, la Birmanie et le Sri Lanka.').
-sen_id(1335, 510, 'h', 'TRIAL', 'unknown', 'La religion officielle de la Thaïlande est le bouddhisme Theravada.').
+sen_id(1336, 510, 'p', 'TRIAL', 'unknown', 'La religion officielle est le bouddhisme Theravada, qui est également pratiqué dans les pays voisins, le Laos, la Thaïlande, la Birmanie et le Sri Lanka.').
+sen_id(1337, 510, 'h', 'TRIAL', 'unknown', 'La religion officielle de la Thaïlande est le bouddhisme Theravada.').
 %problem id = 511
-sen_id(1336, 511, 'p', 'TRIAL', 'yes', 'Le français est la langue maternelle de 80,9 \% des Québécois, tandis que 7,8 \% citent l\'anglais comme langue maternelle.').
-sen_id(1337, 511, 'h', 'TRIAL', 'yes', 'Le français est la langue la plus parlée au Québec.').
+sen_id(1338, 511, 'p', 'TRIAL', 'yes', 'Le français est la langue maternelle de 80,9 \% des Québécois, tandis que 7,8 \% citent l\'anglais comme langue maternelle.').
+sen_id(1339, 511, 'h', 'TRIAL', 'yes', 'Le français est la langue la plus parlée au Québec.').
 %problem id = 512
-sen_id(1338, 512, 'p', 'TRIAL', 'yes', 'Veuillez noter que l\'arabe est la langue du Coran, il est donc préférable de l\'apprendre pour comprendre clairement tous les miracles du Coran.').
-sen_id(1339, 512, 'h', 'TRIAL', 'yes', 'L\'arabe est la langue du Coran.').
+sen_id(1340, 512, 'p', 'TRIAL', 'yes', 'Veuillez noter que l\'arabe est la langue du Coran, il est donc préférable de l\'apprendre pour comprendre clairement tous les miracles du Coran.').
+sen_id(1341, 512, 'h', 'TRIAL', 'yes', 'L\'arabe est la langue du Coran.').
 %problem id = 513
-sen_id(1340, 513, 'p', 'TRIAL', 'yes', 'La langue arabe est la porte d\'entrée à l\'islam et la langue du saint Coran et des traditions prophétiques.').
-sen_id(1341, 513, 'p', 'TRIAL', 'yes', 'Par conséquent, s\'éloigner des études arabes conduit à l\'innovation et à la mécréance.').
-sen_id(1342, 513, 'h', 'TRIAL', 'yes', 'L\'arabe est la langue du Coran.').
+sen_id(1342, 513, 'p', 'TRIAL', 'yes', 'La langue arabe est la porte d\'entrée à l\'islam et la langue du saint Coran et des traditions prophétiques.').
+sen_id(1343, 513, 'p', 'TRIAL', 'yes', 'Par conséquent, s\'éloigner des études arabes conduit à l\'innovation et à la mécréance.').
+sen_id(1344, 513, 'h', 'TRIAL', 'yes', 'L\'arabe est la langue du Coran.').
 %problem id = 514
-sen_id(1343, 514, 'p', 'TRIAL', 'unknown', 'Le Corpus des journaux norvégiens est un vaste corpus auto-extensible de textes de journaux norvégiens.').
-sen_id(1344, 514, 'p', 'TRIAL', 'unknown', 'La collecte de ce corpus dynamique et en croissance continue a commencé en 1998.').
-sen_id(1345, 514, 'h', 'TRIAL', 'unknown', 'Dagbladet est un journal norvégien.').
+sen_id(1345, 514, 'p', 'TRIAL', 'unknown', 'Le Corpus des journaux norvégiens est un vaste corpus auto-extensible de textes de journaux norvégiens.').
+sen_id(1346, 514, 'p', 'TRIAL', 'unknown', 'La collecte de ce corpus dynamique et en croissance continue a commencé en 1998.').
+sen_id(1347, 514, 'h', 'TRIAL', 'unknown', 'Dagbladet est un journal norvégien.').
 %problem id = 515
-sen_id(1346, 515, 'p', 'TRIAL', 'yes', 'Le journal norvégien Dagbladet a imprimé un article sur la "page de l\'intolérance".').
-sen_id(1347, 515, 'h', 'TRIAL', 'yes', 'Dagbladet est un journal norvégien.').
+sen_id(1348, 515, 'p', 'TRIAL', 'yes', 'Le journal norvégien Dagbladet a imprimé un article sur la "page de l\'intolérance".').
+sen_id(1349, 515, 'h', 'TRIAL', 'yes', 'Dagbladet est un journal norvégien.').
 %problem id = 516
-sen_id(1348, 516, 'p', 'TRIAL', 'yes', 'Le plus grand journal de Norvège, Verdens Gang, imprime une lettre au rédacteur en chef écrite par Joe Harrington et moi-même.').
-sen_id(1349, 516, 'h', 'TRIAL', 'yes', 'Verdens Gang est un journal norvégien.').
+sen_id(1350, 516, 'p', 'TRIAL', 'yes', 'Le plus grand journal de Norvège, Verdens Gang, imprime une lettre au rédacteur en chef écrite par Joe Harrington et moi-même.').
+sen_id(1351, 516, 'h', 'TRIAL', 'yes', 'Verdens Gang est un journal norvégien.').
 %problem id = 517
-sen_id(1350, 517, 'p', 'TRIAL', 'yes', 'Un certain nombre d\'écoles et de collèges de premier cycle l\'ont également reçu, tout comme la Croix-Rouge française, l\'abbaye de Notre-Dame des Dombes et la compagnie ferroviaire française SNCF.').
-sen_id(1351, 517, 'h', 'TRIAL', 'yes', 'La compagnie ferroviaire française s\'appelle SNCF.').
+sen_id(1352, 517, 'p', 'TRIAL', 'yes', 'Un certain nombre d\'écoles et de collèges de premier cycle l\'ont également reçu, tout comme la Croix-Rouge française, l\'abbaye de Notre-Dame des Dombes et la compagnie ferroviaire française SNCF.').
+sen_id(1353, 517, 'h', 'TRIAL', 'yes', 'La compagnie ferroviaire française s\'appelle SNCF.').
 %problem id = 518
-sen_id(1352, 518, 'p', 'TRIAL', 'unknown', 'Notez que les SBB, CFF et FFS se distinguent pour la principale compagnie ferroviaire, en allemand, français et italien.').
-sen_id(1353, 518, 'h', 'TRIAL', 'unknown', 'La compagnie ferroviaire française s\'appelle SNCF.').
+sen_id(1354, 518, 'p', 'TRIAL', 'unknown', 'Notez que les SBB, CFF et FFS se distinguent pour la principale compagnie ferroviaire, en allemand, français et italien.').
+sen_id(1355, 518, 'h', 'TRIAL', 'unknown', 'La compagnie ferroviaire française s\'appelle SNCF.').
 %problem id = 519
-sen_id(1354, 519, 'p', 'TRIAL', 'unknown', 'Aux Jeux olympiques de 1932 à Los Angeles, Didrikson remporte des médailles d\'or au javelot (record olympique) et aux 80 mètres haies (record du monde), ainsi qu\'une médaille d\'argent au saut en hauteur (part du record du monde).').
-sen_id(1355, 519, 'h', 'TRIAL', 'unknown', '2,45 m est le record du monde du saut en hauteur.').
+sen_id(1356, 519, 'p', 'TRIAL', 'unknown', 'Aux Jeux olympiques de 1932 à Los Angeles, Didrikson remporte des médailles d\'or au javelot (record olympique) et aux 80 mètres haies (record du monde), ainsi qu\'une médaille d\'argent au saut en hauteur (part du record du monde).').
+sen_id(1357, 519, 'h', 'TRIAL', 'unknown', '2,45 m est le record du monde du saut en hauteur.').
 %problem id = 520
-sen_id(1356, 520, 'p', 'TRIAL', 'unknown', 'Le saut de Beamon était un record du monde qui a éclipsé le record précédent de 21 3/4 pouces.').
-sen_id(1357, 520, 'p', 'TRIAL', 'unknown', 'Ce saut est toujours un record olympique, et est resté un record du monde jusqu\'à ce que Mike Powell fasse un saut de 29\' 4 1/2" aux championnats du monde de 1991 à Tokyo.').
-sen_id(1358, 520, 'h', 'TRIAL', 'unknown', '2,45 m est le record du monde du saut en hauteur.').
+sen_id(1358, 520, 'p', 'TRIAL', 'unknown', 'Le saut de Beamon était un record du monde qui a éclipsé le record précédent de 21 3/4 pouces.').
+sen_id(1359, 520, 'p', 'TRIAL', 'unknown', 'Ce saut est toujours un record olympique, et est resté un record du monde jusqu\'à ce que Mike Powell fasse un saut de 29\' 4 1/2" aux championnats du monde de 1991 à Tokyo.').
+sen_id(1360, 520, 'h', 'TRIAL', 'unknown', '2,45 m est le record du monde du saut en hauteur.').
 %problem id = 521
-sen_id(1359, 521, 'p', 'TRIAL', 'unknown', '4 février 2005, Irak.').
-sen_id(1360, 521, 'p', 'TRIAL', 'unknown', 'Avec plus des deux tiers des 3,3 millions de votes comptés dans l\'élection législative irakienne, l\'Alliance irakienne unie a une avance considérable sur la Liste irakienne du Premier ministre irakien par intérim Iyad Allawi, qui traîne avec environ 17\% du décompte actuel.').
-sen_id(1361, 521, 'h', 'TRIAL', 'unknown', 'Les premières élections libres en Irak ont eu lieu en janvier 2005.').
+sen_id(1361, 521, 'p', 'TRIAL', 'unknown', '4 février 2005, Irak.').
+sen_id(1362, 521, 'p', 'TRIAL', 'unknown', 'Avec plus des deux tiers des 3,3 millions de votes comptés dans l\'élection législative irakienne, l\'Alliance irakienne unie a une avance considérable sur la Liste irakienne du Premier ministre irakien par intérim Iyad Allawi, qui traîne avec environ 17\% du décompte actuel.').
+sen_id(1363, 521, 'h', 'TRIAL', 'unknown', 'Les premières élections libres en Irak ont eu lieu en janvier 2005.').
 %problem id = 522
-sen_id(1362, 522, 'p', 'TRIAL', 'unknown', 'L\'ancien président taïwanais Lee Teng-hui, le chef spirituel du TSU, parti indépendantiste, et le premier ministre Frank Hsieh, membre du Parti démocratique progressiste, participent également à la marche.').
-sen_id(1363, 522, 'h', 'TRIAL', 'unknown', 'Chen Shui-bian est le nouveau président de Taïwan.').
+sen_id(1364, 522, 'p', 'TRIAL', 'unknown', 'L\'ancien président taïwanais Lee Teng-hui, le chef spirituel du TSU, parti indépendantiste, et le premier ministre Frank Hsieh, membre du Parti démocratique progressiste, participent également à la marche.').
+sen_id(1365, 522, 'h', 'TRIAL', 'unknown', 'Chen Shui-bian est le nouveau président de Taïwan.').
 %problem id = 523
-sen_id(1364, 523, 'p', 'TRIAL', 'unknown', 'L\'actuel président de la Banque centrale du Brésil, Henrique Meirelles, est accusé de fraude financière entre autres accusations.').
-sen_id(1365, 523, 'h', 'TRIAL', 'unknown', 'L\'actuel président du Honduras est Manuel Zelaya.').
+sen_id(1366, 523, 'p', 'TRIAL', 'unknown', 'L\'actuel président de la Banque centrale du Brésil, Henrique Meirelles, est accusé de fraude financière entre autres accusations.').
+sen_id(1367, 523, 'h', 'TRIAL', 'unknown', 'L\'actuel président du Honduras est Manuel Zelaya.').
 %problem id = 524
-sen_id(1366, 524, 'p', 'TRIAL', 'unknown', 'Geoscience Australia a déclaré que le séisme de 5,3 n\'avait pas généré de tsunami.').
-sen_id(1367, 524, 'p', 'TRIAL', 'unknown', 'Le séisme de 2004 dans l\'océan Indien, d\'une magnitude de 9,0, a déclenché le 26 décembre 2004 une série de tsunamis meurtriers qui ont tué plus de 270.000 personnes, ce qui en fait le tsunami le plus meurtrier de l\'histoire enregistrée.').
-sen_id(1368, 524, 'h', 'TRIAL', 'unknown', 'Un tsunami est une série de vagues créées lorsqu\'une masse d\'eau se déplace rapidement à une échelle massive.').
+sen_id(1368, 524, 'p', 'TRIAL', 'unknown', 'Geoscience Australia a déclaré que le séisme de 5,3 n\'avait pas généré de tsunami.').
+sen_id(1369, 524, 'p', 'TRIAL', 'unknown', 'Le séisme de 2004 dans l\'océan Indien, d\'une magnitude de 9,0, a déclenché le 26 décembre 2004 une série de tsunamis meurtriers qui ont tué plus de 270.000 personnes, ce qui en fait le tsunami le plus meurtrier de l\'histoire enregistrée.').
+sen_id(1370, 524, 'h', 'TRIAL', 'unknown', 'Un tsunami est une série de vagues créées lorsqu\'une masse d\'eau se déplace rapidement à une échelle massive.').
 %problem id = 525
-sen_id(1369, 525, 'p', 'TRIAL', 'unknown', 'La Suisse a ratifié des accords bilatéraux avec les membres de l\'Union européenne en mars 2004, mais les nouveaux membres (Chypre, République tchèque, Estonie, Hongrie, Lettonie, Lituanie, Malte, Pologne, Slovaquie et Slovénie) n\'ont pas été inclus dans l\'accord.').
-sen_id(1370, 525, 'h', 'TRIAL', 'unknown', 'La Lituanie a l\'intention d\'introduire l\'utilisation de l\'euro comme monnaie officielle le 1er janvier 2007.').
+sen_id(1371, 525, 'p', 'TRIAL', 'unknown', 'La Suisse a ratifié des accords bilatéraux avec les membres de l\'Union européenne en mars 2004, mais les nouveaux membres (Chypre, République tchèque, Estonie, Hongrie, Lettonie, Lituanie, Malte, Pologne, Slovaquie et Slovénie) n\'ont pas été inclus dans l\'accord.').
+sen_id(1372, 525, 'h', 'TRIAL', 'unknown', 'La Lituanie a l\'intention d\'introduire l\'utilisation de l\'euro comme monnaie officielle le 1er janvier 2007.').
 %problem id = 526
-sen_id(1371, 526, 'p', 'TRIAL', 'unknown', 'Il n\'est devancé que par le Danemark, les Pays-Bas, la Belgique, la Suède, la Finlande et la France, et se classe ainsi au 7e rang de l\'Union européenne à 25 membres en termes de pénétration de l\'Internet à large bande.').
-sen_id(1372, 526, 'h', 'TRIAL', 'unknown', '12 membres de l\'Union européenne utilisent l\'euro au lieu de leur propre monnaie nationale.').
+sen_id(1373, 526, 'p', 'TRIAL', 'unknown', 'Il n\'est devancé que par le Danemark, les Pays-Bas, la Belgique, la Suède, la Finlande et la France, et se classe ainsi au 7e rang de l\'Union européenne à 25 membres en termes de pénétration de l\'Internet à large bande.').
+sen_id(1374, 526, 'h', 'TRIAL', 'unknown', '12 membres de l\'Union européenne utilisent l\'euro au lieu de leur propre monnaie nationale.').
 %problem id = 527
-sen_id(1373, 527, 'p', 'TRIAL', 'unknown', 'Les documents commentés par le magazine datent du 25 avril 2002, époque à laquelle le président brésilien était Fernando Henrique Cardoso.').
-sen_id(1374, 527, 'h', 'TRIAL', 'unknown', 'Le président brésilien est Luiz Inácio Lula da Silva.').
+sen_id(1375, 527, 'p', 'TRIAL', 'unknown', 'Les documents commentés par le magazine datent du 25 avril 2002, époque à laquelle le président brésilien était Fernando Henrique Cardoso.').
+sen_id(1376, 527, 'h', 'TRIAL', 'unknown', 'Le président brésilien est Luiz Inácio Lula da Silva.').
 %problem id = 528
-sen_id(1375, 528, 'p', 'TRIAL', 'unknown', 'Les sursauts gamma sont parmi les objets les plus puissants observés dans l\'Univers et on pense qu\'ils signalent la naissance de trous noirs.').
-sen_id(1376, 528, 'p', 'TRIAL', 'unknown', 'Swift est conçu pour détecter ces sursauts et se réorienter automatiquement pour recueillir des images et des données du phénomène.').
-sen_id(1377, 528, 'h', 'TRIAL', 'unknown', 'Les rayons gamma sont des formes de rayonnement électromagnétique.').
+sen_id(1377, 528, 'p', 'TRIAL', 'unknown', 'Les sursauts gamma sont parmi les objets les plus puissants observés dans l\'Univers et on pense qu\'ils signalent la naissance de trous noirs.').
+sen_id(1378, 528, 'p', 'TRIAL', 'unknown', 'Swift est conçu pour détecter ces sursauts et se réorienter automatiquement pour recueillir des images et des données du phénomène.').
+sen_id(1379, 528, 'h', 'TRIAL', 'unknown', 'Les rayons gamma sont des formes de rayonnement électromagnétique.').
 %problem id = 529
-sen_id(1378, 529, 'p', 'TRIAL', 'yes', 'Plus récemment, la secrétaire d\'État américaine Condoleezza Rice a qualifié la Corée du Nord d\'"avant-poste de la tyrannie", faisant enrager Kim Jong-il, le leader de la Corée du Nord.').
-sen_id(1379, 529, 'h', 'TRIAL', 'yes', 'Condoleezza Rice est la secrétaire d\'État américaine.').
+sen_id(1380, 529, 'p', 'TRIAL', 'yes', 'Plus récemment, la secrétaire d\'État américaine Condoleezza Rice a qualifié la Corée du Nord d\'"avant-poste de la tyrannie", faisant enrager Kim Jong-il, le leader de la Corée du Nord.').
+sen_id(1381, 529, 'h', 'TRIAL', 'yes', 'Condoleezza Rice est la secrétaire d\'État américaine.').
 %problem id = 530
-sen_id(1380, 530, 'p', 'TRIAL', 'yes', 'La secrétaire d\'État américaine Condoleeza Rice a exprimé sa colère après une rencontre avec le président soudanais Omar Hassan al-Bashir, au cours de laquelle ses assistants et son personnel ont été maltraités par des agents de sécurité soudanais.').
-sen_id(1381, 530, 'h', 'TRIAL', 'yes', 'Condoleezza Rice est la secrétaire d\'État américaine.').
+sen_id(1382, 530, 'p', 'TRIAL', 'yes', 'La secrétaire d\'État américaine Condoleeza Rice a exprimé sa colère après une rencontre avec le président soudanais Omar Hassan al-Bashir, au cours de laquelle ses assistants et son personnel ont été maltraités par des agents de sécurité soudanais.').
+sen_id(1383, 530, 'h', 'TRIAL', 'yes', 'Condoleezza Rice est la secrétaire d\'État américaine.').
 %problem id = 531
-sen_id(1382, 531, 'p', 'TRIAL', 'unknown', 'James Wilkinson, le directeur de la communication de Mme Rice, a été poussé contre un mur par des gardes alors qu\'il tentait d\'entrer dans la réunion.').
-sen_id(1383, 531, 'h', 'TRIAL', 'unknown', 'Condoleezza Rice est la secrétaire d\'État américaine.').
+sen_id(1384, 531, 'p', 'TRIAL', 'unknown', 'James Wilkinson, le directeur de la communication de Mme Rice, a été poussé contre un mur par des gardes alors qu\'il tentait d\'entrer dans la réunion.').
+sen_id(1385, 531, 'h', 'TRIAL', 'unknown', 'Condoleezza Rice est la secrétaire d\'État américaine.').
 %problem id = 532
-sen_id(1384, 532, 'p', 'TRIAL', 'no', 'La Roumanie fournit actuellement l\'un des plus grands contingents de troupes du monde en Irak, avec près de 1000 personnes.').
-sen_id(1385, 532, 'h', 'TRIAL', 'no', 'La Roumanie a envoyé 730 soldats en Irak.').
+sen_id(1386, 532, 'p', 'TRIAL', 'no', 'La Roumanie fournit actuellement l\'un des plus grands contingents de troupes du monde en Irak, avec près de 1000 personnes.').
+sen_id(1387, 532, 'h', 'TRIAL', 'no', 'La Roumanie a envoyé 730 soldats en Irak.').
 %problem id = 533
-sen_id(1386, 533, 'p', 'TRIAL', 'yes', 'Don Brash leader du Parti national néo-zélandais a déclaré que les Croisés Blancs de la guerre sainte raciale sont "un petit ventre mou fasciste, bien décidé à provoquer la division et à détruire l\'éthos égalitaire de la Nouvelle-Zélande."').
-sen_id(1387, 533, 'h', 'TRIAL', 'yes', 'Don Brash est le leader du Parti national de Nouvelle-Zélande.').
+sen_id(1388, 533, 'p', 'TRIAL', 'yes', 'Don Brash leader du Parti national néo-zélandais a déclaré que les Croisés Blancs de la guerre sainte raciale sont "un petit ventre mou fasciste, bien décidé à provoquer la division et à détruire l\'éthos égalitaire de la Nouvelle-Zélande."').
+sen_id(1389, 533, 'h', 'TRIAL', 'yes', 'Don Brash est le leader du Parti national de Nouvelle-Zélande.').
 %problem id = 534
-sen_id(1388, 534, 'p', 'TRIAL', 'unknown', 'Alternativement connu comme impétueux, émotif et brillant, le non-conformiste Kasparov pourrait être un redoutable adversaire dans le domaine politique.').
-sen_id(1389, 534, 'h', 'TRIAL', 'unknown', 'Don Brash est le leader du parti national néo-zélandais.').
+sen_id(1390, 534, 'p', 'TRIAL', 'unknown', 'Alternativement connu comme impétueux, émotif et brillant, le non-conformiste Kasparov pourrait être un redoutable adversaire dans le domaine politique.').
+sen_id(1391, 534, 'h', 'TRIAL', 'unknown', 'Don Brash est le leader du parti national néo-zélandais.').
 %problem id = 535
-sen_id(1390, 535, 'p', 'TRIAL', 'unknown', 'La sonde d\'exploration de Saturne de la NASA, Cassini, a découvert une atmosphère autour de la lune Encelade.').
-sen_id(1391, 535, 'p', 'TRIAL', 'unknown', 'C\'est la première découverte de ce type par Cassini, autre que Titan, de la présence d\'une atmosphère autour d\'une lune de Saturne.').
-sen_id(1392, 535, 'h', 'TRIAL', 'unknown', 'Titan est le quinzième des satellites connus de Saturne.').
+sen_id(1392, 535, 'p', 'TRIAL', 'unknown', 'La sonde d\'exploration de Saturne de la NASA, Cassini, a découvert une atmosphère autour de la lune Encelade.').
+sen_id(1393, 535, 'p', 'TRIAL', 'unknown', 'C\'est la première découverte de ce type par Cassini, autre que Titan, de la présence d\'une atmosphère autour d\'une lune de Saturne.').
+sen_id(1394, 535, 'h', 'TRIAL', 'unknown', 'Titan est le quinzième des satellites connus de Saturne.').
 %problem id = 536
-sen_id(1393, 536, 'p', 'TRIAL', 'yes', 'Le parc thématique d\'Euro-Disney en banlieue de Paris, en proie à des difficultés, se porte si mal qu\'il pourrait devoir fermer ses portes s\'il n\'obtient pas rapidement l\'aide de ses prêteurs, a déclaré le président de Walt Disney Co.').
-sen_id(1394, 536, 'p', 'TRIAL', 'yes', 'dans une interview publiée vendredi.').
-sen_id(1395, 536, 'h', 'TRIAL', 'yes', 'Euro-Disney est un parc à thème en région parisienne.').
+sen_id(1395, 536, 'p', 'TRIAL', 'yes', 'Le parc thématique d\'Euro-Disney en banlieue de Paris, en proie à des difficultés, se porte si mal qu\'il pourrait devoir fermer ses portes s\'il n\'obtient pas rapidement l\'aide de ses prêteurs, a déclaré le président de Walt Disney Co.').
+sen_id(1396, 536, 'p', 'TRIAL', 'yes', 'dans une interview publiée vendredi.').
+sen_id(1397, 536, 'h', 'TRIAL', 'yes', 'Euro-Disney est un parc à thème en région parisienne.').
 %problem id = 537
-sen_id(1396, 537, 'p', 'TRIAL', 'yes', 'Le Pharos, un phare monumental construit vers 280 avant JC et s\'élevant à 330 pieds de haut, éclairait l\'entrée du port d\'Alexandrie pendant des siècles, mais les archéologues n\'ont jamais pu identifier positivement des vestiges.').
-sen_id(1397, 537, 'h', 'TRIAL', 'yes', 'Le phare du Pharos était situé à Alexandrie.').
+sen_id(1398, 537, 'p', 'TRIAL', 'yes', 'Le Pharos, un phare monumental construit vers 280 avant JC et s\'élevant à 330 pieds de haut, éclairait l\'entrée du port d\'Alexandrie pendant des siècles, mais les archéologues n\'ont jamais pu identifier positivement des vestiges.').
+sen_id(1399, 537, 'h', 'TRIAL', 'yes', 'Le phare du Pharos était situé à Alexandrie.').
 %problem id = 538
-sen_id(1398, 538, 'p', 'TRIAL', 'yes', 'Le Pharos, un phare monumental construit vers 280 avant JC et s\'élevant à 330 pieds de haut, éclairait l\'entrée du port d\'Alexandrie pendant des siècles, mais les archéologues n\'ont jamais pu identifier positivement des vestiges.').
-sen_id(1399, 538, 'h', 'TRIAL', 'yes', 'Le phare du Pharos a été construit vers 280 avant J.-C.').
+sen_id(1400, 538, 'p', 'TRIAL', 'yes', 'Le Pharos, un phare monumental construit vers 280 avant JC et s\'élevant à 330 pieds de haut, éclairait l\'entrée du port d\'Alexandrie pendant des siècles, mais les archéologues n\'ont jamais pu identifier positivement des vestiges.').
+sen_id(1401, 538, 'h', 'TRIAL', 'yes', 'Le phare du Pharos a été construit vers 280 avant J.-C.').
 %problem id = 539
-sen_id(1400, 539, 'p', 'TRIAL', 'yes', 'Lin Piao, après tout, est le créateur du "Petit livre rouge" des citations de Mao.').
-sen_id(1401, 539, 'h', 'TRIAL', 'yes', 'Lin Piao a écrit le "Petit Livre Rouge".').
+sen_id(1402, 539, 'p', 'TRIAL', 'yes', 'Lin Piao, après tout, est le créateur du "Petit livre rouge" des citations de Mao.').
+sen_id(1403, 539, 'h', 'TRIAL', 'yes', 'Lin Piao a écrit le "Petit Livre Rouge".').
 %problem id = 540
-sen_id(1402, 540, 'p', 'TRIAL', 'yes', 'New Delhi : Plus de 100 lauréats du prix Nobel, deux membres du Congrès américain et de grandes organisations syndicales ont exprimé leur inquiétude face aux menaces contre la vie de Kailash Satyarthi, principal opposant indien au travail des enfants.').
-sen_id(1403, 540, 'h', 'TRIAL', 'yes', 'Kailash Satyarthi, principal opposant indien au travail des enfants.').
+sen_id(1404, 540, 'p', 'TRIAL', 'yes', 'New Delhi : Plus de 100 lauréats du prix Nobel, deux membres du Congrès américain et de grandes organisations syndicales ont exprimé leur inquiétude face aux menaces contre la vie de Kailash Satyarthi, principal opposant indien au travail des enfants.').
+sen_id(1405, 540, 'h', 'TRIAL', 'yes', 'Kailash Satyarthi, principal opposant indien au travail des enfants.').
 %problem id = 541
-sen_id(1404, 541, 'p', 'TRIAL', 'yes', 'La coureuse de haies suspendue en 1993 pour avoir pris du stéroïde anabolisant Nandrolone a été innocentée après qu\'un panel d\'arbitrage de trois juges ait décidé que le dossier contre elle ne pouvait pas être prouvé au-delà du doute raisonnable.').
-sen_id(1405, 541, 'h', 'TRIAL', 'yes', 'La nandrolone est un stéroïde.').
+sen_id(1406, 541, 'p', 'TRIAL', 'yes', 'La coureuse de haies suspendue en 1993 pour avoir pris du stéroïde anabolisant Nandrolone a été innocentée après qu\'un panel d\'arbitrage de trois juges ait décidé que le dossier contre elle ne pouvait pas être prouvé au-delà du doute raisonnable.').
+sen_id(1407, 541, 'h', 'TRIAL', 'yes', 'La nandrolone est un stéroïde.').
 %problem id = 542
-sen_id(1406, 542, 'p', 'TRIAL', 'yes', 'Même en acceptant le plan russe, le directeur général du FMI, Michel Camdessus, a noté que l\'efficacité du service des impôts de l\'État russe "décline rapidement".').
-sen_id(1407, 542, 'h', 'TRIAL', 'yes', 'Michel Camdessus est directeur général du FMI.').
+sen_id(1408, 542, 'p', 'TRIAL', 'yes', 'Même en acceptant le plan russe, le directeur général du FMI, Michel Camdessus, a noté que l\'efficacité du service des impôts de l\'État russe "décline rapidement".').
+sen_id(1409, 542, 'h', 'TRIAL', 'yes', 'Michel Camdessus est directeur général du FMI.').
 %problem id = 543
-sen_id(1408, 543, 'p', 'TRIAL', 'unknown', 'Madrid : Luis Roldan, l\'ancien chef de la police espagnole qui a fui le pays il y a 10 mois après avoir prétendument détourné des millions de livres sterling provenant de fonds secrets du gouvernement, était sur le chemin du retour vers une cellule de prison hier soir après avoir été capturé à Bangkok.').
-sen_id(1409, 543, 'h', 'TRIAL', 'unknown', 'Luis Roldan a été directeur de la police de 1986 à 1993.').
+sen_id(1410, 543, 'p', 'TRIAL', 'unknown', 'Madrid : Luis Roldan, l\'ancien chef de la police espagnole qui a fui le pays il y a 10 mois après avoir prétendument détourné des millions de livres sterling provenant de fonds secrets du gouvernement, était sur le chemin du retour vers une cellule de prison hier soir après avoir été capturé à Bangkok.').
+sen_id(1411, 543, 'h', 'TRIAL', 'unknown', 'Luis Roldan a été directeur de la police de 1986 à 1993.').
 %problem id = 544
-sen_id(1410, 544, 'p', 'TRIAL', 'yes', 'Lorsque le mur de Berlin est tombé au début du mois de novembre 1989, les sections est et ouest de Berlin ont été réunies pour créer la troisième plus grande ville d\'Europe, avec une population d\'environ 3 millions d\'habitants.').
-sen_id(1411, 544, 'h', 'TRIAL', 'yes', 'Le mur de Berlin a été démoli en novembre 1989.').
+sen_id(1412, 544, 'p', 'TRIAL', 'yes', 'Lorsque le mur de Berlin est tombé au début du mois de novembre 1989, les sections est et ouest de Berlin ont été réunies pour créer la troisième plus grande ville d\'Europe, avec une population d\'environ 3 millions d\'habitants.').
+sen_id(1413, 544, 'h', 'TRIAL', 'yes', 'Le mur de Berlin a été démoli en novembre 1989.').
 %problem id = 545
-sen_id(1412, 545, 'p', 'TRIAL', 'yes', 'Rolf Ekeus le diplomate suédois, qui préside la commission, a déclaré que si Bagdad s\'était montré coopératif en aidant son groupe à établir des procédures de contrôle et de vérification de la destruction des armes, on ne sait pas comment les Irakiens réagiront une fois que le système sera opérationnel.').
-sen_id(1413, 545, 'h', 'TRIAL', 'yes', 'Rolf Ekeus est un diplomate suédois.').
+sen_id(1414, 545, 'p', 'TRIAL', 'yes', 'Rolf Ekeus le diplomate suédois, qui préside la commission, a déclaré que si Bagdad s\'était montré coopératif en aidant son groupe à établir des procédures de contrôle et de vérification de la destruction des armes, on ne sait pas comment les Irakiens réagiront une fois que le système sera opérationnel.').
+sen_id(1415, 545, 'h', 'TRIAL', 'yes', 'Rolf Ekeus est un diplomate suédois.').
 %problem id = 546
-sen_id(1414, 546, 'p', 'TRIAL', 'unknown', 'Heaney a rejoint "un groupe distingué d\'Irlandais qui ont été honorés par ce prix pour leur contribution à la littérature irlandaise du vingtième siècle".').
-sen_id(1415, 546, 'h', 'TRIAL', 'unknown', 'Heaney a reçu le prix Nobel de littérature en 1995.').
+sen_id(1416, 546, 'p', 'TRIAL', 'unknown', 'Heaney a rejoint "un groupe distingué d\'Irlandais qui ont été honorés par ce prix pour leur contribution à la littérature irlandaise du vingtième siècle".').
+sen_id(1417, 546, 'h', 'TRIAL', 'unknown', 'Heaney a reçu le prix Nobel de littérature en 1995.').
 %problem id = 547
-sen_id(1416, 547, 'p', 'TRIAL', 'yes', 'Parce que l\'affaire d\'Aldrich Hazen (Rick) Ames et de son épouse d\'origine colombienne, Maria del Rosario Casas Ames, arrêtés par le FBI sur l\'accusation d\'être des espions russes, est si riche en mystères, puzzles, énigmes et contradictions que les réponses pourraient ne jamais être démêlées même en tant que contre-intelligence de la CIA.').
-sen_id(1417, 547, 'h', 'TRIAL', 'yes', 'Aldrich Hazen Ames est marié à Rosario Casas Ames.').
+sen_id(1418, 547, 'p', 'TRIAL', 'yes', 'Parce que l\'affaire d\'Aldrich Hazen (Rick) Ames et de son épouse d\'origine colombienne, Maria del Rosario Casas Ames, arrêtés par le FBI sur l\'accusation d\'être des espions russes, est si riche en mystères, puzzles, énigmes et contradictions que les réponses pourraient ne jamais être démêlées même en tant que contre-intelligence de la CIA.').
+sen_id(1419, 547, 'h', 'TRIAL', 'yes', 'Aldrich Hazen Ames est marié à Rosario Casas Ames.').
 %problem id = 548
-sen_id(1418, 548, 'p', 'TRIAL', 'yes', 'Fest : "Au nom du père", un candidat aux Oscars avec Daniel Day-Lewis dans le rôle d\'un homme condamné à tort pour un attentat de l\'IRA, a remporté l\'Ours d\'or du meilleur film lundi au Festival international du film de Berlin.').
-sen_id(1419, 548, 'h', 'TRIAL', 'yes', 'Le Festival international du film de Berlin décerne l\'Ours d\'or.').
+sen_id(1420, 548, 'p', 'TRIAL', 'yes', 'Fest : "Au nom du père", un candidat aux Oscars avec Daniel Day-Lewis dans le rôle d\'un homme condamné à tort pour un attentat de l\'IRA, a remporté l\'Ours d\'or du meilleur film lundi au Festival international du film de Berlin.').
+sen_id(1421, 548, 'h', 'TRIAL', 'yes', 'Le Festival international du film de Berlin décerne l\'Ours d\'or.').
 %problem id = 549
-sen_id(1420, 549, 'p', 'TRIAL', 'no', 'Depuis l\'indépendance et le bain de sang de la partition, au cours duquel on estime que 15 millions de personnes ont été déracinées et 200.000 sont mortes, l\'Inde et le Pakistan ont mené trois guerres, dont deux pour la possession du Cachemire.').
-sen_id(1421, 549, 'h', 'TRIAL', 'no', 'L\'Inde et le Pakistan ont mené trois guerres pour la possession du Cachemire.').
+sen_id(1422, 549, 'p', 'TRIAL', 'no', 'Depuis l\'indépendance et le bain de sang de la partition, au cours duquel on estime que 15 millions de personnes ont été déracinées et 200.000 sont mortes, l\'Inde et le Pakistan ont mené trois guerres, dont deux pour la possession du Cachemire.').
+sen_id(1423, 549, 'h', 'TRIAL', 'no', 'L\'Inde et le Pakistan ont mené trois guerres pour la possession du Cachemire.').
 %problem id = 550
-sen_id(1422, 550, 'p', 'TRIAL', 'yes', 'Bukowski a attiré l\'attention de John Martin, qui a fondé Black Sparrow Press en 1965 spécifiquement pour le publier.').
-sen_id(1423, 550, 'h', 'TRIAL', 'yes', 'John Martin est le fondateur de Black Sparrow Press.').
+sen_id(1424, 550, 'p', 'TRIAL', 'yes', 'Bukowski a attiré l\'attention de John Martin, qui a fondé Black Sparrow Press en 1965 spécifiquement pour le publier.').
+sen_id(1425, 550, 'h', 'TRIAL', 'yes', 'John Martin est le fondateur de Black Sparrow Press.').
 %problem id = 551
-sen_id(1424, 551, 'p', 'TRIAL', 'yes', 'Le réalisateur néo-zélandais Peter Jackson va réaliser une trilogie de 264 millions de dollars néo-zélandais (133 millions de dollars américains) basée sur le classique fantastique de Tolkien "Le Seigneur des anneaux", a rapporté mardi soir la chaîne de télévision locale.').
-sen_id(1425, 551, 'h', 'TRIAL', 'yes', 'Tolkien a écrit l\'épopée fantastique appelée "Le Seigneur des Anneaux".').
+sen_id(1426, 551, 'p', 'TRIAL', 'yes', 'Le réalisateur néo-zélandais Peter Jackson va réaliser une trilogie de 264 millions de dollars néo-zélandais (133 millions de dollars américains) basée sur le classique fantastique de Tolkien "Le Seigneur des anneaux", a rapporté mardi soir la chaîne de télévision locale.').
+sen_id(1427, 551, 'h', 'TRIAL', 'yes', 'Tolkien a écrit l\'épopée fantastique appelée "Le Seigneur des Anneaux".').
 %problem id = 552
-sen_id(1426, 552, 'p', 'TRIAL', 'unknown', 'Nous examinons la relation froide entre ces deux familles de l\'establishment et comment le parti s\'en sortirait avec le fils, le gouverneur du Texas George W. Bush, et la femme, Elizabeth Dole, sur la piste de la campagne 2000.').
-sen_id(1427, 552, 'h', 'TRIAL', 'unknown', 'Le nom de la femme de George W. Bush est Laura.').
+sen_id(1428, 552, 'p', 'TRIAL', 'unknown', 'Nous examinons la relation froide entre ces deux familles de l\'establishment et comment le parti s\'en sortirait avec le fils, le gouverneur du Texas George W. Bush, et la femme, Elizabeth Dole, sur la piste de la campagne 2000.').
+sen_id(1429, 552, 'h', 'TRIAL', 'unknown', 'Le nom de la femme de George W. Bush est Laura.').
 %problem id = 553
-sen_id(1428, 553, 'p', 'TRIAL', 'yes', 'Colin L. Powell et Laura Bush, épouse de George W. Bush, doivent prendre la parole lors de la soirée d\'ouverture à Philadelphie, tandis que les démocrates ont prévu provisoirement que le président Clinton et Hillary Rodham Clinton s\'adressent aux délégués lors de la première soirée à Los Angeles.').
-sen_id(1429, 553, 'h', 'TRIAL', 'yes', 'Le nom de la femme de George W. Bush est Laura.').
+sen_id(1430, 553, 'p', 'TRIAL', 'yes', 'Colin L. Powell et Laura Bush, épouse de George W. Bush, doivent prendre la parole lors de la soirée d\'ouverture à Philadelphie, tandis que les démocrates ont prévu provisoirement que le président Clinton et Hillary Rodham Clinton s\'adressent aux délégués lors de la première soirée à Los Angeles.').
+sen_id(1431, 553, 'h', 'TRIAL', 'yes', 'Le nom de la femme de George W. Bush est Laura.').
 %problem id = 554
-sen_id(1430, 554, 'p', 'TRIAL', 'unknown', 'L\'alpiniste népalais Ang Rita Sherpa a battu la semaine dernière son propre record du nombre d\'ascensions du mont Everest.').
-sen_id(1431, 554, 'h', 'TRIAL', 'unknown', 'Alison Hargreaves est la première femme à avoir réalisé l\'ascension de l\'Everest sans oxygène artificiel.').
+sen_id(1432, 554, 'p', 'TRIAL', 'unknown', 'L\'alpiniste népalais Ang Rita Sherpa a battu la semaine dernière son propre record du nombre d\'ascensions du mont Everest.').
+sen_id(1433, 554, 'h', 'TRIAL', 'unknown', 'Alison Hargreaves est la première femme à avoir réalisé l\'ascension de l\'Everest sans oxygène artificiel.').
 %problem id = 555
-sen_id(1432, 555, 'p', 'TRIAL', 'yes', 'Sans compter la catastrophe de Tchernobyl en 1986, où les réacteurs nucléaires sont d\'une conception différente, l\'industrie a jusqu\'ici réussi.').
-sen_id(1433, 555, 'h', 'TRIAL', 'yes', 'La catastrophe de Tchernobyl a eu lieu en 1986.').
+sen_id(1434, 555, 'p', 'TRIAL', 'yes', 'Sans compter la catastrophe de Tchernobyl en 1986, où les réacteurs nucléaires sont d\'une conception différente, l\'industrie a jusqu\'ici réussi.').
+sen_id(1435, 555, 'h', 'TRIAL', 'yes', 'La catastrophe de Tchernobyl a eu lieu en 1986.').
 %problem id = 556
-sen_id(1434, 556, 'p', 'TRIAL', 'yes', 'Le Titanic a coulé en 1912 après avoir heurté un iceberg lors de son voyage inaugural entre Southampton, en Angleterre, et New York.').
-sen_id(1435, 556, 'h', 'TRIAL', 'yes', 'Le Titanic a coulé en 1912.').
+sen_id(1436, 556, 'p', 'TRIAL', 'yes', 'Le Titanic a coulé en 1912 après avoir heurté un iceberg lors de son voyage inaugural entre Southampton, en Angleterre, et New York.').
+sen_id(1437, 556, 'h', 'TRIAL', 'yes', 'Le Titanic a coulé en 1912.').
 %problem id = 557
-sen_id(1436, 557, 'p', 'TRIAL', 'yes', 'Plus de 1.500 personnes sont mortes lorsque le Titanic a coulé en 1912.').
-sen_id(1437, 557, 'h', 'TRIAL', 'yes', 'Le Titanic a coulé en 1912.').
+sen_id(1438, 557, 'p', 'TRIAL', 'yes', 'Plus de 1.500 personnes sont mortes lorsque le Titanic a coulé en 1912.').
+sen_id(1439, 557, 'h', 'TRIAL', 'yes', 'Le Titanic a coulé en 1912.').
 %problem id = 558
-sen_id(1438, 558, 'p', 'TRIAL', 'yes', 'Au petit matin du 15 avril 1912, le paquebot de luxe britannique Titanic a coulé dans l\'Atlantique Nord au large de Terre-Neuve, moins de trois heures après avoir heurté un iceberg.').
-sen_id(1439, 558, 'h', 'TRIAL', 'yes', 'Le Titanic a coulé en 1912.').
+sen_id(1440, 558, 'p', 'TRIAL', 'yes', 'Au petit matin du 15 avril 1912, le paquebot de luxe britannique Titanic a coulé dans l\'Atlantique Nord au large de Terre-Neuve, moins de trois heures après avoir heurté un iceberg.').
+sen_id(1441, 558, 'h', 'TRIAL', 'yes', 'Le Titanic a coulé en 1912.').
 %problem id = 559
-sen_id(1440, 559, 'p', 'TRIAL', 'unknown', 'La récupération de la capsule, qui transportait l\'astronaute Virgil "Gus" Grissom lors d\'un bref vol suborbital le 21 juillet 1961, a eu lieu le jour du 30e anniversaire du premier alunissage de l\'humanité.').
-sen_id(1441, 559, 'h', 'TRIAL', 'unknown', 'La lune a été touchée pour la première fois par l\'humanité en 1969.').
+sen_id(1442, 559, 'p', 'TRIAL', 'unknown', 'La récupération de la capsule, qui transportait l\'astronaute Virgil "Gus" Grissom lors d\'un bref vol suborbital le 21 juillet 1961, a eu lieu le jour du 30e anniversaire du premier alunissage de l\'humanité.').
+sen_id(1443, 559, 'h', 'TRIAL', 'unknown', 'La lune a été touchée pour la première fois par l\'humanité en 1969.').
 %problem id = 560
-sen_id(1442, 560, 'p', 'TRIAL', 'yes', 'Il y a trente ans [1969], Neil Armstrong a fait le premier petit pas de l\'humanité sur la lune, déclarant qu\'il s\'agissait d\'un "bond de géant pour l\'humanité", seulement pour que le programme spatial se retire pour rouler en orbite terrestre basse.').
-sen_id(1443, 560, 'h', 'TRIAL', 'yes', 'La lune a été touchée pour la première fois par l\'humanité en 1969.').
+sen_id(1444, 560, 'p', 'TRIAL', 'yes', 'Il y a trente ans [1969], Neil Armstrong a fait le premier petit pas de l\'humanité sur la lune, déclarant qu\'il s\'agissait d\'un "bond de géant pour l\'humanité", seulement pour que le programme spatial se retire pour rouler en orbite terrestre basse.').
+sen_id(1445, 560, 'h', 'TRIAL', 'yes', 'La lune a été touchée pour la première fois par l\'humanité en 1969.').
 %problem id = 561
-sen_id(1444, 561, 'p', 'TRIAL', 'unknown', '"Si nous avons pu envoyer un homme sur la lune en quelques décennies dans les années 1960, je pense que nous pouvons éliminer la tuberculose si nous développons la volonté de le faire" a déclaré O\'Brien, qui a appelé à un investissement important pour la recherche, en particulier les grands essais sur le terrain nécessaires pour démontrer l\'efficacité.').
-sen_id(1445, 561, 'h', 'TRIAL', 'unknown', 'La lune a été touchée pour la première fois par l\'homme en 1969.').
+sen_id(1446, 561, 'p', 'TRIAL', 'unknown', '"Si nous avons pu envoyer un homme sur la lune en quelques décennies dans les années 1960, je pense que nous pouvons éliminer la tuberculose si nous développons la volonté de le faire" a déclaré O\'Brien, qui a appelé à un investissement important pour la recherche, en particulier les grands essais sur le terrain nécessaires pour démontrer l\'efficacité.').
+sen_id(1447, 561, 'h', 'TRIAL', 'unknown', 'La lune a été touchée pour la première fois par l\'homme en 1969.').
 %problem id = 562
-sen_id(1446, 562, 'p', 'TRIAL', 'yes', 'Dans "Killing the Dream : James Earl Ray et l\'assassinat de Martin Luther King, JR", de Gerald Posner (Harvest/Harcourt Brace, 15$), l\'écrivain, qui s\'est attaqué aux théories du complot de Kennedy dans "Case Closed", s\'en prend à la revendication d\'innocence de Ray dans le meurtre de King en 1968.').
-sen_id(1447, 562, 'h', 'TRIAL', 'yes', 'Martin Luther King a été assassiné en 1968.').
+sen_id(1448, 562, 'p', 'TRIAL', 'yes', 'Dans "Killing the Dream : James Earl Ray et l\'assassinat de Martin Luther King, JR", de Gerald Posner (Harvest/Harcourt Brace, 15$), l\'écrivain, qui s\'est attaqué aux théories du complot de Kennedy dans "Case Closed", s\'en prend à la revendication d\'innocence de Ray dans le meurtre de King en 1968.').
+sen_id(1449, 562, 'h', 'TRIAL', 'yes', 'Martin Luther King a été assassiné en 1968.').
 %problem id = 563
-sen_id(1448, 563, 'p', 'TRIAL', 'yes', 'Le pape Jean-Paul II, né en Pologne et crédité d\'avoir inspiré le retour de la Pologne à la démocratie après plus de 40 ans de communisme, devrait inaugurer l\'église lors de sa visite l\'été prochain.').
-sen_id(1449, 563, 'h', 'TRIAL', 'yes', 'Le pape Jean-Paul II est né en Pologne.').
+sen_id(1450, 563, 'p', 'TRIAL', 'yes', 'Le pape Jean-Paul II, né en Pologne et crédité d\'avoir inspiré le retour de la Pologne à la démocratie après plus de 40 ans de communisme, devrait inaugurer l\'église lors de sa visite l\'été prochain.').
+sen_id(1451, 563, 'h', 'TRIAL', 'yes', 'Le pape Jean-Paul II est né en Pologne.').
 %problem id = 564
-sen_id(1450, 564, 'p', 'TRIAL', 'unknown', 'Ne voulant pas renoncer à son rêve de commencer un pèlerinage en Terre Sainte en Irak, le Pape Jean-Paul II a effectué mercredi un "pèlerinage virtuel" à Ur, la ville antique traditionnellement considérée comme le lieu de naissance d\'Abraham.').
-sen_id(1451, 564, 'h', 'TRIAL', 'unknown', 'Le pape Jean-Paul II est né en Pologne.').
+sen_id(1452, 564, 'p', 'TRIAL', 'unknown', 'Ne voulant pas renoncer à son rêve de commencer un pèlerinage en Terre Sainte en Irak, le Pape Jean-Paul II a effectué mercredi un "pèlerinage virtuel" à Ur, la ville antique traditionnellement considérée comme le lieu de naissance d\'Abraham.').
+sen_id(1453, 564, 'h', 'TRIAL', 'unknown', 'Le pape Jean-Paul II est né en Pologne.').
 %problem id = 565
-sen_id(1452, 565, 'p', 'TRIAL', 'unknown', 'JERUSALEM (AP) -- Dans un point culminant spirituel de ses 22 ans de pontificat, le pape Jean-Paul II a entamé mardi la première visite officielle d\'un pontife catholique romain en Israël, réalisant son rêve de visiter la terre où le Christ est né et est mort.').
-sen_id(1453, 565, 'h', 'TRIAL', 'unknown', 'Le pape Jean-Paul II est né en Pologne.').
+sen_id(1454, 565, 'p', 'TRIAL', 'unknown', 'JERUSALEM (AP) -- Dans un point culminant spirituel de ses 22 ans de pontificat, le pape Jean-Paul II a entamé mardi la première visite officielle d\'un pontife catholique romain en Israël, réalisant son rêve de visiter la terre où le Christ est né et est mort.').
+sen_id(1455, 565, 'h', 'TRIAL', 'unknown', 'Le pape Jean-Paul II est né en Pologne.').
 %problem id = 566
-sen_id(1454, 566, 'p', 'TRIAL', 'yes', 'Le 27 janvier 1756, le compositeur Wolfgang Amadeus Mozart est né à Salzbourg, en Autriche.').
-sen_id(1455, 566, 'h', 'TRIAL', 'yes', 'Wolfgang Amadeus Mozart est né à Salzbourg.').
+sen_id(1456, 566, 'p', 'TRIAL', 'yes', 'Le 27 janvier 1756, le compositeur Wolfgang Amadeus Mozart est né à Salzbourg, en Autriche.').
+sen_id(1457, 566, 'h', 'TRIAL', 'yes', 'Wolfgang Amadeus Mozart est né à Salzbourg.').
 %problem id = 567
-sen_id(1456, 567, 'p', 'TRIAL', 'unknown', 'Se tenant à l\'écart, voyant tout et entendant la musique de Mozart, que lui seul comprend comme une manifestation de l\'amour de Dieu, se trouve Antonio Salieri, l\'ambitieux compositeur et chef d\'orchestre d\'origine italienne, favori de la cour impériale de Vienne en 1781.').
-sen_id(1457, 567, 'h', 'TRIAL', 'unknown', 'Wolfgang Amadeus Mozart est né à Salzbourg.').
+sen_id(1458, 567, 'p', 'TRIAL', 'unknown', 'Se tenant à l\'écart, voyant tout et entendant la musique de Mozart, que lui seul comprend comme une manifestation de l\'amour de Dieu, se trouve Antonio Salieri, l\'ambitieux compositeur et chef d\'orchestre d\'origine italienne, favori de la cour impériale de Vienne en 1781.').
+sen_id(1459, 567, 'h', 'TRIAL', 'unknown', 'Wolfgang Amadeus Mozart est né à Salzbourg.').
 %problem id = 568
-sen_id(1458, 568, 'p', 'TRIAL', 'unknown', 'Moreau, 72 ans, a reçu vendredi un Ours d\'or pour l\'ensemble de sa carrière au Festival du film de Berlin.').
-sen_id(1459, 568, 'h', 'TRIAL', 'unknown', 'La Palme d\'or a été décernée au Festival du film de Cannes.').
+sen_id(1460, 568, 'p', 'TRIAL', 'unknown', 'Moreau, 72 ans, a reçu vendredi un Ours d\'or pour l\'ensemble de sa carrière au Festival du film de Berlin.').
+sen_id(1461, 568, 'h', 'TRIAL', 'unknown', 'La Palme d\'or a été décernée au Festival du film de Cannes.').
 %problem id = 569
-sen_id(1460, 569, 'p', 'TRIAL', 'unknown', 'Le cinquième festival du Coq d\'Or et des Cent Fleurs, qui se tiendra dans la ville de Kunming (sud-est) du 9 au 13 octobre, proposera des cérémonies de remise de prix, des expositions de films, ainsi que des échanges commerciaux.').
-sen_id(1461, 569, 'h', 'TRIAL', 'unknown', 'La Palme d\'or a été décernée au Festival du film de Cannes.').
+sen_id(1462, 569, 'p', 'TRIAL', 'unknown', 'Le cinquième festival du Coq d\'Or et des Cent Fleurs, qui se tiendra dans la ville de Kunming (sud-est) du 9 au 13 octobre, proposera des cérémonies de remise de prix, des expositions de films, ainsi que des échanges commerciaux.').
+sen_id(1463, 569, 'h', 'TRIAL', 'unknown', 'La Palme d\'or a été décernée au Festival du film de Cannes.').
 %problem id = 570
-sen_id(1462, 570, 'p', 'TRIAL', 'yes', 'Le président Bill Clinton a passé mardi la direction du Parti démocrate au vice-président Al Gore, décrivant son adjoint comme la bonne personne pour être le premier président américain du XXIe siècle.').
-sen_id(1463, 570, 'h', 'TRIAL', 'yes', 'Bill Clinton appartient au parti démocrate.').
+sen_id(1464, 570, 'p', 'TRIAL', 'yes', 'Le président Bill Clinton a passé mardi la direction du Parti démocrate au vice-président Al Gore, décrivant son adjoint comme la bonne personne pour être le premier président américain du XXIe siècle.').
+sen_id(1465, 570, 'h', 'TRIAL', 'yes', 'Bill Clinton appartient au parti démocrate.').
 %problem id = 571
-sen_id(1464, 571, 'p', 'TRIAL', 'unknown', 'Il a emprunté une poignée d\'idées brillantes au groupe de réflexion préféré de Bill Clinton, le Democratic Leadership Council, et a approuvé les réformes de Medicare suggérées par l\'une des plus brillantes sommités du parti démocrate, le Louisianais John Breaux.').
-sen_id(1465, 571, 'h', 'TRIAL', 'unknown', 'Bill Clinton appartient au parti démocrate.').
+sen_id(1466, 571, 'p', 'TRIAL', 'unknown', 'Il a emprunté une poignée d\'idées brillantes au groupe de réflexion préféré de Bill Clinton, le Democratic Leadership Council, et a approuvé les réformes de Medicare suggérées par l\'une des plus brillantes sommités du parti démocrate, le Louisianais John Breaux.').
+sen_id(1467, 571, 'h', 'TRIAL', 'unknown', 'Bill Clinton appartient au parti démocrate.').
 %problem id = 572
-sen_id(1466, 572, 'p', 'TRIAL', 'yes', 'Sur les sept expéditions qui ont été autorisées à gravir le mont Kanchenjunga, haut de 8586 mètres, seul un alpiniste américain a réussi.').
-sen_id(1467, 572, 'h', 'TRIAL', 'yes', 'Le Kanchenjunga fait 8586 mètres de haut.').
+sen_id(1468, 572, 'p', 'TRIAL', 'yes', 'Sur les sept expéditions qui ont été autorisées à gravir le mont Kanchenjunga, haut de 8586 mètres, seul un alpiniste américain a réussi.').
+sen_id(1469, 572, 'h', 'TRIAL', 'yes', 'Le Kanchenjunga fait 8586 mètres de haut.').
 %problem id = 573
-sen_id(1468, 573, 'p', 'TRIAL', 'yes', 'Une équipe d\'alpinistes tibétains composée de sept membres a conquis le mont Kanchenjunga, troisième plus haut sommet du monde, qui culmine à 8586 mètres, a confirmé dimanche ici l\'association chinoise d\'alpinisme.').
-sen_id(1469, 573, 'h', 'TRIAL', 'yes', 'Le Kanchenjunga fait 8586 mètres de haut.').
+sen_id(1470, 573, 'p', 'TRIAL', 'yes', 'Une équipe d\'alpinistes tibétains composée de sept membres a conquis le mont Kanchenjunga, troisième plus haut sommet du monde, qui culmine à 8586 mètres, a confirmé dimanche ici l\'association chinoise d\'alpinisme.').
+sen_id(1471, 573, 'h', 'TRIAL', 'yes', 'Le Kanchenjunga fait 8586 mètres de haut.').
 %problem id = 574
-sen_id(1470, 574, 'p', 'TRIAL', 'unknown', 'L\'équipe de 10 hommes devrait arriver au pied de la montagne à la fin du mois d\'avril et a commencé son voyage vers le sommet de 8586 mètres au début du mois de mai.').
-sen_id(1471, 574, 'h', 'TRIAL', 'unknown', 'Le Kanchenjunga est haut de 8586 mètres.').
+sen_id(1472, 574, 'p', 'TRIAL', 'unknown', 'L\'équipe de 10 hommes devrait arriver au pied de la montagne à la fin du mois d\'avril et a commencé son voyage vers le sommet de 8586 mètres au début du mois de mai.').
+sen_id(1473, 574, 'h', 'TRIAL', 'unknown', 'Le Kanchenjunga est haut de 8586 mètres.').
 %problem id = 575
-sen_id(1472, 575, 'p', 'TRIAL', 'unknown', 'La nouvelle lune, dont le diamètre n\'est que de 25 miles environ, a en fait été photographiée il y a 13 ans par le Voyager 2.').
-sen_id(1473, 575, 'h', 'TRIAL', 'unknown', 'La lune Titan a un diamètre de 5100 kilomètres.').
+sen_id(1474, 575, 'p', 'TRIAL', 'unknown', 'La nouvelle lune, dont le diamètre n\'est que de 25 miles environ, a en fait été photographiée il y a 13 ans par le Voyager 2.').
+sen_id(1475, 575, 'h', 'TRIAL', 'unknown', 'La lune Titan a un diamètre de 5100 kilomètres.').
 %problem id = 576
-sen_id(1474, 576, 'p', 'TRIAL', 'unknown', 'La distance nouvellement suggérée est beaucoup plus proche que les positions actuelles à 2.870.972.200 kilomètres du soleil pour Uranus et 4.498.252.900 kilomètres pour Neptune.').
-sen_id(1475, 576, 'h', 'TRIAL', 'unknown', 'La lune Titan a un diamètre de 5100 kilomètres.').
+sen_id(1476, 576, 'p', 'TRIAL', 'unknown', 'La distance nouvellement suggérée est beaucoup plus proche que les positions actuelles à 2.870.972.200 kilomètres du soleil pour Uranus et 4.498.252.900 kilomètres pour Neptune.').
+sen_id(1477, 576, 'h', 'TRIAL', 'unknown', 'La lune Titan a un diamètre de 5100 kilomètres.').
 %problem id = 577
-sen_id(1476, 577, 'p', 'TRIAL', 'unknown', 'Mars possède la plus petite lune confirmée, Deimos, qui a un diamètre d\'environ 7,5 miles.').
-sen_id(1477, 577, 'h', 'TRIAL', 'unknown', 'La lune terrestre a un diamètre de 3746 kilomètres.').
+sen_id(1478, 577, 'p', 'TRIAL', 'unknown', 'Mars possède la plus petite lune confirmée, Deimos, qui a un diamètre d\'environ 7,5 miles.').
+sen_id(1479, 577, 'h', 'TRIAL', 'unknown', 'La lune terrestre a un diamètre de 3746 kilomètres.').
 %problem id = 578
-sen_id(1478, 578, 'p', 'TRIAL', 'unknown', 'Io a un diamètre de 3.598 kilomètres (2.236 miles), légèrement plus grand que la lune terrestre.').
-sen_id(1479, 578, 'h', 'TRIAL', 'unknown', 'La lune terrestre a un diamètre de 3.746 kilomètres.').
+sen_id(1480, 578, 'p', 'TRIAL', 'unknown', 'Io a un diamètre de 3.598 kilomètres (2.236 miles), légèrement plus grand que la lune terrestre.').
+sen_id(1481, 578, 'h', 'TRIAL', 'unknown', 'La lune terrestre a un diamètre de 3.746 kilomètres.').
 %problem id = 579
-sen_id(1480, 579, 'p', 'TRIAL', 'yes', 'Salma Hayek a attiré la foule à Veracruz, au Mexique, lors de la première, le 8 juillet, de "Personne n\'écrit au colonel", un film basé sur un court roman du lauréat du prix Nobel Gabriel Garcia Marquez.').
-sen_id(1481, 579, 'h', 'TRIAL', 'yes', 'Gabriel Garcia Marquez est un lauréat du prix Nobel.').
+sen_id(1482, 579, 'p', 'TRIAL', 'yes', 'Salma Hayek a attiré la foule à Veracruz, au Mexique, lors de la première, le 8 juillet, de "Personne n\'écrit au colonel", un film basé sur un court roman du lauréat du prix Nobel Gabriel Garcia Marquez.').
+sen_id(1483, 579, 'h', 'TRIAL', 'yes', 'Gabriel Garcia Marquez est un lauréat du prix Nobel.').
 %problem id = 580
-sen_id(1482, 580, 'p', 'TRIAL', 'unknown', 'Il est comme certains grands écrivains, de Charles Dickens à William Faulkner en passant par Gabriel Garcia Marquez : l\'insistance sur la valeur du local conduit à l\'universel.').
-sen_id(1483, 580, 'h', 'TRIAL', 'unknown', 'Gabriel Garcia Marquez est lauréat du prix Nobel.').
+sen_id(1484, 580, 'p', 'TRIAL', 'unknown', 'Il est comme certains grands écrivains, de Charles Dickens à William Faulkner en passant par Gabriel Garcia Marquez : l\'insistance sur la valeur du local conduit à l\'universel.').
+sen_id(1485, 580, 'h', 'TRIAL', 'unknown', 'Gabriel Garcia Marquez est lauréat du prix Nobel.').
 %problem id = 581
-sen_id(1484, 581, 'p', 'TRIAL', 'yes', 'Deux éminents scientifiques ont fait des apparitions dans l\'émission, le paléontologue Stephen Jay Gould et Stephen Hawking, le physicien théoricien dont la brillance a été comparée à celle d\'Einstein.').
-sen_id(1485, 581, 'h', 'TRIAL', 'yes', 'Stephen Hawking est un physicien.').
+sen_id(1486, 581, 'p', 'TRIAL', 'yes', 'Deux éminents scientifiques ont fait des apparitions dans l\'émission, le paléontologue Stephen Jay Gould et Stephen Hawking, le physicien théoricien dont la brillance a été comparée à celle d\'Einstein.').
+sen_id(1487, 581, 'h', 'TRIAL', 'yes', 'Stephen Hawking est un physicien.').
 %problem id = 582
-sen_id(1486, 582, 'p', 'TRIAL', 'unknown', '"Pour les yakuzas japonais, le plus important est de rester en vie, et gagner de l\'argent vient en second", a déclaré le yakuza.').
-sen_id(1487, 582, 'h', 'TRIAL', 'unknown', 'Les yakuzas sont la mafia japonaise.').
+sen_id(1488, 582, 'p', 'TRIAL', 'unknown', '"Pour les yakuzas japonais, le plus important est de rester en vie, et gagner de l\'argent vient en second", a déclaré le yakuza.').
+sen_id(1489, 582, 'h', 'TRIAL', 'unknown', 'Les yakuzas sont la mafia japonaise.').
 %problem id = 583
-sen_id(1488, 583, 'p', 'TRIAL', 'unknown', 'Munir Mezyed, poète et critique, a suscité les sentiments et les émotions du public lorsqu\'il a récité sa poésie fluide à la fois en arabe et en anglais, ce qui a démontré son style unique et bouleversant.').
-sen_id(1489, 583, 'h', 'TRIAL', 'unknown', 'Gotthold Ephraim Lessing a vécu de 1729 à 1781.').
+sen_id(1490, 583, 'p', 'TRIAL', 'unknown', 'Munir Mezyed, poète et critique, a suscité les sentiments et les émotions du public lorsqu\'il a récité sa poésie fluide à la fois en arabe et en anglais, ce qui a démontré son style unique et bouleversant.').
+sen_id(1491, 583, 'h', 'TRIAL', 'unknown', 'Gotthold Ephraim Lessing a vécu de 1729 à 1781.').
 %problem id = 584
-sen_id(1490, 584, 'p', 'TRIAL', 'yes', 'La réunion du CIO examinera également les rapports soumis par les comités d\'organisation des Jeux olympiques d\'hiver de 1998 à Nagano, au Japon, des Jeux olympiques d\'été de 2000 à Sydney, en Australie, et des Jeux olympiques d\'hiver de 2002 à Salt Lake City, aux États-Unis, respectivement.').
-sen_id(1491, 584, 'h', 'TRIAL', 'yes', 'Avant Salt Lake City, les Jeux olympiques d\'hiver ont eu lieu à Nagano.').
+sen_id(1492, 584, 'p', 'TRIAL', 'yes', 'La réunion du CIO examinera également les rapports soumis par les comités d\'organisation des Jeux olympiques d\'hiver de 1998 à Nagano, au Japon, des Jeux olympiques d\'été de 2000 à Sydney, en Australie, et des Jeux olympiques d\'hiver de 2002 à Salt Lake City, aux États-Unis, respectivement.').
+sen_id(1493, 584, 'h', 'TRIAL', 'yes', 'Avant Salt Lake City, les Jeux olympiques d\'hiver ont eu lieu à Nagano.').
 %problem id = 585
-sen_id(1492, 585, 'p', 'TRIAL', 'unknown', 'Hodler a affirmé qu\'il y avait également des irrégularités dans les campagnes organisées par Atlanta pour les Jeux d\'été de 1996, Sydney pour les JO d\'été de 2000 et Salt Lake City pour les Jeux d\'hiver de 2002.').
-sen_id(1493, 585, 'h', 'TRIAL', 'unknown', 'Avant Salt Lake City, les Jeux olympiques d\'hiver ont eu lieu à Nagano.').
+sen_id(1494, 585, 'p', 'TRIAL', 'unknown', 'Hodler a affirmé qu\'il y avait également des irrégularités dans les campagnes organisées par Atlanta pour les Jeux d\'été de 1996, Sydney pour les JO d\'été de 2000 et Salt Lake City pour les Jeux d\'hiver de 2002.').
+sen_id(1495, 585, 'h', 'TRIAL', 'unknown', 'Avant Salt Lake City, les Jeux olympiques d\'hiver ont eu lieu à Nagano.').
 %problem id = 586
-sen_id(1494, 586, 'p', 'TRIAL', 'yes', 'La puissance stupéfiante du Tevatron a rendu possible la découverte en 1995 du quark top - la dernière des six saveurs de quarks prédites par la théorie du modèle standard de la physique des particules.').
-sen_id(1495, 586, 'h', 'TRIAL', 'yes', 'Le quark top est la dernière des six saveurs de quarks prédites par la théorie du modèle standard de la physique des particules.').
+sen_id(1496, 586, 'p', 'TRIAL', 'yes', 'La puissance stupéfiante du Tevatron a rendu possible la découverte en 1995 du quark top - la dernière des six saveurs de quarks prédites par la théorie du modèle standard de la physique des particules.').
+sen_id(1497, 586, 'h', 'TRIAL', 'yes', 'Le quark top est la dernière des six saveurs de quarks prédites par la théorie du modèle standard de la physique des particules.').
 %problem id = 587
-sen_id(1496, 587, 'p', 'TRIAL', 'unknown', 'Le pari, qui lui a valu un dîner pour quatre personnes, portait sur l\'existence et la masse du quark top, une particule élémentaire découverte en 1995.').
-sen_id(1497, 587, 'h', 'TRIAL', 'unknown', 'Le quark top est la dernière des six saveurs de quarks prédites par la théorie du modèle standard de la physique des particules.').
+sen_id(1498, 587, 'p', 'TRIAL', 'unknown', 'Le pari, qui lui a valu un dîner pour quatre personnes, portait sur l\'existence et la masse du quark top, une particule élémentaire découverte en 1995.').
+sen_id(1499, 587, 'h', 'TRIAL', 'unknown', 'Le quark top est la dernière des six saveurs de quarks prédites par la théorie du modèle standard de la physique des particules.').
 %problem id = 588
-sen_id(1498, 588, 'p', 'TRIAL', 'yes', 'En quelques trillionièmes de seconde après le Big Bang, ont-ils raisonné, l\'explosion primordiale - plusieurs milliards de degrés de chaleur - a dû créer un univers qui contenait des quantités égales de matière et d\'antimatière.').
-sen_id(1499, 588, 'h', 'TRIAL', 'yes', 'Le Big Bang est l\'explosion primordiale à partir de laquelle l\'univers a été créé.').
+sen_id(1500, 588, 'p', 'TRIAL', 'yes', 'En quelques trillionièmes de seconde après le Big Bang, ont-ils raisonné, l\'explosion primordiale - plusieurs milliards de degrés de chaleur - a dû créer un univers qui contenait des quantités égales de matière et d\'antimatière.').
+sen_id(1501, 588, 'h', 'TRIAL', 'yes', 'Le Big Bang est l\'explosion primordiale à partir de laquelle l\'univers a été créé.').
 %problem id = 589
-sen_id(1500, 589, 'p', 'TRIAL', 'unknown', 'Selon Naeye, les nouveaux télescopes seront capables de regarder si loin dans l\'espace et donc dans le temps qu\'ils "verront les premières galaxies s\'assembler quelques centaines de millions d\'années après le Big Bang."').
-sen_id(1501, 589, 'h', 'TRIAL', 'unknown', 'Le Big Bang est l\'explosion primordiale à partir de laquelle l\'univers a été créé.').
+sen_id(1502, 589, 'p', 'TRIAL', 'unknown', 'Selon Naeye, les nouveaux télescopes seront capables de regarder si loin dans l\'espace et donc dans le temps qu\'ils "verront les premières galaxies s\'assembler quelques centaines de millions d\'années après le Big Bang."').
+sen_id(1503, 589, 'h', 'TRIAL', 'unknown', 'Le Big Bang est l\'explosion primordiale à partir de laquelle l\'univers a été créé.').
 %problem id = 590
-sen_id(1502, 590, 'p', 'TRIAL', 'unknown', 'Jackson a également constaté que la société a maintenu son monopole sur Windows en établissant des accords avec les fabricants d\'ordinateurs, pour promouvoir les produits Microsoft par rapport à ceux des fabricants de logiciels rivaux.').
-sen_id(1503, 590, 'h', 'TRIAL', 'unknown', 'Microsoft Windows est un système d\'exploitation.').
+sen_id(1504, 590, 'p', 'TRIAL', 'unknown', 'Jackson a également constaté que la société a maintenu son monopole sur Windows en établissant des accords avec les fabricants d\'ordinateurs, pour promouvoir les produits Microsoft par rapport à ceux des fabricants de logiciels rivaux.').
+sen_id(1505, 590, 'h', 'TRIAL', 'unknown', 'Microsoft Windows est un système d\'exploitation.').
 %problem id = 591
-sen_id(1504, 591, 'p', 'TRIAL', 'unknown', 'Espérant desserrer la mainmise de Microsoft sur le bureau des ordinateurs personnels, une minuscule société de Seattle dévoilera lundi une barre de menu à l\'écran qui contourne Windows avec des liens directs vers des programmes et l\'Internet.').
-sen_id(1505, 591, 'h', 'TRIAL', 'unknown', 'Microsoft Windows est un système d\'exploitation.').
+sen_id(1506, 591, 'p', 'TRIAL', 'unknown', 'Espérant desserrer la mainmise de Microsoft sur le bureau des ordinateurs personnels, une minuscule société de Seattle dévoilera lundi une barre de menu à l\'écran qui contourne Windows avec des liens directs vers des programmes et l\'Internet.').
+sen_id(1507, 591, 'h', 'TRIAL', 'unknown', 'Microsoft Windows est un système d\'exploitation.').
 %problem id = 592
-sen_id(1506, 592, 'p', 'TRIAL', 'yes', 'Le Qatar et Oman sont membres du Conseil de coopération du Golfe, CCG, qui regroupe également l\'Arabie saoudite, le Koweït, Bahreïn et les Émirats arabes unis (EAU).').
-sen_id(1507, 592, 'h', 'TRIAL', 'yes', 'Les membres du Conseil de coopération du Golfe sont : Arabie saoudite, Koweït, Émirats arabes unis, Qatar, Oman, Bahreïn.').
+sen_id(1508, 592, 'p', 'TRIAL', 'yes', 'Le Qatar et Oman sont membres du Conseil de coopération du Golfe, CCG, qui regroupe également l\'Arabie saoudite, le Koweït, Bahreïn et les Émirats arabes unis (EAU).').
+sen_id(1509, 592, 'h', 'TRIAL', 'yes', 'Les membres du Conseil de coopération du Golfe sont : Arabie saoudite, Koweït, Émirats arabes unis, Qatar, Oman, Bahreïn.').
 %problem id = 593
-sen_id(1508, 593, 'p', 'TRIAL', 'unknown', 'Bahreïn et le Qatar sont tous deux membres du Conseil de coopération du Golfe (CCG), mais ils ont un différend territorial, qui a conduit Bahreïn à boycotter le sommet du CCG convoqué dans la capitale qatarie de Doha du 7 au 9 décembre.').
-sen_id(1509, 593, 'h', 'TRIAL', 'unknown', 'Les membres du Conseil de coopération du Golfe sont : Arabie saoudite, Koweït, Émirats arabes unis, Qatar, Oman, Bahreïn.').
+sen_id(1510, 593, 'p', 'TRIAL', 'unknown', 'Bahreïn et le Qatar sont tous deux membres du Conseil de coopération du Golfe (CCG), mais ils ont un différend territorial, qui a conduit Bahreïn à boycotter le sommet du CCG convoqué dans la capitale qatarie de Doha du 7 au 9 décembre.').
+sen_id(1511, 593, 'h', 'TRIAL', 'unknown', 'Les membres du Conseil de coopération du Golfe sont : Arabie saoudite, Koweït, Émirats arabes unis, Qatar, Oman, Bahreïn.').
 %problem id = 594
-sen_id(1510, 594, 'p', 'TRIAL', 'yes', 'L\'Égypte, la Syrie et les membres du Conseil de coopération du Golfe, à savoir l\'Arabie saoudite, le Bahreïn, le Koweït, Oman, le Qatar et les Émirats arabes unis, ont signé la déclaration de Damas après la guerre du Golfe de 1991 pour créer un mécanisme visant à garantir la sécurité dans la région du Golfe.').
-sen_id(1511, 594, 'h', 'TRIAL', 'yes', 'Les membres du Conseil de coopération du Golfe sont : Arabie saoudite, Koweït, Émirats arabes unis, Qatar, Oman, Bahreïn.').
+sen_id(1512, 594, 'p', 'TRIAL', 'yes', 'L\'Égypte, la Syrie et les membres du Conseil de coopération du Golfe, à savoir l\'Arabie saoudite, le Bahreïn, le Koweït, Oman, le Qatar et les Émirats arabes unis, ont signé la déclaration de Damas après la guerre du Golfe de 1991 pour créer un mécanisme visant à garantir la sécurité dans la région du Golfe.').
+sen_id(1513, 594, 'h', 'TRIAL', 'yes', 'Les membres du Conseil de coopération du Golfe sont : Arabie saoudite, Koweït, Émirats arabes unis, Qatar, Oman, Bahreïn.').
 %problem id = 595
-sen_id(1512, 595, 'p', 'TRIAL', 'unknown', 'Parmi les plus ardents partisans de Stellafane figure David H. Levy, codécouvreur avec le Dr Eugene Shoemaker d\'une comète portant leur nom qui s\'est brisée en 1994 alors qu\'elle était attirée vers Jupiter, créant un feu d\'artifice visible depuis la Terre.').
-sen_id(1513, 595, 'h', 'TRIAL', 'unknown', 'La comète Shoemaker-Levy a été découverte par Shoemaker, sa femme, Carolyn, et un astronome David H. Levy.').
+sen_id(1514, 595, 'p', 'TRIAL', 'unknown', 'Parmi les plus ardents partisans de Stellafane figure David H. Levy, codécouvreur avec le Dr Eugene Shoemaker d\'une comète portant leur nom qui s\'est brisée en 1994 alors qu\'elle était attirée vers Jupiter, créant un feu d\'artifice visible depuis la Terre.').
+sen_id(1515, 595, 'h', 'TRIAL', 'unknown', 'La comète Shoemaker-Levy a été découverte par Shoemaker, sa femme, Carolyn, et un astronome David H. Levy.').
 %problem id = 596
-sen_id(1514, 596, 'p', 'TRIAL', 'yes', 'Le National Park Trust a identifié 20 sites hautement prioritaires - dont le Blue Ridge Parkway en Caroline du Nord et en Virginie et le parc national des Everglades en Floride - comme des zones comportant des propriétés privées qui pourraient être vendues.').
-sen_id(1515, 596, 'h', 'TRIAL', 'yes', 'Le parc national des Everglades est situé en Floride.').
+sen_id(1516, 596, 'p', 'TRIAL', 'yes', 'Le National Park Trust a identifié 20 sites hautement prioritaires - dont le Blue Ridge Parkway en Caroline du Nord et en Virginie et le parc national des Everglades en Floride - comme des zones comportant des propriétés privées qui pourraient être vendues.').
+sen_id(1517, 596, 'h', 'TRIAL', 'yes', 'Le parc national des Everglades est situé en Floride.').
 %problem id = 597
-sen_id(1516, 597, 'p', 'TRIAL', 'unknown', 'De nombreux espoirs reposent sur la vente des participations de Talisman dans les comtés de Palm Beach et Hendry, que le vice-président Al Gore a annoncée en grande pompe l\'an dernier lors du 50e anniversaire du parc national des Everglades.').
-sen_id(1517, 597, 'h', 'TRIAL', 'unknown', 'Le parc national des Everglades est situé en Floride.').
+sen_id(1518, 597, 'p', 'TRIAL', 'unknown', 'De nombreux espoirs reposent sur la vente des participations de Talisman dans les comtés de Palm Beach et Hendry, que le vice-président Al Gore a annoncée en grande pompe l\'an dernier lors du 50e anniversaire du parc national des Everglades.').
+sen_id(1519, 597, 'h', 'TRIAL', 'unknown', 'Le parc national des Everglades est situé en Floride.').
 %problem id = 598
-sen_id(1518, 598, 'p', 'TRIAL', 'no', 'L\'expulsion des Albanais, qui a distrait l\'OTAN avec une opération de secours parallèle, n\'a fait que durcir la résolution des 19 membres de l\'OTAN, qui sont maintenant prêts à approuver des attaques contre des cibles plus sensibles, comme les maisons de Milosevic et la télévision d\'État yougoslave.').
-sen_id(1519, 598, 'h', 'TRIAL', 'no', 'L\'OTAN compte 16 membres.').
+sen_id(1520, 598, 'p', 'TRIAL', 'no', 'L\'expulsion des Albanais, qui a distrait l\'OTAN avec une opération de secours parallèle, n\'a fait que durcir la résolution des 19 membres de l\'OTAN, qui sont maintenant prêts à approuver des attaques contre des cibles plus sensibles, comme les maisons de Milosevic et la télévision d\'État yougoslave.').
+sen_id(1521, 598, 'h', 'TRIAL', 'no', 'L\'OTAN compte 16 membres.').
 %problem id = 599
-sen_id(1520, 599, 'p', 'TRIAL', 'yes', 'Les ministres des Affaires étrangères des 16 pays membres de l\'OTAN ont rencontré tôt ce matin leur homologue russe, Evgueni Primakov, à Berlin, dans le but d\'améliorer les relations OTAN-Russie.').
-sen_id(1521, 599, 'h', 'TRIAL', 'yes', 'L\'OTAN compte 16 membres.').
+sen_id(1522, 599, 'p', 'TRIAL', 'yes', 'Les ministres des Affaires étrangères des 16 pays membres de l\'OTAN ont rencontré tôt ce matin leur homologue russe, Evgueni Primakov, à Berlin, dans le but d\'améliorer les relations OTAN-Russie.').
+sen_id(1523, 599, 'h', 'TRIAL', 'yes', 'L\'OTAN compte 16 membres.').
 %problem id = 600
-sen_id(1522, 600, 'p', 'TRIAL', 'yes', 'Sotheby\'s et Christie\'s, les deux plus puissantes maisons de vente aux enchères du monde, ont échangé des listes confidentielles de clients super riches qui ont été épargnés du paiement de frais facturés à d\'autres vendeurs, ont déclaré des personnes proches des sociétés et d\'une enquête fédérale antitrust les concernant.').
-sen_id(1523, 600, 'h', 'TRIAL', 'yes', 'Christie\'s est l\'une des plus grandes maisons de vente aux enchères du monde.').
+sen_id(1524, 600, 'p', 'TRIAL', 'yes', 'Sotheby\'s et Christie\'s, les deux plus puissantes maisons de vente aux enchères du monde, ont échangé des listes confidentielles de clients super riches qui ont été épargnés du paiement de frais facturés à d\'autres vendeurs, ont déclaré des personnes proches des sociétés et d\'une enquête fédérale antitrust les concernant.').
+sen_id(1525, 600, 'h', 'TRIAL', 'yes', 'Christie\'s est l\'une des plus grandes maisons de vente aux enchères du monde.').
 %problem id = 601
-sen_id(1524, 601, 'p', 'TRIAL', 'yes', 'La police de Rio de Janeiro a arrêté cinq hommes et récupéré des œuvres d\'art d\'une valeur de plusieurs millions de dollars volées au début du mois, notamment des œuvres de Salvador Dali et Henri Matisse.').
-sen_id(1525, 601, 'p', 'TRIAL', 'yes', 'La police a récupéré tous les objets d\'art volés, à l\'exception de deux sculptures chinoises en céramique du 7e siècle et d\'une collection d\'argenterie.').
-sen_id(1526, 601, 'h', 'TRIAL', 'yes', 'Des œuvres d\'art d\'une valeur de plusieurs millions de dollars ont été récupérées, y compris des œuvres de Dali.').
+sen_id(1526, 601, 'p', 'TRIAL', 'yes', 'La police de Rio de Janeiro a arrêté cinq hommes et récupéré des œuvres d\'art d\'une valeur de plusieurs millions de dollars volées au début du mois, notamment des œuvres de Salvador Dali et Henri Matisse.').
+sen_id(1527, 601, 'p', 'TRIAL', 'yes', 'La police a récupéré tous les objets d\'art volés, à l\'exception de deux sculptures chinoises en céramique du 7e siècle et d\'une collection d\'argenterie.').
+sen_id(1528, 601, 'h', 'TRIAL', 'yes', 'Des œuvres d\'art d\'une valeur de plusieurs millions de dollars ont été récupérées, y compris des œuvres de Dali.').
 %problem id = 602
-sen_id(1527, 602, 'p', 'TRIAL', 'no', 'Des œuvres volées de Warhol retrouvées : La police d\'Amsterdam a annoncé mercredi avoir retrouvé des lithographies volées de l\'artiste pop américain Andy Warhol, aujourd\'hui décédé, d\'une valeur de plus d\'un million de dollars.').
-sen_id(1528, 602, 'p', 'TRIAL', 'no', 'Les tableaux de Dali sont toujours portés disparus.').
-sen_id(1529, 602, 'h', 'TRIAL', 'no', 'Des œuvres d\'art d\'une valeur de plusieurs millions de dollars ont été récupérées, y compris des œuvres de Dali.').
+sen_id(1529, 602, 'p', 'TRIAL', 'no', 'Des œuvres volées de Warhol retrouvées : La police d\'Amsterdam a annoncé mercredi avoir retrouvé des lithographies volées de l\'artiste pop américain Andy Warhol, aujourd\'hui décédé, d\'une valeur de plus d\'un million de dollars.').
+sen_id(1530, 602, 'p', 'TRIAL', 'no', 'Les tableaux de Dali sont toujours portés disparus.').
+sen_id(1531, 602, 'h', 'TRIAL', 'no', 'Des œuvres d\'art d\'une valeur de plusieurs millions de dollars ont été récupérées, y compris des œuvres de Dali.').
 %problem id = 603
-sen_id(1530, 603, 'p', 'TRIAL', 'no', 'Deux portraits, l\'un de Reynolds, l\'autre de Gainsborough, depuis 1990 parmi les œuvres les plus recherchées dans la base de données Art Loss Register, ont été récupérés cette semaine lorsqu\'ils ont été apportés chez Sotheby\'s pour être évalués.').
-sen_id(1531, 603, 'p', 'TRIAL', 'no', 'De même, une lithographie de l\'artiste norvégien Edvard Munch, volée dans une galerie d\'art d\'Oslo en avril, a été récupérée, ont indiqué les médias aujourd\'hui.').
-sen_id(1532, 603, 'h', 'TRIAL', 'no', 'Ces deux portraits et une lithographie d\'Edvard Munch ont été retrouvés grâce à la base de données Art Loss Register.').
+sen_id(1532, 603, 'p', 'TRIAL', 'no', 'Deux portraits, l\'un de Reynolds, l\'autre de Gainsborough, depuis 1990 parmi les œuvres les plus recherchées dans la base de données Art Loss Register, ont été récupérés cette semaine lorsqu\'ils ont été apportés chez Sotheby\'s pour être évalués.').
+sen_id(1533, 603, 'p', 'TRIAL', 'no', 'De même, une lithographie de l\'artiste norvégien Edvard Munch, volée dans une galerie d\'art d\'Oslo en avril, a été récupérée, ont indiqué les médias aujourd\'hui.').
+sen_id(1534, 603, 'h', 'TRIAL', 'no', 'Ces deux portraits et une lithographie d\'Edvard Munch ont été retrouvés grâce à la base de données Art Loss Register.').
 %problem id = 604
-sen_id(1533, 604, 'p', 'TRIAL', 'unknown', 'M. David Herman, responsable des opérations locales de GM, a accusé M. Gerhardt Schroeder, premier ministre de Basse-Saxe et membre du conseil de surveillance de VW, d\'avoir tenté d\'utiliser son poids politique pour influencer les enquêtes menées par les procureurs de l\'État de Hesse sur les allégations d\'espionnage industriel contre GM.').
-sen_id(1534, 604, 'h', 'TRIAL', 'unknown', 'Gerhardt Schroeder a été accusé d\'avoir aidé VW.').
+sen_id(1535, 604, 'p', 'TRIAL', 'unknown', 'M. David Herman, responsable des opérations locales de GM, a accusé M. Gerhardt Schroeder, premier ministre de Basse-Saxe et membre du conseil de surveillance de VW, d\'avoir tenté d\'utiliser son poids politique pour influencer les enquêtes menées par les procureurs de l\'État de Hesse sur les allégations d\'espionnage industriel contre GM.').
+sen_id(1536, 604, 'h', 'TRIAL', 'unknown', 'Gerhardt Schroeder a été accusé d\'avoir aidé VW.').
 %problem id = 605
-sen_id(1535, 605, 'p', 'TRIAL', 'yes', 'L\'Occident a préféré se concentrer sur les animaux en danger, plutôt que sur les humains en danger.').
-sen_id(1536, 605, 'p', 'TRIAL', 'yes', 'Les éléphants d\'Afrique sont chassés, dépouillés de leurs défenses et cachés par les braconniers.').
-sen_id(1537, 605, 'p', 'TRIAL', 'yes', 'Leur nombre en Afrique s\'est effondré de 1,2 million à 600.000 en une décennie jusqu\'à ce que la CITES - la Convention sur le commerce international des espèces menacées d\'extinction - interdise le commerce de l\'ivoire.').
-sen_id(1538, 605, 'h', 'TRIAL', 'yes', 'Les éléphants d\'Afrique sont mis en danger par les braconniers d\'ivoire.').
+sen_id(1537, 605, 'p', 'TRIAL', 'yes', 'L\'Occident a préféré se concentrer sur les animaux en danger, plutôt que sur les humains en danger.').
+sen_id(1538, 605, 'p', 'TRIAL', 'yes', 'Les éléphants d\'Afrique sont chassés, dépouillés de leurs défenses et cachés par les braconniers.').
+sen_id(1539, 605, 'p', 'TRIAL', 'yes', 'Leur nombre en Afrique s\'est effondré de 1,2 million à 600.000 en une décennie jusqu\'à ce que la CITES - la Convention sur le commerce international des espèces menacées d\'extinction - interdise le commerce de l\'ivoire.').
+sen_id(1540, 605, 'h', 'TRIAL', 'yes', 'Les éléphants d\'Afrique sont mis en danger par les braconniers d\'ivoire.').
 %problem id = 606
-sen_id(1539, 606, 'p', 'TRIAL', 'unknown', 'La police d\'Amsterdam a annoncé mercredi avoir retrouvé des lithographies volées de l\'artiste pop américain Andy Warhol, aujourd\'hui décédé, pour une valeur de plus d\'un million de dollars.').
-sen_id(1540, 606, 'h', 'TRIAL', 'unknown', 'La police a retrouvé 81 lithographies d\'Andy Warhol.').
+sen_id(1541, 606, 'p', 'TRIAL', 'unknown', 'La police d\'Amsterdam a annoncé mercredi avoir retrouvé des lithographies volées de l\'artiste pop américain Andy Warhol, aujourd\'hui décédé, pour une valeur de plus d\'un million de dollars.').
+sen_id(1542, 606, 'h', 'TRIAL', 'unknown', 'La police a retrouvé 81 lithographies d\'Andy Warhol.').
 %problem id = 607
-sen_id(1541, 607, 'p', 'TRIAL', 'yes', 'L\'Occident a préféré se concentrer sur les animaux en danger, plutôt que sur les humains en danger.').
-sen_id(1542, 607, 'p', 'TRIAL', 'yes', 'Les éléphants d\'Afrique sont chassés, dépouillés de leurs défenses et cachés par les braconniers.').
-sen_id(1543, 607, 'p', 'TRIAL', 'yes', 'Leur nombre en Afrique s\'est effondré de 1,2 million à 600.000 en une décennie jusqu\'à ce que la CITES - la Convention sur le commerce international des espèces menacées d\'extinction - interdise le commerce de l\'ivoire.').
-sen_id(1544, 607, 'h', 'TRIAL', 'yes', 'Une convention internationale a interdit le commerce de l\'ivoire.').
+sen_id(1543, 607, 'p', 'TRIAL', 'yes', 'L\'Occident a préféré se concentrer sur les animaux en danger, plutôt que sur les humains en danger.').
+sen_id(1544, 607, 'p', 'TRIAL', 'yes', 'Les éléphants d\'Afrique sont chassés, dépouillés de leurs défenses et cachés par les braconniers.').
+sen_id(1545, 607, 'p', 'TRIAL', 'yes', 'Leur nombre en Afrique s\'est effondré de 1,2 million à 600.000 en une décennie jusqu\'à ce que la CITES - la Convention sur le commerce international des espèces menacées d\'extinction - interdise le commerce de l\'ivoire.').
+sen_id(1546, 607, 'h', 'TRIAL', 'yes', 'Une convention internationale a interdit le commerce de l\'ivoire.').
 %problem id = 608
-sen_id(1545, 608, 'p', 'TRIAL', 'unknown', 'En plus de produire cette mer fluviale, le déluge nourrit également la plus grande étendue de forêt tropicale restante sur Terre.').
-sen_id(1546, 608, 'p', 'TRIAL', 'unknown', 'Un tiers de la forêt tropicale restante se trouve dans le bassin de l\'Amazone et les incendies en ont consumé environ 10 \%, soit une surface deux fois plus grande que la Californie.').
-sen_id(1547, 608, 'h', 'TRIAL', 'unknown', 'La forêt tropicale amazonienne est une vaste zone d\'Amérique du Sud.').
+sen_id(1547, 608, 'p', 'TRIAL', 'unknown', 'En plus de produire cette mer fluviale, le déluge nourrit également la plus grande étendue de forêt tropicale restante sur Terre.').
+sen_id(1548, 608, 'p', 'TRIAL', 'unknown', 'Un tiers de la forêt tropicale restante se trouve dans le bassin de l\'Amazone et les incendies en ont consumé environ 10 \%, soit une surface deux fois plus grande que la Californie.').
+sen_id(1549, 608, 'h', 'TRIAL', 'unknown', 'La forêt tropicale amazonienne est une vaste zone d\'Amérique du Sud.').
 %problem id = 609
-sen_id(1548, 609, 'p', 'TRIAL', 'yes', 'Les responsables du shérif ont déclaré qu\'un robot pourrait être mis à contribution dans le comté de Ventura, où l\'équipe de déminage a répondu à plus de 40 appels cette année.').
-sen_id(1549, 609, 'h', 'TRIAL', 'yes', 'La police utilise des robots pour le traitement des bombes.').
+sen_id(1550, 609, 'p', 'TRIAL', 'yes', 'Les responsables du shérif ont déclaré qu\'un robot pourrait être mis à contribution dans le comté de Ventura, où l\'équipe de déminage a répondu à plus de 40 appels cette année.').
+sen_id(1551, 609, 'h', 'TRIAL', 'yes', 'La police utilise des robots pour le traitement des bombes.').
 %problem id = 610
-sen_id(1550, 610, 'p', 'TRIAL', 'yes', 'Les chercheurs de la dernière étude ont donné à un groupe de souris un régime dans lequel 60 \% des calories provenaient des graisses.').
-sen_id(1551, 610, 'p', 'TRIAL', 'yes', 'Le régime a commencé lorsque les souris, toutes des mâles, avaient un an, ce qui correspond à l\'âge moyen de la longévité des souris.').
-sen_id(1552, 610, 'p', 'TRIAL', 'yes', 'Comme prévu, les souris ont rapidement développé des signes de diabète imminent, avec des foies grossièrement hypertrophiés, et ont commencé à mourir beaucoup plus tôt que les souris nourries avec un régime standard.').
-sen_id(1553, 610, 'h', 'TRIAL', 'yes', 'À l\'âge d\'un an, les souris mâles ont été nourries avec un régime dans lequel 60 \% des calories provenaient des graisses.').
+sen_id(1552, 610, 'p', 'TRIAL', 'yes', 'Les chercheurs de la dernière étude ont donné à un groupe de souris un régime dans lequel 60 \% des calories provenaient des graisses.').
+sen_id(1553, 610, 'p', 'TRIAL', 'yes', 'Le régime a commencé lorsque les souris, toutes des mâles, avaient un an, ce qui correspond à l\'âge moyen de la longévité des souris.').
+sen_id(1554, 610, 'p', 'TRIAL', 'yes', 'Comme prévu, les souris ont rapidement développé des signes de diabète imminent, avec des foies grossièrement hypertrophiés, et ont commencé à mourir beaucoup plus tôt que les souris nourries avec un régime standard.').
+sen_id(1555, 610, 'h', 'TRIAL', 'yes', 'À l\'âge d\'un an, les souris mâles ont été nourries avec un régime dans lequel 60 \% des calories provenaient des graisses.').
 %problem id = 611
-sen_id(1554, 611, 'p', 'TRIAL', 'unknown', 'En plus des bases de données et de la publicité, l\'art volé est récupéré lorsque quelqu\'un cherche à l\'évaluer ou le propose à la vente à des marchands ou à des maisons de vente aux enchères, répond à une offre de récompense, tente de le faire passer par les douanes ou demande une rançon pour l\'art.').
-sen_id(1555, 611, 'h', 'TRIAL', 'unknown', 'Les registres d\'inventaire centralisés des musées aident à la sensibilisation au vol.').
+sen_id(1556, 611, 'p', 'TRIAL', 'unknown', 'En plus des bases de données et de la publicité, l\'art volé est récupéré lorsque quelqu\'un cherche à l\'évaluer ou le propose à la vente à des marchands ou à des maisons de vente aux enchères, répond à une offre de récompense, tente de le faire passer par les douanes ou demande une rançon pour l\'art.').
+sen_id(1557, 611, 'h', 'TRIAL', 'unknown', 'Les registres d\'inventaire centralisés des musées aident à la sensibilisation au vol.').
 %problem id = 612
-sen_id(1556, 612, 'p', 'TRIAL', 'unknown', 'La police française a retrouvé cinq chefs-d\'œuvre volés au musée de Paris l\'été dernier, dont une petite œuvre de Renoir.').
-sen_id(1557, 612, 'h', 'TRIAL', 'unknown', 'Cinq chefs-d\'œuvre, dont un Renoir, ont été récupérés lorsque le voleur a avoué.').
+sen_id(1558, 612, 'p', 'TRIAL', 'unknown', 'La police française a retrouvé cinq chefs-d\'œuvre volés au musée de Paris l\'été dernier, dont une petite œuvre de Renoir.').
+sen_id(1559, 612, 'h', 'TRIAL', 'unknown', 'Cinq chefs-d\'œuvre, dont un Renoir, ont été récupérés lorsque le voleur a avoué.').
 %problem id = 613
-sen_id(1558, 613, 'p', 'TRIAL', 'unknown', 'Les experts en art ont déclaré lundi, qu\'il y avait un stupéfiant butin au musée Gardner de Boston -- peut-être le plus grand vol d\'art de l\'histoire des États-Unis.').
-sen_id(1559, 613, 'h', 'TRIAL', 'unknown', 'Le plus grand vol d\'art de l\'histoire des États-Unis a été le vol d\'une douzaine d\'œuvres au musée Gardner de Boston.').
+sen_id(1560, 613, 'p', 'TRIAL', 'unknown', 'Les experts en art ont déclaré lundi, qu\'il y avait un stupéfiant butin au musée Gardner de Boston -- peut-être le plus grand vol d\'art de l\'histoire des États-Unis.').
+sen_id(1561, 613, 'h', 'TRIAL', 'unknown', 'Le plus grand vol d\'art de l\'histoire des États-Unis a été le vol d\'une douzaine d\'œuvres au musée Gardner de Boston.').
 %problem id = 614
-sen_id(1560, 614, 'p', 'TRIAL', 'yes', '"Le Herald est maintenant heureux que Kennedy puisse poursuivre vigoureusement un réexamen de la guerre en Irak et de la manière d\'en sortir notre nation.').
-sen_id(1561, 614, 'p', 'TRIAL', 'yes', 'En parlant sérieusement, je prendrai ce changement de cœur comme une indication sobre que nous tous, où que nous nous situions sur le continuum libéral-conservateur, sommes profondément préoccupés par les impacts dommageables de la guerre en Irak et cherchons des moyens de travailler ensemble pour la résoudre le plus rapidement possible."').
-sen_id(1562, 614, 'h', 'TRIAL', 'yes', 'Tous sont profondément préoccupés par les dommages de la guerre en Irak et cherchent des moyens de la résoudre.').
+sen_id(1562, 614, 'p', 'TRIAL', 'yes', '"Le Herald est maintenant heureux que Kennedy puisse poursuivre vigoureusement un réexamen de la guerre en Irak et de la manière d\'en sortir notre nation.').
+sen_id(1563, 614, 'p', 'TRIAL', 'yes', 'En parlant sérieusement, je prendrai ce changement de cœur comme une indication sobre que nous tous, où que nous nous situions sur le continuum libéral-conservateur, sommes profondément préoccupés par les impacts dommageables de la guerre en Irak et cherchons des moyens de travailler ensemble pour la résoudre le plus rapidement possible."').
+sen_id(1564, 614, 'h', 'TRIAL', 'yes', 'Tous sont profondément préoccupés par les dommages de la guerre en Irak et cherchent des moyens de la résoudre.').
 %problem id = 615
-sen_id(1563, 615, 'p', 'TRIAL', 'yes', 'Par exemple, si vous voulez savoir quel temps il fera dans votre région au cours des cinq prochains jours, sélectionnez la chaîne météo sur le multi-écran principal et vous trouverez des prévisions détaillées et d\'autres informations météorologiques.').
-sen_id(1564, 615, 'p', 'TRIAL', 'yes', 'Ou si votre équipe a été en action, vous pouvez lire les principaux titres de votre sport préféré en tapant 300 sur votre combiné - comme vous le feriez sur Ceefax.').
-sen_id(1565, 615, 'h', 'TRIAL', 'yes', 'La chaîne météo vous donne des informations sur le temps qu\'il fera dans les prochains jours.').
+sen_id(1565, 615, 'p', 'TRIAL', 'yes', 'Par exemple, si vous voulez savoir quel temps il fera dans votre région au cours des cinq prochains jours, sélectionnez la chaîne météo sur le multi-écran principal et vous trouverez des prévisions détaillées et d\'autres informations météorologiques.').
+sen_id(1566, 615, 'p', 'TRIAL', 'yes', 'Ou si votre équipe a été en action, vous pouvez lire les principaux titres de votre sport préféré en tapant 300 sur votre combiné - comme vous le feriez sur Ceefax.').
+sen_id(1567, 615, 'h', 'TRIAL', 'yes', 'La chaîne météo vous donne des informations sur le temps qu\'il fera dans les prochains jours.').
 %problem id = 616
-sen_id(1566, 616, 'p', 'TRIAL', 'unknown', 'Volkswagen devrait commencer à coopérer pleinement avec l\'enquête des procureurs sur le vol présumé de documents secrets de General Motors.').
-sen_id(1567, 616, 'h', 'TRIAL', 'unknown', 'Les autorités allemandes ont commencé à enquêter sur VW pour vol.').
+sen_id(1568, 616, 'p', 'TRIAL', 'unknown', 'Volkswagen devrait commencer à coopérer pleinement avec l\'enquête des procureurs sur le vol présumé de documents secrets de General Motors.').
+sen_id(1569, 616, 'h', 'TRIAL', 'unknown', 'Les autorités allemandes ont commencé à enquêter sur VW pour vol.').
 %problem id = 617
-sen_id(1568, 617, 'p', 'TRIAL', 'unknown', 'Une première tentative pour empêcher sept anciens employés de GM de travailler pour Volkswagen pendant 12 mois a été rejetée par un tribunal de Francfort.').
-sen_id(1569, 617, 'h', 'TRIAL', 'unknown', 'Toutes les accusations de débauchage anticoncurrentiel de personnel ont ensuite été rejetées.').
+sen_id(1570, 617, 'p', 'TRIAL', 'unknown', 'Une première tentative pour empêcher sept anciens employés de GM de travailler pour Volkswagen pendant 12 mois a été rejetée par un tribunal de Francfort.').
+sen_id(1571, 617, 'h', 'TRIAL', 'unknown', 'Toutes les accusations de débauchage anticoncurrentiel de personnel ont ensuite été rejetées.').
 %problem id = 618
-sen_id(1570, 618, 'p', 'TRIAL', 'yes', 'Certains passagers ont été escortés hors du navire en fauteuil roulant par des membres d\'équipage portant des gants bleus.').
-sen_id(1571, 618, 'h', 'TRIAL', 'yes', 'Des fauteuils roulants ont été utilisés pour conduire les passagers hors du navire.').
+sen_id(1572, 618, 'p', 'TRIAL', 'yes', 'Certains passagers ont été escortés hors du navire en fauteuil roulant par des membres d\'équipage portant des gants bleus.').
+sen_id(1573, 618, 'h', 'TRIAL', 'yes', 'Des fauteuils roulants ont été utilisés pour conduire les passagers hors du navire.').
 %problem id = 619
-sen_id(1572, 619, 'p', 'TRIAL', 'unknown', 'L\'enquête impliquant M. Lopez et trois associés porte principalement sur des soupçons de vol systématique de secrets.').
-sen_id(1573, 619, 'h', 'TRIAL', 'unknown', 'Sept autres cadres de GM sont partis avec Lopez.').
+sen_id(1574, 619, 'p', 'TRIAL', 'unknown', 'L\'enquête impliquant M. Lopez et trois associés porte principalement sur des soupçons de vol systématique de secrets.').
+sen_id(1575, 619, 'h', 'TRIAL', 'unknown', 'Sept autres cadres de GM sont partis avec Lopez.').
 %problem id = 620
-sen_id(1574, 620, 'p', 'TRIAL', 'unknown', 'Le chef de VW a été soumis à une pression intense de la part du gouvernement de Bonn et de ses collègues de l\'industrie allemande pour rechercher une conciliation après ses déclarations franches de l\'an dernier, qui ont été largement considérées comme portant atteinte à la réputation de l\'Allemagne.').
-sen_id(1575, 620, 'h', 'TRIAL', 'unknown', 'L\'Allemagne s\'inquiète de l\'effet des enquêtes judiciaires sur les affaires économiques et politiques intérieures.').
+sen_id(1576, 620, 'p', 'TRIAL', 'unknown', 'Le chef de VW a été soumis à une pression intense de la part du gouvernement de Bonn et de ses collègues de l\'industrie allemande pour rechercher une conciliation après ses déclarations franches de l\'an dernier, qui ont été largement considérées comme portant atteinte à la réputation de l\'Allemagne.').
+sen_id(1577, 620, 'h', 'TRIAL', 'unknown', 'L\'Allemagne s\'inquiète de l\'effet des enquêtes judiciaires sur les affaires économiques et politiques intérieures.').
 %problem id = 621
-sen_id(1576, 621, 'p', 'TRIAL', 'unknown', 'Monsieur Piech a rejeté les suggestions selon lesquelles les actions de VW en embauchant M. Lopez et ses sept collègues de GM avaient provoqué une consternation générale dans l\'industrie allemande, et étaient en désaccord avec le style des affaires allemandes.').
-sen_id(1577, 621, 'h', 'TRIAL', 'unknown', 'Piech s\'est montré nationaliste dans ses accusations.').
+sen_id(1578, 621, 'p', 'TRIAL', 'unknown', 'Monsieur Piech a rejeté les suggestions selon lesquelles les actions de VW en embauchant M. Lopez et ses sept collègues de GM avaient provoqué une consternation générale dans l\'industrie allemande, et étaient en désaccord avec le style des affaires allemandes.').
+sen_id(1579, 621, 'h', 'TRIAL', 'unknown', 'Piech s\'est montré nationaliste dans ses accusations.').
 %problem id = 622
-sen_id(1578, 622, 'p', 'TRIAL', 'unknown', 'Le Federal Bureau of Investigation a entamé une enquête indépendante sur les circonstances peu après que la Maison Blanche ait fait comprendre que le président Bill Clinton considérait l\'espionnage industriel comme une menace particulière pour les intérêts économiques américains.').
-sen_id(1579, 622, 'h', 'TRIAL', 'unknown', 'Une enquête américaine a débuté à l\'instigation du ministère du Commerce.').
+sen_id(1580, 622, 'p', 'TRIAL', 'unknown', 'Le Federal Bureau of Investigation a entamé une enquête indépendante sur les circonstances peu après que la Maison Blanche ait fait comprendre que le président Bill Clinton considérait l\'espionnage industriel comme une menace particulière pour les intérêts économiques américains.').
+sen_id(1581, 622, 'h', 'TRIAL', 'unknown', 'Une enquête américaine a débuté à l\'instigation du ministère du Commerce.').
 %problem id = 623
-sen_id(1580, 623, 'p', 'TRIAL', 'yes', 'Yunus, qui a partagé vendredi le prix de 1,4 million avec la Grameen Bank qu\'il a fondée il y a 30 ans, a été le pionnier du concept de "microcrédit".').
-sen_id(1581, 623, 'p', 'TRIAL', 'yes', 'Il permet aux personnes très pauvres, qui ne remplissent pas les conditions requises pour les prêts traditionnels, d\'obtenir des prêts de quelques dollars seulement, sans garantie.').
-sen_id(1582, 623, 'p', 'TRIAL', 'yes', 'Les actionnaires des banques sont les personnes appauvries qu\'elle soutient.').
-sen_id(1583, 623, 'h', 'TRIAL', 'yes', 'Yunus a fondé la Grameen Bank il y a 30 ans.').
+sen_id(1582, 623, 'p', 'TRIAL', 'yes', 'Yunus, qui a partagé vendredi le prix de 1,4 million avec la Grameen Bank qu\'il a fondée il y a 30 ans, a été le pionnier du concept de "microcrédit".').
+sen_id(1583, 623, 'p', 'TRIAL', 'yes', 'Il permet aux personnes très pauvres, qui ne remplissent pas les conditions requises pour les prêts traditionnels, d\'obtenir des prêts de quelques dollars seulement, sans garantie.').
+sen_id(1584, 623, 'p', 'TRIAL', 'yes', 'Les actionnaires des banques sont les personnes appauvries qu\'elle soutient.').
+sen_id(1585, 623, 'h', 'TRIAL', 'yes', 'Yunus a fondé la Grameen Bank il y a 30 ans.').
 %problem id = 624
-sen_id(1584, 624, 'p', 'TRIAL', 'yes', 'Alors que sa nation en liesse l\'acclamait, Yunus a déclaré aux journalistes dans la capitale de Dhaka qu\'il voulait "travailler pour créer d\'autres choses nouvelles dans le monde" et qu\'il utiliserait l\'argent du prix pour lancer une entreprise de production d\'aliments peu coûteux mais nutritifs pour les pauvres et mettre en place un hôpital ophtalmologique pour traiter les patients démunis.').
-sen_id(1585, 624, 'h', 'TRIAL', 'yes', 'Yunus veut lancer une entreprise.').
+sen_id(1586, 624, 'p', 'TRIAL', 'yes', 'Alors que sa nation en liesse l\'acclamait, Yunus a déclaré aux journalistes dans la capitale de Dhaka qu\'il voulait "travailler pour créer d\'autres choses nouvelles dans le monde" et qu\'il utiliserait l\'argent du prix pour lancer une entreprise de production d\'aliments peu coûteux mais nutritifs pour les pauvres et mettre en place un hôpital ophtalmologique pour traiter les patients démunis.').
+sen_id(1587, 624, 'h', 'TRIAL', 'yes', 'Yunus veut lancer une entreprise.').
 %problem id = 625
-sen_id(1586, 625, 'p', 'TRIAL', 'unknown', 'Suite à un flux constant de fuites et de déclarations sur des découvertes apparemment incriminantes, son bureau a été bâillonné par de hautes autorités juridiques.').
-sen_id(1587, 625, 'h', 'TRIAL', 'unknown', 'En raison de fuites, un bâillon a été placé sur le bureau de Hollande.').
+sen_id(1588, 625, 'p', 'TRIAL', 'unknown', 'Suite à un flux constant de fuites et de déclarations sur des découvertes apparemment incriminantes, son bureau a été bâillonné par de hautes autorités juridiques.').
+sen_id(1589, 625, 'h', 'TRIAL', 'unknown', 'En raison de fuites, un bâillon a été placé sur le bureau de Hollande.').
 %problem id = 626
-sen_id(1588, 626, 'p', 'TRIAL', 'yes', 'Le prix porte le nom d\'Alfred Nobel, un pacifiste et entrepreneur qui a inventé la dynamite en 1866.').
-sen_id(1589, 626, 'p', 'TRIAL', 'yes', 'Nobel a laissé une grande partie de sa fortune pour créer le prix, qui récompense depuis 1901 les réalisations en physique, chimie, médecine, littérature et les efforts pour promouvoir la paix.').
-sen_id(1590, 626, 'h', 'TRIAL', 'yes', 'Alfred Nobel a inventé la dynamite en 1866.').
+sen_id(1590, 626, 'p', 'TRIAL', 'yes', 'Le prix porte le nom d\'Alfred Nobel, un pacifiste et entrepreneur qui a inventé la dynamite en 1866.').
+sen_id(1591, 626, 'p', 'TRIAL', 'yes', 'Nobel a laissé une grande partie de sa fortune pour créer le prix, qui récompense depuis 1901 les réalisations en physique, chimie, médecine, littérature et les efforts pour promouvoir la paix.').
+sen_id(1592, 626, 'h', 'TRIAL', 'yes', 'Alfred Nobel a inventé la dynamite en 1866.').
 %problem id = 627
-sen_id(1591, 627, 'p', 'TRIAL', 'no', 'M. Ferdinand Piech a déclaré que l\'entreprise allemande ne disposait d\'aucun plan ou document confidentiel concernant le projet d\'usine à très bas coût de GM.').
-sen_id(1592, 627, 'h', 'TRIAL', 'no', 'Les documents comprenaient des plans secrets pour une nouvelle usine.').
+sen_id(1593, 627, 'p', 'TRIAL', 'no', 'M. Ferdinand Piech a déclaré que l\'entreprise allemande ne disposait d\'aucun plan ou document confidentiel concernant le projet d\'usine à très bas coût de GM.').
+sen_id(1594, 627, 'h', 'TRIAL', 'no', 'Les documents comprenaient des plans secrets pour une nouvelle usine.').
 %problem id = 628
-sen_id(1593, 628, 'p', 'TRIAL', 'no', 'Des témoins auraient entendu et vu des documents être déchiquetés toute la nuit par Jorge Alvarez Aguirre et Rosario Piazza, deux ex-Opel qui avaient suivi leur chef chez VW.').
-sen_id(1594, 628, 'h', 'TRIAL', 'no', 'Les personnes quittant GM avec Lopez comprenaient Jose Gutierrez, Jorge Alvarez Aguirre et Rosario Piazza.').
+sen_id(1595, 628, 'p', 'TRIAL', 'no', 'Des témoins auraient entendu et vu des documents être déchiquetés toute la nuit par Jorge Alvarez Aguirre et Rosario Piazza, deux ex-Opel qui avaient suivi leur chef chez VW.').
+sen_id(1596, 628, 'h', 'TRIAL', 'no', 'Les personnes quittant GM avec Lopez comprenaient Jose Gutierrez, Jorge Alvarez Aguirre et Rosario Piazza.').
 %problem id = 629
-sen_id(1595, 629, 'p', 'TRIAL', 'yes', 'Le Bangladesh, l\'un des pays les plus pauvres du monde, a subi une sécheresse et une famine dévastatrices en 1974, qui ont tué 1,5 million de personnes.').
-sen_id(1596, 629, 'p', 'TRIAL', 'yes', 'Alors qu\'il tentait d\'aider des villageois affamés, il a rencontré une jeune femme de 21 ans, Sufia Begum, accablée par une dette minuscule mais écrasante, se souvient Yunus dans son autobiographie, "Banker to the Poor".').
-sen_id(1597, 629, 'h', 'TRIAL', 'yes', '1,5 million de personnes ont été tuées lors des ravages de la sécheresse et de la famine en 1974 au Bangladesh.').
+sen_id(1597, 629, 'p', 'TRIAL', 'yes', 'Le Bangladesh, l\'un des pays les plus pauvres du monde, a subi une sécheresse et une famine dévastatrices en 1974, qui ont tué 1,5 million de personnes.').
+sen_id(1598, 629, 'p', 'TRIAL', 'yes', 'Alors qu\'il tentait d\'aider des villageois affamés, il a rencontré une jeune femme de 21 ans, Sufia Begum, accablée par une dette minuscule mais écrasante, se souvient Yunus dans son autobiographie, "Banker to the Poor".').
+sen_id(1599, 629, 'h', 'TRIAL', 'yes', '1,5 million de personnes ont été tuées lors des ravages de la sécheresse et de la famine en 1974 au Bangladesh.').
 %problem id = 630
-sen_id(1598, 630, 'p', 'TRIAL', 'yes', 'Pour briser le cercle vicieux de la dette et de la pauvreté, Yunus a prêté 27 dollars à Begum et à plus de 40 de ses voisins dans le village de Joba.').
-sen_id(1599, 630, 'p', 'TRIAL', 'yes', 'Il leur a permis de le rembourser au cours de l\'année suivante, lorsque leurs entreprises ont commencé à produire des bénéfices stables.').
-sen_id(1600, 630, 'h', 'TRIAL', 'yes', 'Certaines personnes du village de Joba ont reçu des prêts de Yunus.').
+sen_id(1600, 630, 'p', 'TRIAL', 'yes', 'Pour briser le cercle vicieux de la dette et de la pauvreté, Yunus a prêté 27 dollars à Begum et à plus de 40 de ses voisins dans le village de Joba.').
+sen_id(1601, 630, 'p', 'TRIAL', 'yes', 'Il leur a permis de le rembourser au cours de l\'année suivante, lorsque leurs entreprises ont commencé à produire des bénéfices stables.').
+sen_id(1602, 630, 'h', 'TRIAL', 'yes', 'Certaines personnes du village de Joba ont reçu des prêts de Yunus.').
 %problem id = 631
-sen_id(1601, 631, 'p', 'TRIAL', 'unknown', 'L\'Argentine et la Grande-Bretagne ont annoncé jeudi un accord pour rétablir des liens diplomatiques complets près de huit ans après avoir mené une guerre de 74 jours pour les îles Malouines.').
-sen_id(1602, 631, 'h', 'TRIAL', 'unknown', 'Les relations diplomatiques complètes ont été rétablies en 1990.').
+sen_id(1603, 631, 'p', 'TRIAL', 'unknown', 'L\'Argentine et la Grande-Bretagne ont annoncé jeudi un accord pour rétablir des liens diplomatiques complets près de huit ans après avoir mené une guerre de 74 jours pour les îles Malouines.').
+sen_id(1604, 631, 'h', 'TRIAL', 'unknown', 'Les relations diplomatiques complètes ont été rétablies en 1990.').
 %problem id = 632
-sen_id(1603, 632, 'p', 'TRIAL', 'yes', 'Les emprunteurs doivent former des groupes de cinq membres qui, avec les agents de terrain de la banque, supervisent étroitement les prêts.').
-sen_id(1604, 632, 'p', 'TRIAL', 'yes', 'La pression des pairs se substitue aux garanties car les deux premiers emprunteurs du groupe doivent commencer à rembourser le principal plus les intérêts sur une période de six semaines avant que les autres membres puissent contracter des prêts.').
-sen_id(1605, 632, 'p', 'TRIAL', 'yes', 'Le taux d\'intérêt est fixé à 16 \%.').
-sen_id(1606, 632, 'h', 'TRIAL', 'yes', 'Les deux premiers emprunteurs doivent commencer à rembourser le principal plus les intérêts sur une période de six semaines.').
+sen_id(1605, 632, 'p', 'TRIAL', 'yes', 'Les emprunteurs doivent former des groupes de cinq membres qui, avec les agents de terrain de la banque, supervisent étroitement les prêts.').
+sen_id(1606, 632, 'p', 'TRIAL', 'yes', 'La pression des pairs se substitue aux garanties car les deux premiers emprunteurs du groupe doivent commencer à rembourser le principal plus les intérêts sur une période de six semaines avant que les autres membres puissent contracter des prêts.').
+sen_id(1607, 632, 'p', 'TRIAL', 'yes', 'Le taux d\'intérêt est fixé à 16 \%.').
+sen_id(1608, 632, 'h', 'TRIAL', 'yes', 'Les deux premiers emprunteurs doivent commencer à rembourser le principal plus les intérêts sur une période de six semaines.').
 %problem id = 633
-sen_id(1607, 633, 'p', 'TRIAL', 'yes', 'Un policier belge se faisant passer pour un marchand d\'art à Bruxelles a arrêté trois Suédois.').
-sen_id(1608, 633, 'h', 'TRIAL', 'yes', 'Trois Suédois ont été arrêtés lors d\'une opération d\'infiltration de la police belge.').
+sen_id(1609, 633, 'p', 'TRIAL', 'yes', 'Un policier belge se faisant passer pour un marchand d\'art à Bruxelles a arrêté trois Suédois.').
+sen_id(1610, 633, 'h', 'TRIAL', 'yes', 'Trois Suédois ont été arrêtés lors d\'une opération d\'infiltration de la police belge.').
 %problem id = 634
-sen_id(1609, 634, 'p', 'TRIAL', 'yes', 'Un homme soupçonné d\'avoir volé une collection d\'un million de dollars de centaines d\'objets d\'art anciens népalais et tibétains à New York il y a 11 ans a été arrêté jeudi à son domicile de South Los Angeles, où il avait caché les antiquités.').
-sen_id(1610, 634, 'h', 'TRIAL', 'yes', 'Un homme soupçonné d\'avoir volé une collection d\'un million de dollars d\'objets d\'art népalais et tibétain à New York a été arrêté.').
+sen_id(1611, 634, 'p', 'TRIAL', 'yes', 'Un homme soupçonné d\'avoir volé une collection d\'un million de dollars de centaines d\'objets d\'art anciens népalais et tibétains à New York il y a 11 ans a été arrêté jeudi à son domicile de South Los Angeles, où il avait caché les antiquités.').
+sen_id(1612, 634, 'h', 'TRIAL', 'yes', 'Un homme soupçonné d\'avoir volé une collection d\'un million de dollars d\'objets d\'art népalais et tibétain à New York a été arrêté.').
 %problem id = 635
-sen_id(1611, 635, 'p', 'TRIAL', 'yes', 'La police norvégienne a relâché l\'une des trois personnes arrêtées lorsque le tableau d\'Edvard Munch, \'Le Cri\', volé à la Galerie nationale d\'Oslo, a été retrouvé.').
-sen_id(1612, 635, 'h', 'TRIAL', 'yes', 'La police norvégienne a arrêté trois personnes pour le vol du tableau de Munch, \'Le Cri\'.').
+sen_id(1613, 635, 'p', 'TRIAL', 'yes', 'La police norvégienne a relâché l\'une des trois personnes arrêtées lorsque le tableau d\'Edvard Munch, \'Le Cri\', volé à la Galerie nationale d\'Oslo, a été retrouvé.').
+sen_id(1614, 635, 'h', 'TRIAL', 'yes', 'La police norvégienne a arrêté trois personnes pour le vol du tableau de Munch, \'Le Cri\'.').
 %problem id = 636
-sen_id(1613, 636, 'p', 'TRIAL', 'yes', 'Les offres de récompenses ont permis de récupérer des œuvres d\'art volées.').
-sen_id(1614, 636, 'h', 'TRIAL', 'yes', 'Certaines œuvres d\'art volées sont récupérées grâce aux récompenses offertes.').
+sen_id(1615, 636, 'p', 'TRIAL', 'yes', 'Les offres de récompenses ont permis de récupérer des œuvres d\'art volées.').
+sen_id(1616, 636, 'h', 'TRIAL', 'yes', 'Certaines œuvres d\'art volées sont récupérées grâce aux récompenses offertes.').
 %problem id = 637
-sen_id(1615, 637, 'p', 'TRIAL', 'yes', 'En France, les marchands d\'art sont tenus par la loi d\'enregistrer tous leurs achats, à l\'exception de ceux achetés aux enchères publiques.').
-sen_id(1616, 637, 'h', 'TRIAL', 'yes', 'En France, les œuvres d\'art achetées aux enchères publiques sont dispensées d\'enregistrement.').
+sen_id(1617, 637, 'p', 'TRIAL', 'yes', 'En France, les marchands d\'art sont tenus par la loi d\'enregistrer tous leurs achats, à l\'exception de ceux achetés aux enchères publiques.').
+sen_id(1618, 637, 'h', 'TRIAL', 'yes', 'En France, les œuvres d\'art achetées aux enchères publiques sont dispensées d\'enregistrement.').
 %problem id = 638
-sen_id(1617, 638, 'p', 'TRIAL', 'unknown', 'La visite officielle du ministre argentin marque une nouvelle étape dans la normalisation des relations entre le Royaume-Uni et l\'Argentine.').
-sen_id(1618, 638, 'h', 'TRIAL', 'unknown', 'Les relations entre l\'Argentine et la Grande-Bretagne deviennent de plus en plus coopératives.').
+sen_id(1619, 638, 'p', 'TRIAL', 'unknown', 'La visite officielle du ministre argentin marque une nouvelle étape dans la normalisation des relations entre le Royaume-Uni et l\'Argentine.').
+sen_id(1620, 638, 'h', 'TRIAL', 'unknown', 'Les relations entre l\'Argentine et la Grande-Bretagne deviennent de plus en plus coopératives.').
 %problem id = 639
-sen_id(1619, 639, 'p', 'TRIAL', 'unknown', 'L\'Argentine reste l\'un des 17 pays qui interdisent encore l\'élevage de bovins britanniques en raison de l\'apparition de la maladie de la vache folle dans les années 1980.').
-sen_id(1620, 639, 'h', 'TRIAL', 'unknown', 'Le refus de l\'Argentine d\'acheter du bétail a créé de nouvelles tensions entre les deux pays.').
+sen_id(1621, 639, 'p', 'TRIAL', 'unknown', 'L\'Argentine reste l\'un des 17 pays qui interdisent encore l\'élevage de bovins britanniques en raison de l\'apparition de la maladie de la vache folle dans les années 1980.').
+sen_id(1622, 639, 'h', 'TRIAL', 'unknown', 'Le refus de l\'Argentine d\'acheter du bétail a créé de nouvelles tensions entre les deux pays.').
 %problem id = 640
-sen_id(1621, 640, 'p', 'TRIAL', 'yes', 'L\'affaire d\'espionnage industriel impliquant GM et VW a commencé par l\'embauche de Jos Ignacio Lopez, un employé de la filiale Adam Opel de GM, par VW en tant que directeur de production.').
-sen_id(1622, 640, 'h', 'TRIAL', 'yes', 'Il y a eu une affaire d\'espionnage industriel impliquant GM et VW.').
+sen_id(1623, 640, 'p', 'TRIAL', 'yes', 'L\'affaire d\'espionnage industriel impliquant GM et VW a commencé par l\'embauche de Jos Ignacio Lopez, un employé de la filiale Adam Opel de GM, par VW en tant que directeur de production.').
+sen_id(1624, 640, 'h', 'TRIAL', 'yes', 'Il y a eu une affaire d\'espionnage industriel impliquant GM et VW.').
 %problem id = 641
-sen_id(1623, 641, 'p', 'TRIAL', 'unknown', 'L\'Argentine a demandé l\'aide de la Grande-Bretagne pour son programme de privatisation et a encouragé les investissements britanniques.').
-sen_id(1624, 641, 'h', 'TRIAL', 'unknown', 'L\'Argentine a recherché l\'expertise britannique en matière de privatisation et d\'agriculture.').
+sen_id(1625, 641, 'p', 'TRIAL', 'unknown', 'L\'Argentine a demandé l\'aide de la Grande-Bretagne pour son programme de privatisation et a encouragé les investissements britanniques.').
+sen_id(1626, 641, 'h', 'TRIAL', 'unknown', 'L\'Argentine a recherché l\'expertise britannique en matière de privatisation et d\'agriculture.').
 %problem id = 642
-sen_id(1625, 642, 'p', 'TRIAL', 'unknown', 'Philip Morris a déclaré avoir vendu 201 milliards de cigarettes dans le monde au cours du trimestre.').
-sen_id(1626, 642, 'h', 'TRIAL', 'unknown', 'Philip Morris a déclaré avoir vendu 201 milliards de cigarettes dans le monde au cours du troisième trimestre de 1994.').
+sen_id(1627, 642, 'p', 'TRIAL', 'unknown', 'Philip Morris a déclaré avoir vendu 201 milliards de cigarettes dans le monde au cours du trimestre.').
+sen_id(1628, 642, 'h', 'TRIAL', 'unknown', 'Philip Morris a déclaré avoir vendu 201 milliards de cigarettes dans le monde au cours du troisième trimestre de 1994.').
 %problem id = 643
-sen_id(1627, 643, 'p', 'TRIAL', 'yes', 'Le Federal Bureau of Investigation a entamé une enquête indépendante sur les circonstances peu après que la Maison Blanche ait fait comprendre que le président Bill Clinton considérait l\'espionnage industriel comme une menace particulière pour les intérêts économiques américains.').
-sen_id(1628, 643, 'h', 'TRIAL', 'yes', 'Le président Clinton pense que l\'espionnage industriel est une menace pour le bien-être de l\'Amérique.').
+sen_id(1629, 643, 'p', 'TRIAL', 'yes', 'Le Federal Bureau of Investigation a entamé une enquête indépendante sur les circonstances peu après que la Maison Blanche ait fait comprendre que le président Bill Clinton considérait l\'espionnage industriel comme une menace particulière pour les intérêts économiques américains.').
+sen_id(1630, 643, 'h', 'TRIAL', 'yes', 'Le président Clinton pense que l\'espionnage industriel est une menace pour le bien-être de l\'Amérique.').
 %problem id = 644
-sen_id(1629, 644, 'p', 'TRIAL', 'unknown', 'PM a tenté de racheter l\'entreprise de biscuits Belin de RJR Nabisco il y a deux ans.').
-sen_id(1630, 644, 'h', 'TRIAL', 'unknown', 'Les compagnies de tabac américaines ont commencé à diversifier leur production.').
+sen_id(1631, 644, 'p', 'TRIAL', 'unknown', 'PM a tenté de racheter l\'entreprise de biscuits Belin de RJR Nabisco il y a deux ans.').
+sen_id(1632, 644, 'h', 'TRIAL', 'unknown', 'Les compagnies de tabac américaines ont commencé à diversifier leur production.').
 %problem id = 645
-sen_id(1631, 645, 'p', 'TRIAL', 'unknown', 'GM a ouvert des enquêtes criminelles en Allemagne et aux États-Unis sur la base de leurs soupçons que M. Lopez et son équipe ont volé des informations confidentielles avant de faire défection à VW en mars.').
-sen_id(1632, 645, 'h', 'TRIAL', 'unknown', 'Lopez a fait passer des documents de GM à VW.').
+sen_id(1633, 645, 'p', 'TRIAL', 'unknown', 'GM a ouvert des enquêtes criminelles en Allemagne et aux États-Unis sur la base de leurs soupçons que M. Lopez et son équipe ont volé des informations confidentielles avant de faire défection à VW en mars.').
+sen_id(1634, 645, 'h', 'TRIAL', 'unknown', 'Lopez a fait passer des documents de GM à VW.').
 %problem id = 646
-sen_id(1633, 646, 'p', 'TRIAL', 'unknown', 'En achetant des entreprises locales, Philip Morris et sa filiale héritent de contacts commerciaux informels cultivés sous le régime soviétique, qui peuvent contribuer à adoucir tout déplacement futur vers l\'Est.').
-sen_id(1634, 646, 'h', 'TRIAL', 'unknown', 'Les compagnies de tabac américaines ont utilisé la libéralisation du monopole étatique du tabac.').
+sen_id(1635, 646, 'p', 'TRIAL', 'unknown', 'En achetant des entreprises locales, Philip Morris et sa filiale héritent de contacts commerciaux informels cultivés sous le régime soviétique, qui peuvent contribuer à adoucir tout déplacement futur vers l\'Est.').
+sen_id(1636, 646, 'h', 'TRIAL', 'unknown', 'Les compagnies de tabac américaines ont utilisé la libéralisation du monopole étatique du tabac.').
 %problem id = 647
-sen_id(1635, 647, 'p', 'TRIAL', 'yes', 'GM a établi des motifs de suspicion d\'espionnage industriel en présentant des déclarations sous serment de ses employés.').
-sen_id(1636, 647, 'p', 'TRIAL', 'yes', 'Il s\'agira de déterminer si le projet de VW a été copié à partir de données de GM - ce qui est essentiel pour prouver l\'espionnage industriel.').
-sen_id(1637, 647, 'h', 'TRIAL', 'yes', 'Il y a eu une affaire d\'espionnage industriel impliquant GM et VW.').
+sen_id(1637, 647, 'p', 'TRIAL', 'yes', 'GM a établi des motifs de suspicion d\'espionnage industriel en présentant des déclarations sous serment de ses employés.').
+sen_id(1638, 647, 'p', 'TRIAL', 'yes', 'Il s\'agira de déterminer si le projet de VW a été copié à partir de données de GM - ce qui est essentiel pour prouver l\'espionnage industriel.').
+sen_id(1639, 647, 'h', 'TRIAL', 'yes', 'Il y a eu une affaire d\'espionnage industriel impliquant GM et VW.').
 %problem id = 648
-sen_id(1638, 648, 'p', 'TRIAL', 'unknown', 'En Russie, BAT met en place une joint-venture avec Yava, la plus grande fabrique de cigarettes de Moscou.').
-sen_id(1639, 648, 'h', 'TRIAL', 'unknown', 'BAT a acquis des intérêts de production en Ukraine, en Hongrie et en Russie.').
+sen_id(1640, 648, 'p', 'TRIAL', 'unknown', 'En Russie, BAT met en place une joint-venture avec Yava, la plus grande fabrique de cigarettes de Moscou.').
+sen_id(1641, 648, 'h', 'TRIAL', 'unknown', 'BAT a acquis des intérêts de production en Ukraine, en Hongrie et en Russie.').
 %problem id = 649
-sen_id(1640, 649, 'p', 'TRIAL', 'unknown', 'Bien que Philip Morris vende ses cigarettes à des prix plus bas aux Etats-Unis, l\'augmentation des volumes a permis de faire grimper le résultat d\'exploitation de la division tabac domestique de 25,1 pour cent, à 858 millions de dollars.').
-sen_id(1641, 649, 'h', 'TRIAL', 'unknown', 'PM a réduit les prix américains pour rétablir la position de Marlboro aux Etats-Unis.').
+sen_id(1642, 649, 'p', 'TRIAL', 'unknown', 'Bien que Philip Morris vende ses cigarettes à des prix plus bas aux Etats-Unis, l\'augmentation des volumes a permis de faire grimper le résultat d\'exploitation de la division tabac domestique de 25,1 pour cent, à 858 millions de dollars.').
+sen_id(1643, 649, 'h', 'TRIAL', 'unknown', 'PM a réduit les prix américains pour rétablir la position de Marlboro aux Etats-Unis.').
 %problem id = 650
-sen_id(1642, 650, 'p', 'TRIAL', 'unknown', 'PM a maintenant des projets fermes qui comprennent une participation dans une coentreprise appelée "Constellation in Samara" impliquant la principale usine de tabac de la ville.').
-sen_id(1643, 650, 'h', 'TRIAL', 'unknown', 'PM a acquis trois usines russes.').
+sen_id(1644, 650, 'p', 'TRIAL', 'unknown', 'PM a maintenant des projets fermes qui comprennent une participation dans une coentreprise appelée "Constellation in Samara" impliquant la principale usine de tabac de la ville.').
+sen_id(1645, 650, 'h', 'TRIAL', 'unknown', 'PM a acquis trois usines russes.').
 %problem id = 651
-sen_id(1644, 651, 'p', 'TRIAL', 'unknown', 'Les compagnies de tabac américaines affichaient un bénéfice la plupart des trimestres grâce aux ventes de cigarettes à l\'exportation et à la diversification des produits vendus, y compris les aliments.').
-sen_id(1645, 651, 'h', 'TRIAL', 'unknown', 'PM entrait souvent sur les marchés avec à la fois des cigarettes et des aliments.').
+sen_id(1646, 651, 'p', 'TRIAL', 'unknown', 'Les compagnies de tabac américaines affichaient un bénéfice la plupart des trimestres grâce aux ventes de cigarettes à l\'exportation et à la diversification des produits vendus, y compris les aliments.').
+sen_id(1647, 651, 'h', 'TRIAL', 'unknown', 'PM entrait souvent sur les marchés avec à la fois des cigarettes et des aliments.').
 %problem id = 652
-sen_id(1646, 652, 'p', 'TRIAL', 'unknown', 'Jusqu\'à présent, les Britanniques ont préféré une politique d\'approche volontaire pour restreindre la publicité et des taxes élevées sur les produits du tabac.').
-sen_id(1647, 652, 'h', 'TRIAL', 'unknown', 'Les ventes ont diminué en raison des restrictions sur la publicité.').
+sen_id(1648, 652, 'p', 'TRIAL', 'unknown', 'Jusqu\'à présent, les Britanniques ont préféré une politique d\'approche volontaire pour restreindre la publicité et des taxes élevées sur les produits du tabac.').
+sen_id(1649, 652, 'h', 'TRIAL', 'unknown', 'Les ventes ont diminué en raison des restrictions sur la publicité.').
 %problem id = 653
-sen_id(1648, 653, 'p', 'TRIAL', 'yes', 'La campagne de l\'Argentine pour se rétablir en tant que partenaire commercial digne de confiance a été stimulée hier par la souscription d\'un crédit acheteur de 9,5 millions de dollars par le département britannique de garantie des crédits à l\'exportation.').
-sen_id(1649, 653, 'h', 'TRIAL', 'yes', 'Le Département britannique de garantie des crédits à l\'exportation souscrit des prêts à l\'Argentine.').
+sen_id(1650, 653, 'p', 'TRIAL', 'yes', 'La campagne de l\'Argentine pour se rétablir en tant que partenaire commercial digne de confiance a été stimulée hier par la souscription d\'un crédit acheteur de 9,5 millions de dollars par le département britannique de garantie des crédits à l\'exportation.').
+sen_id(1651, 653, 'h', 'TRIAL', 'yes', 'Le Département britannique de garantie des crédits à l\'exportation souscrit des prêts à l\'Argentine.').
 %problem id = 654
-sen_id(1650, 654, 'p', 'TRIAL', 'unknown', 'Les changements politiques en Europe de l\'Est et la suppression des barrières commerciales en Extrême-Orient ont permis aux quatre multinationales-Philip Morris, BAT Industries, R J Reynolds et Rothmans International-d\'accéder à de nouveaux marchés potentiels importants.').
-sen_id(1651, 654, 'h', 'TRIAL', 'unknown', 'La libéralisation du commerce s\'est produite en Chine.').
+sen_id(1652, 654, 'p', 'TRIAL', 'unknown', 'Les changements politiques en Europe de l\'Est et la suppression des barrières commerciales en Extrême-Orient ont permis aux quatre multinationales-Philip Morris, BAT Industries, R J Reynolds et Rothmans International-d\'accéder à de nouveaux marchés potentiels importants.').
+sen_id(1653, 654, 'h', 'TRIAL', 'unknown', 'La libéralisation du commerce s\'est produite en Chine.').
 %problem id = 655
-sen_id(1652, 655, 'p', 'TRIAL', 'yes', 'L\'Argentine était toujours obsédée par les îles Malouines même en 1994, 12 ans après sa défaite dans la guerre de 74 jours contre la Grande-Bretagne.').
-sen_id(1653, 655, 'h', 'TRIAL', 'yes', 'La guerre des Malouines a eu lieu en 1982.').
+sen_id(1654, 655, 'p', 'TRIAL', 'yes', 'L\'Argentine était toujours obsédée par les îles Malouines même en 1994, 12 ans après sa défaite dans la guerre de 74 jours contre la Grande-Bretagne.').
+sen_id(1655, 655, 'h', 'TRIAL', 'yes', 'La guerre des Malouines a eu lieu en 1982.').
 %problem id = 656
-sen_id(1654, 656, 'p', 'TRIAL', 'unknown', 'Cette opération marque la deuxième incursion en Lituanie de Philip Morris qui, en avril, a devancé British American Tobacco pour acquérir la société Klaipeda Tobacco pour 40 millions de dollars - le plus gros investissement occidental dans les pays baltes à ce jour.').
-sen_id(1655, 656, 'h', 'TRIAL', 'unknown', 'L\'acquisition de la société Klaipeda Tobacco est le plus gros investissement dans les pays baltes.').
+sen_id(1656, 656, 'p', 'TRIAL', 'unknown', 'Cette opération marque la deuxième incursion en Lituanie de Philip Morris qui, en avril, a devancé British American Tobacco pour acquérir la société Klaipeda Tobacco pour 40 millions de dollars - le plus gros investissement occidental dans les pays baltes à ce jour.').
+sen_id(1657, 656, 'h', 'TRIAL', 'unknown', 'L\'acquisition de la société Klaipeda Tobacco est le plus gros investissement dans les pays baltes.').
 %problem id = 657
-sen_id(1656, 657, 'p', 'TRIAL', 'yes', 'L\'Argentine a annoncé qu\'elle avait décidé de lever les restrictions financières et commerciales sur les importations en provenance de Grande-Bretagne qui avaient été imposées lors du conflit des Malouines en 1982.').
-sen_id(1657, 657, 'h', 'TRIAL', 'yes', 'L\'Argentine a levé les restrictions sur les importations britanniques.').
+sen_id(1658, 657, 'p', 'TRIAL', 'yes', 'L\'Argentine a annoncé qu\'elle avait décidé de lever les restrictions financières et commerciales sur les importations en provenance de Grande-Bretagne qui avaient été imposées lors du conflit des Malouines en 1982.').
+sen_id(1659, 657, 'h', 'TRIAL', 'yes', 'L\'Argentine a levé les restrictions sur les importations britanniques.').
 %problem id = 658
-sen_id(1658, 658, 'p', 'TRIAL', 'unknown', 'Le ministre britannique des Affaires étrangères Douglas Hurd rencontrera le président Carlos Menem en Argentine la semaine prochaine.').
-sen_id(1659, 658, 'h', 'TRIAL', 'unknown', 'Le ministre des Affaires étrangères Douglas Hurd s\'est rendu en Argentine.').
+sen_id(1660, 658, 'p', 'TRIAL', 'unknown', 'Le ministre britannique des Affaires étrangères Douglas Hurd rencontrera le président Carlos Menem en Argentine la semaine prochaine.').
+sen_id(1661, 658, 'h', 'TRIAL', 'unknown', 'Le ministre des Affaires étrangères Douglas Hurd s\'est rendu en Argentine.').
 %problem id = 659
-sen_id(1660, 659, 'p', 'TRIAL', 'yes', 'La Grande-Bretagne a accepté de lever d\'ici le 31 mars une zone de protection militaire de 150 miles appliquée autour des îles depuis que l\'Argentine les a envahies en 1982.').
-sen_id(1661, 659, 'h', 'TRIAL', 'yes', 'La zone de protection militaire autour des Malouines a été levée.').
+sen_id(1662, 659, 'p', 'TRIAL', 'yes', 'La Grande-Bretagne a accepté de lever d\'ici le 31 mars une zone de protection militaire de 150 miles appliquée autour des îles depuis que l\'Argentine les a envahies en 1982.').
+sen_id(1663, 659, 'h', 'TRIAL', 'yes', 'La zone de protection militaire autour des Malouines a été levée.').
 %problem id = 660
-sen_id(1662, 660, 'p', 'TRIAL', 'unknown', 'La plupart des mines se trouvent dans des zones arides et les animaux à la recherche d\'eau sont attirés par les bassins de rétention contenant du cyanure qui font partie intégrante des opérations minières.').
-sen_id(1663, 660, 'h', 'TRIAL', 'unknown', 'Des animaux sont morts par milliers pour avoir bu dans des bassins de rétention contenant du cyanure.').
+sen_id(1664, 660, 'p', 'TRIAL', 'unknown', 'La plupart des mines se trouvent dans des zones arides et les animaux à la recherche d\'eau sont attirés par les bassins de rétention contenant du cyanure qui font partie intégrante des opérations minières.').
+sen_id(1665, 660, 'h', 'TRIAL', 'unknown', 'Des animaux sont morts par milliers pour avoir bu dans des bassins de rétention contenant du cyanure.').
 %problem id = 661
-sen_id(1664, 661, 'p', 'TRIAL', 'unknown', 'Le barrage couvrant ce qui était son terrain de football se remplit de millions de tonnes de déchets miniers toxiques.').
-sen_id(1665, 661, 'h', 'TRIAL', 'unknown', 'Les eaux usées des mines représentent un danger pour l\'environnement.').
+sen_id(1666, 661, 'p', 'TRIAL', 'unknown', 'Le barrage couvrant ce qui était son terrain de football se remplit de millions de tonnes de déchets miniers toxiques.').
+sen_id(1667, 661, 'h', 'TRIAL', 'unknown', 'Les eaux usées des mines représentent un danger pour l\'environnement.').
 %problem id = 662
-sen_id(1666, 662, 'p', 'TRIAL', 'yes', 'Les échanges ont permis d\'améliorer considérablement les questions financières, pétrolières, halieutiques et militaires, mais la Grande-Bretagne a toujours refusé d\'aborder la question de la souveraineté sur les Malouines.').
-sen_id(1667, 662, 'h', 'TRIAL', 'yes', 'La Grande-Bretagne continue de refuser de discuter des questions de souveraineté.').
+sen_id(1668, 662, 'p', 'TRIAL', 'yes', 'Les échanges ont permis d\'améliorer considérablement les questions financières, pétrolières, halieutiques et militaires, mais la Grande-Bretagne a toujours refusé d\'aborder la question de la souveraineté sur les Malouines.').
+sen_id(1669, 662, 'h', 'TRIAL', 'yes', 'La Grande-Bretagne continue de refuser de discuter des questions de souveraineté.').
 %problem id = 663
-sen_id(1668, 663, 'p', 'TRIAL', 'yes', 'L\'un des principaux négociateurs argentins des Malouines a déclaré que la visite de M. Hurd, la première d\'un ministre depuis le conflit des Malouines de 1982, signifiait que nous sommes sur la voie d\'une relation plus large et plus riche dans laquelle les îles ne sont qu\'une partie de la relation et non la seule question.').
-sen_id(1669, 663, 'h', 'TRIAL', 'yes', 'Les relations entre l\'Argentine et la Grande-Bretagne deviennent plus coopératives.').
+sen_id(1670, 663, 'p', 'TRIAL', 'yes', 'L\'un des principaux négociateurs argentins des Malouines a déclaré que la visite de M. Hurd, la première d\'un ministre depuis le conflit des Malouines de 1982, signifiait que nous sommes sur la voie d\'une relation plus large et plus riche dans laquelle les îles ne sont qu\'une partie de la relation et non la seule question.').
+sen_id(1671, 663, 'h', 'TRIAL', 'yes', 'Les relations entre l\'Argentine et la Grande-Bretagne deviennent plus coopératives.').
 %problem id = 664
-sen_id(1670, 664, 'p', 'TRIAL', 'unknown', 'La mine fonctionnerait sans interruption sept jours sur sept et utiliserait des tonnes de cyanure chaque jour pour lixivier l\'or du minerai concassé.').
-sen_id(1671, 664, 'h', 'TRIAL', 'unknown', 'Une solution de cyanure faible est versée dessus pour extraire l\'or de la roche.').
+sen_id(1672, 664, 'p', 'TRIAL', 'unknown', 'La mine fonctionnerait sans interruption sept jours sur sept et utiliserait des tonnes de cyanure chaque jour pour lixivier l\'or du minerai concassé.').
+sen_id(1673, 664, 'h', 'TRIAL', 'unknown', 'Une solution de cyanure faible est versée dessus pour extraire l\'or de la roche.').
 %problem id = 665
-sen_id(1672, 665, 'p', 'TRIAL', 'yes', 'Les liens militaires entre les deux pays ont été régis officiellement par un embargo sur les armes imposé par la Grande-Bretagne à l\'Argentine.').
-sen_id(1673, 665, 'h', 'TRIAL', 'yes', 'La Grande-Bretagne a maintenu un embargo sur les armes.').
+sen_id(1674, 665, 'p', 'TRIAL', 'yes', 'Les liens militaires entre les deux pays ont été régis officiellement par un embargo sur les armes imposé par la Grande-Bretagne à l\'Argentine.').
+sen_id(1675, 665, 'h', 'TRIAL', 'yes', 'La Grande-Bretagne a maintenu un embargo sur les armes.').
 %problem id = 666
-sen_id(1674, 666, 'p', 'TRIAL', 'yes', 'Les relations entre l\'Argentine et la Grande-Bretagne se sont de nouveau envenimées en mai dernier lorsque la Grande-Bretagne a décidé d\'étendre les eaux territoriales à 200 miles autour de la Géorgie du Sud et des îles Sandwich du Sud.').
-sen_id(1675, 666, 'h', 'TRIAL', 'yes', 'La Grande-Bretagne a provoqué la colère de l\'Argentine.').
+sen_id(1676, 666, 'p', 'TRIAL', 'yes', 'Les relations entre l\'Argentine et la Grande-Bretagne se sont de nouveau envenimées en mai dernier lorsque la Grande-Bretagne a décidé d\'étendre les eaux territoriales à 200 miles autour de la Géorgie du Sud et des îles Sandwich du Sud.').
+sen_id(1677, 666, 'h', 'TRIAL', 'yes', 'La Grande-Bretagne a provoqué la colère de l\'Argentine.').
 %problem id = 667
-sen_id(1676, 667, 'p', 'TRIAL', 'yes', 'Le gouvernement britannique a indiqué qu\'il était prêt à autoriser les entreprises argentines à participer à l\'exploitation de gisements pétrolifères dans les eaux territoriales des îles Malouines - à condition qu\'elles reconnaissent que tout pétrole extrait appartient à la Grande-Bretagne.').
-sen_id(1677, 667, 'h', 'TRIAL', 'yes', 'Les Britanniques ont indiqué qu\'ils étaient prêts à permettre aux entreprises argentines de participer à l\'exploitation de champs pétroliers.').
+sen_id(1678, 667, 'p', 'TRIAL', 'yes', 'Le gouvernement britannique a indiqué qu\'il était prêt à autoriser les entreprises argentines à participer à l\'exploitation de gisements pétrolifères dans les eaux territoriales des îles Malouines - à condition qu\'elles reconnaissent que tout pétrole extrait appartient à la Grande-Bretagne.').
+sen_id(1679, 667, 'h', 'TRIAL', 'yes', 'Les Britanniques ont indiqué qu\'ils étaient prêts à permettre aux entreprises argentines de participer à l\'exploitation de champs pétroliers.').
 %problem id = 668
-sen_id(1678, 668, 'p', 'TRIAL', 'unknown', 'RJ Reynolds Tobacco a annoncé hier qu\'il prévoyait de construire une usine en Turquie pour produire des cigarettes d\'ici la fin de 1993.').
-sen_id(1679, 668, 'h', 'TRIAL', 'unknown', 'RJR a construit des usines en Turquie.').
+sen_id(1680, 668, 'p', 'TRIAL', 'unknown', 'RJ Reynolds Tobacco a annoncé hier qu\'il prévoyait de construire une usine en Turquie pour produire des cigarettes d\'ici la fin de 1993.').
+sen_id(1681, 668, 'h', 'TRIAL', 'unknown', 'RJR a construit des usines en Turquie.').
 %problem id = 669
-sen_id(1680, 669, 'p', 'TRIAL', 'unknown', 'Le cyanure d\'hydrogène est utilisé dans la fabrication de produits chimiques tels que le tryptophane et d\'autres acides aminés.').
-sen_id(1681, 669, 'h', 'TRIAL', 'unknown', 'Le cyanure est utilisé dans la production de produits pharmaceutiques.').
+sen_id(1682, 669, 'p', 'TRIAL', 'unknown', 'Le cyanure d\'hydrogène est utilisé dans la fabrication de produits chimiques tels que le tryptophane et d\'autres acides aminés.').
+sen_id(1683, 669, 'h', 'TRIAL', 'unknown', 'Le cyanure est utilisé dans la production de produits pharmaceutiques.').
 %problem id = 670
-sen_id(1682, 670, 'p', 'TRIAL', 'yes', 'Philip Morris a cité de forts gains en volume en Allemagne, en Italie, en France, en Espagne, en Europe centrale et orientale, en Russie, au Moyen-Orient, au Japon, en Corée, en Argentine et au Brésil.').
-sen_id(1683, 670, 'h', 'TRIAL', 'yes', 'Philip Morris a réalisé des gains de marché en Russie.').
+sen_id(1684, 670, 'p', 'TRIAL', 'yes', 'Philip Morris a cité de forts gains en volume en Allemagne, en Italie, en France, en Espagne, en Europe centrale et orientale, en Russie, au Moyen-Orient, au Japon, en Corée, en Argentine et au Brésil.').
+sen_id(1685, 670, 'h', 'TRIAL', 'yes', 'Philip Morris a réalisé des gains de marché en Russie.').
 %problem id = 671
-sen_id(1684, 671, 'p', 'TRIAL', 'yes', 'Bien que les marchés intérieurs des cigarettes en Amérique dans les années 1990 aient été fortement réduits en raison de l\'interdiction de la publicité, du tabagisme dans les lieux publics et des avertissements sanitaires, les compagnies de tabac américaines affichaient un bénéfice plus élevé.').
-sen_id(1685, 671, 'h', 'TRIAL', 'yes', 'Les ventes de cigarettes ont diminué en raison des restrictions sur la publicité.').
+sen_id(1686, 671, 'p', 'TRIAL', 'yes', 'Bien que les marchés intérieurs des cigarettes en Amérique dans les années 1990 aient été fortement réduits en raison de l\'interdiction de la publicité, du tabagisme dans les lieux publics et des avertissements sanitaires, les compagnies de tabac américaines affichaient un bénéfice plus élevé.').
+sen_id(1687, 671, 'h', 'TRIAL', 'yes', 'Les ventes de cigarettes ont diminué en raison des restrictions sur la publicité.').
 %problem id = 672
-sen_id(1686, 672, 'p', 'TRIAL', 'yes', 'Philip Morris, le groupe agroalimentaire américain qui fabrique Marlboro, la cigarette la plus vendue au monde, a fait fi du fort sentiment anti-tabac aux Etats-Unis.').
-sen_id(1687, 672, 'h', 'TRIAL', 'yes', 'Philip Morris est propriétaire de la marque Marlboro.').
+sen_id(1688, 672, 'p', 'TRIAL', 'yes', 'Philip Morris, le groupe agroalimentaire américain qui fabrique Marlboro, la cigarette la plus vendue au monde, a fait fi du fort sentiment anti-tabac aux Etats-Unis.').
+sen_id(1689, 672, 'h', 'TRIAL', 'yes', 'Philip Morris est propriétaire de la marque Marlboro.').
 %problem id = 673
-sen_id(1688, 673, 'p', 'TRIAL', 'yes', 'Deux frères qui exploitaient une entreprise de placage à North Hollywood, qui a déversé des milliers de gallons d\'eaux usées contenant du cyanure dans le réseau d\'égouts de Los Angeles, ont plaidé coupable jeudi et doivent purger une peine de prison pour avoir manipulé et stocké de manière imprudente des matières dangereuses.').
-sen_id(1689, 673, 'h', 'TRIAL', 'yes', 'Une entreprise californienne a été accusée de stockage imprudent de produits chimiques.').
+sen_id(1690, 673, 'p', 'TRIAL', 'yes', 'Deux frères qui exploitaient une entreprise de placage à North Hollywood, qui a déversé des milliers de gallons d\'eaux usées contenant du cyanure dans le réseau d\'égouts de Los Angeles, ont plaidé coupable jeudi et doivent purger une peine de prison pour avoir manipulé et stocké de manière imprudente des matières dangereuses.').
+sen_id(1691, 673, 'h', 'TRIAL', 'yes', 'Une entreprise californienne a été accusée de stockage imprudent de produits chimiques.').
 %problem id = 674
-sen_id(1690, 674, 'p', 'TRIAL', 'no', 'Les Nations unies ont élu hier soir huit juges pour le tribunal international des crimes de guerre qui jugera les personnes accusées de meurtres et autres atrocités en ex-Yougoslavie depuis 1991.').
-sen_id(1691, 674, 'h', 'TRIAL', 'no', '11 juges du tribunal de guerre pour la Yougoslavie ont prêté serment devant la Cour mondiale.').
+sen_id(1692, 674, 'p', 'TRIAL', 'no', 'Les Nations unies ont élu hier soir huit juges pour le tribunal international des crimes de guerre qui jugera les personnes accusées de meurtres et autres atrocités en ex-Yougoslavie depuis 1991.').
+sen_id(1693, 674, 'h', 'TRIAL', 'no', '11 juges du tribunal de guerre pour la Yougoslavie ont prêté serment devant la Cour mondiale.').
 %problem id = 675
-sen_id(1692, 675, 'p', 'TRIAL', 'yes', 'Les exploitations minières d\'or en Californie et au Nevada utilisent du cyanure pour extraire le métal précieux.').
-sen_id(1693, 675, 'h', 'TRIAL', 'yes', 'Le cyanure est utilisé dans les mines d\'or.').
+sen_id(1694, 675, 'p', 'TRIAL', 'yes', 'Les exploitations minières d\'or en Californie et au Nevada utilisent du cyanure pour extraire le métal précieux.').
+sen_id(1695, 675, 'h', 'TRIAL', 'yes', 'Le cyanure est utilisé dans les mines d\'or.').
 %problem id = 676
-sen_id(1694, 676, 'p', 'TRIAL', 'unknown', 'Lors d\'une cérémonie discrète, les responsables albanais et britanniques ont accepté d\'enterrer tous les différends en suspens causés par l\'"incident du canal de Corfou".').
-sen_id(1695, 676, 'h', 'TRIAL', 'unknown', 'Le différend entre l\'Albanie et le Royaume-Uni au sujet de l\'incident de Corfou a duré longtemps.').
+sen_id(1696, 676, 'p', 'TRIAL', 'unknown', 'Lors d\'une cérémonie discrète, les responsables albanais et britanniques ont accepté d\'enterrer tous les différends en suspens causés par l\'"incident du canal de Corfou".').
+sen_id(1697, 676, 'h', 'TRIAL', 'unknown', 'Le différend entre l\'Albanie et le Royaume-Uni au sujet de l\'incident de Corfou a duré longtemps.').
 %problem id = 677
-sen_id(1696, 677, 'p', 'TRIAL', 'yes', 'Connue sous le nom de "lixiviation en tas", cette méthode est devenue populaire au cours de la dernière décennie parce qu\'elle permet d\'extraire économiquement des morceaux microscopiques d\'or à partir de minerai à faible teneur.').
-sen_id(1697, 677, 'h', 'TRIAL', 'yes', 'L\'industrie minière utilise une méthode connue sous le nom de lixiviation en tas.').
+sen_id(1698, 677, 'p', 'TRIAL', 'yes', 'Connue sous le nom de "lixiviation en tas", cette méthode est devenue populaire au cours de la dernière décennie parce qu\'elle permet d\'extraire économiquement des morceaux microscopiques d\'or à partir de minerai à faible teneur.').
+sen_id(1699, 677, 'h', 'TRIAL', 'yes', 'L\'industrie minière utilise une méthode connue sous le nom de lixiviation en tas.').
 %problem id = 678
-sen_id(1698, 678, 'p', 'TRIAL', 'unknown', 'C\'est seulement la quatrième fois que le Conseil de sécurité impose des sanctions, les cas précédents étant contre la Rhodésie, l\'Afrique du Sud et, plus récemment, l\'Irak.').
-sen_id(1699, 678, 'h', 'TRIAL', 'unknown', 'La Cour a approuvé les sanctions de l\'ONU contre la Libye.').
+sen_id(1700, 678, 'p', 'TRIAL', 'unknown', 'C\'est seulement la quatrième fois que le Conseil de sécurité impose des sanctions, les cas précédents étant contre la Rhodésie, l\'Afrique du Sud et, plus récemment, l\'Irak.').
+sen_id(1701, 678, 'h', 'TRIAL', 'unknown', 'La Cour a approuvé les sanctions de l\'ONU contre la Libye.').
 %problem id = 679
-sen_id(1700, 679, 'p', 'TRIAL', 'unknown', 'L\'extension de la période effective d\'exclusivité de commercialisation des médicaments est conçue pour donner aux sociétés pharmaceutiques un rendement équitable.').
-sen_id(1701, 679, 'h', 'TRIAL', 'unknown', 'Les médicaments prospectifs doivent avoir une longue durée de vie sur le marché après l\'approbation réglementaire afin d\'être développés.').
+sen_id(1702, 679, 'p', 'TRIAL', 'unknown', 'L\'extension de la période effective d\'exclusivité de commercialisation des médicaments est conçue pour donner aux sociétés pharmaceutiques un rendement équitable.').
+sen_id(1703, 679, 'h', 'TRIAL', 'unknown', 'Les médicaments prospectifs doivent avoir une longue durée de vie sur le marché après l\'approbation réglementaire afin d\'être développés.').
 %problem id = 680
-sen_id(1702, 680, 'p', 'TRIAL', 'unknown', 'Cancer Research Campaign a signé un accord avec une société pharmaceutique américaine pour développer un traitement pionnier du cancer.').
-sen_id(1703, 680, 'h', 'TRIAL', 'unknown', 'Les autres changements concernent des programmes de recherche et développement conjoints avec d\'autres entreprises.').
+sen_id(1704, 680, 'p', 'TRIAL', 'unknown', 'Cancer Research Campaign a signé un accord avec une société pharmaceutique américaine pour développer un traitement pionnier du cancer.').
+sen_id(1705, 680, 'h', 'TRIAL', 'unknown', 'Les autres changements concernent des programmes de recherche et développement conjoints avec d\'autres entreprises.').
 %problem id = 681
-sen_id(1704, 681, 'p', 'TRIAL', 'yes', 'Les pêcheurs utilisant le poison cyanure de sodium ont contribué à la destruction d\'environ 70\% des récifs.').
-sen_id(1705, 681, 'h', 'TRIAL', 'yes', 'La pêche au cyanure est liée à la destruction des récifs de la zone.').
+sen_id(1706, 681, 'p', 'TRIAL', 'yes', 'Les pêcheurs utilisant le poison cyanure de sodium ont contribué à la destruction d\'environ 70\% des récifs.').
+sen_id(1707, 681, 'h', 'TRIAL', 'yes', 'La pêche au cyanure est liée à la destruction des récifs de la zone.').
 %problem id = 682
-sen_id(1706, 682, 'p', 'TRIAL', 'unknown', 'Les entreprises s\'efforcent de réduire l\'intervalle entre la découverte d\'un médicament et sa commercialisation.').
-sen_id(1707, 682, 'h', 'TRIAL', 'unknown', 'Les entreprises s\'efforcent de réduire la période de développement des nouveaux médicaments à une moyenne de huit à neuf ans aux États-Unis.').
+sen_id(1708, 682, 'p', 'TRIAL', 'unknown', 'Les entreprises s\'efforcent de réduire l\'intervalle entre la découverte d\'un médicament et sa commercialisation.').
+sen_id(1709, 682, 'h', 'TRIAL', 'unknown', 'Les entreprises s\'efforcent de réduire la période de développement des nouveaux médicaments à une moyenne de huit à neuf ans aux États-Unis.').
 %problem id = 683
-sen_id(1708, 683, 'p', 'TRIAL', 'yes', 'La délocalisation a permis à l\'entreprise d\'éliminer l\'utilisation du cyanure et du chrome dans ses travaux de placage en les remplaçant par une solution de type savon.').
-sen_id(1709, 683, 'h', 'TRIAL', 'yes', 'Des alternatives de type savon existent.').
+sen_id(1710, 683, 'p', 'TRIAL', 'yes', 'La délocalisation a permis à l\'entreprise d\'éliminer l\'utilisation du cyanure et du chrome dans ses travaux de placage en les remplaçant par une solution de type savon.').
+sen_id(1711, 683, 'h', 'TRIAL', 'yes', 'Des alternatives de type savon existent.').
 %problem id = 684
-sen_id(1710, 684, 'p', 'TRIAL', 'unknown', 'Les fabricants japonais de médicaments essaient maintenant de mettre en place des opérations indépendantes complètes dans la recherche et le développement, la production et la commercialisation.').
-sen_id(1711, 684, 'h', 'TRIAL', 'unknown', 'Il existe des entreprises qui ont scindé la gestion de leurs processus de recherche et de développement.').
+sen_id(1712, 684, 'p', 'TRIAL', 'unknown', 'Les fabricants japonais de médicaments essaient maintenant de mettre en place des opérations indépendantes complètes dans la recherche et le développement, la production et la commercialisation.').
+sen_id(1713, 684, 'h', 'TRIAL', 'unknown', 'Il existe des entreprises qui ont scindé la gestion de leurs processus de recherche et de développement.').
 %problem id = 685
-sen_id(1712, 685, 'p', 'TRIAL', 'yes', 'Si les déchets toxiques contenant du cyanure ne sont pas éliminés correctement, ils peuvent s\'écouler dans les étangs, les cours d\'eau, les égouts et les réservoirs.').
-sen_id(1713, 685, 'h', 'TRIAL', 'yes', 'Les fuites dans l\'environnement sont causées par une mauvaise élimination des déchets toxiques contenant du cyanure.').
+sen_id(1714, 685, 'p', 'TRIAL', 'yes', 'Si les déchets toxiques contenant du cyanure ne sont pas éliminés correctement, ils peuvent s\'écouler dans les étangs, les cours d\'eau, les égouts et les réservoirs.').
+sen_id(1715, 685, 'h', 'TRIAL', 'yes', 'Les fuites dans l\'environnement sont causées par une mauvaise élimination des déchets toxiques contenant du cyanure.').
 %problem id = 686
-sen_id(1714, 686, 'p', 'TRIAL', 'no', 'Au total, 79\% des personnes interrogées dans le cadre d\'un sondage sont d\'accord pour que les adultes souffrant d\'une maladie incurable reçoivent "une aide médicale pour une mort paisible".').
-sen_id(1715, 686, 'h', 'TRIAL', 'no', 'Dans un sondage réalisé auprès du public américain, la plupart des personnes approuvent les lois qui permettent de retirer le maintien en vie d\'un patient en phase terminale.').
+sen_id(1716, 686, 'p', 'TRIAL', 'no', 'Au total, 79\% des personnes interrogées dans le cadre d\'un sondage sont d\'accord pour que les adultes souffrant d\'une maladie incurable reçoivent "une aide médicale pour une mort paisible".').
+sen_id(1717, 686, 'h', 'TRIAL', 'no', 'Dans un sondage réalisé auprès du public américain, la plupart des personnes approuvent les lois qui permettent de retirer le maintien en vie d\'un patient en phase terminale.').
 %problem id = 687
-sen_id(1716, 687, 'p', 'TRIAL', 'unknown', 'Michaela Roeder, 31 ans, a été reconnue coupable de six chefs d\'accusation d\'homicide involontaire et de meurtre par pitié.').
-sen_id(1717, 687, 'h', 'TRIAL', 'unknown', 'Une infirmière allemande a été reconnue coupable d\'homicide involontaire et de meurtre par pitié de patients par injection létale.').
+sen_id(1718, 687, 'p', 'TRIAL', 'unknown', 'Michaela Roeder, 31 ans, a été reconnue coupable de six chefs d\'accusation d\'homicide involontaire et de meurtre par pitié.').
+sen_id(1719, 687, 'h', 'TRIAL', 'unknown', 'Une infirmière allemande a été reconnue coupable d\'homicide involontaire et de meurtre par pitié de patients par injection létale.').
 %problem id = 688
-sen_id(1718, 688, 'p', 'TRIAL', 'unknown', 'Un médecin du Michigan a aidé une femme de l\'Oregon atteinte de la maladie d\'Alzheimer à se suicider.').
-sen_id(1719, 688, 'h', 'TRIAL', 'unknown', 'Le docteur Kevorkian a aidé Janet Adkins à utiliser son dispositif de suicide.').
+sen_id(1720, 688, 'p', 'TRIAL', 'unknown', 'Un médecin du Michigan a aidé une femme de l\'Oregon atteinte de la maladie d\'Alzheimer à se suicider.').
+sen_id(1721, 688, 'h', 'TRIAL', 'unknown', 'Le docteur Kevorkian a aidé Janet Adkins à utiliser son dispositif de suicide.').
 %problem id = 689
-sen_id(1720, 689, 'p', 'TRIAL', 'yes', 'Une entreprise de placage qui a déversé des milliers de gallons d\'eaux usées contenant du cyanure dans le réseau d\'égouts de Los Angeles a plaidé coupable.').
-sen_id(1721, 689, 'h', 'TRIAL', 'yes', 'Une entreprise de placage a déversé des eaux usées contenant du cyanure dans le réseau d\'égouts de Los Angeles.').
+sen_id(1722, 689, 'p', 'TRIAL', 'yes', 'Une entreprise de placage qui a déversé des milliers de gallons d\'eaux usées contenant du cyanure dans le réseau d\'égouts de Los Angeles a plaidé coupable.').
+sen_id(1723, 689, 'h', 'TRIAL', 'yes', 'Une entreprise de placage a déversé des eaux usées contenant du cyanure dans le réseau d\'égouts de Los Angeles.').
 %problem id = 690
-sen_id(1722, 690, 'p', 'TRIAL', 'yes', 'Les déchets dans les bassins produits par la lixiviation de l\'or du minerai sont une source de dangers potentiels pour l\'environnement.').
-sen_id(1723, 690, 'h', 'TRIAL', 'yes', 'Les eaux usées des mines constituent un danger pour l\'environnement.').
+sen_id(1724, 690, 'p', 'TRIAL', 'yes', 'Les déchets dans les bassins produits par la lixiviation de l\'or du minerai sont une source de dangers potentiels pour l\'environnement.').
+sen_id(1725, 690, 'h', 'TRIAL', 'yes', 'Les eaux usées des mines constituent un danger pour l\'environnement.').
 %problem id = 691
-sen_id(1724, 691, 'p', 'TRIAL', 'unknown', 'Janet Elaine Adkins, 54 ans, a utilisé une machine controversée pour se suicider dans le Michigan.').
-sen_id(1725, 691, 'h', 'TRIAL', 'unknown', 'Un patient atteint d\'Alzheimer s\'est rendu dans le Michigan pour un suicide assisté.').
+sen_id(1726, 691, 'p', 'TRIAL', 'unknown', 'Janet Elaine Adkins, 54 ans, a utilisé une machine controversée pour se suicider dans le Michigan.').
+sen_id(1727, 691, 'h', 'TRIAL', 'unknown', 'Un patient atteint d\'Alzheimer s\'est rendu dans le Michigan pour un suicide assisté.').
 %problem id = 692
-sen_id(1726, 692, 'p', 'TRIAL', 'unknown', 'Une adolescente en état de mort cérébrale a été retirée de l\'équipement de maintien en vie après avoir donné naissance à une fille prématurée.').
-sen_id(1727, 692, 'h', 'TRIAL', 'unknown', 'Les femmes enceintes sont autorisées à mourir après avoir accouché de leur bébé.').
+sen_id(1728, 692, 'p', 'TRIAL', 'unknown', 'Une adolescente en état de mort cérébrale a été retirée de l\'équipement de maintien en vie après avoir donné naissance à une fille prématurée.').
+sen_id(1729, 692, 'h', 'TRIAL', 'unknown', 'Les femmes enceintes sont autorisées à mourir après avoir accouché de leur bébé.').
 %problem id = 693
-sen_id(1728, 693, 'p', 'TRIAL', 'yes', 'Plus de 6400 oiseaux migrateurs et autres animaux ont été tués au Nevada en buvant l\'eau des bassins de retenue contenant du cyanure produits par les exploitations aurifères.').
-sen_id(1729, 693, 'h', 'TRIAL', 'yes', 'Des animaux sont morts par milliers pour avoir bu dans des bassins de rétention contenant du cyanure.').
+sen_id(1730, 693, 'p', 'TRIAL', 'yes', 'Plus de 6400 oiseaux migrateurs et autres animaux ont été tués au Nevada en buvant l\'eau des bassins de retenue contenant du cyanure produits par les exploitations aurifères.').
+sen_id(1731, 693, 'h', 'TRIAL', 'yes', 'Des animaux sont morts par milliers pour avoir bu dans des bassins de rétention contenant du cyanure.').
 %problem id = 694
-sen_id(1730, 694, 'p', 'TRIAL', 'unknown', 'La Cour suprême a déclaré aujourd\'hui que les États peuvent interdire le retrait d\'un traitement de maintien en vie à des patients comateux qui n\'ont pas fait ou ne peuvent pas faire connaître leurs désirs.').
-sen_id(1731, 694, 'h', 'TRIAL', 'unknown', 'Dans la plupart des cas, le patient est comateux ou mentalement incapable de communiquer ses sentiments.').
+sen_id(1732, 694, 'p', 'TRIAL', 'unknown', 'La Cour suprême a déclaré aujourd\'hui que les États peuvent interdire le retrait d\'un traitement de maintien en vie à des patients comateux qui n\'ont pas fait ou ne peuvent pas faire connaître leurs désirs.').
+sen_id(1733, 694, 'h', 'TRIAL', 'unknown', 'Dans la plupart des cas, le patient est comateux ou mentalement incapable de communiquer ses sentiments.').
 %problem id = 695
-sen_id(1732, 695, 'p', 'TRIAL', 'unknown', 'Une patiente atteinte de la maladie d\'Alzheimer a parcouru 3.000 km pour se suicider avec l\'aide d\'un médecin, qui a construit un appareil qui lui a administré une dose mortelle de produits chimiques.').
-sen_id(1733, 695, 'h', 'TRIAL', 'unknown', 'La femme dans l\'affaire Kevorkian a injecté des produits chimiques mortels dans son corps.').
+sen_id(1734, 695, 'p', 'TRIAL', 'unknown', 'Une patiente atteinte de la maladie d\'Alzheimer a parcouru 3.000 km pour se suicider avec l\'aide d\'un médecin, qui a construit un appareil qui lui a administré une dose mortelle de produits chimiques.').
+sen_id(1735, 695, 'h', 'TRIAL', 'unknown', 'La femme dans l\'affaire Kevorkian a injecté des produits chimiques mortels dans son corps.').
 %problem id = 696
-sen_id(1734, 696, 'p', 'TRIAL', 'unknown', 'Les enquêteurs de la police d\'État ont déclaré lors d\'une audience préliminaire que Delbert leur a dit que la mort de Billy, 64 ans, était un meurtre par compassion.').
-sen_id(1735, 696, 'h', 'TRIAL', 'unknown', 'C\'est Delbert Ward qui a dit aux autorités qu\'il avait étranglé son frère.').
+sen_id(1736, 696, 'p', 'TRIAL', 'unknown', 'Les enquêteurs de la police d\'État ont déclaré lors d\'une audience préliminaire que Delbert leur a dit que la mort de Billy, 64 ans, était un meurtre par compassion.').
+sen_id(1737, 696, 'h', 'TRIAL', 'unknown', 'C\'est Delbert Ward qui a dit aux autorités qu\'il avait étranglé son frère.').
 %problem id = 697
-sen_id(1736, 697, 'p', 'TRIAL', 'yes', 'Dans un cas, cinq travailleurs d\'une entreprise de placage ont été asphyxiés par du cyanure d\'hydrogène alors qu\'ils tentaient de nettoyer un réservoir de boue.').
-sen_id(1737, 697, 'h', 'TRIAL', 'yes', 'Les émanations de cyanure ont tué cinq travailleurs qui nettoyaient une cuve.').
+sen_id(1738, 697, 'p', 'TRIAL', 'yes', 'Dans un cas, cinq travailleurs d\'une entreprise de placage ont été asphyxiés par du cyanure d\'hydrogène alors qu\'ils tentaient de nettoyer un réservoir de boue.').
+sen_id(1739, 697, 'h', 'TRIAL', 'yes', 'Les émanations de cyanure ont tué cinq travailleurs qui nettoyaient une cuve.').
 %problem id = 698
-sen_id(1738, 698, 'p', 'TRIAL', 'yes', 'Le cyanure est également utilisé par les pêcheurs Muru-ami aux Philippines pour chasser les poissons des récifs coralliens.').
-sen_id(1739, 698, 'h', 'TRIAL', 'yes', 'Les pêcheurs philippins utilisent le cyanure pour pêcher.').
+sen_id(1740, 698, 'p', 'TRIAL', 'yes', 'Le cyanure est également utilisé par les pêcheurs Muru-ami aux Philippines pour chasser les poissons des récifs coralliens.').
+sen_id(1741, 698, 'h', 'TRIAL', 'yes', 'Les pêcheurs philippins utilisent le cyanure pour pêcher.').
 %problem id = 699
-sen_id(1740, 699, 'p', 'TRIAL', 'unknown', 'NUCOR, le principal groupe américain de mini-aciéries, va fortement augmenter la capacité de production d\'une usine à Crawfordsville, dans l\'Indiana, qui a bouleversé l\'industrie par l\'utilisation d\'une nouvelle technologie radicale.').
-sen_id(1741, 699, 'h', 'TRIAL', 'unknown', 'Le nouveau procédé de moulage à paroi mince a bouleversé l\'industrie de l\'acier.').
+sen_id(1742, 699, 'p', 'TRIAL', 'unknown', 'NUCOR, le principal groupe américain de mini-aciéries, va fortement augmenter la capacité de production d\'une usine à Crawfordsville, dans l\'Indiana, qui a bouleversé l\'industrie par l\'utilisation d\'une nouvelle technologie radicale.').
+sen_id(1743, 699, 'h', 'TRIAL', 'unknown', 'Le nouveau procédé de moulage à paroi mince a bouleversé l\'industrie de l\'acier.').
 %problem id = 700
-sen_id(1742, 700, 'p', 'TRIAL', 'yes', 'À la toute périphérie du commerce, les pygmées Baka du sud-est du Cameroun utilisent un composé de cyanure pour étourdir les abeilles lors de leurs raids sur leurs nids pour le miel.').
-sen_id(1743, 700, 'h', 'TRIAL', 'yes', 'Les cueilleurs de miel camerounais utilisent du cyanure pour étourdir les abeilles.').
+sen_id(1744, 700, 'p', 'TRIAL', 'yes', 'À la toute périphérie du commerce, les pygmées Baka du sud-est du Cameroun utilisent un composé de cyanure pour étourdir les abeilles lors de leurs raids sur leurs nids pour le miel.').
+sen_id(1745, 700, 'h', 'TRIAL', 'yes', 'Les cueilleurs de miel camerounais utilisent du cyanure pour étourdir les abeilles.').
 %problem id = 701
-sen_id(1744, 701, 'p', 'TRIAL', 'yes', 'Les présidents du Honduras et du Salvador devaient entamer hier deux jours de discussions à San Salvador, dans un contexte de tensions persistantes dans les zones frontalières.').
-sen_id(1745, 701, 'h', 'TRIAL', 'yes', 'Le Honduras et le Salvador sont entrés en conflit sur leurs frontières.').
+sen_id(1746, 701, 'p', 'TRIAL', 'yes', 'Les présidents du Honduras et du Salvador devaient entamer hier deux jours de discussions à San Salvador, dans un contexte de tensions persistantes dans les zones frontalières.').
+sen_id(1747, 701, 'h', 'TRIAL', 'yes', 'Le Honduras et le Salvador sont entrés en conflit sur leurs frontières.').
 %problem id = 702
-sen_id(1746, 702, 'p', 'TRIAL', 'unknown', 'Deux destroyers britanniques ont heurté des mines posées par l\'Albanie alors qu\'ils exerçaient leurs droits en passant par le canal de Corfou.').
-sen_id(1747, 702, 'h', 'TRIAL', 'unknown', 'L\'incident du canal de Corfou concerne un destroyer britannique coulé par l\'Albanie dans le canal de Corfou.').
+sen_id(1748, 702, 'p', 'TRIAL', 'unknown', 'Deux destroyers britanniques ont heurté des mines posées par l\'Albanie alors qu\'ils exerçaient leurs droits en passant par le canal de Corfou.').
+sen_id(1749, 702, 'h', 'TRIAL', 'unknown', 'L\'incident du canal de Corfou concerne un destroyer britannique coulé par l\'Albanie dans le canal de Corfou.').
 %problem id = 703
-sen_id(1748, 703, 'p', 'TRIAL', 'yes', 'L\'Occident a préféré se concentrer sur les animaux en danger, plutôt que sur les humains en danger.').
-sen_id(1749, 703, 'p', 'TRIAL', 'yes', 'Les éléphants d\'Afrique sont chassés, dépouillés de leurs défenses et cachés par les braconniers.').
-sen_id(1750, 703, 'p', 'TRIAL', 'yes', 'Leur nombre en Afrique s\'est effondré de 1,2 million à 600.000 en une décennie jusqu\'à ce que la CITES - la Convention sur le commerce international des espèces menacées d\'extinction - interdise le commerce de l\'ivoire.').
-sen_id(1751, 703, 'h', 'TRIAL', 'yes', 'La population d\'éléphants d\'Afrique a été décimée par les braconniers.').
+sen_id(1750, 703, 'p', 'TRIAL', 'yes', 'L\'Occident a préféré se concentrer sur les animaux en danger, plutôt que sur les humains en danger.').
+sen_id(1751, 703, 'p', 'TRIAL', 'yes', 'Les éléphants d\'Afrique sont chassés, dépouillés de leurs défenses et cachés par les braconniers.').
+sen_id(1752, 703, 'p', 'TRIAL', 'yes', 'Leur nombre en Afrique s\'est effondré de 1,2 million à 600.000 en une décennie jusqu\'à ce que la CITES - la Convention sur le commerce international des espèces menacées d\'extinction - interdise le commerce de l\'ivoire.').
+sen_id(1753, 703, 'h', 'TRIAL', 'yes', 'La population d\'éléphants d\'Afrique a été décimée par les braconniers.').
 %problem id = 704
-sen_id(1752, 704, 'p', 'TRIAL', 'yes', 'L\'affaire de la Libye contre la Grande-Bretagne et les États-Unis concerne le différend relatif à leur demande d\'extradition des Libyens accusés d\'avoir fait exploser un avion de la Pan Am au-dessus de Lockerbie en 1988.').
-sen_id(1753, 704, 'h', 'TRIAL', 'yes', 'Une affaire concernait l\'extradition de suspects libyens dans l\'attentat à la bombe de la Pan Am Lockerbie.').
+sen_id(1754, 704, 'p', 'TRIAL', 'yes', 'L\'affaire de la Libye contre la Grande-Bretagne et les États-Unis concerne le différend relatif à leur demande d\'extradition des Libyens accusés d\'avoir fait exploser un avion de la Pan Am au-dessus de Lockerbie en 1988.').
+sen_id(1755, 704, 'h', 'TRIAL', 'yes', 'Une affaire concernait l\'extradition de suspects libyens dans l\'attentat à la bombe de la Pan Am Lockerbie.').
 %problem id = 705
-sen_id(1754, 705, 'p', 'TRIAL', 'yes', 'Pour les laboratoires pharmaceutiques américains, les réformes imminentes des soins de santé promettent une ère de maîtrise accrue des coûts et de contrôle des prix.').
-sen_id(1755, 705, 'h', 'TRIAL', 'yes', 'Le gouvernement américain veut maintenir les prix des médicaments à un niveau bas.').
+sen_id(1756, 705, 'p', 'TRIAL', 'yes', 'Pour les laboratoires pharmaceutiques américains, les réformes imminentes des soins de santé promettent une ère de maîtrise accrue des coûts et de contrôle des prix.').
+sen_id(1757, 705, 'h', 'TRIAL', 'yes', 'Le gouvernement américain veut maintenir les prix des médicaments à un niveau bas.').
 %problem id = 706
-sen_id(1756, 706, 'p', 'TRIAL', 'unknown', 'Les touristes paient des millions de dollars par an pour venir voir la faune africaine et les contrebandiers en paient des millions supplémentaires en achetant de manière strictement illégale de l\'ivoire et de la corne de rhinocéros aux braconniers.').
-sen_id(1757, 706, 'h', 'TRIAL', 'unknown', 'Les pays africains encouragent le maintien en vie des animaux pour attirer les touristes.').
+sen_id(1758, 706, 'p', 'TRIAL', 'unknown', 'Les touristes paient des millions de dollars par an pour venir voir la faune africaine et les contrebandiers en paient des millions supplémentaires en achetant de manière strictement illégale de l\'ivoire et de la corne de rhinocéros aux braconniers.').
+sen_id(1759, 706, 'h', 'TRIAL', 'unknown', 'Les pays africains encouragent le maintien en vie des animaux pour attirer les touristes.').
 %problem id = 707
-sen_id(1758, 707, 'p', 'TRIAL', 'unknown', 'Les propriétaires de Phinda, la Conservation Corporation basée en Afrique du Sud, n\'auraient pas pu payer une meilleure publicité pour leur philosophie de la conservation de la vie sauvage : une approche de la conservation basée sur les populations, qui gagne lentement du terrain en Afrique, alors que les réserves de chasse sont de plus en plus menacées par des populations locales affamées, pauvres et en colère.').
-sen_id(1759, 707, 'h', 'TRIAL', 'unknown', 'La Conservation Corporation basée en Afrique du Sud menace la population locale.').
+sen_id(1760, 707, 'p', 'TRIAL', 'unknown', 'Les propriétaires de Phinda, la Conservation Corporation basée en Afrique du Sud, n\'auraient pas pu payer une meilleure publicité pour leur philosophie de la conservation de la vie sauvage : une approche de la conservation basée sur les populations, qui gagne lentement du terrain en Afrique, alors que les réserves de chasse sont de plus en plus menacées par des populations locales affamées, pauvres et en colère.').
+sen_id(1761, 707, 'h', 'TRIAL', 'unknown', 'La Conservation Corporation basée en Afrique du Sud menace la population locale.').
 %problem id = 708
-sen_id(1760, 708, 'p', 'TRIAL', 'yes', 'Le développement d\'un médicament est un processus énormément complexe et coûteux.').
-sen_id(1761, 708, 'h', 'TRIAL', 'yes', 'La phase de recherche et développement de la création d\'un nouveau médicament est compliquée.').
+sen_id(1762, 708, 'p', 'TRIAL', 'yes', 'Le développement d\'un médicament est un processus énormément complexe et coûteux.').
+sen_id(1763, 708, 'h', 'TRIAL', 'yes', 'La phase de recherche et développement de la création d\'un nouveau médicament est compliquée.').
 %problem id = 709
-sen_id(1762, 709, 'p', 'TRIAL', 'no', 'Les essais cliniques concernent 240 patients dans 10 centres, chaque patient étant interrogé trois fois.').
-sen_id(1763, 709, 'h', 'TRIAL', 'no', 'Les essais cliniques impliquent une moyenne de 200 patients par essai.').
+sen_id(1764, 709, 'p', 'TRIAL', 'no', 'Les essais cliniques concernent 240 patients dans 10 centres, chaque patient étant interrogé trois fois.').
+sen_id(1765, 709, 'h', 'TRIAL', 'no', 'Les essais cliniques impliquent une moyenne de 200 patients par essai.').
 %problem id = 710
-sen_id(1764, 710, 'p', 'TRIAL', 'yes', 'Les défenseurs de la nature craignent que l\'une des ressources les plus précieuses de la Namibie, sa faune abondante et surtout son rhinocéros noir menacé, ne soit confrontée à une menace majeure de braconnage.').
-sen_id(1765, 710, 'h', 'TRIAL', 'yes', 'En Afrique, les rhinocéros sont gravement menacés par le braconnage.').
+sen_id(1766, 710, 'p', 'TRIAL', 'yes', 'Les défenseurs de la nature craignent que l\'une des ressources les plus précieuses de la Namibie, sa faune abondante et surtout son rhinocéros noir menacé, ne soit confrontée à une menace majeure de braconnage.').
+sen_id(1767, 710, 'h', 'TRIAL', 'yes', 'En Afrique, les rhinocéros sont gravement menacés par le braconnage.').
 %problem id = 711
-sen_id(1766, 711, 'p', 'TRIAL', 'unknown', '"Voyant que la décision d\'exploiter le pétrole dans le bloc 16 a été prise, nous travaillons maintenant à rendre le projet aussi durable que possible sur le plan environnemental", déclare Danila Silva d\'EcoCiencia, un groupe de recherche sur l\'environnement.').
-sen_id(1767, 711, 'h', 'TRIAL', 'unknown', 'Des techniques de sylviculture et de développement durables sont employées.').
+sen_id(1768, 711, 'p', 'TRIAL', 'unknown', '"Voyant que la décision d\'exploiter le pétrole dans le bloc 16 a été prise, nous travaillons maintenant à rendre le projet aussi durable que possible sur le plan environnemental", déclare Danila Silva d\'EcoCiencia, un groupe de recherche sur l\'environnement.').
+sen_id(1769, 711, 'h', 'TRIAL', 'unknown', 'Des techniques de sylviculture et de développement durables sont employées.').
 %problem id = 712
-sen_id(1768, 712, 'p', 'TRIAL', 'unknown', 'Depuis 1987, cependant, le Brésil a pris des mesures pour réduire considérablement la destruction, notamment en renforçant l\'application de la loi et en éliminant les incitations fiscales qui conduisaient à des défrichements à grande échelle.').
-sen_id(1769, 712, 'h', 'TRIAL', 'unknown', 'Au début des années 1990, le Brésil a commencé à prendre des mesures pour sauver la forêt tropicale.').
+sen_id(1770, 712, 'p', 'TRIAL', 'unknown', 'Depuis 1987, cependant, le Brésil a pris des mesures pour réduire considérablement la destruction, notamment en renforçant l\'application de la loi et en éliminant les incitations fiscales qui conduisaient à des défrichements à grande échelle.').
+sen_id(1771, 712, 'h', 'TRIAL', 'unknown', 'Au début des années 1990, le Brésil a commencé à prendre des mesures pour sauver la forêt tropicale.').
 %problem id = 713
-sen_id(1770, 713, 'p', 'TRIAL', 'yes', 'Le développement chaotique qui engloutit la forêt amazonienne pourrait enfin être maîtrisé grâce à un nouveau plan élaboré par des responsables des pays amazoniens et d\'éminents scientifiques du monde entier.').
-sen_id(1771, 713, 'h', 'TRIAL', 'yes', 'La forêt amazonienne souffre d\'un développement chaotique.').
+sen_id(1772, 713, 'p', 'TRIAL', 'yes', 'Le développement chaotique qui engloutit la forêt amazonienne pourrait enfin être maîtrisé grâce à un nouveau plan élaboré par des responsables des pays amazoniens et d\'éminents scientifiques du monde entier.').
+sen_id(1773, 713, 'h', 'TRIAL', 'yes', 'La forêt amazonienne souffre d\'un développement chaotique.').
 %problem id = 714
-sen_id(1772, 714, 'p', 'TRIAL', 'unknown', 'Leakey a estimé que la riche faune du Kenya, qui sous-tend une industrie touristique d\'une valeur de 450 millions de dollars (308 millions de livres) par an, pouvait être gérée de manière rentable et durable.').
-sen_id(1773, 714, 'h', 'TRIAL', 'unknown', 'Les pays africains encouragent le maintien en vie des animaux pour attirer les touristes.').
+sen_id(1774, 714, 'p', 'TRIAL', 'unknown', 'Leakey a estimé que la riche faune du Kenya, qui sous-tend une industrie touristique d\'une valeur de 450 millions de dollars (308 millions de livres) par an, pouvait être gérée de manière rentable et durable.').
+sen_id(1775, 714, 'h', 'TRIAL', 'unknown', 'Les pays africains encouragent le maintien en vie des animaux pour attirer les touristes.').
 %problem id = 715
-sen_id(1774, 715, 'p', 'TRIAL', 'unknown', 'La loi exigeait autrefois que les colons défrichent 80\% de leurs terres en deux ans pour en gagner la propriété.').
-sen_id(1775, 715, 'h', 'TRIAL', 'unknown', 'Avant la fin des années 1980, certaines nations accordaient même des terres et des crédits d\'impôt aux individus et aux entreprises qui coupaient, brûlaient et exploitaient la forêt.').
+sen_id(1776, 715, 'p', 'TRIAL', 'unknown', 'La loi exigeait autrefois que les colons défrichent 80\% de leurs terres en deux ans pour en gagner la propriété.').
+sen_id(1777, 715, 'h', 'TRIAL', 'unknown', 'Avant la fin des années 1980, certaines nations accordaient même des terres et des crédits d\'impôt aux individus et aux entreprises qui coupaient, brûlaient et exploitaient la forêt.').
 %problem id = 716
-sen_id(1776, 716, 'p', 'TRIAL', 'unknown', 'David Marshall, responsable de la formation des clients chez ABB Robotics à Milton Keynes, espère ardemment que l\'industrie alimentaire, des boissons et de la confiserie deviendra le prochain grand marché des robots.').
-sen_id(1777, 716, 'h', 'TRIAL', 'unknown', 'Les robots sont utilisés dans l\'industrie alimentaire, en général.').
+sen_id(1778, 716, 'p', 'TRIAL', 'unknown', 'David Marshall, responsable de la formation des clients chez ABB Robotics à Milton Keynes, espère ardemment que l\'industrie alimentaire, des boissons et de la confiserie deviendra le prochain grand marché des robots.').
+sen_id(1779, 716, 'h', 'TRIAL', 'unknown', 'Les robots sont utilisés dans l\'industrie alimentaire, en général.').
 %problem id = 717
-sen_id(1778, 717, 'p', 'TRIAL', 'unknown', 'Mike Wilson, responsable marketing chez Fanuc Robotics à Coventry, déclare à propos des améliorations des performances des robots : " Notre nouveau robot de soudage ARC Mate, par exemple, est 30 \% moins cher en termes réels qu\'un modèle similaire il y a trois ans.').
-sen_id(1779, 717, 'h', 'TRIAL', 'unknown', 'Le soudage est une utilisation courante des robots dans l\'industrie automobile.').
+sen_id(1780, 717, 'p', 'TRIAL', 'unknown', 'Mike Wilson, responsable marketing chez Fanuc Robotics à Coventry, déclare à propos des améliorations des performances des robots : " Notre nouveau robot de soudage ARC Mate, par exemple, est 30 \% moins cher en termes réels qu\'un modèle similaire il y a trois ans.').
+sen_id(1781, 717, 'h', 'TRIAL', 'unknown', 'Le soudage est une utilisation courante des robots dans l\'industrie automobile.').
 %problem id = 718
-sen_id(1780, 718, 'p', 'TRIAL', 'unknown', 'Malgré cela, même les chirurgiens les plus enthousiastes disent qu\'il faudra probablement plusieurs années avant qu\'ils envisagent de laisser un robot opérer seul.').
-sen_id(1781, 718, 'h', 'TRIAL', 'unknown', 'Les robots sont utilisés pour assister une série de procédures chirurgicales.').
+sen_id(1782, 718, 'p', 'TRIAL', 'unknown', 'Malgré cela, même les chirurgiens les plus enthousiastes disent qu\'il faudra probablement plusieurs années avant qu\'ils envisagent de laisser un robot opérer seul.').
+sen_id(1783, 718, 'h', 'TRIAL', 'unknown', 'Les robots sont utilisés pour assister une série de procédures chirurgicales.').
 %problem id = 719
-sen_id(1782, 719, 'p', 'TRIAL', 'unknown', 'La forte concurrence dans des secteurs tels que le transport maritime a entraîné des vagues d\'investissements dans des technologies permettant d\'économiser de la main-d\'œuvre, telles que les outils de découpe de l\'acier et de l\'aluminium, la machine de traitement et les robots de soudage.').
-sen_id(1783, 719, 'h', 'TRIAL', 'unknown', 'L\'industrie automobile a connu des avancées dans la découpe robotisée des métaux.').
+sen_id(1784, 719, 'p', 'TRIAL', 'unknown', 'La forte concurrence dans des secteurs tels que le transport maritime a entraîné des vagues d\'investissements dans des technologies permettant d\'économiser de la main-d\'œuvre, telles que les outils de découpe de l\'acier et de l\'aluminium, la machine de traitement et les robots de soudage.').
+sen_id(1785, 719, 'h', 'TRIAL', 'unknown', 'L\'industrie automobile a connu des avancées dans la découpe robotisée des métaux.').
 %problem id = 720
-sen_id(1784, 720, 'p', 'TRIAL', 'unknown', 'Imaginons un robot Janis Joplin assis sur un banc de parc parlant du Summer of Love, chantant "Me and Bobby McGee" et présentant un robot David Bowie.').
-sen_id(1785, 720, 'h', 'TRIAL', 'unknown', 'Des robots servent de chanteurs de cire au Rock Hall of Fame.').
+sen_id(1786, 720, 'p', 'TRIAL', 'unknown', 'Imaginons un robot Janis Joplin assis sur un banc de parc parlant du Summer of Love, chantant "Me and Bobby McGee" et présentant un robot David Bowie.').
+sen_id(1787, 720, 'h', 'TRIAL', 'unknown', 'Des robots servent de chanteurs de cire au Rock Hall of Fame.').
 %problem id = 721
-sen_id(1786, 721, 'p', 'TRIAL', 'yes', 'Contrairement à ce qui se passe dans certaines autres parties de l\'Amazonie, où la forêt est coupée et brûlée à un rythme alarmant, ceux qui veulent sauver la forêt d\'Acre semblent gagner.').
-sen_id(1787, 721, 'h', 'TRIAL', 'yes', 'Le cycle de défrichement par coupe et brûlis cause de nombreux problèmes dans la forêt tropicale.').
+sen_id(1788, 721, 'p', 'TRIAL', 'yes', 'Contrairement à ce qui se passe dans certaines autres parties de l\'Amazonie, où la forêt est coupée et brûlée à un rythme alarmant, ceux qui veulent sauver la forêt d\'Acre semblent gagner.').
+sen_id(1789, 721, 'h', 'TRIAL', 'yes', 'Le cycle de défrichement par coupe et brûlis cause de nombreux problèmes dans la forêt tropicale.').
 %problem id = 722
-sen_id(1788, 722, 'p', 'TRIAL', 'yes', 'Alors que Fiat montre ses piles de stocks contrôlées par des robots dans des publicités sur papier glacé et qu\'IBM éteint les lumières de son entrepôt automatisé de Greenock, il est clair que cette opération Cendrillon a un nouvel ensemble de belles fringues high-tech.').
-sen_id(1789, 722, 'h', 'TRIAL', 'yes', 'Fiat, notamment, utilise des robots pour la gestion des stocks.').
+sen_id(1790, 722, 'p', 'TRIAL', 'yes', 'Alors que Fiat montre ses piles de stocks contrôlées par des robots dans des publicités sur papier glacé et qu\'IBM éteint les lumières de son entrepôt automatisé de Greenock, il est clair que cette opération Cendrillon a un nouvel ensemble de belles fringues high-tech.').
+sen_id(1791, 722, 'h', 'TRIAL', 'yes', 'Fiat, notamment, utilise des robots pour la gestion des stocks.').
 %problem id = 723
-sen_id(1790, 723, 'p', 'TRIAL', 'yes', 'L\'industrie automobile représente pas moins de 40 \% des 450.000 robots industriels installés dans le monde, mais leur utilisation évolue et les applications se développent.').
-sen_id(1791, 723, 'h', 'TRIAL', 'yes', 'L\'utilisation la plus courante des robots est la fabrication d\'automobiles.').
+sen_id(1792, 723, 'p', 'TRIAL', 'yes', 'L\'industrie automobile représente pas moins de 40 \% des 450.000 robots industriels installés dans le monde, mais leur utilisation évolue et les applications se développent.').
+sen_id(1793, 723, 'h', 'TRIAL', 'yes', 'L\'utilisation la plus courante des robots est la fabrication d\'automobiles.').
 %problem id = 724
-sen_id(1792, 724, 'p', 'TRIAL', 'yes', 'À présent, GMFanuc Robotics a mis au point une solution robotique qui est trois fois plus rapide que la pulvérisation manuelle, qui peut reproduire un motif de pulvérisation avec une précision de 0,03 pouce et qui peut être programmée facilement pour traiter une large gamme de vêtements.').
-sen_id(1793, 724, 'h', 'TRIAL', 'yes', 'Des robots sont utilisés pour pulvériser de la teinture sur les vêtements.').
+sen_id(1794, 724, 'p', 'TRIAL', 'yes', 'À présent, GMFanuc Robotics a mis au point une solution robotique qui est trois fois plus rapide que la pulvérisation manuelle, qui peut reproduire un motif de pulvérisation avec une précision de 0,03 pouce et qui peut être programmée facilement pour traiter une large gamme de vêtements.').
+sen_id(1795, 724, 'h', 'TRIAL', 'yes', 'Des robots sont utilisés pour pulvériser de la teinture sur les vêtements.').
 %problem id = 725
-sen_id(1794, 725, 'p', 'TRIAL', 'yes', 'Bush a retenu son jugement lundi sur les appels rivaux à renforcer ou à réduire les troupes américaines en Irak, et a déclaré que les manifestations de colère en Indonésie contre sa politique au Moyen-Orient étaient un signe sain de démocratie dans la nation fortement musulmane.').
-sen_id(1795, 725, 'h', 'TRIAL', 'yes', 'Bush a déclaré que les protestations en Indonésie contre sa politique au Moyen-Orient étaient un signe de démocratie dans la nation fortement musulmane.').
+sen_id(1796, 725, 'p', 'TRIAL', 'yes', 'Bush a retenu son jugement lundi sur les appels rivaux à renforcer ou à réduire les troupes américaines en Irak, et a déclaré que les manifestations de colère en Indonésie contre sa politique au Moyen-Orient étaient un signe sain de démocratie dans la nation fortement musulmane.').
+sen_id(1797, 725, 'h', 'TRIAL', 'yes', 'Bush a déclaré que les protestations en Indonésie contre sa politique au Moyen-Orient étaient un signe de démocratie dans la nation fortement musulmane.').
 %problem id = 726
-sen_id(1796, 726, 'p', 'TRIAL', 'yes', 'Le rapport de l\'Agence internationale de l\'énergie atomique détaillant cette découverte reproche également à Téhéran de ne pas avoir coopéré avec les tentatives de l\'organe de surveillance de l\'ONU d\'enquêter sur d\'autres aspects suspects du programme nucléaire iranien.').
-sen_id(1797, 726, 'h', 'TRIAL', 'yes', 'Téhéran n\'a pas coopéré avec les tentatives de l\'organe de surveillance de l\'ONU d\'enquêter sur les aspects suspects du programme nucléaire iranien.').
+sen_id(1798, 726, 'p', 'TRIAL', 'yes', 'Le rapport de l\'Agence internationale de l\'énergie atomique détaillant cette découverte reproche également à Téhéran de ne pas avoir coopéré avec les tentatives de l\'organe de surveillance de l\'ONU d\'enquêter sur d\'autres aspects suspects du programme nucléaire iranien.').
+sen_id(1799, 726, 'h', 'TRIAL', 'yes', 'Téhéran n\'a pas coopéré avec les tentatives de l\'organe de surveillance de l\'ONU d\'enquêter sur les aspects suspects du programme nucléaire iranien.').
 %problem id = 727
-sen_id(1798, 727, 'p', 'TRIAL', 'yes', 'Les responsables nucléaires iraniens affirment que 54.000 centrifugeuses produiraient suffisamment d\'uranium enrichi pour alimenter un réacteur de 1.000 mégawatts, comme celui construit par la Russie qui est presque terminé dans la ville de Bushehr, dans le sud du pays.').
-sen_id(1799, 727, 'h', 'TRIAL', 'yes', '54.000 centrifugeuses produiraient suffisamment d\'uranium enrichi pour alimenter un réacteur de 1.000 mégawatts.').
+sen_id(1800, 727, 'p', 'TRIAL', 'yes', 'Les responsables nucléaires iraniens affirment que 54.000 centrifugeuses produiraient suffisamment d\'uranium enrichi pour alimenter un réacteur de 1.000 mégawatts, comme celui construit par la Russie qui est presque terminé dans la ville de Bushehr, dans le sud du pays.').
+sen_id(1801, 727, 'h', 'TRIAL', 'yes', '54.000 centrifugeuses produiraient suffisamment d\'uranium enrichi pour alimenter un réacteur de 1.000 mégawatts.').
 %problem id = 728
-sen_id(1800, 728, 'p', 'TRIAL', 'yes', 'L\'usine d\'Arak, ainsi que la découverte d\'un programme secret d\'enrichissement iranien en 2003, le refus de Téhéran de cesser l\'enrichissement d\'uranium et les constatations des inspecteurs de l\'AIEA ont accru les soupçons sur le programme de l\'Iran.').
-sen_id(1801, 728, 'h', 'TRIAL', 'yes', 'Le programme iranien fait l\'objet de soupçons en raison des constatations des inspecteurs de l\'AIEA.').
+sen_id(1802, 728, 'p', 'TRIAL', 'yes', 'L\'usine d\'Arak, ainsi que la découverte d\'un programme secret d\'enrichissement iranien en 2003, le refus de Téhéran de cesser l\'enrichissement d\'uranium et les constatations des inspecteurs de l\'AIEA ont accru les soupçons sur le programme de l\'Iran.').
+sen_id(1803, 728, 'h', 'TRIAL', 'yes', 'Le programme iranien fait l\'objet de soupçons en raison des constatations des inspecteurs de l\'AIEA.').
 %problem id = 729
-sen_id(1802, 729, 'p', 'TRIAL', 'no', 'Des souris, auxquelles on a donné une substance présente dans le vin rouge, ont vécu plus longtemps malgré un régime gras, selon une étude.').
-sen_id(1803, 729, 'h', 'TRIAL', 'no', 'Des souris nourries au vin rouge ont vécu plus longtemps malgré un régime gras.').
+sen_id(1804, 729, 'p', 'TRIAL', 'no', 'Des souris, auxquelles on a donné une substance présente dans le vin rouge, ont vécu plus longtemps malgré un régime gras, selon une étude.').
+sen_id(1805, 729, 'h', 'TRIAL', 'no', 'Des souris nourries au vin rouge ont vécu plus longtemps malgré un régime gras.').
 %problem id = 730
-sen_id(1804, 730, 'p', 'TRIAL', 'yes', 'Le conseil de l\'AIEA a renvoyé en février l\'Iran devant le Conseil de sécurité, suggérant qu\'il avait enfreint le traité de non-prolifération nucléaire et qu\'il pourrait essayer de fabriquer des armes nucléaires.').
-sen_id(1805, 730, 'h', 'TRIAL', 'yes', 'L\'Iran pourrait essayer de fabriquer des armes nucléaires selon le conseil de l\'AIEA.').
+sen_id(1806, 730, 'p', 'TRIAL', 'yes', 'Le conseil de l\'AIEA a renvoyé en février l\'Iran devant le Conseil de sécurité, suggérant qu\'il avait enfreint le traité de non-prolifération nucléaire et qu\'il pourrait essayer de fabriquer des armes nucléaires.').
+sen_id(1807, 730, 'h', 'TRIAL', 'yes', 'L\'Iran pourrait essayer de fabriquer des armes nucléaires selon le conseil de l\'AIEA.').
 %problem id = 731
-sen_id(1806, 731, 'p', 'TRIAL', 'yes', 'M. Lopez Obrador a affirmé que la fraude électorale lui a coûté la présidence, malgré un recomptage confirmant Felipe Calderon comme président élu du Mexique.').
-sen_id(1807, 731, 'h', 'TRIAL', 'yes', 'Felipe Calderon a remporté l\'élection présidentielle du Mexique.').
+sen_id(1808, 731, 'p', 'TRIAL', 'yes', 'M. Lopez Obrador a affirmé que la fraude électorale lui a coûté la présidence, malgré un recomptage confirmant Felipe Calderon comme président élu du Mexique.').
+sen_id(1809, 731, 'h', 'TRIAL', 'yes', 'Felipe Calderon a remporté l\'élection présidentielle du Mexique.').
 %problem id = 732
-sen_id(1808, 732, 'p', 'TRIAL', 'no', 'M. Lopez Obrador, qui a perdu l\'élection présidentielle de juillet avec moins d\'un point de pourcentage, s\'est déclaré président "légitime" du Mexique.').
-sen_id(1809, 732, 'h', 'TRIAL', 'no', 'Mr Lopez Obrador n\'a pas perdu l\'élection présidentielle de juillet.').
+sen_id(1810, 732, 'p', 'TRIAL', 'no', 'M. Lopez Obrador, qui a perdu l\'élection présidentielle de juillet avec moins d\'un point de pourcentage, s\'est déclaré président "légitime" du Mexique.').
+sen_id(1811, 732, 'h', 'TRIAL', 'no', 'Mr Lopez Obrador n\'a pas perdu l\'élection présidentielle de juillet.').
 %problem id = 733
-sen_id(1810, 733, 'p', 'TRIAL', 'yes', 'M. Lopez Obrador a été "assermenté" par la sénatrice Rosario Ibarra, militante des droits de l\'homme et membre de son parti, qui a placé une écharpe présidentielle rouge, verte et blanche sur ses épaules.').
-sen_id(1811, 733, 'h', 'TRIAL', 'yes', 'La sénatrice Rosario Ibarra est une militante des droits de l\'homme.').
+sen_id(1812, 733, 'p', 'TRIAL', 'yes', 'M. Lopez Obrador a été "assermenté" par la sénatrice Rosario Ibarra, militante des droits de l\'homme et membre de son parti, qui a placé une écharpe présidentielle rouge, verte et blanche sur ses épaules.').
+sen_id(1813, 733, 'h', 'TRIAL', 'yes', 'La sénatrice Rosario Ibarra est une militante des droits de l\'homme.').
 %problem id = 734
-sen_id(1812, 734, 'p', 'TRIAL', 'no', 'M. Carstens a quitté son poste de directeur général adjoint du FMI le mois dernier pour travailler avec M. Calderon, et dirigera désormais les efforts pour faire avancer les réformes du marché et créer plus d\'emplois.').
-sen_id(1813, 734, 'h', 'TRIAL', 'no', 'Monsieur Carstens a perdu son poste de directeur général adjoint du FMI le mois dernier.').
+sen_id(1814, 734, 'p', 'TRIAL', 'no', 'M. Carstens a quitté son poste de directeur général adjoint du FMI le mois dernier pour travailler avec M. Calderon, et dirigera désormais les efforts pour faire avancer les réformes du marché et créer plus d\'emplois.').
+sen_id(1815, 734, 'h', 'TRIAL', 'no', 'Monsieur Carstens a perdu son poste de directeur général adjoint du FMI le mois dernier.').
 %problem id = 735
-sen_id(1814, 735, 'p', 'TRIAL', 'yes', 'Le commerce entre la Chine et l\'Inde devrait toucher 20 milliards de dollars cette année et les investisseurs chinois se précipitent désormais en Inde - attirés par la richesse croissante du pays.').
-sen_id(1815, 735, 'h', 'TRIAL', 'yes', 'Il existe un commerce profitable entre la Chine et l\'Inde.').
+sen_id(1816, 735, 'p', 'TRIAL', 'yes', 'Le commerce entre la Chine et l\'Inde devrait toucher 20 milliards de dollars cette année et les investisseurs chinois se précipitent désormais en Inde - attirés par la richesse croissante du pays.').
+sen_id(1817, 735, 'h', 'TRIAL', 'yes', 'Il existe un commerce profitable entre la Chine et l\'Inde.').
 %problem id = 736
-sen_id(1816, 736, 'p', 'TRIAL', 'yes', 'La direction de Huawei estime également que les questions relatives à la sécurité entravent ses progrès - découlant en grande partie des allégations, en 2001, selon lesquelles elle a été accusée de travailler pour le Pakistan et le gouvernement des talibans de l\'époque en Afghanistan.').
-sen_id(1817, 736, 'h', 'TRIAL', 'yes', 'La direction de Huawei a été accusée de travailler pour le Pakistan et le gouvernement taliban de l\'époque en Afghanistan.').
+sen_id(1818, 736, 'p', 'TRIAL', 'yes', 'La direction de Huawei estime également que les questions relatives à la sécurité entravent ses progrès - découlant en grande partie des allégations, en 2001, selon lesquelles elle a été accusée de travailler pour le Pakistan et le gouvernement des talibans de l\'époque en Afghanistan.').
+sen_id(1819, 736, 'h', 'TRIAL', 'yes', 'La direction de Huawei a été accusée de travailler pour le Pakistan et le gouvernement taliban de l\'époque en Afghanistan.').
 %problem id = 737
-sen_id(1818, 737, 'p', 'TRIAL', 'no', 'Mais Huawei affirme que cette expansion n\'a pas été facile - l\'obtention de visas pour ses ingénieurs chinois travaillant sur des projets à long terme en Inde étant un défi particulier.').
-sen_id(1819, 737, 'h', 'TRIAL', 'no', 'Les ingénieurs chinois travaillant sur des projets à long terme en Inde peuvent facilement obtenir des visas.').
+sen_id(1820, 737, 'p', 'TRIAL', 'no', 'Mais Huawei affirme que cette expansion n\'a pas été facile - l\'obtention de visas pour ses ingénieurs chinois travaillant sur des projets à long terme en Inde étant un défi particulier.').
+sen_id(1821, 737, 'h', 'TRIAL', 'no', 'Les ingénieurs chinois travaillant sur des projets à long terme en Inde peuvent facilement obtenir des visas.').
 %problem id = 738
-sen_id(1820, 738, 'p', 'TRIAL', 'yes', 'Des milliers de soldats sont déployés pour sécuriser la ville de Bogor, où Bush doit s\'entretenir avec son homologue indonésien, Susilo Bambang Yudhoyono.').
-sen_id(1821, 738, 'h', 'TRIAL', 'yes', 'Bush doit se rendre dans la ville de Bogor.').
+sen_id(1822, 738, 'p', 'TRIAL', 'yes', 'Des milliers de soldats sont déployés pour sécuriser la ville de Bogor, où Bush doit s\'entretenir avec son homologue indonésien, Susilo Bambang Yudhoyono.').
+sen_id(1823, 738, 'h', 'TRIAL', 'yes', 'Bush doit se rendre dans la ville de Bogor.').
 %problem id = 739
-sen_id(1822, 739, 'p', 'TRIAL', 'unknown', 'Dans une interview accordée cette semaine, le président a déclaré que le vice-président Dick Cheney et le secrétaire à la Défense Donald Rumsfeld seront une partie appréciée de son administration jusqu\'à la fin de sa présidence.').
-sen_id(1823, 739, 'h', 'TRIAL', 'unknown', 'Dick Cheney est le vice-président du secrétaire à la Défense Donald Rumsfeld.').
+sen_id(1824, 739, 'p', 'TRIAL', 'unknown', 'Dans une interview accordée cette semaine, le président a déclaré que le vice-président Dick Cheney et le secrétaire à la Défense Donald Rumsfeld seront une partie appréciée de son administration jusqu\'à la fin de sa présidence.').
+sen_id(1825, 739, 'h', 'TRIAL', 'unknown', 'Dick Cheney est le vice-président du secrétaire à la Défense Donald Rumsfeld.').
 %problem id = 740
-sen_id(1824, 740, 'p', 'TRIAL', 'yes', 'Des militants liés à Al-Qaida ont mené une série d\'attentats-suicides visant des intérêts occidentaux en Indonésie depuis 2002.').
-sen_id(1825, 740, 'h', 'TRIAL', 'yes', 'Depuis 2002, des militants liés à Al-Qaida ont tenté de frapper des intérêts occidentaux en Indonésie.').
+sen_id(1826, 740, 'p', 'TRIAL', 'yes', 'Des militants liés à Al-Qaida ont mené une série d\'attentats-suicides visant des intérêts occidentaux en Indonésie depuis 2002.').
+sen_id(1827, 740, 'h', 'TRIAL', 'yes', 'Depuis 2002, des militants liés à Al-Qaida ont tenté de frapper des intérêts occidentaux en Indonésie.').
 %problem id = 741
-sen_id(1826, 741, 'p', 'TRIAL', 'yes', 'BEYROUTH, 21 novembre (Xinhua) -- Le ministre libanais de l\'Industrie et leader chrétien Pierre Gemayel a été tué par balle dans une rue de la banlieue de Beyrouth mardi, a indiqué la chaîne de télévision al-Jazeera citant le ministère libanais de l\'Intérieur.').
-sen_id(1827, 741, 'h', 'TRIAL', 'yes', 'Pierre Gemayel a été assassiné dans une rue de la banlieue de Beyrouth.').
+sen_id(1828, 741, 'p', 'TRIAL', 'yes', 'BEYROUTH, 21 novembre (Xinhua) -- Le ministre libanais de l\'Industrie et leader chrétien Pierre Gemayel a été tué par balle dans une rue de la banlieue de Beyrouth mardi, a indiqué la chaîne de télévision al-Jazeera citant le ministère libanais de l\'Intérieur.').
+sen_id(1829, 741, 'h', 'TRIAL', 'yes', 'Pierre Gemayel a été assassiné dans une rue de la banlieue de Beyrouth.').
 %problem id = 742
-sen_id(1828, 742, 'p', 'TRIAL', 'yes', 'L\'assassinat de Gemayel est presque certain d\'approfondir la crise politique au Liban, qui a commencé après la démission de six ministres pro-syriens, dont deux du Hezbollah, quelques heures après l\'effondrement des négociations de la table ronde multipartite.').
-sen_id(1829, 742, 'h', 'TRIAL', 'yes', 'Après la démission de six ministres pro-syriens, une profonde crise politique a débuté au Liban.').
+sen_id(1830, 742, 'p', 'TRIAL', 'yes', 'L\'assassinat de Gemayel est presque certain d\'approfondir la crise politique au Liban, qui a commencé après la démission de six ministres pro-syriens, dont deux du Hezbollah, quelques heures après l\'effondrement des négociations de la table ronde multipartite.').
+sen_id(1831, 742, 'h', 'TRIAL', 'yes', 'Après la démission de six ministres pro-syriens, une profonde crise politique a débuté au Liban.').
 %problem id = 743
-sen_id(1830, 743, 'p', 'TRIAL', 'yes', 'La crise a pris une tournure pour le pire après l\'approbation par le cabinet, sans les ministres soutenus par la Syrie, du projet de document de l\'ONU pour la création d\'un tribunal international dans l\'affaire de l\'assassinat de l\'ex-Premier ministre Rafic Hariri.').
-sen_id(1831, 743, 'h', 'TRIAL', 'yes', 'La crise s\'est aggravée après que le projet de document de l\'ONU pour la création d\'un tribunal international a été approuvé.').
+sen_id(1832, 743, 'p', 'TRIAL', 'yes', 'La crise a pris une tournure pour le pire après l\'approbation par le cabinet, sans les ministres soutenus par la Syrie, du projet de document de l\'ONU pour la création d\'un tribunal international dans l\'affaire de l\'assassinat de l\'ex-Premier ministre Rafic Hariri.').
+sen_id(1833, 743, 'h', 'TRIAL', 'yes', 'La crise s\'est aggravée après que le projet de document de l\'ONU pour la création d\'un tribunal international a été approuvé.').
 %problem id = 744
-sen_id(1832, 744, 'p', 'TRIAL', 'yes', 'L\'ancien Premier ministre Rafic Hariri, également une figure politique anti-syrienne de premier plan, a été tué dans un attentat suicide en février dernier, ce qui a entraîné une montée des vagues anti-syriennes et le retrait des troupes syriennes du Liban.').
-sen_id(1833, 744, 'h', 'TRIAL', 'yes', 'Les troupes syriennes ont été retirées du Liban après l\'assassinat de Rafic Hariri.').
+sen_id(1834, 744, 'p', 'TRIAL', 'yes', 'L\'ancien Premier ministre Rafic Hariri, également une figure politique anti-syrienne de premier plan, a été tué dans un attentat suicide en février dernier, ce qui a entraîné une montée des vagues anti-syriennes et le retrait des troupes syriennes du Liban.').
+sen_id(1835, 744, 'h', 'TRIAL', 'yes', 'Les troupes syriennes ont été retirées du Liban après l\'assassinat de Rafic Hariri.').
 %problem id = 745
-sen_id(1834, 745, 'p', 'TRIAL', 'yes', 'San Francisco (Reuters) -- Dell Inc prévoit d\'annoncer ses résultats trimestriels préliminaires après la fermeture du marché mardi, après avoir retardé la semaine dernière leur publication en raison de complexités comptables liées à une enquête réglementaire.').
-sen_id(1835, 745, 'h', 'TRIAL', 'yes', 'Mardi, les résultats trimestriels préliminaires seront annoncés.').
+sen_id(1836, 745, 'p', 'TRIAL', 'yes', 'San Francisco (Reuters) -- Dell Inc prévoit d\'annoncer ses résultats trimestriels préliminaires après la fermeture du marché mardi, après avoir retardé la semaine dernière leur publication en raison de complexités comptables liées à une enquête réglementaire.').
+sen_id(1837, 745, 'h', 'TRIAL', 'yes', 'Mardi, les résultats trimestriels préliminaires seront annoncés.').
 %problem id = 746
-sen_id(1836, 746, 'p', 'TRIAL', 'yes', 'Le succès des démocrates aux élections de 2006 signifie des changements au sommet de la Chambre et du Sénat.').
-sen_id(1837, 746, 'h', 'TRIAL', 'yes', 'Les démocrates ont remporté les élections de 2006.').
+sen_id(1838, 746, 'p', 'TRIAL', 'yes', 'Le succès des démocrates aux élections de 2006 signifie des changements au sommet de la Chambre et du Sénat.').
+sen_id(1839, 746, 'h', 'TRIAL', 'yes', 'Les démocrates ont remporté les élections de 2006.').
 %problem id = 747
-sen_id(1838, 747, 'p', 'TRIAL', 'unknown', 'San Francisco (Reuters) -- Wal-Mart Stores Inc.').
-sen_id(1839, 747, 'p', 'TRIAL', 'unknown', 'a annoncé mardi qu\'un juge du Massachusetts avait accordé sa motion visant à annuler un recours collectif accusant le plus grand détaillant du monde de refuser des pauses à ses employés.').
-sen_id(1840, 747, 'h', 'TRIAL', 'unknown', 'Les pauses des employés avaient été refusées par une motion accordée par un juge du Massachusetts.').
+sen_id(1840, 747, 'p', 'TRIAL', 'unknown', 'San Francisco (Reuters) -- Wal-Mart Stores Inc.').
+sen_id(1841, 747, 'p', 'TRIAL', 'unknown', 'a annoncé mardi qu\'un juge du Massachusetts avait accordé sa motion visant à annuler un recours collectif accusant le plus grand détaillant du monde de refuser des pauses à ses employés.').
+sen_id(1842, 747, 'h', 'TRIAL', 'unknown', 'Les pauses des employés avaient été refusées par une motion accordée par un juge du Massachusetts.').
 %problem id = 748
-sen_id(1841, 748, 'p', 'TRIAL', 'yes', 'À bord d\'Air Force One, le 22 novembre 2006 le président Bush et le Premier ministre irakien Nouri al-Maliki se rencontreront la semaine prochaine en Jordanie pour discuter de la détérioration de la situation sécuritaire en Irak.').
-sen_id(1842, 748, 'h', 'TRIAL', 'yes', 'La Jordanie accueillera la rencontre entre le président Bush et le Premier ministre irakien Nouri al-Maliki.').
+sen_id(1843, 748, 'p', 'TRIAL', 'yes', 'À bord d\'Air Force One, le 22 novembre 2006 le président Bush et le Premier ministre irakien Nouri al-Maliki se rencontreront la semaine prochaine en Jordanie pour discuter de la détérioration de la situation sécuritaire en Irak.').
+sen_id(1844, 748, 'h', 'TRIAL', 'yes', 'La Jordanie accueillera la rencontre entre le président Bush et le Premier ministre irakien Nouri al-Maliki.').
 %problem id = 749
-sen_id(1843, 749, 'p', 'TRIAL', 'yes', 'Quatorze invités et cinq membres d\'équipage restaient malades et en isolement lorsque le navire est arrivé à Port Everglades, en Floride, selon un communiqué de Carnival Cruise Lines, une marque de Carnival Corp.').
-sen_id(1844, 749, 'h', 'TRIAL', 'yes', 'Le Carnival Cruise Lines est une marque de Carnival Corp.').
+sen_id(1845, 749, 'p', 'TRIAL', 'yes', 'Quatorze invités et cinq membres d\'équipage restaient malades et en isolement lorsque le navire est arrivé à Port Everglades, en Floride, selon un communiqué de Carnival Cruise Lines, une marque de Carnival Corp.').
+sen_id(1846, 749, 'h', 'TRIAL', 'yes', 'Le Carnival Cruise Lines est une marque de Carnival Corp.').
 %problem id = 750
-sen_id(1845, 750, 'p', 'TRIAL', 'yes', 'Des tests préliminaires ont permis d\'identifier la source de l\'épidémie comme étant le norovirus très contagieux, qui avait frappé plusieurs invités juste avant d\'embarquer sur la croisière le 3 novembre à Rome, ont déclaré les responsables de Carnival.').
-sen_id(1846, 750, 'h', 'TRIAL', 'yes', 'Le norovirus est la source de l\'épidémie sur le navire.').
+sen_id(1847, 750, 'p', 'TRIAL', 'yes', 'Des tests préliminaires ont permis d\'identifier la source de l\'épidémie comme étant le norovirus très contagieux, qui avait frappé plusieurs invités juste avant d\'embarquer sur la croisière le 3 novembre à Rome, ont déclaré les responsables de Carnival.').
+sen_id(1848, 750, 'h', 'TRIAL', 'yes', 'Le norovirus est la source de l\'épidémie sur le navire.').
 %problem id = 751
-sen_id(1847, 751, 'p', 'TRIAL', 'unknown', 'Un comité du Pentagone et le groupe d\'étude sur l\'Irak, créé par le Congrès, ont préparé des rapports pour Bush, et l\'Iran a demandé aux présidents de l\'Irak et de la Syrie de se rencontrer à Téhéran.').
-sen_id(1848, 751, 'h', 'TRIAL', 'unknown', 'Bush rencontrera les présidents d\'Irak et de Syrie à Téhéran.').
+sen_id(1849, 751, 'p', 'TRIAL', 'unknown', 'Un comité du Pentagone et le groupe d\'étude sur l\'Irak, créé par le Congrès, ont préparé des rapports pour Bush, et l\'Iran a demandé aux présidents de l\'Irak et de la Syrie de se rencontrer à Téhéran.').
+sen_id(1850, 751, 'h', 'TRIAL', 'unknown', 'Bush rencontrera les présidents d\'Irak et de Syrie à Téhéran.').
 %problem id = 752
-sen_id(1849, 752, 'p', 'TRIAL', 'no', 'Hadley a déclaré que la Jordanie avait été choisie comme site de la rencontre entre Bush et al-Maliki en raison de son soutien au gouvernement d\'unité en Irak et du fait que Bush serait dans la région.').
-sen_id(1850, 752, 'h', 'TRIAL', 'no', 'Bush rencontrera al-Maliki à Hadley.').
+sen_id(1851, 752, 'p', 'TRIAL', 'no', 'Hadley a déclaré que la Jordanie avait été choisie comme site de la rencontre entre Bush et al-Maliki en raison de son soutien au gouvernement d\'unité en Irak et du fait que Bush serait dans la région.').
+sen_id(1852, 752, 'h', 'TRIAL', 'no', 'Bush rencontrera al-Maliki à Hadley.').
 %problem id = 753
-sen_id(1851, 753, 'p', 'TRIAL', 'yes', '"Ils nous ont apporté du 7-Up, des bouteilles d\'eau, de la glace et un régime composé de riz, même si on n\'avait pas envie de manger", a déclaré Jim Lankes, 48 ans, de Phoenix.').
-sen_id(1852, 753, 'h', 'TRIAL', 'yes', 'Jim Lankes a reçu des bouteilles d\'eaux, de la glace et du riz.').
+sen_id(1853, 753, 'p', 'TRIAL', 'yes', '"Ils nous ont apporté du 7-Up, des bouteilles d\'eau, de la glace et un régime composé de riz, même si on n\'avait pas envie de manger", a déclaré Jim Lankes, 48 ans, de Phoenix.').
+sen_id(1854, 753, 'h', 'TRIAL', 'yes', 'Jim Lankes a reçu des bouteilles d\'eaux, de la glace et du riz.').
 %problem id = 754
-sen_id(1853, 754, 'p', 'TRIAL', 'yes', 'Une équipe des Centres américains de contrôle des maladies est montée à bord du navire lorsqu\'il a accosté à Saint-Martin, pour superviser l\'opération de nettoyage et tenter de déterminer les causes de l\'épidémie, a indiqué Carnival.').
-sen_id(1854, 754, 'h', 'TRIAL', 'yes', 'Les causes de l\'épidémie ont été recherchées par une équipe du CDC américain.').
+sen_id(1855, 754, 'p', 'TRIAL', 'yes', 'Une équipe des Centres américains de contrôle des maladies est montée à bord du navire lorsqu\'il a accosté à Saint-Martin, pour superviser l\'opération de nettoyage et tenter de déterminer les causes de l\'épidémie, a indiqué Carnival.').
+sen_id(1856, 754, 'h', 'TRIAL', 'yes', 'Les causes de l\'épidémie ont été recherchées par une équipe du CDC américain.').
 %problem id = 755
-sen_id(1855, 755, 'p', 'TRIAL', 'yes', 'Les pilules étaient vendues sous des marques de magasins par Wal-Mart, CVS, Safeway et plus de 120 autres grands détaillants, a indiqué la Food and Drug Administration.').
-sen_id(1856, 755, 'h', 'TRIAL', 'yes', 'Les pilules ont été commercialisées par de grands détaillants.').
+sen_id(1857, 755, 'p', 'TRIAL', 'yes', 'Les pilules étaient vendues sous des marques de magasins par Wal-Mart, CVS, Safeway et plus de 120 autres grands détaillants, a indiqué la Food and Drug Administration.').
+sen_id(1858, 755, 'h', 'TRIAL', 'yes', 'Les pilules ont été commercialisées par de grands détaillants.').
 %problem id = 756
-sen_id(1857, 756, 'p', 'TRIAL', 'yes', 'Les pilules contaminées contenaient des fragments de métal dont la taille allait de "micro-points" à des portions de fil d\'un tiers de pouce de long, a indiqué la FDA.').
-sen_id(1858, 756, 'h', 'TRIAL', 'yes', 'Les pilules contaminées contenaient des fragments de métal.').
+sen_id(1859, 756, 'p', 'TRIAL', 'yes', 'Les pilules contaminées contenaient des fragments de métal dont la taille allait de "micro-points" à des portions de fil d\'un tiers de pouce de long, a indiqué la FDA.').
+sen_id(1860, 756, 'h', 'TRIAL', 'yes', 'Les pilules contaminées contenaient des fragments de métal.').
 %problem id = 757
-sen_id(1859, 757, 'p', 'TRIAL', 'yes', 'Les consommateurs qui prennent l\'une des pilules contaminées pourraient souffrir de malaise gastrique légère ou de possibles coupures à la bouche et à la gorge, a déclaré la FDA, ajoutant que le risque de blessure grave était faible.').
-sen_id(1860, 757, 'h', 'TRIAL', 'yes', 'Les pilules contaminées pourraient causer des malaises gastriques légères ou des coupures possibles à la bouche et à la gorge.').
+sen_id(1861, 757, 'p', 'TRIAL', 'yes', 'Les consommateurs qui prennent l\'une des pilules contaminées pourraient souffrir de malaise gastrique légère ou de possibles coupures à la bouche et à la gorge, a déclaré la FDA, ajoutant que le risque de blessure grave était faible.').
+sen_id(1862, 757, 'h', 'TRIAL', 'yes', 'Les pilules contaminées pourraient causer des malaises gastriques légères ou des coupures possibles à la bouche et à la gorge.').
 %problem id = 758
-sen_id(1861, 758, 'p', 'TRIAL', 'yes', 'Le médicament, avec l\'aspirine et l\'ibuprofène, est l\'un des analgésiques les plus utilisés et disponibles sans ordonnance médicale.').
-sen_id(1862, 758, 'h', 'TRIAL', 'yes', 'L\'aspirine est l\'un des analgésiques les plus utilisés et disponibles sans ordonnance médicale.').
+sen_id(1863, 758, 'p', 'TRIAL', 'yes', 'Le médicament, avec l\'aspirine et l\'ibuprofène, est l\'un des analgésiques les plus utilisés et disponibles sans ordonnance médicale.').
+sen_id(1864, 758, 'h', 'TRIAL', 'yes', 'L\'aspirine est l\'un des analgésiques les plus utilisés et disponibles sans ordonnance médicale.').
 %problem id = 759
-sen_id(1863, 759, 'p', 'TRIAL', 'yes', 'CVS va cesser de vendre sa propre marque de caplets d\'acétaminophène de 500 milligrammes et retirer les bouteilles des rayons des magasins dans tout le pays, a déclaré le porte-parole Mike DeAngelis.').
-sen_id(1864, 759, 'h', 'TRIAL', 'yes', 'CVS ne vendra plus sa propre marque de caplets d\'acétaminophène de 500 milligrammes.').
+sen_id(1865, 759, 'p', 'TRIAL', 'yes', 'CVS va cesser de vendre sa propre marque de caplets d\'acétaminophène de 500 milligrammes et retirer les bouteilles des rayons des magasins dans tout le pays, a déclaré le porte-parole Mike DeAngelis.').
+sen_id(1866, 759, 'h', 'TRIAL', 'yes', 'CVS ne vendra plus sa propre marque de caplets d\'acétaminophène de 500 milligrammes.').
 %problem id = 760
-sen_id(1865, 760, 'p', 'TRIAL', 'no', 'L\'enquête d\'une entreprise a révélé la présence de métal dans environ 200 pilules sur les 70 millions qu\'elle a passées au détecteur de métaux, selon la FDA.').
-sen_id(1866, 760, 'h', 'TRIAL', 'no', 'La FDA a trouvé du métal dans environ 200 pilules sur les 70 millions qu\'elle a fait passer dans un détecteur de métaux.').
+sen_id(1867, 760, 'p', 'TRIAL', 'no', 'L\'enquête d\'une entreprise a révélé la présence de métal dans environ 200 pilules sur les 70 millions qu\'elle a passées au détecteur de métaux, selon la FDA.').
+sen_id(1868, 760, 'h', 'TRIAL', 'no', 'La FDA a trouvé du métal dans environ 200 pilules sur les 70 millions qu\'elle a fait passer dans un détecteur de métaux.').
 %problem id = 761
-sen_id(1867, 761, 'p', 'TRIAL', 'yes', 'Le rappel volontaire est considéré comme un rappel de classe II, car il couvre des produits qui pourraient causer un problème de santé temporaire ou qui ne posent qu\'une légère menace de nature grave, a déclaré la FDA.').
-sen_id(1868, 761, 'h', 'TRIAL', 'yes', 'Un rappel de classe II couvre des produits qui pourraient causer un problème de santé temporaire.').
+sen_id(1869, 761, 'p', 'TRIAL', 'yes', 'Le rappel volontaire est considéré comme un rappel de classe II, car il couvre des produits qui pourraient causer un problème de santé temporaire ou qui ne posent qu\'une légère menace de nature grave, a déclaré la FDA.').
+sen_id(1870, 761, 'h', 'TRIAL', 'yes', 'Un rappel de classe II couvre des produits qui pourraient causer un problème de santé temporaire.').
 %problem id = 762
-sen_id(1869, 762, 'p', 'TRIAL', 'unknown', 'L\'acétaminophène est surtout connu comme le médicament contenu dans les produits vendus sous la marque Tylenol, mais il est largement disponible dans des versions génériques généralement moins coûteuses.').
-sen_id(1870, 762, 'h', 'TRIAL', 'unknown', 'L\'acétaminophène est produit par Tylenol.').
+sen_id(1871, 762, 'p', 'TRIAL', 'unknown', 'L\'acétaminophène est surtout connu comme le médicament contenu dans les produits vendus sous la marque Tylenol, mais il est largement disponible dans des versions génériques généralement moins coûteuses.').
+sen_id(1872, 762, 'h', 'TRIAL', 'unknown', 'L\'acétaminophène est produit par Tylenol.').
 %problem id = 763
-sen_id(1871, 763, 'p', 'TRIAL', 'yes', 'PST Chittagong, Bangladesh-- Muhammad Yunus, le "banquier des pauvres" bangladais qui accorde des prêts pour aider des millions de personnes à lutter contre la pauvreté en créant des entreprises, a reçu le prix Nobel de la paix.').
-sen_id(1872, 763, 'h', 'TRIAL', 'yes', 'Muhammad Yunus a remporté le prix Nobel de la paix.').
+sen_id(1873, 763, 'p', 'TRIAL', 'yes', 'PST Chittagong, Bangladesh-- Muhammad Yunus, le "banquier des pauvres" bangladais qui accorde des prêts pour aider des millions de personnes à lutter contre la pauvreté en créant des entreprises, a reçu le prix Nobel de la paix.').
+sen_id(1874, 763, 'h', 'TRIAL', 'yes', 'Muhammad Yunus a remporté le prix Nobel de la paix.').
 %problem id = 764
-sen_id(1873, 764, 'p', 'TRIAL', 'unknown', 'Kevin Vincent, 44 ans, d\'Arlington, Va., a déclaré que sa femme achète de l\'acétaminophène de marque de magasin et qu\'il voulait en savoir plus sur le problème.').
-sen_id(1874, 764, 'h', 'TRIAL', 'unknown', 'Kevin Vincent achète de l\'acétaminophène de marque de magasin.').
+sen_id(1875, 764, 'p', 'TRIAL', 'unknown', 'Kevin Vincent, 44 ans, d\'Arlington, Va., a déclaré que sa femme achète de l\'acétaminophène de marque de magasin et qu\'il voulait en savoir plus sur le problème.').
+sen_id(1876, 764, 'h', 'TRIAL', 'unknown', 'Kevin Vincent achète de l\'acétaminophène de marque de magasin.').
 %problem id = 765
-sen_id(1875, 765, 'p', 'TRIAL', 'yes', 'Le Nobel braque les projecteurs sur une forme de "capitalisme social" qui a gagné en popularité ces dernières années, propulsé par des partisans très en vue comme l\'ancien président Bill Clinton, la star du rock Bono et le fondateur de Microsoft Bill Gates.').
-sen_id(1876, 765, 'h', 'TRIAL', 'yes', 'Le président Bill Clinton est un partisan du "capitalisme social".').
+sen_id(1877, 765, 'p', 'TRIAL', 'yes', 'Le Nobel braque les projecteurs sur une forme de "capitalisme social" qui a gagné en popularité ces dernières années, propulsé par des partisans très en vue comme l\'ancien président Bill Clinton, la star du rock Bono et le fondateur de Microsoft Bill Gates.').
+sen_id(1878, 765, 'h', 'TRIAL', 'yes', 'Le président Bill Clinton est un partisan du "capitalisme social".').
 %problem id = 766
-sen_id(1877, 766, 'p', 'TRIAL', 'no', 'Molly Walsh, 21 ans, étudiante à l\'université George Washington, qui fait ses courses dans une pharmacie CVS à Washington, a déclaré qu\'elle ne prévoyait pas de jeter chez elle les médicaments de marque de magasin qu\'elle avait achetés pour faire des économies.').
-sen_id(1878, 766, 'p', 'TRIAL', 'no', 'Elle n\'avait pas non plus l\'intention d\'arrêter d\'acheter les produits génériques.').
-sen_id(1879, 766, 'h', 'TRIAL', 'no', 'Molly Walsh prévoit d\'arrêter d\'acheter les produits génériques.').
+sen_id(1879, 766, 'p', 'TRIAL', 'no', 'Molly Walsh, 21 ans, étudiante à l\'université George Washington, qui fait ses courses dans une pharmacie CVS à Washington, a déclaré qu\'elle ne prévoyait pas de jeter chez elle les médicaments de marque de magasin qu\'elle avait achetés pour faire des économies.').
+sen_id(1880, 766, 'p', 'TRIAL', 'no', 'Elle n\'avait pas non plus l\'intention d\'arrêter d\'acheter les produits génériques.').
+sen_id(1881, 766, 'h', 'TRIAL', 'no', 'Molly Walsh prévoit d\'arrêter d\'acheter les produits génériques.').
 %problem id = 767
-sen_id(1880, 767, 'p', 'TRIAL', 'yes', '"J\'ai toujours dit qu\'il est ce qui se rapprochera le plus d\'une rencontre avec Gandhi, il est tout simplement insensible à tout obstacle ou à tout argument", a déclaré Bill Clapp, héritier de la fortune de Weyerhaeuser et fondateur de Global Partnerships, un groupe de microfinance de Seattle qui s\'est associé à Grameen en Amérique centrale.').
-sen_id(1881, 767, 'h', 'TRIAL', 'yes', 'Bill Clapp est le fondateur de Global Partnerships.').
+sen_id(1882, 767, 'p', 'TRIAL', 'yes', '"J\'ai toujours dit qu\'il est ce qui se rapprochera le plus d\'une rencontre avec Gandhi, il est tout simplement insensible à tout obstacle ou à tout argument", a déclaré Bill Clapp, héritier de la fortune de Weyerhaeuser et fondateur de Global Partnerships, un groupe de microfinance de Seattle qui s\'est associé à Grameen en Amérique centrale.').
+sen_id(1883, 767, 'h', 'TRIAL', 'yes', 'Bill Clapp est le fondateur de Global Partnerships.').
 %problem id = 768
-sen_id(1882, 768, 'p', 'TRIAL', 'no', 'La FDA n\'a pas voulu dire dans quels États les pilules avaient été vendues, mais a plutôt recommandé aux clients de déterminer si les produits qu\'ils ont achetés font l\'objet d\'un rappel en vérifiant la liste des magasins sur le site Web de la FDA et la liste des lots.').
-sen_id(1883, 768, 'p', 'TRIAL', 'no', 'Les numéros de lot figurent sur l\'étiquette du récipient.').
-sen_id(1884, 768, 'h', 'TRIAL', 'no', 'La FDA a fourni une liste des États dans lesquels les pilules ont été vendues.').
+sen_id(1884, 768, 'p', 'TRIAL', 'no', 'La FDA n\'a pas voulu dire dans quels États les pilules avaient été vendues, mais a plutôt recommandé aux clients de déterminer si les produits qu\'ils ont achetés font l\'objet d\'un rappel en vérifiant la liste des magasins sur le site Web de la FDA et la liste des lots.').
+sen_id(1885, 768, 'p', 'TRIAL', 'no', 'Les numéros de lot figurent sur l\'étiquette du récipient.').
+sen_id(1886, 768, 'h', 'TRIAL', 'no', 'La FDA a fourni une liste des États dans lesquels les pilules ont été vendues.').
 %problem id = 769
-sen_id(1885, 769, 'p', 'TRIAL', 'yes', 'Il a essayé de persuader un banquier local de prêter plus d\'argent aux villageois, mais le banquier a refusé, insistant sur le fait qu\'ils ne remplissaient pas les conditions requises pour obtenir un crédit.').
-sen_id(1886, 769, 'p', 'TRIAL', 'yes', 'Alors, Yunus a créé sa propre banque pour aider les plus pauvres des pauvres à se relever.').
-sen_id(1887, 769, 'h', 'TRIAL', 'yes', 'Yunus a créé sa propre banque pour prêter de l\'argent aux villageois.').
+sen_id(1887, 769, 'p', 'TRIAL', 'yes', 'Il a essayé de persuader un banquier local de prêter plus d\'argent aux villageois, mais le banquier a refusé, insistant sur le fait qu\'ils ne remplissaient pas les conditions requises pour obtenir un crédit.').
+sen_id(1888, 769, 'p', 'TRIAL', 'yes', 'Alors, Yunus a créé sa propre banque pour aider les plus pauvres des pauvres à se relever.').
+sen_id(1889, 769, 'h', 'TRIAL', 'yes', 'Yunus a créé sa propre banque pour prêter de l\'argent aux villageois.').
 %problem id = 770
-sen_id(1888, 770, 'p', 'TRIAL', 'yes', 'La plupart des emprunteurs de la Grameen Bank utilisent les petits prêts pour créer des entreprises en achetant, par exemple, une vache pour produire du lait, ou un pousse-pousse, ou des matériaux pour fabriquer du tissu ou de la poterie.').
-sen_id(1889, 770, 'h', 'TRIAL', 'yes', 'Les prêts de la Grameen Bank sont utilisés pour acheter une vache.').
+sen_id(1890, 770, 'p', 'TRIAL', 'yes', 'La plupart des emprunteurs de la Grameen Bank utilisent les petits prêts pour créer des entreprises en achetant, par exemple, une vache pour produire du lait, ou un pousse-pousse, ou des matériaux pour fabriquer du tissu ou de la poterie.').
+sen_id(1891, 770, 'h', 'TRIAL', 'yes', 'Les prêts de la Grameen Bank sont utilisés pour acheter une vache.').
 %problem id = 771
-sen_id(1890, 771, 'p', 'TRIAL', 'yes', 'En 2003, Yunus a amené la révolution du microcrédit dans les rues du Bangladesh pour soutenir plus de 50.000 mendiants, que la Grameen Bank appelle respectueusement les Membres en difficulté.').
-sen_id(1891, 771, 'h', 'TRIAL', 'yes', 'Yunus a soutenu plus de 50.000 Membres en difficulté.').
+sen_id(1892, 771, 'p', 'TRIAL', 'yes', 'En 2003, Yunus a amené la révolution du microcrédit dans les rues du Bangladesh pour soutenir plus de 50.000 mendiants, que la Grameen Bank appelle respectueusement les Membres en difficulté.').
+sen_id(1893, 771, 'h', 'TRIAL', 'yes', 'Yunus a soutenu plus de 50.000 Membres en difficulté.').
 %problem id = 772
-sen_id(1892, 772, 'p', 'TRIAL', 'unknown', 'Le comité Nobel a déclaré dans un communiqué qu\'"une paix durable ne peut être atteinte que si d\'importants groupes de population trouvent des moyens de sortir de la pauvreté".').
-sen_id(1893, 772, 'h', 'TRIAL', 'unknown', 'Le comité Nobel prévoit d\'aider les gens à sortir de la pauvreté.').
+sen_id(1894, 772, 'p', 'TRIAL', 'unknown', 'Le comité Nobel a déclaré dans un communiqué qu\'"une paix durable ne peut être atteinte que si d\'importants groupes de population trouvent des moyens de sortir de la pauvreté".').
+sen_id(1895, 772, 'h', 'TRIAL', 'unknown', 'Le comité Nobel prévoit d\'aider les gens à sortir de la pauvreté.').
 %problem id = 773
-sen_id(1894, 773, 'p', 'TRIAL', 'yes', 'Alors que la Chambre a été extrêmement active dans l\'adoption de projets de loi abordant les principales priorités des entrepreneurs, la plupart des lois se sont heurtées à un mur de briques au Sénat.').
-sen_id(1895, 773, 'h', 'TRIAL', 'yes', 'La Chambre adopte rapidement des projets de loi répondant aux priorités des entrepreneurs.').
+sen_id(1896, 773, 'p', 'TRIAL', 'yes', 'Alors que la Chambre a été extrêmement active dans l\'adoption de projets de loi abordant les principales priorités des entrepreneurs, la plupart des lois se sont heurtées à un mur de briques au Sénat.').
+sen_id(1897, 773, 'h', 'TRIAL', 'yes', 'La Chambre adopte rapidement des projets de loi répondant aux priorités des entrepreneurs.').
 %problem id = 774
-sen_id(1896, 774, 'p', 'TRIAL', 'unknown', 'En août, la fondation de Gates a donné 1,5 million à la fondation Grameen de Yunus pour un programme visant à étendre ses programmes de microfinance à 5 millions de familles supplémentaires parmi les plus pauvres du monde.').
-sen_id(1897, 774, 'p', 'TRIAL', 'unknown', 'Il y a trois ans, l\'entrepreneur en technologie Craig McCaw a fourni 2 millions pour lancer le Grameen Technology Center, qui utilise le microcrédit pour financer un service mobile bon marché pour les populations de l\'Ouganda et du Rwanda.').
-sen_id(1898, 774, 'h', 'TRIAL', 'unknown', 'La fondation de Gates étend ses programmes de microfinance à 5 millions de familles supplémentaires parmi les plus pauvres du monde.').
+sen_id(1898, 774, 'p', 'TRIAL', 'unknown', 'En août, la fondation de Gates a donné 1,5 million à la fondation Grameen de Yunus pour un programme visant à étendre ses programmes de microfinance à 5 millions de familles supplémentaires parmi les plus pauvres du monde.').
+sen_id(1899, 774, 'p', 'TRIAL', 'unknown', 'Il y a trois ans, l\'entrepreneur en technologie Craig McCaw a fourni 2 millions pour lancer le Grameen Technology Center, qui utilise le microcrédit pour financer un service mobile bon marché pour les populations de l\'Ouganda et du Rwanda.').
+sen_id(1900, 774, 'h', 'TRIAL', 'unknown', 'La fondation de Gates étend ses programmes de microfinance à 5 millions de familles supplémentaires parmi les plus pauvres du monde.').
 %problem id = 775
-sen_id(1899, 775, 'p', 'TRIAL', 'yes', 'Comme le souligne un rapport publié fin septembre par les démocrates, les républicains n\'ont pas réussi à faire passer leurs propres projets de loi sur les petites entreprises au Congrès, même s\'ils contrôlent à la fois les deux chambres et la Maison Blanche.').
-sen_id(1900, 775, 'h', 'TRIAL', 'yes', 'Les Républicains contrôlent à la fois les deux chambres et la Maison Blanche.').
+sen_id(1901, 775, 'p', 'TRIAL', 'yes', 'Comme le souligne un rapport publié fin septembre par les démocrates, les républicains n\'ont pas réussi à faire passer leurs propres projets de loi sur les petites entreprises au Congrès, même s\'ils contrôlent à la fois les deux chambres et la Maison Blanche.').
+sen_id(1902, 775, 'h', 'TRIAL', 'yes', 'Les Républicains contrôlent à la fois les deux chambres et la Maison Blanche.').
 %problem id = 776
-sen_id(1901, 776, 'p', 'TRIAL', 'unknown', 'Yunus, qui a déjà été nommé au moins deux fois pour le prix de la paix, est la première personne du Bangladesh, un pays de 147 millions d\'habitants, à remporter un prix Nobel.').
-sen_id(1902, 776, 'p', 'TRIAL', 'unknown', 'Son prix Nobel est une rare lueur d\'espoir dans un pays qui lutte pour vaincre les terroristes islamiques, et qui est chroniquement inondé par les inondations et battu par les tempêtes qui soufflent depuis la baie du Bengale.').
-sen_id(1903, 776, 'p', 'TRIAL', 'unknown', 'Le pays, anciennement connu sous le nom de Pakistan oriental, est bordé par la baie du Bengale, l\'Inde et la Birmanie.').
-sen_id(1904, 776, 'h', 'TRIAL', 'unknown', 'Yunus est la première personne à remporter un prix Nobel.').
+sen_id(1903, 776, 'p', 'TRIAL', 'unknown', 'Yunus, qui a déjà été nommé au moins deux fois pour le prix de la paix, est la première personne du Bangladesh, un pays de 147 millions d\'habitants, à remporter un prix Nobel.').
+sen_id(1904, 776, 'p', 'TRIAL', 'unknown', 'Son prix Nobel est une rare lueur d\'espoir dans un pays qui lutte pour vaincre les terroristes islamiques, et qui est chroniquement inondé par les inondations et battu par les tempêtes qui soufflent depuis la baie du Bengale.').
+sen_id(1905, 776, 'p', 'TRIAL', 'unknown', 'Le pays, anciennement connu sous le nom de Pakistan oriental, est bordé par la baie du Bengale, l\'Inde et la Birmanie.').
+sen_id(1906, 776, 'h', 'TRIAL', 'unknown', 'Yunus est la première personne à remporter un prix Nobel.').
 %problem id = 777
-sen_id(1905, 777, 'p', 'TRIAL', 'yes', 'L\'avion transporteur Hercules qui a fait un vol direct jusqu\'ici depuis le premier tour du voyage au Pakistan, a atterri et ce n\'était qu\'une promenade rapide de 100 m jusqu\'aux poignées de main.').
-sen_id(1906, 777, 'h', 'TRIAL', 'yes', 'L\'avion transporteur Hercules a effectué un vol au Pakistan.').
+sen_id(1907, 777, 'p', 'TRIAL', 'yes', 'L\'avion transporteur Hercules qui a fait un vol direct jusqu\'ici depuis le premier tour du voyage au Pakistan, a atterri et ce n\'était qu\'une promenade rapide de 100 m jusqu\'aux poignées de main.').
+sen_id(1908, 777, 'h', 'TRIAL', 'yes', 'L\'avion transporteur Hercules a effectué un vol au Pakistan.').
 %problem id = 778
-sen_id(1907, 778, 'p', 'TRIAL', 'yes', 'Le voyage visait à faire ce que, lui, il n\'a pas fait depuis ce que de nombreuses troupes estiment être trop longtemps - rendre visite aux milliers de militaires qui combattent une guerre dans le sud de l\'Afghanistan.').
-sen_id(1908, 778, 'h', 'TRIAL', 'yes', 'Les militaires combattent une guerre dans le sud de l\'Afghanistan.').
+sen_id(1909, 778, 'p', 'TRIAL', 'yes', 'Le voyage visait à faire ce que, lui, il n\'a pas fait depuis ce que de nombreuses troupes estiment être trop longtemps - rendre visite aux milliers de militaires qui combattent une guerre dans le sud de l\'Afghanistan.').
+sen_id(1910, 778, 'h', 'TRIAL', 'yes', 'Les militaires combattent une guerre dans le sud de l\'Afghanistan.').
 %problem id = 779
-sen_id(1909, 779, 'p', 'TRIAL', 'no', 'Begum, qui a dû emprunter pour acheter du bambou afin de fabriquer des tabourets, recevait 25 cents par jour des prêteurs d\'argent.').
-sen_id(1910, 779, 'p', 'TRIAL', 'no', 'Après leur avoir donné des tabourets pour rembourser sa dette, il lui restait 2 cents par jour, à peine assez pour se nourrir.').
-sen_id(1911, 779, 'h', 'TRIAL', 'no', 'Begum n\'était pas en mesure de se nourrir.').
+sen_id(1911, 779, 'p', 'TRIAL', 'no', 'Begum, qui a dû emprunter pour acheter du bambou afin de fabriquer des tabourets, recevait 25 cents par jour des prêteurs d\'argent.').
+sen_id(1912, 779, 'p', 'TRIAL', 'no', 'Après leur avoir donné des tabourets pour rembourser sa dette, il lui restait 2 cents par jour, à peine assez pour se nourrir.').
+sen_id(1913, 779, 'h', 'TRIAL', 'no', 'Begum n\'était pas en mesure de se nourrir.').
 %problem id = 780
-sen_id(1912, 780, 'p', 'TRIAL', 'yes', 'L\'autorité néo-zélandaise des qualifications a déclaré vendredi qu\'elle déconseillait toujours fortement aux étudiants d\'utiliser autre chose que l\'anglais complet, mais que le crédit sera accordé si la réponse "montre clairement la compréhension requise", même si elle contient du langage SMS.').
-sen_id(1913, 780, 'h', 'TRIAL', 'yes', 'L\'anglais complet est recommandé par l\'Autorité des qualifications de Nouvelle-Zélande.').
+sen_id(1914, 780, 'p', 'TRIAL', 'yes', 'L\'autorité néo-zélandaise des qualifications a déclaré vendredi qu\'elle déconseillait toujours fortement aux étudiants d\'utiliser autre chose que l\'anglais complet, mais que le crédit sera accordé si la réponse "montre clairement la compréhension requise", même si elle contient du langage SMS.').
+sen_id(1915, 780, 'h', 'TRIAL', 'yes', 'L\'anglais complet est recommandé par l\'Autorité des qualifications de Nouvelle-Zélande.').
 %problem id = 781
-sen_id(1914, 781, 'p', 'TRIAL', 'yes', 'Les critiques ont déclaré que le National Certificate of Educational Achievement ou NCEA, la principale qualification pour les lycéens, serait dégradé par l\'autorité autorisant l\'utilisation du langage SMS dans les examens.').
-sen_id(1915, 781, 'h', 'TRIAL', 'yes', 'Le NCEA est la principale qualification pour les élèves du secondaire.').
+sen_id(1916, 781, 'p', 'TRIAL', 'yes', 'Les critiques ont déclaré que le National Certificate of Educational Achievement ou NCEA, la principale qualification pour les lycéens, serait dégradé par l\'autorité autorisant l\'utilisation du langage SMS dans les examens.').
+sen_id(1917, 781, 'h', 'TRIAL', 'yes', 'Le NCEA est la principale qualification pour les élèves du secondaire.').
 %problem id = 782
-sen_id(1916, 782, 'p', 'TRIAL', 'yes', 'Un soldat américain, accusé d\'avoir participé au viol d\'une jeune fille irakienne puis de l\'avoir tuée ainsi que sa famille, a été condamné à 90 ans de prison jeudi, selon les médias.').
-sen_id(1917, 782, 'h', 'TRIAL', 'yes', 'Un soldat américain a été condamné à 90 ans de prison.').
+sen_id(1918, 782, 'p', 'TRIAL', 'yes', 'Un soldat américain, accusé d\'avoir participé au viol d\'une jeune fille irakienne puis de l\'avoir tuée ainsi que sa famille, a été condamné à 90 ans de prison jeudi, selon les médias.').
+sen_id(1919, 782, 'h', 'TRIAL', 'yes', 'Un soldat américain a été condamné à 90 ans de prison.').
 %problem id = 783
-sen_id(1918, 783, 'p', 'TRIAL', 'yes', 'Le soldat, James Barker, l\'un des quatre soldats américains accusés d\'avoir violé la jeune Irakienne et tué sa famille lors de l\'incident de mars 2006, a plaidé coupable de viol et de meurtre mercredi à Fort Campbell, dans le Kentucky.').
-sen_id(1919, 783, 'h', 'TRIAL', 'yes', 'James Barker est accusé d\'avoir violé une jeune fille irakienne et tué sa famille.').
+sen_id(1920, 783, 'p', 'TRIAL', 'yes', 'Le soldat, James Barker, l\'un des quatre soldats américains accusés d\'avoir violé la jeune Irakienne et tué sa famille lors de l\'incident de mars 2006, a plaidé coupable de viol et de meurtre mercredi à Fort Campbell, dans le Kentucky.').
+sen_id(1921, 783, 'h', 'TRIAL', 'yes', 'James Barker est accusé d\'avoir violé une jeune fille irakienne et tué sa famille.').
 %problem id = 784
-sen_id(1920, 784, 'p', 'TRIAL', 'yes', 'Trois infirmières de l\'un des plus anciens hôpitaux de Vienne ont été arrêtées, soupçonnées d\'avoir tué 35 patients.').
-sen_id(1921, 784, 'h', 'TRIAL', 'yes', 'Trois infirmières de Vienne sont soupçonnées d\'avoir tué des patients.').
+sen_id(1922, 784, 'p', 'TRIAL', 'yes', 'Trois infirmières de l\'un des plus anciens hôpitaux de Vienne ont été arrêtées, soupçonnées d\'avoir tué 35 patients.').
+sen_id(1923, 784, 'h', 'TRIAL', 'yes', 'Trois infirmières de Vienne sont soupçonnées d\'avoir tué des patients.').
 %problem id = 785
-sen_id(1922, 785, 'p', 'TRIAL', 'unknown', 'Le rédacteur en chef de la BBC pour les Amériques, Will Grant, affirme que de nombreux Mexicains sont fatigués des conflits et aspirent à un retour à la normale.').
-sen_id(1923, 785, 'h', 'TRIAL', 'unknown', 'Will Grant fait des recherches sur un conflit avec les Mexicains.').
+sen_id(1924, 785, 'p', 'TRIAL', 'unknown', 'Le rédacteur en chef de la BBC pour les Amériques, Will Grant, affirme que de nombreux Mexicains sont fatigués des conflits et aspirent à un retour à la normale.').
+sen_id(1925, 785, 'h', 'TRIAL', 'unknown', 'Will Grant fait des recherches sur un conflit avec les Mexicains.').
 %problem id = 786
-sen_id(1924, 786, 'p', 'TRIAL', 'unknown', 'Bien qu\'il dispose d\'une base de soutien suffisante pour pouvoir créer un mouvement de désobéissance civile de masse, certains analystes pensent que sa campagne sera, au mieux, une épine dans le pied de M. Calderon.').
-sen_id(1925, 786, 'h', 'TRIAL', 'unknown', 'Monsieur Calderon est capable de créer un mouvement de désobéissance civile de masse.').
+sen_id(1926, 786, 'p', 'TRIAL', 'unknown', 'Bien qu\'il dispose d\'une base de soutien suffisante pour pouvoir créer un mouvement de désobéissance civile de masse, certains analystes pensent que sa campagne sera, au mieux, une épine dans le pied de M. Calderon.').
+sen_id(1927, 786, 'h', 'TRIAL', 'unknown', 'Monsieur Calderon est capable de créer un mouvement de désobéissance civile de masse.').
 %problem id = 787
-sen_id(1926, 787, 'p', 'TRIAL', 'unknown', 'Bien sûr, la plupart des réductions d\'impôts expirent en 2010 ; à seulement trois ans du moment où Rangel prendrait la présidence en cas de victoire des démocrates.').
-sen_id(1927, 787, 'h', 'TRIAL', 'unknown', 'Les démocrates ont gagné les élections il y a trois ans.').
+sen_id(1928, 787, 'p', 'TRIAL', 'unknown', 'Bien sûr, la plupart des réductions d\'impôts expirent en 2010 ; à seulement trois ans du moment où Rangel prendrait la présidence en cas de victoire des démocrates.').
+sen_id(1929, 787, 'h', 'TRIAL', 'unknown', 'Les démocrates ont gagné les élections il y a trois ans.').
 %problem id = 788
-sen_id(1928, 788, 'p', 'TRIAL', 'no', 'Les membres démocrates de la commission des voies et moyens, où les projets de loi fiscale sont rédigés et avancés, n\'ont pas de solides antécédents de vote pour les petites entreprises.').
-sen_id(1929, 788, 'h', 'TRIAL', 'no', 'Les membres démocrates ont eu des solides antécédents de vote pour les petites entreprises.').
+sen_id(1930, 788, 'p', 'TRIAL', 'no', 'Les membres démocrates de la commission des voies et moyens, où les projets de loi fiscale sont rédigés et avancés, n\'ont pas de solides antécédents de vote pour les petites entreprises.').
+sen_id(1931, 788, 'h', 'TRIAL', 'no', 'Les membres démocrates ont eu des solides antécédents de vote pour les petites entreprises.').
 %problem id = 789
-sen_id(1930, 789, 'p', 'TRIAL', 'unknown', 'Maximo Rene Mendez, dans le cadre d\'une apparente contrebande, est mort après que les médecins aient débranché le matériel de maintien en vie.').
-sen_id(1931, 789, 'h', 'TRIAL', 'unknown', 'Un homme de Miami imbibé de cocaïne a vu son système de survie retiré.').
+sen_id(1932, 789, 'p', 'TRIAL', 'unknown', 'Maximo Rene Mendez, dans le cadre d\'une apparente contrebande, est mort après que les médecins aient débranché le matériel de maintien en vie.').
+sen_id(1933, 789, 'h', 'TRIAL', 'unknown', 'Un homme de Miami imbibé de cocaïne a vu son système de survie retiré.').
 %problem id = 790
-sen_id(1932, 790, 'p', 'TRIAL', 'unknown', 'Quarante-cinq pour cent des projets de loi examinés étaient bipartisans, et 85 \% des projets de loi examinés avaient des parrains principaux républicains.').
-sen_id(1933, 790, 'p', 'TRIAL', 'unknown', '8221 ; Les propriétaires de petites entreprises sont déçus par le bilan des Républicains, en particulier par le manque de productivité du Sénat.').
-sen_id(1934, 790, 'h', 'TRIAL', 'unknown', 'Le Sénat est le moins productif.').
+sen_id(1934, 790, 'p', 'TRIAL', 'unknown', 'Quarante-cinq pour cent des projets de loi examinés étaient bipartisans, et 85 \% des projets de loi examinés avaient des parrains principaux républicains.').
+sen_id(1935, 790, 'p', 'TRIAL', 'unknown', '8221 ; Les propriétaires de petites entreprises sont déçus par le bilan des Républicains, en particulier par le manque de productivité du Sénat.').
+sen_id(1936, 790, 'h', 'TRIAL', 'unknown', 'Le Sénat est le moins productif.').
 %problem id = 791
-sen_id(1935, 791, 'p', 'TRIAL', 'unknown', 'Des hélicoptères d\'attaque, des Chinooks, des véhicules blindés, des grues et un camion de pompiers ont encerclé le groupe.').
-sen_id(1936, 791, 'h', 'TRIAL', 'unknown', 'Il y a eu une attaque de Chinook.').
+sen_id(1937, 791, 'p', 'TRIAL', 'unknown', 'Des hélicoptères d\'attaque, des Chinooks, des véhicules blindés, des grues et un camion de pompiers ont encerclé le groupe.').
+sen_id(1938, 791, 'h', 'TRIAL', 'unknown', 'Il y a eu une attaque de Chinook.').
 %problem id = 792
-sen_id(1937, 792, 'p', 'TRIAL', 'yes', 'La Cour suprême a déclaré aujourd\'hui que les États peuvent interdire le retrait du traitement de maintien en vie des patients comateux qui n\'ont pas fait ou ne peuvent pas faire connaître leurs désirs.').
-sen_id(1938, 792, 'h', 'TRIAL', 'yes', 'Il y a une décision de la Cour suprême sur le retrait du traitement de survie.').
+sen_id(1939, 792, 'p', 'TRIAL', 'yes', 'La Cour suprême a déclaré aujourd\'hui que les États peuvent interdire le retrait du traitement de maintien en vie des patients comateux qui n\'ont pas fait ou ne peuvent pas faire connaître leurs désirs.').
+sen_id(1940, 792, 'h', 'TRIAL', 'yes', 'Il y a une décision de la Cour suprême sur le retrait du traitement de survie.').
 %problem id = 793
-sen_id(1939, 793, 'p', 'TRIAL', 'unknown', '"Le mot dans les files d\'attente de la cuisine est que nous pourrions faire avec plus d\'hommes, et le kit continue de s\'user, mais c\'est dû aux conditions ici", a déclaré le caporal Martin Page.').
-sen_id(1940, 793, 'h', 'TRIAL', 'unknown', 'Martin Page a été envoyé en mission en Afghanistan.').
+sen_id(1941, 793, 'p', 'TRIAL', 'unknown', '"Le mot dans les files d\'attente de la cuisine est que nous pourrions faire avec plus d\'hommes, et le kit continue de s\'user, mais c\'est dû aux conditions ici", a déclaré le caporal Martin Page.').
+sen_id(1942, 793, 'h', 'TRIAL', 'unknown', 'Martin Page a été envoyé en mission en Afghanistan.').
 %problem id = 794
-sen_id(1941, 794, 'p', 'TRIAL', 'yes', 'La fusillade mortelle de Steven Charles Jenkins, un malade du sida en phase terminale, par son ami Philip Lee Saylor au Cedars-Sinai Medical Center a de nouveau attiré l\'attention sur les problèmes de la mort et du décès dans notre société.').
-sen_id(1942, 794, 'h', 'TRIAL', 'yes', 'Steven Jenkins a été abattu par un ami.').
+sen_id(1943, 794, 'p', 'TRIAL', 'yes', 'La fusillade mortelle de Steven Charles Jenkins, un malade du sida en phase terminale, par son ami Philip Lee Saylor au Cedars-Sinai Medical Center a de nouveau attiré l\'attention sur les problèmes de la mort et du décès dans notre société.').
+sen_id(1944, 794, 'h', 'TRIAL', 'yes', 'Steven Jenkins a été abattu par un ami.').
 %problem id = 795
-sen_id(1943, 795, 'p', 'TRIAL', 'yes', 'La division acier de Broken Hill Proprietary, le groupe de ressources australien, et North Star steel, qui fait partie du groupe privé Cargill aux États-Unis, unissent leurs forces pour construire et exploiter une nouvelle mini-aciérie dans le Midwest américain.').
-sen_id(1944, 795, 'h', 'TRIAL', 'yes', 'Le groupe australien Broken Hill Proprietary et le groupe américain North Star Steel vont en construire et exploiter une dans le Midwest américain.').
+sen_id(1945, 795, 'p', 'TRIAL', 'yes', 'La division acier de Broken Hill Proprietary, le groupe de ressources australien, et North Star steel, qui fait partie du groupe privé Cargill aux États-Unis, unissent leurs forces pour construire et exploiter une nouvelle mini-aciérie dans le Midwest américain.').
+sen_id(1946, 795, 'h', 'TRIAL', 'yes', 'Le groupe australien Broken Hill Proprietary et le groupe américain North Star Steel vont en construire et exploiter une dans le Midwest américain.').
 %problem id = 796
-sen_id(1945, 796, 'p', 'TRIAL', 'unknown', 'Confiant que ceux qui corrigent les copies comprendront les réponses écrites en langage SMS, Haque a souligné que dans certains examens, dont l\'anglais, les abréviations textuelles seraient pénalisées.').
-sen_id(1946, 796, 'h', 'TRIAL', 'unknown', 'Haque veut inclure l\'anglais dans certains examens.').
+sen_id(1947, 796, 'p', 'TRIAL', 'unknown', 'Confiant que ceux qui corrigent les copies comprendront les réponses écrites en langage SMS, Haque a souligné que dans certains examens, dont l\'anglais, les abréviations textuelles seraient pénalisées.').
+sen_id(1948, 796, 'h', 'TRIAL', 'unknown', 'Haque veut inclure l\'anglais dans certains examens.').
 %problem id = 797
-sen_id(1947, 797, 'p', 'TRIAL', 'yes', 'Iscor, le fabricant sud-africain de fer et d\'acier, a annoncé son intention de développer une mini-aciérie à Saldanha Bay, sur la côte ouest du pays, en partenariat avec la société publique de développement industriel.').
-sen_id(1948, 797, 'h', 'TRIAL', 'yes', 'Le fabricant d\'acier sud-africain Iscor prévoit de développer une mini-aciérie.').
+sen_id(1949, 797, 'p', 'TRIAL', 'yes', 'Iscor, le fabricant sud-africain de fer et d\'acier, a annoncé son intention de développer une mini-aciérie à Saldanha Bay, sur la côte ouest du pays, en partenariat avec la société publique de développement industriel.').
+sen_id(1950, 797, 'h', 'TRIAL', 'yes', 'Le fabricant d\'acier sud-africain Iscor prévoit de développer une mini-aciérie.').
 %problem id = 798
-sen_id(1949, 798, 'p', 'TRIAL', 'unknown', 'Les critiques ont déclaré que le National Certificate of Educational Achievement ou NCEA, la principale qualification pour les lycéens, serait dégradé par l\'autorité autorisant l\'utilisation du langage SMS dans les examens.').
-sen_id(1950, 798, 'h', 'TRIAL', 'unknown', 'Le NCEA a été dégradé par l\'autorité.').
+sen_id(1951, 798, 'p', 'TRIAL', 'unknown', 'Les critiques ont déclaré que le National Certificate of Educational Achievement ou NCEA, la principale qualification pour les lycéens, serait dégradé par l\'autorité autorisant l\'utilisation du langage SMS dans les examens.').
+sen_id(1952, 798, 'h', 'TRIAL', 'unknown', 'Le NCEA a été dégradé par l\'autorité.').
 %problem id = 799
-sen_id(1951, 799, 'p', 'TRIAL', 'no', 'Deux autres marines, Tyler Jackson et John Jodka III, ont déjà plaidé coupable de voies de fait aggravées et de complot d\'entrave à la justice et ont été condamnés respectivement à 21 mois et 18 mois.').
-sen_id(1952, 799, 'h', 'TRIAL', 'no', 'Tyler Jackson a été condamné à 18 mois.').
+sen_id(1953, 799, 'p', 'TRIAL', 'no', 'Deux autres marines, Tyler Jackson et John Jodka III, ont déjà plaidé coupable de voies de fait aggravées et de complot d\'entrave à la justice et ont été condamnés respectivement à 21 mois et 18 mois.').
+sen_id(1954, 799, 'h', 'TRIAL', 'no', 'Tyler Jackson a été condamné à 18 mois.').
 %problem id = 800
-sen_id(1953, 800, 'p', 'TRIAL', 'yes', 'US Steel pourrait même avoir un avantage technique sur Nucor puisqu\'une nouvelle méthode de fabrication de l\'acier qu\'elle envisage, la coulée en bande mince, pourrait produire un acier de meilleure qualité que la technique des brames minces de Nucor.').
-sen_id(1954, 800, 'h', 'TRIAL', 'yes', 'US Steel pourrait investir dans la coulée en bandes.').
+sen_id(1955, 800, 'p', 'TRIAL', 'yes', 'US Steel pourrait même avoir un avantage technique sur Nucor puisqu\'une nouvelle méthode de fabrication de l\'acier qu\'elle envisage, la coulée en bande mince, pourrait produire un acier de meilleure qualité que la technique des brames minces de Nucor.').
+sen_id(1956, 800, 'h', 'TRIAL', 'yes', 'US Steel pourrait investir dans la coulée en bandes.').
