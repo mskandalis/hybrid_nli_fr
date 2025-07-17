@@ -9,7 +9,7 @@ This repository contains:
   - their logical reprsentation (both lambda-terms and FOL expressions, in different files and for use by different models and theorem provers afterwards).
 - the whole pipeline :
   - for obtaining this logical representation from the raw sentences, and
-  - for predicting the label attributed to every sentence pair.
+  - for predicting wih a theorem prover the label attributed to every sentence pair.
 
 ## Requirements
 
