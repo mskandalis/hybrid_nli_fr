@@ -18,9 +18,13 @@ def remove_quant_wrappers(line):
 
         while i < len(s):
             if s.startswith('[exists', i):
-                # Skip "quant(" and start tracking parentheses
+                # Skip "[exists" and start tracking quantifier wrappers
                 i += len('[exists')
                 stack.append('exists')
+            elif s.startswith('[forall', i):
+                # Also handle forall quantifiers
+                i += len('[forall')
+                stack.append('forall')
             elif s[i] == '[':
                 result.append(s[i])
                 stack.append('[')
@@ -28,8 +32,8 @@ def remove_quant_wrappers(line):
             elif s[i] == ']':
                 if stack:
                     top = stack.pop()
-                    if top == 'exists':
-                        # End of quant(...) — don't append this closing paren
+                    if top in ['exists', 'forall']:
+                        # End of quantifier wrapper — don't append this closing bracket
                         i += 1
                         continue
                 result.append(']')
@@ -82,36 +86,37 @@ def replace_var_expressions(input_filename, output_filename):
 
 
 # Example usage
-replace_var_expressions('fol_sentences.pl', 'fol_nltk.txt')
+replace_var_expressions('fol_sentences.pl', 'fol_nltk_gqnli.txt')
 
 def balance_parentheses(expr):
-    open_count = 0
-    corrected = []
-
-    for char in expr:
+    """
+    Balance parentheses by removing unmatched ones.
+    Uses a more robust approach that tracks actual nesting.
+    """
+    result = []
+    stack = []
+    
+    # First pass: mark valid parentheses pairs
+    valid_positions = set()
+    
+    for i, char in enumerate(expr):
         if char == '(':
-            open_count += 1
-            corrected.append(char)
+            stack.append(i)
         elif char == ')':
-            if open_count > 0:
-                open_count -= 1
-                corrected.append(char)
-            else:
-                # Too many closing parens — skip
-                continue
+            if stack:
+                open_pos = stack.pop()
+                valid_positions.add(open_pos)
+                valid_positions.add(i)
+    
+    # Second pass: build result with only valid parentheses
+    for i, char in enumerate(expr):
+        if char in '()':
+            if i in valid_positions:
+                result.append(char)
         else:
-            corrected.append(char)
-
-    # If too many opening parens, we remove from the end
-    if open_count > 0:
-        for _ in range(open_count):
-            # Remove last unmatched opening '(' from the end
-            for i in range(len(corrected) - 1, -1, -1):
-                if corrected[i] == '(':
-                    corrected.pop(i)
-                    break
-
-    return ''.join(corrected)
+            result.append(char)
+    
+    return ''.join(result)
 
 def remove_redundant_parens(expr):
     chars = list(expr)
@@ -161,6 +166,87 @@ def remove_redundant_parens(expr):
     # Build new expression without redundant parens
     return ''.join(ch for i, ch in enumerate(chars) if i not in to_remove)
 
+def balance_brackets(expr):
+    """
+    Balance brackets by removing unmatched ones.
+    Similar to balance_parentheses but for square brackets.
+    """
+    result = []
+    stack = []
+    
+    # First pass: mark valid bracket pairs
+    valid_positions = set()
+    
+    for i, char in enumerate(expr):
+        if char == '[':
+            stack.append(i)
+        elif char == ']':
+            if stack:
+                open_pos = stack.pop()
+                valid_positions.add(open_pos)
+                valid_positions.add(i)
+    
+    # Second pass: build result with only valid brackets
+    for i, char in enumerate(expr):
+        if char in '[]':
+            if i in valid_positions:
+                result.append(char)
+        else:
+            result.append(char)
+    
+    return ''.join(result)
+
+def balance_all_brackets_and_parens(expr):
+    """
+    Balance both brackets and parentheses in an expression.
+    This ensures proper nesting and removes unmatched brackets/parentheses.
+    """
+    result = []
+    stack = []
+    valid_positions = set()
+    bracket_pairs = {'(': ')', '[': ']'}
+    
+    # First pass: mark valid bracket/parenthesis pairs
+    for i, char in enumerate(expr):
+        if char in bracket_pairs:
+            stack.append((i, char))
+        elif char in bracket_pairs.values():
+            # Find matching opening bracket/parenthesis
+            for j in range(len(stack) - 1, -1, -1):
+                pos, open_char = stack[j]
+                if bracket_pairs[open_char] == char:
+                    # Found matching pair
+                    valid_positions.add(pos)
+                    valid_positions.add(i)
+                    stack.pop(j)
+                    break
+    
+    # Second pass: build result with only valid brackets/parentheses
+    for i, char in enumerate(expr):
+        if char in '()[]':
+            if i in valid_positions:
+                result.append(char)
+        else:
+            result.append(char)
+    
+    return ''.join(result)
+
+def convert_brackets_to_parentheses(formula):
+    """
+    Convert bracket notation to parentheses notation for NLTK compatibility.
+    Handles patterns like x[...] -> x.(...)
+    """
+    # First balance all brackets and parentheses
+    formula = balance_all_brackets_and_parens(formula)
+    
+    # Convert variable[...] to variable.(...)
+    formula = re.sub(r'\b([a-z]|[a-z]\d+)\[', r'\1.(', formula)
+    
+    # Convert remaining ] to )
+    formula = formula.replace(']', ')')
+    
+    return formula
+
 def extract_line_by_fol_number(fol_file, source_file):
     # Read the entire source file into a list
     lp = LogicParser()
@@ -168,32 +254,38 @@ def extract_line_by_fol_number(fol_file, source_file):
     with open(source_file, 'r', encoding='utf-8') as sf:
         source_lines = sf.readlines()
 
-    # Process the fol_file line by line
+    # Read the fol_file content first to avoid file truncation issues
     with open(fol_file, 'r', encoding='utf-8') as ff:
-        ff = ff.readlines()
+        fol_lines = ff.readlines()
     
+    # Now write the processed output
     with open(fol_file, 'w', encoding='utf-8') as outfile:    
-        for line in ff:
+        for line in fol_lines:
             match = re.search(r'fol\((\d+)', line)
             if match:
                 number = int(match.group(1))
                 # Line numbers are typically 1-based
                 if 1 <= number <= len(source_lines):
-                    formula = balance_parentheses(line.split('prenex, ')[1].strip())
-                    formula = re.sub(r'\b([a-z]|[a-z]1)\[', r'\1.(', formula)
-                    formula = formula.replace('].', ').')
-                    formula = formula.replace('])', '))') if 'forall' in formula and formula.index('forall') < formula.find("])") else formula
+                    # Extract formula after 'prenex, '
+                    if 'prenex, ' in line:
+                        formula = line.split('prenex, ')[1].strip()
+                    else:
+                        formula = line.strip()
+                    
+                    # Process the formula
+                    formula = balance_parentheses(formula)
+                    formula = convert_brackets_to_parentheses(formula)
                     formula = remove_redundant_parens(formula)
                     formula = formula.rstrip('.')
+                    
                     try:
                         parsed_expr = lp.parse(formula)
                         print(f"FOL expression for sentence {number} compatible with NLTK.")
                     except Exception as e:
                         print(f"Error raised during parsing of FOL expression for sentence {number} with NLTK: {e}")
 
-
                     outfile.write(f"# fol({number}): {source_lines[number - 1].strip()}\n{formula}\n\n")
                 else:
                     print(f"fol({number}): [Line not found]")
 
-extract_line_by_fol_number('fol_nltk.txt', 'sick_input.txt')
+extract_line_by_fol_number('fol_nltk_gqnli.txt', 'gqnli_fr_input.txt')

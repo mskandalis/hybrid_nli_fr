@@ -79,9 +79,9 @@ def write_tsv(rows, max_p, max_h, output_path):
 
 # ==== Run the process ====
 
-fol_path = 'fol_nltk_fracas.txt'        # Your FOL expressions file path
-sen_path = 'fracas_fr_id.pl'     # Your sen_id file path
-output_path = 'output_fol_fracas.tsv'       # Output TSV file path
+fol_path = 'fol_nltk_gqnli.txt'        # Your FOL expressions file path
+sen_path = 'gqnli_fr_id_sentences_split.pl'     # Your sen_id file path
+output_path = 'output_fol_gqnli.tsv'       # Output TSV file path
 
 fol_map = extract_fol_expressions(fol_path)
 problem_labels, sen_info = extract_sen_info(sen_path, fol_map)
