@@ -3582,31 +3582,31 @@ Un homme joue de la guitare à voix haute
 Une flûte n'est pas jouée par un homme
 Un homme joue de la guitare à voix haute
 Une flûte est jouée par un homme
-La personne est en train de couper un poivre qui est orange
+La personne est en train de couper un poivron qui est orange
 Un poivron orange est coupé en dés par une personne
 La personne n'est pas en train de couper un poivron orange
-La personne est en train de couper un poivre qui est orange
-La personne est en train de couper un poivre qui est orange
-Les dés de couleur orange sont jetés par un cuisinier pour gagner le poivre
+La personne est en train de couper un poivron qui est orange
+La personne est en train de couper un poivron qui est orange
+Les dés de couleur orange sont jetés par un cuisinier pour gagner le poivron
 Un cuisinier coupe rapidement quelques poivrons
 Un cuisinier tranche des poivrons
 Il n'y a pas de cuisinier tranchant des poivrons
 Un cuisinier tranche des poivrons
 Certaines cloches sonnent près d'un cuisinier tranchant des poivrons
 Un cuisinier tranche des poivrons
-La personne est en train de couper un poivre qui est orange
+La personne est en train de couper un poivron qui est orange
 Un cuisinier coupe rapidement quelques poivrons
 Il n'y a pas de cuisinier tranchant des poivrons
-La personne est en train de couper un poivre qui est orange
+La personne est en train de couper un poivron qui est orange
 Certaines cloches sonnent près d'un cuisinier tranchant des poivrons
-La personne est en train de couper un poivre qui est orange
+La personne est en train de couper un poivron qui est orange
 Un cuisinier tranche des poivrons
 Un poivron orange est coupé en dés par une personne
 La personne n'est pas en train de couper un poivron orange
 Un cuisinier tranche des poivrons
-Les dés de couleur orange sont jetés par un cuisinier pour gagner le poivre
+Les dés de couleur orange sont jetés par un cuisinier pour gagner le poivron
 Un cuisinier tranche des poivrons
-La personne est en train de couper un poivre qui est orange
+La personne est en train de couper un poivron qui est orange
 Un cuisinier tranche des poivrons
 Une fille coupe le beurre en deux morceaux
 Une fille coupe du beurre en deux morceaux
@@ -7466,28 +7466,28 @@ Une harpe est jouée avec un chapeau par un homme
 Un homme joue de la guitare
 Un homme joue de la guitare
 Un homme dans un chapeau joue de la harpe
-Une femme tranche un poivre qui est vert
-Une femme tranche un poivre vert
-Une femme tranche un poivre vert
+Une femme tranche un poivron qui est vert
+Une femme tranche un poivron vert
+Une femme tranche un poivron vert
 Il n'y a pas de femme qui tranche un poivron vert
 Une femme est en train de poivrer des tranches vertes
-Une femme tranche un poivre vert
-Le poivre est tranché par une femme avec un couteau
-La femme avec un couteau tranche un poivre
-La femme avec un couteau tranche un poivre
-La femme avec le couteau ne coupe pas un poivre
-Le poivre est tranché par une femme avec un couteau
-Une femme tranche un poivre vert
-La femme avec le couteau ne coupe pas un poivre
-Une femme tranche un poivre vert
-Une femme tranche un poivre qui est vert
-La femme avec un couteau tranche un poivre
-La femme avec un couteau tranche un poivre
+Une femme tranche un poivron vert
+Le poivron est tranché par une femme avec un couteau
+La femme avec un couteau tranche un poivron
+La femme avec un couteau tranche un poivron
+La femme avec le couteau ne coupe pas un poivron
+Le poivron est tranché par une femme avec un couteau
+Une femme tranche un poivron vert
+La femme avec le couteau ne coupe pas un poivron
+Une femme tranche un poivron vert
+Une femme tranche un poivron qui est vert
+La femme avec un couteau tranche un poivron
+La femme avec un couteau tranche un poivron
 Il n'y a pas de femme qui tranche un poivron vert
 Une femme est en train de poivrer des tranches vertes
-La femme avec un couteau tranche un poivre
-Une femme tranche un poivre vert
-La femme avec un couteau tranche un poivre
+La femme avec un couteau tranche un poivron
+Une femme tranche un poivron vert
+La femme avec un couteau tranche un poivron
 Une femme concentrée joue de la flûte
 Une femme joue de la flûte
 Une femme se débarrasse d'une flûte
@@ -7764,24 +7764,24 @@ Un motard s'éloigne d'une clôture
 Le garçon monte un vélo sur le dessus d'une clôture en métal
 Le garçon monte un vélo sur le dessus d'une clôture en métal
 Un motard chevauche le sommet d'une clôture
-Une femme tranche un poivre qui est grand
-Une femme tranche un gros poivre
-Une femme lave un gros poivre
-Une femme tranche un gros poivre
+Une femme tranche un poivron qui est grand
+Une femme tranche un gros poivron
+Une femme lave un gros poivron
+Une femme tranche un gros poivron
 La femme tranche une gousse d'ail
 Une femme tranche une gousse d'ail
 Il n'y a pas de femme qui coupe une gousse d'ail
 Une femme tranche une gousse d'ail
-Une femme tranche un gros poivre
+Une femme tranche un gros poivron
 La femme tranche une gousse d'ail
-Une femme tranche un gros poivre
+Une femme tranche un gros poivron
 Il n'y a pas de femme qui coupe une gousse d'ail
 Une femme tranche une gousse d'ail
-Une femme tranche un poivre qui est grand
+Une femme tranche un poivron qui est grand
 Une femme tranche une gousse d'ail
-Une femme lave un gros poivre
+Une femme lave un gros poivron
 Une femme tranche une gousse d'ail
-Une femme tranche un gros poivre
+Une femme tranche un gros poivron
 Un enfant se réveille lentement
 Un enfant se réveille
 Un enfant se réveille
@@ -19677,4 +19677,4 @@ Un cycliste tient un vélo au-dessus de sa tête dans un groupe de personnes
 Un homme en bleu a une boule jaune dans la mitaine
 Un homme saute à la corde dehors
 Trois chiens se reposent sur un trottoir
-La femme avec un couteau tranche un poivre
+La femme avec un couteau tranche un poivron
