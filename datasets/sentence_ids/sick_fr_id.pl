@@ -5375,14 +5375,14 @@ sen_id(3582, 1811, 'h', 'TRIAL', 'unknown', 'Une flûte n\'est pas jouée par un
 sen_id(3583, 1812, 'p', 'TRAIN', 'unknown', 'Un homme joue de la guitare à voix haute').
 sen_id(3584, 1812, 'h', 'TRAIN', 'unknown', 'Une flûte est jouée par un homme').
 %problem id = 1813
-sen_id(3585, 1813, 'p', 'TEST', 'yes', 'La personne est en train de couper un poivre qui est orange').
+sen_id(3585, 1813, 'p', 'TEST', 'yes', 'La personne est en train de couper un poivron qui est orange').
 sen_id(3586, 1813, 'h', 'TEST', 'yes', 'Un poivron orange est coupé en dés par une personne').
 %problem id = 1814
 sen_id(3587, 1814, 'p', 'TRAIN', 'no', 'La personne n\'est pas en train de couper un poivron orange').
-sen_id(3588, 1814, 'h', 'TRAIN', 'no', 'La personne est en train de couper un poivre qui est orange').
+sen_id(3588, 1814, 'h', 'TRAIN', 'no', 'La personne est en train de couper un poivron qui est orange').
 %problem id = 1815
-sen_id(3589, 1815, 'p', 'TRAIN', 'unknown', 'La personne est en train de couper un poivre qui est orange').
-sen_id(3590, 1815, 'h', 'TRAIN', 'unknown', 'Les dés de couleur orange sont jetés par un cuisinier pour gagner le poivre').
+sen_id(3589, 1815, 'p', 'TRAIN', 'unknown', 'La personne est en train de couper un poivron qui est orange').
+sen_id(3590, 1815, 'h', 'TRAIN', 'unknown', 'Les dés de couleur orange sont jetés par un cuisinier pour gagner le poivron').
 %problem id = 1816
 sen_id(3591, 1816, 'p', 'TEST', 'yes', 'Un cuisinier coupe rapidement quelques poivrons').
 sen_id(3592, 1816, 'h', 'TEST', 'yes', 'Un cuisinier tranche des poivrons').
@@ -5393,14 +5393,14 @@ sen_id(3594, 1817, 'h', 'TEST', 'no', 'Un cuisinier tranche des poivrons').
 sen_id(3595, 1818, 'p', 'TRAIN', 'unknown', 'Certaines cloches sonnent près d\'un cuisinier tranchant des poivrons').
 sen_id(3596, 1818, 'h', 'TRAIN', 'unknown', 'Un cuisinier tranche des poivrons').
 %problem id = 1819
-sen_id(3597, 1819, 'p', 'TEST', 'unknown', 'La personne est en train de couper un poivre qui est orange').
+sen_id(3597, 1819, 'p', 'TEST', 'unknown', 'La personne est en train de couper un poivron qui est orange').
 sen_id(3598, 1819, 'h', 'TEST', 'unknown', 'Un cuisinier coupe rapidement quelques poivrons').
 %problem id = 1820
 sen_id(3599, 1820, 'p', 'TRAIN', 'no', 'Il n\'y a pas de cuisinier tranchant des poivrons').
-sen_id(3600, 1820, 'h', 'TRAIN', 'no', 'La personne est en train de couper un poivre qui est orange').
+sen_id(3600, 1820, 'h', 'TRAIN', 'no', 'La personne est en train de couper un poivron qui est orange').
 %problem id = 1821
 sen_id(3601, 1821, 'p', 'TEST', 'unknown', 'Certaines cloches sonnent près d\'un cuisinier tranchant des poivrons').
-sen_id(3602, 1821, 'h', 'TEST', 'unknown', 'La personne est en train de couper un poivre qui est orange').
+sen_id(3602, 1821, 'h', 'TEST', 'unknown', 'La personne est en train de couper un poivron qui est orange').
 %problem id = 1822
 sen_id(3603, 1822, 'p', 'TRAIN', 'unknown', 'Un cuisinier tranche des poivrons').
 sen_id(3604, 1822, 'h', 'TRAIN', 'unknown', 'Un poivron orange est coupé en dés par une personne').
@@ -5408,10 +5408,10 @@ sen_id(3604, 1822, 'h', 'TRAIN', 'unknown', 'Un poivron orange est coupé en dé
 sen_id(3605, 1823, 'p', 'TRAIN', 'unknown', 'La personne n\'est pas en train de couper un poivron orange').
 sen_id(3606, 1823, 'h', 'TRAIN', 'unknown', 'Un cuisinier tranche des poivrons').
 %problem id = 1824
-sen_id(3607, 1824, 'p', 'TEST', 'unknown', 'Les dés de couleur orange sont jetés par un cuisinier pour gagner le poivre').
+sen_id(3607, 1824, 'p', 'TEST', 'unknown', 'Les dés de couleur orange sont jetés par un cuisinier pour gagner le poivron').
 sen_id(3608, 1824, 'h', 'TEST', 'unknown', 'Un cuisinier tranche des poivrons').
 %problem id = 1825
-sen_id(3609, 1825, 'p', 'TRAIN', 'unknown', 'La personne est en train de couper un poivre qui est orange').
+sen_id(3609, 1825, 'p', 'TRAIN', 'unknown', 'La personne est en train de couper un poivron qui est orange').
 sen_id(3610, 1825, 'h', 'TRAIN', 'unknown', 'Un cuisinier tranche des poivrons').
 %problem id = 1826
 sen_id(3611, 1826, 'p', 'TEST', 'yes', 'Une fille coupe le beurre en deux morceaux').
@@ -11201,38 +11201,38 @@ sen_id(7466, 3810, 'h', 'TEST', 'unknown', 'Un homme joue de la guitare').
 sen_id(7467, 3811, 'p', 'TEST', 'unknown', 'Un homme joue de la guitare').
 sen_id(7468, 3811, 'h', 'TEST', 'unknown', 'Un homme dans un chapeau joue de la harpe').
 %problem id = 3812
-sen_id(7469, 3812, 'p', 'TRIAL', 'yes', 'Une femme tranche un poivre qui est vert').
-sen_id(7470, 3812, 'h', 'TRIAL', 'yes', 'Une femme tranche un poivre vert').
+sen_id(7469, 3812, 'p', 'TRIAL', 'yes', 'Une femme tranche un poivron qui est vert').
+sen_id(7470, 3812, 'h', 'TRIAL', 'yes', 'Une femme tranche un poivron vert').
 %problem id = 3813
-sen_id(7471, 3813, 'p', 'TEST', 'no', 'Une femme tranche un poivre vert').
+sen_id(7471, 3813, 'p', 'TEST', 'no', 'Une femme tranche un poivron vert').
 sen_id(7472, 3813, 'h', 'TEST', 'no', 'Il n\'y a pas de femme qui tranche un poivron vert').
 %problem id = 3814
 sen_id(7473, 3814, 'p', 'TRAIN', 'unknown', 'Une femme est en train de poivrer des tranches vertes').
-sen_id(7474, 3814, 'h', 'TRAIN', 'unknown', 'Une femme tranche un poivre vert').
+sen_id(7474, 3814, 'h', 'TRAIN', 'unknown', 'Une femme tranche un poivron vert').
 %problem id = 3815
-sen_id(7475, 3815, 'p', 'TEST', 'yes', 'Le poivre est tranché par une femme avec un couteau').
-sen_id(7476, 3815, 'h', 'TEST', 'yes', 'La femme avec un couteau tranche un poivre').
+sen_id(7475, 3815, 'p', 'TEST', 'yes', 'Le poivron est tranché par une femme avec un couteau').
+sen_id(7476, 3815, 'h', 'TEST', 'yes', 'La femme avec un couteau tranche un poivron').
 %problem id = 3816
-sen_id(7477, 3816, 'p', 'TEST', 'no', 'La femme avec un couteau tranche un poivre').
-sen_id(7478, 3816, 'h', 'TEST', 'no', 'La femme avec le couteau ne coupe pas un poivre').
+sen_id(7477, 3816, 'p', 'TEST', 'no', 'La femme avec un couteau tranche un poivron').
+sen_id(7478, 3816, 'h', 'TEST', 'no', 'La femme avec le couteau ne coupe pas un poivron').
 %problem id = 3817
-sen_id(7479, 3817, 'p', 'TEST', 'yes', 'Le poivre est tranché par une femme avec un couteau').
-sen_id(7480, 3817, 'h', 'TEST', 'yes', 'Une femme tranche un poivre vert').
+sen_id(7479, 3817, 'p', 'TEST', 'yes', 'Le poivron est tranché par une femme avec un couteau').
+sen_id(7480, 3817, 'h', 'TEST', 'yes', 'Une femme tranche un poivron vert').
 %problem id = 3818
-sen_id(7481, 3818, 'p', 'TEST', 'unknown', 'La femme avec le couteau ne coupe pas un poivre').
-sen_id(7482, 3818, 'h', 'TEST', 'unknown', 'Une femme tranche un poivre vert').
+sen_id(7481, 3818, 'p', 'TEST', 'unknown', 'La femme avec le couteau ne coupe pas un poivron').
+sen_id(7482, 3818, 'h', 'TEST', 'unknown', 'Une femme tranche un poivron vert').
 %problem id = 3819
-sen_id(7483, 3819, 'p', 'TEST', 'yes', 'Une femme tranche un poivre qui est vert').
-sen_id(7484, 3819, 'h', 'TEST', 'yes', 'La femme avec un couteau tranche un poivre').
+sen_id(7483, 3819, 'p', 'TEST', 'yes', 'Une femme tranche un poivron qui est vert').
+sen_id(7484, 3819, 'h', 'TEST', 'yes', 'La femme avec un couteau tranche un poivron').
 %problem id = 3820
-sen_id(7485, 3820, 'p', 'TRAIN', 'unknown', 'La femme avec un couteau tranche un poivre').
+sen_id(7485, 3820, 'p', 'TRAIN', 'unknown', 'La femme avec un couteau tranche un poivron').
 sen_id(7486, 3820, 'h', 'TRAIN', 'unknown', 'Il n\'y a pas de femme qui tranche un poivron vert').
 %problem id = 3821
 sen_id(7487, 3821, 'p', 'TRAIN', 'unknown', 'Une femme est en train de poivrer des tranches vertes').
-sen_id(7488, 3821, 'h', 'TRAIN', 'unknown', 'La femme avec un couteau tranche un poivre').
+sen_id(7488, 3821, 'h', 'TRAIN', 'unknown', 'La femme avec un couteau tranche un poivron').
 %problem id = 3822
-sen_id(7489, 3822, 'p', 'TEST', 'yes', 'Une femme tranche un poivre vert').
-sen_id(7490, 3822, 'h', 'TEST', 'yes', 'La femme avec un couteau tranche un poivre').
+sen_id(7489, 3822, 'p', 'TEST', 'yes', 'Une femme tranche un poivron vert').
+sen_id(7490, 3822, 'h', 'TEST', 'yes', 'La femme avec un couteau tranche un poivron').
 %problem id = 3823
 sen_id(7491, 3823, 'p', 'TRAIN', 'yes', 'Une femme concentrée joue de la flûte').
 sen_id(7492, 3823, 'h', 'TRAIN', 'yes', 'Une femme joue de la flûte').
@@ -11648,11 +11648,11 @@ sen_id(7764, 3961, 'h', 'TRAIN', 'unknown', 'Le garçon monte un vélo sur le de
 sen_id(7765, 3962, 'p', 'TEST', 'yes', 'Le garçon monte un vélo sur le dessus d\'une clôture en métal').
 sen_id(7766, 3962, 'h', 'TEST', 'yes', 'Un motard chevauche le sommet d\'une clôture').
 %problem id = 3963
-sen_id(7767, 3963, 'p', 'TEST', 'yes', 'Une femme tranche un poivre qui est grand').
-sen_id(7768, 3963, 'h', 'TEST', 'yes', 'Une femme tranche un gros poivre').
+sen_id(7767, 3963, 'p', 'TEST', 'yes', 'Une femme tranche un poivron qui est grand').
+sen_id(7768, 3963, 'h', 'TEST', 'yes', 'Une femme tranche un gros poivron').
 %problem id = 3964
-sen_id(7769, 3964, 'p', 'TEST', 'unknown', 'Une femme lave un gros poivre').
-sen_id(7770, 3964, 'h', 'TEST', 'unknown', 'Une femme tranche un gros poivre').
+sen_id(7769, 3964, 'p', 'TEST', 'unknown', 'Une femme lave un gros poivron').
+sen_id(7770, 3964, 'h', 'TEST', 'unknown', 'Une femme tranche un gros poivron').
 %problem id = 3965
 sen_id(7771, 3965, 'p', 'TEST', 'yes', 'La femme tranche une gousse d\'ail').
 sen_id(7772, 3965, 'h', 'TEST', 'yes', 'Une femme tranche une gousse d\'ail').
@@ -11660,20 +11660,20 @@ sen_id(7772, 3965, 'h', 'TEST', 'yes', 'Une femme tranche une gousse d\'ail').
 sen_id(7773, 3966, 'p', 'TEST', 'no', 'Il n\'y a pas de femme qui coupe une gousse d\'ail').
 sen_id(7774, 3966, 'h', 'TEST', 'no', 'Une femme tranche une gousse d\'ail').
 %problem id = 3967
-sen_id(7775, 3967, 'p', 'TEST', 'unknown', 'Une femme tranche un gros poivre').
+sen_id(7775, 3967, 'p', 'TEST', 'unknown', 'Une femme tranche un gros poivron').
 sen_id(7776, 3967, 'h', 'TEST', 'unknown', 'La femme tranche une gousse d\'ail').
 %problem id = 3968
-sen_id(7777, 3968, 'p', 'TEST', 'unknown', 'Une femme tranche un gros poivre').
+sen_id(7777, 3968, 'p', 'TEST', 'unknown', 'Une femme tranche un gros poivron').
 sen_id(7778, 3968, 'h', 'TEST', 'unknown', 'Il n\'y a pas de femme qui coupe une gousse d\'ail').
 %problem id = 3969
 sen_id(7779, 3969, 'p', 'TEST', 'unknown', 'Une femme tranche une gousse d\'ail').
-sen_id(7780, 3969, 'h', 'TEST', 'unknown', 'Une femme tranche un poivre qui est grand').
+sen_id(7780, 3969, 'h', 'TEST', 'unknown', 'Une femme tranche un poivron qui est grand').
 %problem id = 3970
 sen_id(7781, 3970, 'p', 'TRAIN', 'unknown', 'Une femme tranche une gousse d\'ail').
-sen_id(7782, 3970, 'h', 'TRAIN', 'unknown', 'Une femme lave un gros poivre').
+sen_id(7782, 3970, 'h', 'TRAIN', 'unknown', 'Une femme lave un gros poivron').
 %problem id = 3971
 sen_id(7783, 3971, 'p', 'TEST', 'unknown', 'Une femme tranche une gousse d\'ail').
-sen_id(7784, 3971, 'h', 'TEST', 'unknown', 'Une femme tranche un gros poivre').
+sen_id(7784, 3971, 'h', 'TEST', 'unknown', 'Une femme tranche un gros poivron').
 %problem id = 3972
 sen_id(7785, 3972, 'p', 'TRAIN', 'yes', 'Un enfant se réveille lentement').
 sen_id(7786, 3972, 'h', 'TRAIN', 'yes', 'Un enfant se réveille').
@@ -29517,4 +29517,4 @@ sen_id(19677, 9999, 'p', 'TRAIN', 'unknown', 'Un homme en bleu a une boule jaune
 sen_id(19678, 9999, 'h', 'TRAIN', 'unknown', 'Un homme saute à la corde dehors').
 %problem id = 10000
 sen_id(19679, 10000, 'p', 'TRAIN', 'unknown', 'Trois chiens se reposent sur un trottoir').
-sen_id(19680, 10000, 'h', 'TRAIN', 'unknown', 'La femme avec un couteau tranche un poivre').
+sen_id(19680, 10000, 'h', 'TRAIN', 'unknown', 'La femme avec un couteau tranche un poivron').
