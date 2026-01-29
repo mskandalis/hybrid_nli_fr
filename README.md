@@ -65,7 +65,7 @@ python scripts/convert_grail_output_to_langpro_input.py
 #### Remarks
 
 - The advised pipeline is: ELMo POS-tagger used with DeepGrailv1, Stanza for lemmatisation, DeepGrailv2 for CG Supertagging, Graillight for proof finding / lambda-term generation.
-- For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d', or English terms used in French like half-pipe (in skateboard); some other don't. Make sure whatever your choice, it's kept the same throughout the process. Here I make sure to verify this with the code itself.
+- For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d', or English terms used in French like half-pipe (in skateboard); some others don't. Make sure whatever your choice, it's kept the same throughout the process. Here I make sure to verify this with the code itself.
 
 ### Predicting the label (two options)
 
@@ -144,4 +144,5 @@ Maximos Skandalis, Lasha Abzianidze, Richard Moot, Christian Retoré, and Simon 
 This work was supported by the Defence Innovation Agency (AID) of the Directorate General of Armament (DGA) of the French Ministry of Armed Forces, and by the ICO, _Institut Cybersécurité Occitanie_, funded by Région Occitanie, France. 
 
 Part of the research was carried out during a research stay in Utrecht University with the support of the Erasmus+ programme.
+
 
