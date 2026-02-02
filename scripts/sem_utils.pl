@@ -99,6 +99,7 @@ reduce_drs(D0, D) :-
 reduce_drs(D, D).
 
 reduce_drs1(merge(drs(X,C),drs(Y,D)), drs(Z,F)) :-
+	!,
 	merge_lists(X, Y, Z),
 	merge_lists(C, D, F).
 
@@ -110,12 +111,12 @@ reduce_drs1(merge(drs(X,C),drs(Y,D)), drs(Z,F)) :-
 %% 	ord_intersect(BV, FV, [_|_]),
 %% 	!.	     % "freeze" a presuppositions at the current level
 % Quick'n'dirty solution to get complex proper names into a single DRS
-reduce_drs1(merge(presup(X,Y),drs(Z,V)), presup(X,merge(Y,drs(Z,V)))).
-reduce_drs1(merge(drs(Z,V),presup(X,Y)), presup(X,merge(drs(Z,V),Y))).
+reduce_drs1(merge(presup(X,Y),drs(Z,V)), presup(X,merge(Y,drs(Z,V)))) :- !.
+reduce_drs1(merge(drs(Z,V),presup(X,Y)), presup(X,merge(drs(Z,V),Y))) :- !.
 
-reduce_drs1(presup(presup(X,Y),Z), presup(merge(X,Y),Z)).
-reduce_drs1(presup(P1,presup(P2,X)), presup(merge(P1,P2),X)).
-reduce_drs1(merge(presup(P1,X),presup(P2,Y)), presup(merge(P1,P2),merge(X,Y))).
+reduce_drs1(presup(presup(X,Y),Z), presup(merge(X,Y),Z)) :- !.
+reduce_drs1(presup(P1,presup(P2,X)), presup(merge(P1,P2),X)) :- !.
+reduce_drs1(merge(presup(P1,X),presup(P2,Y)), presup(merge(P1,P2),merge(X,Y))) :- !.
 
 reduce_drs1(not(presup(P,Q)),presup(P,not(Q))).
 reduce_drs1(bool(presup(P,Q),->,R), Red) :-
@@ -158,14 +159,15 @@ reduce_drs1(drs(V,L0), presup(P, drs(V,[Q|L]))) :-
 reduce_drs1(drs(V,L0), presup(P, drs(V,[drs_label(X,Q)|L]))) :-
 	select(drs_label(X,presup(P, Q)), L0, L).
 
-% recursive cases
-
-reduce_drs1(merge(D0,D1), merge(D2,D3)) :-
-	reduce_drs1(D0, D2),
-	reduce_drs1(D1, D3).
+% recursive cases - reduce contents of presup (with cut to prevent infinite loop)
 reduce_drs1(presup(D0,D1), presup(D2,D3)) :-
+	!,
 	reduce_drs1(D0, D2),
 	reduce_drs1(D1, D3).
+% Added: recursive case for drs_label to reduce merge inside it
+reduce_drs1(drs_label(L,D0), drs_label(L,D)) :-
+	!,
+	reduce_drs1(D0, D).
 reduce_drs1(drs(V,Cs0), drs(V,Cs)) :-
 	!,
 	reduce_conditions(Cs0, Cs).
@@ -189,6 +191,18 @@ reduce_condition(not(D0), not(D)) :-
 reduce_condition(drs_label(L,DRS0), drs_label(L,DRS)) :-
 	!,
 	reduce_drs1(DRS0, DRS).
+% Added: handle drs appearing as a condition (reduce its contents)
+reduce_condition(drs(V,Cs0), drs(V,Cs)) :-
+	!,
+	reduce_conditions(Cs0, Cs).
+% Added: handle merge appearing as a condition - try to reduce once, don't loop
+reduce_condition(merge(D0,D1), Result) :-
+	!,
+	reduce_drs1(merge(D0,D1), Reduced),
+	(   Reduced = merge(_, _)
+	->  Result = Reduced  % Can't reduce further, stop here
+	;   Result = Reduced
+	).
 reduce_condition(appl(F0,A0), appl(F,A)) :-
 	!,
 	reduce_condition(F0, F),
@@ -639,7 +653,7 @@ relabel_sem_vars(T0, T) :-
 	relabel_sem_vars(T0, T, 0, _, empty, _).
 
 relabel_sem_vars(T0, T, N0, N) :-
-	relabel_sem_vars(T0, T, N0, N, emtpy, _).
+	relabel_sem_vars(T0, T, N0, N, empty, _).
 
 % relabel_sem(T0, T, M0, M)
 
@@ -1544,6 +1558,45 @@ sem_to_fol(quant(Q,V,X0), X, Pol, NPol, U0, T0, T) :-
 	U = U0
     ),
 	sem_to_fol(X0, X, Pol, NPol, U, T1, T).
+% --- PRESUP -> conjunction in sem_to_fol ---
+sem_to_fol(presup(Background, Main), Term, Pol, NPol, U, T0, T) :-
+    !,
+    % convert background (if it's a drs this will produce a quantified FOL term)
+    ( Background = drs(_,_) ->
+        drs_to_fol(Background, FB), T1 = T0
+    ;
+        sem_to_fol(Background, FB, Pol, NPol, U, T0, T1)
+    ),
+    % convert main
+    ( Main = drs(_,_) ->
+        drs_to_fol(Main, FM), T = T1
+    ;
+        sem_to_fol(Main, FM, Pol, NPol, U, T1, T)
+    ),
+    Term = bool(FB, &, FM).
+% --- end PRESUP ---
+% --- MERGE -> proper DRS merge if both are DRS, otherwise reduce/fallback ---
+sem_to_fol(merge(X,Y), Term, Pol, NPol, U, T0, T) :-
+    !,
+    % First try proper DRS merge if both are DRS (preserves shared scope)
+    (   X = drs(VarsX, CondsX), Y = drs(VarsY, CondsY)
+    ->  % Proper merge: combine referents and conditions into single DRS
+        merge_lists(VarsX, VarsY, Vars),
+        merge_lists(CondsX, CondsY, Conds),
+        drs_to_fol(drs(Vars, Conds), Term),
+        T = T0  % drs_to_fol doesn't use T
+    ;   % Not both DRS - try reduction
+        reduce_drs1(merge(X,Y), Reduced),
+        (   Reduced = merge(R1, R2)
+        ->  % Still a merge, can't reduce further - fallback to conjunction (lossy)
+            sem_to_fol(R1, TX, Pol, NPol, U, T0, T1),
+            sem_to_fol(R2, TY, Pol, NPol, U, T1, T),
+            Term = bool(TX, &, TY)
+        ;   % Successfully reduced to non-merge - recurse
+            sem_to_fol(Reduced, Term, Pol, NPol, U, T0, T)
+        )
+    ).
+% --- end MERGE ---
 sem_to_fol(bool(X0,C,Y0), Term, Pol, NPol, U, T0, T) :-
 	!,
 	handle_boolean(C, X0, Y0, Term, Pol, NPol, U, T0, T).
@@ -1973,6 +2026,18 @@ drs_to_fol(presup(Background, Main), bool(F1,&,F2)) :-
 	drs_to_fol(Background, F1),
 	drs_to_fol(Main, F2).
 
+% Handle merge at top level by reducing first, then convert both parts as conjunction
+drs_to_fol(merge(D1,D2), Form) :-
+	!,
+	reduce_drs1(merge(D1,D2), ReducedDRS),
+	(   ReducedDRS = merge(R1, R2)
+	->  % Couldn't reduce merge - convert both parts as conjunction
+	    drs_to_fol(R1, F1),
+	    drs_to_fol(R2, F2),
+	    Form = bool(F1, &, F2)
+	;   drs_to_fol(ReducedDRS, Form)
+	).
+
 add_quantifiers([], _, F, F).
 add_quantifiers([X|Xs], Q, F0, F) :-
 	add_quantifier(X, Q, F0, F1),
@@ -2046,15 +2111,17 @@ drs_condition_to_fol(bool(drs(Vars1,Conds1), &, presup(B2,M2)), bool(Form1, &, b
     drs_to_fol(M2, F4).
 
 % Handle presup within boolean implications (left side)
-drs_condition_to_fol(bool(presup(B1,M1), ->, drs(Vars2,Conds2)), bool(bool(F1,&,F2), ->, Form3)) :-
+% Original: bool(presup(P,Q),->,R) reduces to presup(P,bool(Q,->,R)) = P & (Q -> R)
+drs_condition_to_fol(bool(presup(B1,M1), ->, drs(Vars2,Conds2)), bool(F1, &, bool(F2, ->, Form3))) :-
     !,
     drs_to_fol(B1, F1),
     drs_to_fol(M1, F2),
     add_quantifiers(Vars2, exists, Form2, Form3),
     drs_conditions_to_fol(Conds2, Form2).
 
-% Handle presup within boolean implications (right side)  
-drs_condition_to_fol(bool(drs(Vars1,Conds1), ->, presup(B2,M2)), bool(Form1, ->, bool(F3,&,F4))) :-
+% Handle presup within boolean implications (right side)
+% Original: bool(P,->,presup(Q,R)) -> bool(presup(Q,P),->,R) -> presup(Q, P->R) = Q & (P -> R)
+drs_condition_to_fol(bool(drs(Vars1,Conds1), ->, presup(B2,M2)), bool(F3, &, bool(Form1, ->, F4))) :-
     !,
     add_quantifiers(Vars1, exists, Form0, Form1),
     drs_conditions_to_fol(Conds1, Form0),
@@ -2062,35 +2129,109 @@ drs_condition_to_fol(bool(drs(Vars1,Conds1), ->, presup(B2,M2)), bool(Form1, ->,
     drs_to_fol(M2, F4).
 
 % Handle presup within boolean implications (both sides)
-drs_condition_to_fol(bool(presup(B1,M1), ->, presup(B2,M2)), bool(bool(F1,&,F2), ->, bool(F3,&,F4))) :-
+% Both presups project: presup(B1,M1) -> presup(B2,M2) = B1 & B2 & (M1 -> M2)
+drs_condition_to_fol(bool(presup(B1,M1), ->, presup(B2,M2)), bool(F1, &, bool(F3, &, bool(F2, ->, F4)))) :-
     !,
     drs_to_fol(B1, F1),
     drs_to_fol(M1, F2),
     drs_to_fol(B2, F3),
     drs_to_fol(M2, F4).
-    
-drs_condition_to_fol(bool(drs(Vars1,Conds1),->,drs(Vars2,Conds2)), Form) :-
+
+% Generic bool handlers - work with any content types (merge, presup, drs, etc)
+drs_condition_to_fol(bool(D1, \/, D2), bool(F1, \/, F2)) :-
 	!,
-	add_quantifiers(Vars1, forall, bool(Form1,->,Form3), Form),
-	drs_conditions_to_fol(Conds1, Form1),
-	add_quantifiers(Vars2, exists, Form2, Form3),
-	drs_conditions_to_fol(Conds2, Form2).
-drs_condition_to_fol(bool(drs(Vars1,Conds1),\/,drs(Vars2,Conds2)), bool(Form1,\/,Form3)) :-
+	drs_to_fol(D1, F1),
+	drs_to_fol(D2, F2).
+drs_condition_to_fol(bool(D1, &, D2), bool(F1, &, F2)) :-
 	!,
-	add_quantifiers(Vars1, exists, Form0, Form1),
-	drs_conditions_to_fol(Conds1, Form0),
-	add_quantifiers(Vars2, exists, Form2, Form3),
-	drs_conditions_to_fol(Conds2, Form2).
-drs_condition_to_fol(bool(drs(Vars1,Conds1),&,drs(Vars2,Conds2)), bool(Form1,&,Form3)) :-
+	drs_to_fol(D1, F1),
+	drs_to_fol(D2, F2).
+% Generic implication handler - must handle presup specially for correct projection
+drs_condition_to_fol(bool(D1, ->, D2), Form) :-
 	!,
-	add_quantifiers(Vars1, exists, Form0, Form1),
-	drs_conditions_to_fol(Conds1, Form0),
-	add_quantifiers(Vars2, exists, Form2, Form3),
-	drs_conditions_to_fol(Conds2, Form2).
+	(   D1 = presup(B1, M1), D2 = presup(B2, M2)
+	->  % Both sides presup: B1 & B2 & (M1 -> M2)
+	    drs_to_fol(B1, FB1),
+	    drs_to_fol(M1, FM1),
+	    drs_to_fol(B2, FB2),
+	    drs_to_fol(M2, FM2),
+	    Form = bool(FB1, &, bool(FB2, &, bool(FM1, ->, FM2)))
+	;   D1 = presup(B1, M1)
+	->  % Left side presup: bool(presup(B,M), ->, D) = B & (M -> D)
+	    drs_to_fol(B1, FB1),
+	    drs_to_fol(M1, FM1),
+	    drs_to_fol(D2, F2),
+	    Form = bool(FB1, &, bool(FM1, ->, F2))
+	;   D2 = presup(B2, M2)
+	->  % Right side presup: bool(D, ->, presup(B,M)) = B & (D -> M)
+	    drs_to_fol(D1, F1),
+	    drs_to_fol(B2, FB2),
+	    drs_to_fol(M2, FM2),
+	    Form = bool(FB2, &, bool(F1, ->, FM2))
+	;   % No presup on either side - standard conversion
+	    drs_to_fol(D1, F1),
+	    drs_to_fol(D2, F2),
+	    Form = bool(F1, ->, F2)
+	).
+% Handle drs([],[...]) appearing as a condition - convert its contents  
+drs_condition_to_fol(drs([],Conds), Form) :-
+	!,
+	drs_conditions_to_fol(Conds, Form).
+drs_condition_to_fol(drs(Vars,Conds), Form) :-
+	Vars \= [],
+	!,
+	drs_conditions_to_fol(Conds, Form0),
+	add_quantifiers(Vars, exists, Form0, Form).
+% Handle not(merge(...)) by first reducing the merge then converting
+drs_condition_to_fol(not(merge(D1,D2)), not(Form)) :-
+	!,
+	reduce_drs1(merge(D1,D2), ReducedDRS),
+	drs_to_fol(ReducedDRS, Form).
 drs_condition_to_fol(not(drs(Vars,Conds)), not(Form)) :-
 	!,
 	drs_conditions_to_fol(Conds, Form0),
 	add_quantifiers(Vars, exists, Form0, Form).
+% Handle not(presup(...)) - presupposition survives negation: not(presup(P,Q)) = P & not(Q)
+drs_condition_to_fol(not(presup(B,M)), bool(F1, &, not(F2))) :-
+	!,
+	drs_to_fol(B, F1),
+	drs_to_fol(M, F2).
+% Handle not(bool(...)) - for disjunctions etc inside not
+drs_condition_to_fol(not(bool(D1,Op,D2)), not(Form)) :-
+	!,
+	drs_condition_to_fol(bool(D1,Op,D2), Form).
+% Handle merge as a condition by reducing and converting
+drs_condition_to_fol(merge(D1,D2), Form) :-
+	!,
+	reduce_drs1(merge(D1,D2), ReducedDRS),
+	(   ReducedDRS = merge(R1, R2)
+	->  % Couldn't reduce - convert both parts as conjunction
+	    drs_to_fol(R1, F1),
+	    drs_to_fol(R2, F2),
+	    Form = bool(F1, &, F2)
+	;   drs_to_fol(ReducedDRS, Form)
+	).
+% Handle drs_label by adding the label as event argument to the predicate
+% Converts drs_label(e, drs([],[P(x)])) to P(e, x)
+drs_condition_to_fol(drs_label(Label, drs([], [appl(Pred, Arg)])), Form) :-
+	atom(Pred),
+	!,
+	Form =.. [Pred, Label, Arg].
+% Handle drs_label containing merge - reduce first then convert
+drs_condition_to_fol(drs_label(Label, merge(D1,D2)), Form) :-
+	!,
+	reduce_drs1(merge(D1,D2), ReducedDRS),
+	(   ReducedDRS = merge(R1, R2)
+	->  % Couldn't reduce - convert label with conjunction of both parts
+	    drs_condition_to_fol(drs_label(Label, R1), F1),
+	    drs_condition_to_fol(drs_label(Label, R2), F2),
+	    Form = bool(F1, &, F2)
+	;   drs_condition_to_fol(drs_label(Label, ReducedDRS), Form)
+	).
+% Fallback for other drs_label patterns - just convert the DRS content
+drs_condition_to_fol(drs_label(_Label, DRS), Form) :-
+	!,
+	drs_to_fol(DRS, Form).
 drs_condition_to_fol(Form, Form).
 
 test_conversion(F) :-
