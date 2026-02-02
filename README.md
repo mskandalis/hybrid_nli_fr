@@ -1,4 +1,4 @@
-# Hybrid AI for NLI in French
+# Neurosymbolic AI for NLI in French
 
 <p align="center">Attention, this is an ongoing project constantly updated for the moment.</p>
 
@@ -144,5 +144,6 @@ Maximos Skandalis, Lasha Abzianidze, Richard Moot, Christian Retoré, and Simon 
 This work was supported by the Defence Innovation Agency (AID) of the Directorate General of Armament (DGA) of the French Ministry of Armed Forces, and by the ICO, _Institut Cybersécurité Occitanie_, funded by Région Occitanie, France. 
 
 Part of the research was carried out during a research stay in Utrecht University with the support of the Erasmus+ programme.
+
 
 
