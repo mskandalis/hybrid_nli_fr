@@ -70,7 +70,7 @@ With the same pipeline but with DeepGrailv2's Supertagger beta value set to 0.00
 |  FraCaS‑FR | 882  |   882  | 881 | 99,89  | 1 |  0,11  | 0| 1,8624 |
 |  GQNLI‑FR | 703  |   703  | 698 | 99,29  | 5 |  0,71  | 0| 1,2444 |
 |  RTE3‑TEST | 1828  |   1828  |  |   |  |    | | 2,2468 |
-|  RTE3‑DEV | 1959  |   1959  |  |  |  |    | | 2,5643 |
+|  RTE3‑DEV | 1959  |   1959  | 1837 | 93,77 | 7 | 0,36   | 115 (5,87%)| 2,5643 |
 |  XNLI‑TEST |  10409 |  10409   |  |   |  |    | |  3,0798|
 |  XNLI‑DEV |  5151 |  5151   |  |   |  |    | | 3,0073|
 |  DACCORD | 2341  |   2341  |  |   |  |    | | 2,6925|
