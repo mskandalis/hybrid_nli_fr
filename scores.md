@@ -60,7 +60,7 @@ With the same pipeline but with DeepGrailv2's Supertagger beta value set to 0.00
 |  RTE3‑DEV | 1959  |   1959  |  |  |  |    | | 1,4849|
 |  XNLI‑TEST |  10409 |  10409   |  |   |  |    | | 1,5795 |
 |  XNLI‑DEV |  5151 |  5151   |  |   |  |    | | 1,5767|
-|  DACCORD | 2341  |   2341  |  |   |  |    | | 1,547|
+|  DACCORD | 2341  |   2341  | 2210 | 94,40  | 59 |  2,52  | 72 (3,076%) | 1,547|
 
 With the same pipeline but with DeepGrailv2's Supertagger beta value set to 0.0001, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
