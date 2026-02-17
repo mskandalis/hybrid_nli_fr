@@ -1,4 +1,4 @@
-# Hybrid AI for NLI in French
+# Neurosymbolic AI for NLI in French
 
 <p align="center">Attention, this is an ongoing project constantly updated for the moment.</p>
 
@@ -65,7 +65,7 @@ python scripts/convert_grail_output_to_langpro_input.py
 #### Remarks
 
 - The advised pipeline is: ELMo POS-tagger used with DeepGrailv1, Stanza for lemmatisation, DeepGrailv2 for CG Supertagging, Graillight for proof finding / lambda-term generation.
-- For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d', or English terms used in French like half-pipe (in skateboard); some other don't. Make sure whatever your choice, it's kept the same throughout the process. Here I make sure to verify this with the code itself.
+- For the tokenisation, which happens multiple times in the process, the key is consistency. Some tokenisers split words like celui-ci/celui-là, au-dessus, eux-mêmes, n', l', d', or English terms used in French like half-pipe (in skateboard); some others don't. Make sure whatever your choice, it's kept the same throughout the process. Here I make sure to verify this with the code itself.
 
 ### Predicting the label (two options)
 
@@ -106,18 +106,25 @@ For the datasets:
 
 And, for the method:
 ````BibTeX
-@misc{skandalis:hal-05002405,
-  TITLE = {{Hybrid AI with LLMs and Theorem Provers for Semantic Parsing and Natural Language Inference for French}},
-  AUTHOR = {Skandalis, Maximos and Abzianidze, Lasha and Moot, Richard and Robillard, Simon},
-  URL = {https://hal.science/hal-05002405},
-  NOTE = {Poster},
-  HOWPUBLISHED = {{FoMo 2025 - ELLIS Winter School on Foundation Models}},
-  ORGANIZATION = {{ELLIS Unit Amsterdam and University of Amsterdam}},
-  YEAR = {2025},
-  MONTH = Mar,
-  PDF = {https://hal.science/hal-05002405v1/file/Natural_language_inference_neurosymbolic_ai.pdf},
-  HAL_ID = {hal-05002405},
-  HAL_VERSION = {v1},
+@inproceedings{skandalis-etal-2025-neurosymbolic,
+    title = "Neurosymbolic {AI} for Natural Language Inference in {F}rench : combining {LLM}s and theorem provers for semantic parsing and natural language reasoning",
+    author = "Skandalis, Maximos  and
+      Abzianidze, Lasha  and
+      Moot, Richard  and
+      Retor{\'e}, Christian  and
+      Robillard, Simon",
+    editor = "Evang, Kilian  and
+      Kallmeyer, Laura  and
+      Pogodalla, Sylvain",
+    booktitle = "Proceedings of the 16th International Conference on Computational Semantics",
+    month = sep,
+    year = "2025",
+    address = {D{\"u}sseldorf, Germany},
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.iwcs-main.21/",
+    pages = "242--253",
+    ISBN = "979-8-89176-316-6",
+    abstract = "In this article, we describe the first comprehensive neurosymbolic pipeline for the task of Natural Language Inference (NLI) for French, with the synergy of Large Language Models (CamemBERT) and automated theorem provers (GrailLight, LangPro). LLMs prepare the input for GrailLight by tagging each token with Part-of-Speech and grammatical information based on the Type-Logical Grammar formalism. GrailLight then produces the lambda-terms given as input to the LangPro theorem prover, a tableau-based theorem prover for natural logic originally developped for English. Currently, the proposed system works on the French version of SICK dataset. The results obtained are comparable to the ones on the English and Dutch versions of SICK with the same LangPro theorem prover, and are better than the results of recent transformers on this specific dataset.Finally, we have identified ways to further improve the results obtained, such as giving access to the theorem prover to lexical knowledge via a knowledge base for French."
 }
 ````
 
@@ -129,7 +136,7 @@ Maximos Skandalis, Richard Moot, Christian Retoré, and Simon Robillard. 2024. [
 
 And, for the method:
 
-Maximos Skandalis, Lasha Abzianidze, Richard Moot, Simon Robillard. Hybrid AI with LLMs and Theorem Provers for Semantic Parsing and Natural Language Inference for French. *FoMo 2025 - ELLIS Winter School on Foundation Models*, Mar 2025, Amsterdam, Netherlands. , 2025. [⟨hal-05002405⟩](https://hal.science/hal-05002405v1)
+Maximos Skandalis, Lasha Abzianidze, Richard Moot, Christian Retoré, and Simon Robillard. 2025. [Neurosymbolic AI for Natural Language Inference in French : combining LLMs and theorem provers for semantic parsing and natural language reasoning](https://aclanthology.org/2025.iwcs-main.21/). In *Proceedings of the 16th International Conference on Computational Semantics*, pages 242–253, Düsseldorf, Germany. Association for Computational Linguistics.
 
 
 # Acknowledgements
@@ -137,3 +144,6 @@ Maximos Skandalis, Lasha Abzianidze, Richard Moot, Simon Robillard. Hybrid AI wi
 This work was supported by the Defence Innovation Agency (AID) of the Directorate General of Armament (DGA) of the French Ministry of Armed Forces, and by the ICO, _Institut Cybersécurité Occitanie_, funded by Région Occitanie, France. 
 
 Part of the research was carried out during a research stay in Utrecht University with the support of the Erasmus+ programme.
+
+
+

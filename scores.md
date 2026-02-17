@@ -56,11 +56,11 @@ With the same pipeline but with DeepGrailv2's Supertagger beta value set to 0.00
 |  SICK‑FR | 19680 (9840*2)  |  19680    | 19619 | 99,69  | 61 |  0,31  | 0 | 1,1431 |
 |  FraCaS‑FR | 882  |   882  | 880 |  99,77 | 2 | 0,23   | 0| 1,2455 |
 |  GQNLI‑FR | 703  |   703  | 694 | 98,72  | 9 | 1,28   | 0| 1,0955 |
-|  RTE3‑TEST | 1828  |   1828  |  |   |  |    | | 1,3974|
+|  RTE3‑TEST | 1828  |   1828  | 1788 |  97,81 | 20 |  1,09  | 20 (1,09%) | 1,3974|
 |  RTE3‑DEV | 1959  |   1959  |  |  |  |    | | 1,4849|
 |  XNLI‑TEST |  10409 |  10409   |  |   |  |    | | 1,5795 |
 |  XNLI‑DEV |  5151 |  5151   |  |   |  |    | | 1,5767|
-|  DACCORD | 2341  |   2341  |  |   |  |    | | 1,547|
+|  DACCORD | 2341  |   2341  | 2210 | 94,40  | 59 |  2,52  | 72 (3,076%) | 1,547|
 
 With the same pipeline but with DeepGrailv2's Supertagger beta value set to 0.0001, the number and percentage of proofs generated (whether these proofs are correct or not) are as follows:
 
@@ -69,8 +69,8 @@ With the same pipeline but with DeepGrailv2's Supertagger beta value set to 0.00
 |  SICK‑FR | 19680 (9840*2)  |  19680    | 19644 |  99,82 | 34 |  0,17  | 2 (0,01%) |  1,4157|
 |  FraCaS‑FR | 882  |   882  | 881 | 99,89  | 1 |  0,11  | 0| 1,8624 |
 |  GQNLI‑FR | 703  |   703  | 698 | 99,29  | 5 |  0,71  | 0| 1,2444 |
-|  RTE3‑TEST | 1828  |   1828  |  |   |  |    | | 2,2468 |
-|  RTE3‑DEV | 1959  |   1959  |  |  |  |    | | 2,5643 |
+|  RTE3‑TEST | 1828  |   1828  | 1748 | 95,62  | 12 |  0,66  | 68 (3,72%) | 2,2468 |
+|  RTE3‑DEV | 1959  |   1959  | 1837 | 93,77 | 7 | 0,36   | 115 (5,87%)| 2,5643 |
 |  XNLI‑TEST |  10409 |  10409   |  |   |  |    | |  3,0798|
 |  XNLI‑DEV |  5151 |  5151   |  |   |  |    | | 3,0073|
 |  DACCORD | 2341  |   2341  |  |   |  |    | | 2,6925|
