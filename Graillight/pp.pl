@@ -51,6 +51,14 @@ portray(lambda(X,Y)) :-
 	!,
 	format('^~p.~p', [X,Y]).
 
+portray(appl(appl(appl(appl(appl(F,V),W),Z),Y),X)) :-
+	atom(F),
+	!,
+	format('~p(~p,~p,~p,~p,~p)', [F,X,Y,Z,W,V]).
+portray(appl(appl(appl(appl(F,W),Z),Y),X)) :-
+	atom(F),
+	!,
+	format('~p(~p,~p,~p,~p)', [F,X,Y,Z,W]).
 portray(appl(appl(appl(F,Z),Y),X)) :-
 	atom(F),
 	!,
@@ -79,7 +87,7 @@ portray(bool(X,Y,Z)) :-
 
 portray(quant(Q,X,T)) :- 
 	!,
-	format('~p ~p[~p])', [Q,X,T]).
+	format('~p ~p[~p]', [Q,X,T]).
 portray(qualia(C,F,T,A)) :-
 	!,
 	format('{const:~p,form:~p,telic:~p,agentive:~p}', [C, F, T, A]).
