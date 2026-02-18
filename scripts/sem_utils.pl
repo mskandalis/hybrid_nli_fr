@@ -102,6 +102,11 @@ reduce_drs1(merge(drs(X,C),drs(Y,D)), drs(Z,F)) :-
 	!,
 	merge_lists(X, Y, Z),
 	merge_lists(C, D, F).
+% Handle upstream bug: merge([Vars],[Conds]) instead of drs(Vars,Conds)
+reduce_drs1(merge(Vars, Conds), drs(Vars, Conds)) :-
+	is_list(Vars),
+	is_list(Conds),
+	!.
 
 % = DRS presuppositions; move the preposition to the top level
 
@@ -2038,6 +2043,14 @@ drs_to_fol(merge(D1,D2), Form) :-
 	;   drs_to_fol(ReducedDRS, Form)
 	).
 
+% Handle bare DRS conditions appearing where a DRS box is expected
+% (ill-formed DRS from upstream parser/reducer — treat as conditions)
+drs_to_fol(bool(D1, Op, D2), Form) :-
+	!,
+	drs_condition_to_fol(bool(D1, Op, D2), Form).
+drs_to_fol(not(D), Form) :-
+	!,
+	drs_condition_to_fol(not(D), Form).
 add_quantifiers([], _, F, F).
 add_quantifiers([X|Xs], Q, F0, F) :-
 	add_quantifier(X, Q, F0, F1),
@@ -2046,6 +2059,39 @@ add_quantifiers([X|Xs], Q, F0, F) :-
 add_quantifier('$VAR'(X), Q, F, quant(Q,'$VAR'(X),F)).
 add_quantifier(event('$VAR'(X)), Q, F, quant(Q,'$VAR'(X),F)).
 add_quantifier(variable('$VAR'(X)), Q, F, quant(Q,'$VAR'(X),F)).
+
+% drs_to_fol_body(+DRS, -Vars, -BodyFOL)
+% Extracts referent variables and body FOL separately
+% (for use in implication antecedents where vars need forall quantification)
+drs_to_fol_body(drs(Vars, Conds), Vars, BodyFOL) :-
+	!,
+	drs_conditions_to_fol(Conds, BodyFOL).
+drs_to_fol_body(merge(D1, D2), Vars, Form) :-
+	!,
+	reduce_drs1(merge(D1, D2), Reduced),
+	(   Reduced = drs(V, C)
+	->  Vars = V,
+	    drs_conditions_to_fol(C, Form)
+	;   Reduced = merge(R1, R2)
+	->  drs_to_fol_body(R1, V1, F1),
+	    drs_to_fol_body(R2, V2, F2),
+	    append(V1, V2, Vars),
+	    Form = bool(F1, &, F2)
+	;   Reduced = presup(BR, MR)
+	->  % reduce_drs1 transformed merge(drs,presup) into presup(B,merge(drs,M))
+	    % Presup B projects (existential); M's vars must propagate for forall
+	    drs_to_fol(BR, BF),
+	    drs_to_fol_body(MR, Vars, MF),
+	    Form = bool(BF, &, MF)
+	;   Vars = [],
+	    drs_to_fol(Reduced, Form)
+	).
+drs_to_fol_body(presup(B, M), Vars, bool(BF, &, MF)) :-
+	!,
+	drs_to_fol(B, BF),
+	drs_to_fol_body(M, Vars, MF).
+drs_to_fol_body(Other, [], Form) :-
+	drs_to_fol(Other, Form).
 
 drs_conditions_to_fol([], true).
 drs_conditions_to_fol([C|Cs], F) :-
@@ -2111,31 +2157,33 @@ drs_condition_to_fol(bool(drs(Vars1,Conds1), &, presup(B2,M2)), bool(Form1, &, b
     drs_to_fol(M2, F4).
 
 % Handle presup within boolean implications (left side)
-% Original: bool(presup(P,Q),->,R) reduces to presup(P,bool(Q,->,R)) = P & (Q -> R)
-drs_condition_to_fol(bool(presup(B1,M1), ->, drs(Vars2,Conds2)), bool(F1, &, bool(F2, ->, Form3))) :-
+% presup(B,M) -> drs(V2,C2) = B & forall M_vars. (M_body -> exists V2. C2_FOL)
+drs_condition_to_fol(bool(presup(B1,M1), ->, drs(Vars2,Conds2)), bool(F1, &, Form)) :-
     !,
     drs_to_fol(B1, F1),
-    drs_to_fol(M1, F2),
-    add_quantifiers(Vars2, exists, Form2, Form3),
-    drs_conditions_to_fol(Conds2, Form2).
+    drs_to_fol_body(M1, MVars, FM1),
+    add_quantifiers(Vars2, exists, CondsFOL2, F2),
+    drs_conditions_to_fol(Conds2, CondsFOL2),
+    add_quantifiers(MVars, forall, bool(FM1, ->, F2), Form).
 
 % Handle presup within boolean implications (right side)
-% Original: bool(P,->,presup(Q,R)) -> bool(presup(Q,P),->,R) -> presup(Q, P->R) = Q & (P -> R)
-drs_condition_to_fol(bool(drs(Vars1,Conds1), ->, presup(B2,M2)), bool(F3, &, bool(Form1, ->, F4))) :-
+% drs(V1,C1) -> presup(B,M) = B & forall V1. (C1_FOL -> M_FOL)
+drs_condition_to_fol(bool(drs(Vars1,Conds1), ->, presup(B2,M2)), bool(F3, &, Form)) :-
     !,
-    add_quantifiers(Vars1, exists, Form0, Form1),
-    drs_conditions_to_fol(Conds1, Form0),
+    drs_conditions_to_fol(Conds1, CondsFOL1),
     drs_to_fol(B2, F3),
-    drs_to_fol(M2, F4).
+    drs_to_fol(M2, F4),
+    add_quantifiers(Vars1, forall, bool(CondsFOL1, ->, F4), Form).
 
 % Handle presup within boolean implications (both sides)
-% Both presups project: presup(B1,M1) -> presup(B2,M2) = B1 & B2 & (M1 -> M2)
-drs_condition_to_fol(bool(presup(B1,M1), ->, presup(B2,M2)), bool(F1, &, bool(F3, &, bool(F2, ->, F4)))) :-
+% presup(B1,M1) -> presup(B2,M2) = B1 & B2 & forall M1_vars. (M1_body -> M2_FOL)
+drs_condition_to_fol(bool(presup(B1,M1), ->, presup(B2,M2)), bool(F1, &, bool(F3, &, Form))) :-
     !,
     drs_to_fol(B1, F1),
-    drs_to_fol(M1, F2),
+    drs_to_fol_body(M1, MVars, FM1),
     drs_to_fol(B2, F3),
-    drs_to_fol(M2, F4).
+    drs_to_fol(M2, FM2),
+    add_quantifiers(MVars, forall, bool(FM1, ->, FM2), Form).
 
 % Generic bool handlers - work with any content types (merge, presup, drs, etc)
 drs_condition_to_fol(bool(D1, \/, D2), bool(F1, \/, F2)) :-
@@ -2147,31 +2195,35 @@ drs_condition_to_fol(bool(D1, &, D2), bool(F1, &, F2)) :-
 	drs_to_fol(D1, F1),
 	drs_to_fol(D2, F2).
 % Generic implication handler - must handle presup specially for correct projection
+% Antecedent variables get forall quantification (standard DRS semantics)
 drs_condition_to_fol(bool(D1, ->, D2), Form) :-
 	!,
 	(   D1 = presup(B1, M1), D2 = presup(B2, M2)
-	->  % Both sides presup: B1 & B2 & (M1 -> M2)
+	->  % Both sides presup: B1 & B2 & forall M1_vars. (M1_body -> M2)
 	    drs_to_fol(B1, FB1),
-	    drs_to_fol(M1, FM1),
+	    drs_to_fol_body(M1, MVars, FM1),
 	    drs_to_fol(B2, FB2),
 	    drs_to_fol(M2, FM2),
-	    Form = bool(FB1, &, bool(FB2, &, bool(FM1, ->, FM2)))
+	    add_quantifiers(MVars, forall, bool(FM1, ->, FM2), ImpForm),
+	    Form = bool(FB1, &, bool(FB2, &, ImpForm))
 	;   D1 = presup(B1, M1)
-	->  % Left side presup: bool(presup(B,M), ->, D) = B & (M -> D)
+	->  % Left side presup: B & forall M_vars. (M_body -> D2)
 	    drs_to_fol(B1, FB1),
-	    drs_to_fol(M1, FM1),
+	    drs_to_fol_body(M1, MVars, FM1),
 	    drs_to_fol(D2, F2),
-	    Form = bool(FB1, &, bool(FM1, ->, F2))
+	    add_quantifiers(MVars, forall, bool(FM1, ->, F2), ImpForm),
+	    Form = bool(FB1, &, ImpForm)
 	;   D2 = presup(B2, M2)
-	->  % Right side presup: bool(D, ->, presup(B,M)) = B & (D -> M)
-	    drs_to_fol(D1, F1),
+	->  % Right side presup: B & forall D1_vars. (D1_body -> M)
+	    drs_to_fol_body(D1, Vars1, F1),
 	    drs_to_fol(B2, FB2),
 	    drs_to_fol(M2, FM2),
-	    Form = bool(FB2, &, bool(F1, ->, FM2))
-	;   % No presup on either side - standard conversion
-	    drs_to_fol(D1, F1),
+	    add_quantifiers(Vars1, forall, bool(F1, ->, FM2), ImpForm),
+	    Form = bool(FB2, &, ImpForm)
+	;   % No presup - standard: forall D1_vars. (D1_body -> D2)
+	    drs_to_fol_body(D1, Vars1, F1),
 	    drs_to_fol(D2, F2),
-	    Form = bool(F1, ->, F2)
+	    add_quantifiers(Vars1, forall, bool(F1, ->, F2), Form)
 	).
 % Handle drs([],[...]) appearing as a condition - convert its contents  
 drs_condition_to_fol(drs([],Conds), Form) :-
@@ -2228,6 +2280,14 @@ drs_condition_to_fol(drs_label(Label, merge(D1,D2)), Form) :-
 	    Form = bool(F1, &, F2)
 	;   drs_condition_to_fol(drs_label(Label, ReducedDRS), Form)
 	).
+% Handle drs_label with DRS body containing event variable:
+% identify the body's event variable with the label (they denote the same event)
+drs_condition_to_fol(drs_label(Label, drs(Vars, Conds)), Form) :-
+	select(event(E), Vars, RestVars),
+	!,
+	replace_sem(Conds, E, Label, Conds1),
+	add_quantifiers(RestVars, exists, CondF, Form),
+	drs_conditions_to_fol(Conds1, CondF).
 % Fallback for other drs_label patterns - just convert the DRS content
 drs_condition_to_fol(drs_label(_Label, DRS), Form) :-
 	!,
