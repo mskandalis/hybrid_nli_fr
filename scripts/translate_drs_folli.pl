@@ -5,7 +5,7 @@
 :- ['pp.pl'].
 
 % Load the semantics data file
-:- consult('semantics_sick.pl').
+:- consult('semantics.pl').
 
 % Main predicate to process all semantics
 process_all_semantics :-
@@ -36,16 +36,24 @@ process_reduced_semantics :-
                     (   catch(open('fol_sentences.pl', append, Fd, [alias(folsent_pl), buffer(line)]), FileError, 
                               (format('Error opening file: ~w~n', [FileError]), fail)) ->
                         (   % Write the reduced semantics and Prenex form to the file
-                            format(Fd, '~n% = Reduced Semantics~2nsemantics(~d, reduced, ~W).~n', [Number, ReducedSemantics, [numbervars(true), quoted(true)]]),
-                            with_output_to(Fd,
-                                (
-                                    format('~n% = FOL~2nfol(~d, prenex, ', [Number]),
-                                    portray(PrenexForm),
-                                    format(').~n~n')
-                                )
-                            ),
-                            close(Fd),
-                            format('Written results for ~w to file~n', [Number])
+                                ( catch(
+          with_output_to(Fd,
+              ( format('~n% = Reduced Semantics~2nsemantics(~d, reduced, ~W).~n',
+                        [Number, ReducedSemantics, [numbervars(true), quoted(true)]]),
+                format('~n% = FOL~2nfol(~d, prenex, ', [Number]),
+                portray(PrenexForm),
+                format(').~n~n')
+              )
+          ),
+          Error,
+          ( format('Error in printing for ~w: ~w~n', [Number, Error]),
+            fail
+          )
+      )
+    -> format('Written results for ~w to file~n', [Number])
+    ;  format('Skipping ~w due to printing error~n', [Number])
+    ),
+    close(Fd)
                         )
                     ;   format('Failed to open output file for ~w~n', [Number])
                     )
