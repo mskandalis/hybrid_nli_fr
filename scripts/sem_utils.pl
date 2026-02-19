@@ -123,7 +123,7 @@ reduce_drs1(presup(presup(X,Y),Z), presup(merge(X,Y),Z)) :- !.
 reduce_drs1(presup(P1,presup(P2,X)), presup(merge(P1,P2),X)) :- !.
 reduce_drs1(merge(presup(P1,X),presup(P2,Y)), presup(merge(P1,P2),merge(X,Y))) :- !.
 
-reduce_drs1(not(presup(P,Q)),presup(P,not(Q))).
+reduce_drs1(not(presup(P,Q)),presup(P,not(Q))) :- !.
 reduce_drs1(bool(presup(P,Q),->,R), Red) :-
 	free_vars(P, FV),
 	bound_variables(Q, BV),
@@ -2021,27 +2021,85 @@ get_arguments_result(A->B, R, [A|As]) :-
 % converts a Discourse Representation Structure DRS into an equivalent
 % first-order logic formula Formula.
 
+:- discontiguous drs_to_fol/2.
+
 drs_to_fol(drs(Vars,Conds), Fol) :-
+	!,
 	add_quantifiers(Vars, exists, Fol0, Fol),
 	drs_conditions_to_fol(Conds, Fol0).
 
-% Handle bare presup structures at top level
-drs_to_fol(presup(Background, Main), bool(F1,&,F2)) :-
+% Handle presup and merge by flattening the tree.
+% After presupposition accommodation, presup(B,M) is semantically equivalent
+% to merge(B,M) — the background referents are accessible in the main DRS.
+% flatten_merge_all recursively collects all variables and conditions from
+% drs boxes and presup backgrounds, ensuring proper quantifier scoping.
+drs_to_fol(presup(Background, Main), Form) :-
 	!,
-	drs_to_fol(Background, F1),
-	drs_to_fol(Main, F2).
-
-% Handle merge at top level by reducing first, then convert both parts as conjunction
+	drs_to_fol_merged(presup(Background, Main), Form).
 drs_to_fol(merge(D1,D2), Form) :-
 	!,
-	reduce_drs1(merge(D1,D2), ReducedDRS),
-	(   ReducedDRS = merge(R1, R2)
-	->  % Couldn't reduce merge - convert both parts as conjunction
-	    drs_to_fol(R1, F1),
-	    drs_to_fol(R2, F2),
-	    Form = bool(F1, &, F2)
-	;   drs_to_fol(ReducedDRS, Form)
+	drs_to_fol_merged(merge(D1,D2), Form).
+
+% = drs_to_fol_merged(+MergeOrPresupTerm, -Form)
+% Shared handler for merge and presup at the FOL conversion level.
+drs_to_fol_merged(Term, Form) :-
+	flatten_merge_all(Term, Vars, Conds, Complex),
+	(   Complex = []
+	->  % All parts are plain drs/presup - combine into single quantified formula
+	    add_quantifiers(Vars, exists, Fol0, Form),
+	    drs_conditions_to_fol(Conds, Fol0)
+	;   Vars = [], Conds = []
+	->  % No plain drs parts, only complex - conjoin them
+	    maplist(drs_to_fol, Complex, FOLs),
+	    fol_conjunction(FOLs, Form)
+	;   % Mix of plain drs and complex parts - combine under quantifiers
+	    maplist(drs_to_fol, Complex, FOLs),
+	    fol_conjunction(FOLs, ComplexFol),
+	    add_quantifiers(Vars, exists, Fol0, Form),
+	    (   Conds = []
+	    ->  Fol0 = ComplexFol
+	    ;   drs_conditions_to_fol(Conds, CondsFol),
+	        Fol0 = bool(CondsFol, &, ComplexFol)
+	    )
 	).
+
+% = flatten_merge_all(+DRS, -Vars, -Conds, -Complex)
+% Recursively flattens a merge/presup tree into collected variables,
+% conditions, and irreducible complex parts.
+% - merge(VarsList, CondsList): upstream bug where merge is used as drs
+% - merge: flatten both sides
+% - presup: unpack background and main (presup within merge means
+%   background is accommodated at the merge level)
+% - drs: collect variables and conditions
+% - other: treat as irreducible complex part
+% Handle upstream bug: merge(Vars, Conds) used instead of drs(Vars, Conds)
+flatten_merge_all(merge(Vars, Conds), Vars, Conds, []) :-
+	is_list(Vars),
+	is_list(Conds),
+	!.
+flatten_merge_all(merge(D1, D2), Vars, Conds, Complex) :-
+	!,
+	flatten_merge_all(D1, V1, C1, X1),
+	flatten_merge_all(D2, V2, C2, X2),
+	append(V1, V2, Vars),
+	append(C1, C2, Conds),
+	append(X1, X2, Complex).
+flatten_merge_all(presup(B, M), Vars, Conds, Complex) :-
+	!,
+	flatten_merge_all(B, V1, C1, X1),
+	flatten_merge_all(M, V2, C2, X2),
+	append(V1, V2, Vars),
+	append(C1, C2, Conds),
+	append(X1, X2, Complex).
+flatten_merge_all(drs(V, C), V, C, []) :- !.
+flatten_merge_all(Other, [], [], [Other]).
+
+% = fol_conjunction(+FOLList, -ConjFOL)
+% Builds a right-associated conjunction from a list of FOL formulas.
+fol_conjunction([], true) :- !.
+fol_conjunction([F], F) :- !.
+fol_conjunction([F|Fs], bool(F, &, Rest)) :-
+	fol_conjunction(Fs, Rest).
 
 % Handle bare DRS conditions appearing where a DRS box is expected
 % (ill-formed DRS from upstream parser/reducer — treat as conditions)
@@ -2068,28 +2126,30 @@ drs_to_fol_body(drs(Vars, Conds), Vars, BodyFOL) :-
 	drs_conditions_to_fol(Conds, BodyFOL).
 drs_to_fol_body(merge(D1, D2), Vars, Form) :-
 	!,
-	reduce_drs1(merge(D1, D2), Reduced),
-	(   Reduced = drs(V, C)
-	->  Vars = V,
-	    drs_conditions_to_fol(C, Form)
-	;   Reduced = merge(R1, R2)
-	->  drs_to_fol_body(R1, V1, F1),
-	    drs_to_fol_body(R2, V2, F2),
-	    append(V1, V2, Vars),
-	    Form = bool(F1, &, F2)
-	;   Reduced = presup(BR, MR)
-	->  % reduce_drs1 transformed merge(drs,presup) into presup(B,merge(drs,M))
-	    % Presup B projects (existential); M's vars must propagate for forall
-	    drs_to_fol(BR, BF),
-	    drs_to_fol_body(MR, Vars, MF),
-	    Form = bool(BF, &, MF)
-	;   Vars = [],
-	    drs_to_fol(Reduced, Form)
+	flatten_merge_all(merge(D1,D2), Vars, Conds, Complex),
+	(   Complex = []
+	->  drs_conditions_to_fol(Conds, Form)
+	;   Conds = []
+	->  maplist(drs_to_fol, Complex, FOLs),
+	    fol_conjunction(FOLs, Form)
+	;   drs_conditions_to_fol(Conds, CondsFol),
+	    maplist(drs_to_fol, Complex, FOLs),
+	    fol_conjunction(FOLs, ComplexFol),
+	    Form = bool(CondsFol, &, ComplexFol)
 	).
-drs_to_fol_body(presup(B, M), Vars, bool(BF, &, MF)) :-
+drs_to_fol_body(presup(B, M), Vars, Form) :-
 	!,
-	drs_to_fol(B, BF),
-	drs_to_fol_body(M, Vars, MF).
+	flatten_merge_all(presup(B,M), Vars, Conds, Complex),
+	(   Complex = []
+	->  drs_conditions_to_fol(Conds, Form)
+	;   Conds = []
+	->  maplist(drs_to_fol, Complex, FOLs),
+	    fol_conjunction(FOLs, Form)
+	;   drs_conditions_to_fol(Conds, CondsFol),
+	    maplist(drs_to_fol, Complex, FOLs),
+	    fol_conjunction(FOLs, ComplexFol),
+	    Form = bool(CondsFol, &, ComplexFol)
+	).
 drs_to_fol_body(Other, [], Form) :-
 	drs_to_fol(Other, Form).
 
@@ -2103,89 +2163,16 @@ drs_conditions_to_fol([C|Cs], C0, bool(F0,&,F)) :-
 	drs_condition_to_fol(C0, F0),
 	drs_conditions_to_fol(Cs, C, F).
 
-drs_condition_to_fol(presup(Background, Main), bool(F1,&,F2)) :-
+% presup as a condition: after accommodation, presup(B,M) is semantically
+% a merge of B and M. Use drs_to_fol_merged to ensure shared variables
+% between background and main get a single unified scope.
+drs_condition_to_fol(presup(Background, Main), Form) :-
     !,
-    drs_to_fol(Background, F1),
-    drs_to_fol(Main, F2).
-
-% Handle presup within boolean disjunctions    
-drs_condition_to_fol(bool(presup(B1,M1), \/, presup(B2,M2)), bool(bool(F1,&,F2), \/, bool(F3,&,F4))) :-
-    !,
-    drs_to_fol(B1, F1),
-    drs_to_fol(M1, F2),
-    drs_to_fol(B2, F3),
-    drs_to_fol(M2, F4).
-
-% Handle presup on left side of disjunction
-drs_condition_to_fol(bool(presup(B1,M1), \/, drs(Vars2,Conds2)), bool(bool(F1,&,F2), \/, Form3)) :-
-    !,
-    drs_to_fol(B1, F1),
-    drs_to_fol(M1, F2),
-    add_quantifiers(Vars2, exists, Form2, Form3),
-    drs_conditions_to_fol(Conds2, Form2).
-
-% Handle presup on right side of disjunction  
-drs_condition_to_fol(bool(drs(Vars1,Conds1), \/, presup(B2,M2)), bool(Form1, \/, bool(F3,&,F4))) :-
-    !,
-    add_quantifiers(Vars1, exists, Form0, Form1),
-    drs_conditions_to_fol(Conds1, Form0),
-    drs_to_fol(B2, F3),
-    drs_to_fol(M2, F4).
-
-% Handle presup within boolean conjunctions
-drs_condition_to_fol(bool(presup(B1,M1), &, presup(B2,M2)), bool(bool(F1,&,F2), &, bool(F3,&,F4))) :-
-    !,
-    drs_to_fol(B1, F1),
-    drs_to_fol(M1, F2),
-    drs_to_fol(B2, F3),
-    drs_to_fol(M2, F4).
-
-% Handle presup on left side of conjunction
-drs_condition_to_fol(bool(presup(B1,M1), &, drs(Vars2,Conds2)), bool(bool(F1,&,F2), &, Form3)) :-
-    !,
-    drs_to_fol(B1, F1),
-    drs_to_fol(M1, F2),
-    add_quantifiers(Vars2, exists, Form2, Form3),
-    drs_conditions_to_fol(Conds2, Form2).
-
-% Handle presup on right side of conjunction
-drs_condition_to_fol(bool(drs(Vars1,Conds1), &, presup(B2,M2)), bool(Form1, &, bool(F3,&,F4))) :-
-    !,
-    add_quantifiers(Vars1, exists, Form0, Form1),
-    drs_conditions_to_fol(Conds1, Form0),
-    drs_to_fol(B2, F3),
-    drs_to_fol(M2, F4).
-
-% Handle presup within boolean implications (left side)
-% presup(B,M) -> drs(V2,C2) = B & forall M_vars. (M_body -> exists V2. C2_FOL)
-drs_condition_to_fol(bool(presup(B1,M1), ->, drs(Vars2,Conds2)), bool(F1, &, Form)) :-
-    !,
-    drs_to_fol(B1, F1),
-    drs_to_fol_body(M1, MVars, FM1),
-    add_quantifiers(Vars2, exists, CondsFOL2, F2),
-    drs_conditions_to_fol(Conds2, CondsFOL2),
-    add_quantifiers(MVars, forall, bool(FM1, ->, F2), Form).
-
-% Handle presup within boolean implications (right side)
-% drs(V1,C1) -> presup(B,M) = B & forall V1. (C1_FOL -> M_FOL)
-drs_condition_to_fol(bool(drs(Vars1,Conds1), ->, presup(B2,M2)), bool(F3, &, Form)) :-
-    !,
-    drs_conditions_to_fol(Conds1, CondsFOL1),
-    drs_to_fol(B2, F3),
-    drs_to_fol(M2, F4),
-    add_quantifiers(Vars1, forall, bool(CondsFOL1, ->, F4), Form).
-
-% Handle presup within boolean implications (both sides)
-% presup(B1,M1) -> presup(B2,M2) = B1 & B2 & forall M1_vars. (M1_body -> M2_FOL)
-drs_condition_to_fol(bool(presup(B1,M1), ->, presup(B2,M2)), bool(F1, &, bool(F3, &, Form))) :-
-    !,
-    drs_to_fol(B1, F1),
-    drs_to_fol_body(M1, MVars, FM1),
-    drs_to_fol(B2, F3),
-    drs_to_fol(M2, FM2),
-    add_quantifiers(MVars, forall, bool(FM1, ->, FM2), Form).
+    drs_to_fol_merged(presup(Background, Main), Form).
 
 % Generic bool handlers - work with any content types (merge, presup, drs, etc)
+% The generic handlers correctly handle presup by delegating to drs_to_fol,
+% which calls drs_to_fol_merged for presup/merge, ensuring proper variable scoping.
 drs_condition_to_fol(bool(D1, \/, D2), bool(F1, \/, F2)) :-
 	!,
 	drs_to_fol(D1, F1),
@@ -2234,11 +2221,12 @@ drs_condition_to_fol(drs(Vars,Conds), Form) :-
 	!,
 	drs_conditions_to_fol(Conds, Form0),
 	add_quantifiers(Vars, exists, Form0, Form).
-% Handle not(merge(...)) by first reducing the merge then converting
+% Handle not(merge(...)) by flattening the merge and converting directly.
+% reduce_drs should have already projected any presup out of negation before
+% we reach FOL conversion, so the merge here is presup-free.
 drs_condition_to_fol(not(merge(D1,D2)), not(Form)) :-
 	!,
-	reduce_drs1(merge(D1,D2), ReducedDRS),
-	drs_to_fol(ReducedDRS, Form).
+	drs_to_fol_merged(merge(D1,D2), Form).
 drs_condition_to_fol(not(drs(Vars,Conds)), not(Form)) :-
 	!,
 	drs_conditions_to_fol(Conds, Form0),
@@ -2252,33 +2240,40 @@ drs_condition_to_fol(not(presup(B,M)), bool(F1, &, not(F2))) :-
 drs_condition_to_fol(not(bool(D1,Op,D2)), not(Form)) :-
 	!,
 	drs_condition_to_fol(bool(D1,Op,D2), Form).
-% Handle merge as a condition by reducing and converting
+% Handle merge as a condition by flattening and converting
 drs_condition_to_fol(merge(D1,D2), Form) :-
 	!,
-	reduce_drs1(merge(D1,D2), ReducedDRS),
-	(   ReducedDRS = merge(R1, R2)
-	->  % Couldn't reduce - convert both parts as conjunction
-	    drs_to_fol(R1, F1),
-	    drs_to_fol(R2, F2),
-	    Form = bool(F1, &, F2)
-	;   drs_to_fol(ReducedDRS, Form)
-	).
+	drs_to_fol_merged(merge(D1,D2), Form).
 % Handle drs_label by adding the label as event argument to the predicate
 % Converts drs_label(e, drs([],[P(x)])) to P(e, x)
 drs_condition_to_fol(drs_label(Label, drs([], [appl(Pred, Arg)])), Form) :-
 	atom(Pred),
 	!,
 	Form =.. [Pred, Label, Arg].
-% Handle drs_label containing merge - reduce first then convert
-drs_condition_to_fol(drs_label(Label, merge(D1,D2)), Form) :-
+% Handle drs_label containing merge or presup - flatten then convert
+% Collect all vars and conditions, replace event var with label.
+drs_condition_to_fol(drs_label(Label, Body), Form) :-
+	(Body = merge(_,_) ; Body = presup(_,_)),
 	!,
-	reduce_drs1(merge(D1,D2), ReducedDRS),
-	(   ReducedDRS = merge(R1, R2)
-	->  % Couldn't reduce - convert label with conjunction of both parts
-	    drs_condition_to_fol(drs_label(Label, R1), F1),
-	    drs_condition_to_fol(drs_label(Label, R2), F2),
-	    Form = bool(F1, &, F2)
-	;   drs_condition_to_fol(drs_label(Label, ReducedDRS), Form)
+	flatten_merge_all(Body, Vars, Conds, Complex),
+	(   select(event(E), Vars, RestVars)
+	->  replace_sem(Conds, E, Label, Conds1),
+	    (   Complex = []
+	    ->  add_quantifiers(RestVars, exists, CondF, Form),
+	        drs_conditions_to_fol(Conds1, CondF)
+	    ;   % Also substitute event var in Complex parts before converting
+	        replace_sem(Complex, E, Label, Complex1),
+	        maplist(drs_to_fol, Complex1, FOLs),
+	        fol_conjunction(FOLs, ComplexFol),
+	        add_quantifiers(RestVars, exists, Fol0, Form),
+	        (   Conds1 = []
+	        ->  Fol0 = ComplexFol
+	        ;   drs_conditions_to_fol(Conds1, CondsFol),
+	            Fol0 = bool(CondsFol, &, ComplexFol)
+	        )
+	    )
+	;   % No event variable - just convert as merged DRS
+	    drs_to_fol_merged(Body, Form)
 	).
 % Handle drs_label with DRS body containing event variable:
 % identify the body's event variable with the label (they denote the same event)
