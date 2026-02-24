@@ -2,7 +2,8 @@
 
 :- use_module(sem_utils,  [drs_to_fol/2]).
 
-:- ['pp.pl'].
+
+:- use_module('print_fol.pl').
 
 % Load the semantics data file
 :- consult('semantics.pl').
@@ -41,7 +42,7 @@ process_reduced_semantics :-
               ( format('~n% = Reduced Semantics~2nsemantics(~d, reduced, ~W).~n',
                         [Number, ReducedSemantics, [numbervars(true), quoted(true)]]),
                 format('~n% = FOL~2nfol(~d, prenex, ', [Number]),
-                portray(PrenexForm),
+                pp(PrenexForm),
                 format(').~n~n')
               )
           ),

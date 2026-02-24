@@ -1,4 +1,5 @@
 import re
+import regex
 import random
 import string
 from itertools import count
@@ -73,20 +74,25 @@ def replace_var_expressions(input_filename, output_filename):
                 replacements = {}
                 var_names = var_name_generator()
 
+                line = re.sub(r"\b([a-z])\b(?=\()", r"'\1'", line)
+
                 def replacer(match):
                     key = match.group(0)
                     if key not in replacements:
-                        replacements[key] = next(var_names)
-
-                    return replacements[key]
+                        while True:
+                            new_var = next(var_names)
+                            # If this new variable does NOT already appear as a word in the line, use it
+                            if not re.search(rf'\b{re.escape(new_var)}\b', line):
+                                replacements[key] = new_var
+                                break               
+                        return replacements[key]
+                    else:
+                        return replacements[key]             
                 new_line = re.sub(pattern, replacer, line)
                 new_line = remove_quant_wrappers(new_line)
                 new_line = format_exists_sequence(new_line)
                 outfile.write(new_line.rstrip(', ')+'\n')
 
-
-# Example usage
-replace_var_expressions('fol_sentences.pl', 'fol_nltk_gqnli.txt')
 
 def balance_parentheses(expr):
     """
@@ -247,6 +253,42 @@ def convert_brackets_to_parentheses(formula):
     
     return formula
 
+def normalize_quoted_identifiers(formula):
+    """
+    Replace -, ', and . by _ inside single-quoted identifiers,
+    but keep the surrounding quotes and original casing.
+    """
+
+    def repl(match):
+        content = match.group(1)
+        # replace only inside the quoted word
+        content = re.sub(r"\\\\", r"\\", content)
+        content = re.sub(r"\\'|[.](?!-)", "_", content)
+        content = re.sub(r"\.(?=-)", "", content)
+        content = re.sub(r"(?<=\d)-(?=\d)", "_HYPHEN_", content)
+        content = regex.sub(r"(?<=\p{L})-(?=\p{L}|\d)", "_", content)
+        content = regex.sub(r"(?<=\p{L})--(?=\p{L})", "__", content)
+
+
+        return f"'{content}'"   # keep quotes
+
+    return re.sub(r"'((?:\\'|[^'])*)'", repl, formula)
+
+def normalize_numeric_underscores(formula):
+    """
+    Find numbers (possibly quoted) that contain underscores, and remove the underscores.
+    """
+    # Pattern: numbers possibly quoted, containing at least one underscore
+    pattern = r"'?\b(\d+(?:_\d+)+)\b'?"
+
+    def repl(m):
+        num_str = m.group(1)
+        # Remove underscores
+        num_clean = num_str.replace('_', '')
+        return num_clean  # return as unquoted number
+
+    return re.sub(pattern, repl, formula)
+
 def extract_line_by_fol_number(fol_file, source_file):
     # Read the entire source file into a list
     lp = LogicParser()
@@ -273,11 +315,35 @@ def extract_line_by_fol_number(fol_file, source_file):
                         formula = line.strip()
                     
                     # Process the formula
+                    formula = re.sub(r"'[(]'(?=\([a-z])", "'OPENING_PARENTHESIS'", formula)
+                    formula = re.sub(r"'[)]'(?=\([a-z])", "'CLOSING_PARENTHESIS'", formula)
                     formula = balance_parentheses(formula)
                     formula = convert_brackets_to_parentheses(formula)
                     formula = remove_redundant_parens(formula)
                     formula = formula.rstrip('.')
-                    
+                    formula = normalize_numeric_underscores(formula)
+                    formula = normalize_quoted_identifiers(formula)
+                    formula = re.sub(r'\b(?:and|or)\s*\(', lambda m: f"'{m.group(0)[:-1]}'(", formula)
+                    formula = re.sub(r"'[,] '(?=\()", "'COMMA'", formula)
+                    formula = re.sub(r"\b(\d+)\.(\d+)\b", r"\1_\2", formula)
+                    formula = re.sub(r"(\d*_?-?\d+)\,\s?(\d+[a-z]?[a-z]?)\b", r"\1_\2", formula)
+                    formula = re.sub(r"'-(?=\w)", r"'_", formula)
+                    formula = re.sub(r'(?<=[(&])\s?-(?=\()', r'DASH', formula)
+                    formula = re.sub(r"\$\.?(?=\()", "'dollar'", formula)
+                    formula = re.sub(r"\\\"(?=\([a-z])", "'DOUBLE_QUOTE'", formula)
+                    formula = re.sub(r"(?<=\()&(?=\([a-z])", "'and'", formula)
+                    formula = re.sub(r"(?<=\()\b([a-z][0-9])\b(?=\()", r"'\1'", formula)
+                    #formula = regex.sub(r"(?<=\(|& )(\>|\<)(?=\()", r"'\1'", formula)
+                    formula = regex.sub(r"(?<=\(|& )\\(?=\([a-z])", "'BACKSLASH'", formula)
+                    formula = re.sub(r"(?<=[a-z], )\\(?=\))", "'BACKSLASH'", formula)
+                    #formula = re.sub(r"(?<=\=)(\s?)(\?)(?=\))", r"\1'\2'", formula)
+                    formula = re.sub(r"iota(?=\()", "'iota'", formula)
+                    formula = regex.sub(r"(?<=\()'.'(?=\()", "'DOT'", formula)
+
+
+
+
+
                     try:
                         parsed_expr = lp.parse(formula)
                         print(f"FOL expression for sentence {number} compatible with NLTK.")
@@ -288,4 +354,5 @@ def extract_line_by_fol_number(fol_file, source_file):
                 else:
                     print(f"fol({number}): [Line not found]")
 
-extract_line_by_fol_number('fol_nltk_gqnli.txt', 'gqnli_fr_input.txt')
+replace_var_expressions('fol_sentences_xnli_test.pl', 'fol_nltk_xnli_test.txt')
+extract_line_by_fol_number('fol_nltk_xnli_test.txt', 'xnli_test_input.txt')

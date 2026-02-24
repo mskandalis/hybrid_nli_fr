@@ -18,7 +18,7 @@ def extract_fol_expressions(fol_path):
     return fol_map
 
 def extract_sen_info(sen_path, fol_map):
-    problem_labels = defaultdict(lambda: {'p': [], 'h': []})
+    problem_labels = defaultdict(lambda: {'p': [], 'h': [], 'nli_label': None, 'subset': None})
     sen_info = {}
 
     with open(sen_path, 'r', encoding='utf-8') as f:
@@ -26,13 +26,18 @@ def extract_sen_info(sen_path, fol_map):
             line = line.strip()
             if line.startswith("sen_id("):
                 # Example line: sen_id(1, 1, 'p', 'TEST', 'yes', '...')
-                match = re.match(r"sen_id\((\d+),\s*(\d+),\s*'([ph])'", line)
+                match = re.match(r"sen_id\((\d+),\s*(\d+),\s*'([ph])',\s*'([A-Z]+)',\s*'(yes|no|unknown|undef)',\s*'(.*)'\)\.$", line)
                 if match:
                     sen_id = int(match.group(1))
                     problem_id = int(match.group(2))
                     label = match.group(3)
+                    subset = match.group(4)
+                    nli_label = match.group(5)
+                    sentence = match.group(6)
                     problem_labels[problem_id][label].append(sen_id)
-                    sen_info[sen_id] = (problem_id, label)
+                    problem_labels[problem_id]['nli_label'] = nli_label
+                    problem_labels[problem_id]['subset'] = subset
+                    sen_info[sen_id] = (problem_id, label, sentence)
 
     # Debug print
     for pid, labels in problem_labels.items():
@@ -42,7 +47,7 @@ def extract_sen_info(sen_path, fol_map):
 
     return problem_labels, sen_info
 
-def build_rows(fol_map, problem_labels):
+def build_rows(fol_map, problem_labels, sen_info):
     rows = []
     max_p = 0
     max_h = 0
@@ -51,20 +56,27 @@ def build_rows(fol_map, problem_labels):
         p_exprs = [fol_map.get(sid, "") for sid in labels['p']]
         h_exprs = [fol_map.get(sid, "") for sid in labels['h']]
 
+        p_nl = [sen_info[sid][2] for sid in labels['p']]
+        h_nl = [sen_info[sid][2] for sid in labels['h']]
+
         max_p = max(max_p, len(p_exprs))
         max_h = max(max_h, len(h_exprs))
 
         rows.append({
             'problem_id': problem_id,
             'p': p_exprs,
-            'h': h_exprs
+            'h': h_exprs,
+            'p_nl': p_nl,
+            'h_nl': h_nl,
+            'label': labels['nli_label'],
+            'subset': labels['subset']
         })
 
     print(f"Max p expressions: {max_p}, Max h expressions: {max_h}")
     return rows, max_p, max_h
 
 def write_tsv(rows, max_p, max_h, output_path):
-    header = ['problem_id'] + [f"p{i+1}" for i in range(max_p)] + [f"h{i+1}" for i in range(max_h)]
+    header = ['problem_id'] + [f"p{i+1}" for i in range(max_p)] + [f"p{i+1}_nl" for i in range(max_p)] + [f"h{i+1}" for i in range(max_h)] + [f"h{i+1}_nl" for i in range(max_h)] + ['label'] + ['dataset'] + ['subset']
 
     with open(output_path, 'w', encoding='utf-8', newline='') as f_out:
         writer = csv.writer(f_out, delimiter='\t')
@@ -73,7 +85,10 @@ def write_tsv(rows, max_p, max_h, output_path):
         for row in rows:
             p_exprs = row['p'] + [""] * (max_p - len(row['p']))
             h_exprs = row['h'] + [""] * (max_h - len(row['h']))
-            writer.writerow([row['problem_id']] + p_exprs + h_exprs)
+
+            p_nl = row['p_nl'] + [""] * (max_p - len(row['p_nl']))
+            h_nl = row['h_nl'] + [""] * (max_h - len(row['h_nl']))
+            writer.writerow([row['problem_id']] + p_exprs + p_nl + h_exprs + h_nl + [row['label']] + ['SICK'] + [row['subset']])
 
     print(f"TSV file written to: {output_path}")
 
@@ -85,5 +100,5 @@ output_path = 'output_fol_gqnli.tsv'       # Output TSV file path
 
 fol_map = extract_fol_expressions(fol_path)
 problem_labels, sen_info = extract_sen_info(sen_path, fol_map)
-rows, max_p, max_h = build_rows(fol_map, problem_labels)
+rows, max_p, max_h = build_rows(fol_map, problem_labels, sen_info)
 write_tsv(rows, max_p, max_h, output_path)
