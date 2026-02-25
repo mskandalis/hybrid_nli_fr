@@ -66,7 +66,7 @@ def format_exists_sequence(text):
     return ' '.join(result)
 
 def replace_var_expressions(input_filename, output_filename):
-    pattern = r"'\$VAR'\(_\d+\)"
+    pattern = r"'\$VAR'\(_\d+\)|_\d+"
 
     with open(input_filename, 'r', encoding='utf-8') as infile, open(output_filename, 'w', encoding='utf-8') as outfile:
         for line in infile:
@@ -354,5 +354,5 @@ def extract_line_by_fol_number(fol_file, source_file):
                 else:
                     print(f"fol({number}): [Line not found]")
 
-replace_var_expressions('fol_sentences_xnli_test.pl', 'fol_nltk_xnli_test.txt')
-extract_line_by_fol_number('fol_nltk_xnli_test.txt', 'xnli_test_input.txt')
+replace_var_expressions('fol_sentences_fracas.pl', 'fol_nltk_fracas.txt')
+extract_line_by_fol_number('fol_nltk_fracas.txt', 'fracas_input.txt')
