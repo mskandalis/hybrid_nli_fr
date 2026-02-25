@@ -66,7 +66,7 @@ def format_exists_sequence(text):
     return ' '.join(result)
 
 def replace_var_expressions(input_filename, output_filename):
-    pattern = r"'\$VAR'\(_\d+\)|_\d+"
+    pattern = r"'\$VAR'\(_\d+\)|\b_\d+\b"
 
     with open(input_filename, 'r', encoding='utf-8') as infile, open(output_filename, 'w', encoding='utf-8') as outfile:
         for line in infile:
