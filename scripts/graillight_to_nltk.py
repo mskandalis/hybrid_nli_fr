@@ -354,5 +354,5 @@ def extract_line_by_fol_number(fol_file, source_file):
                 else:
                     print(f"fol({number}): [Line not found]")
 
-replace_var_expressions('fol_sentences_fracas.pl', 'fol_nltk_fracas.txt')
-extract_line_by_fol_number('fol_nltk_fracas.txt', 'fracas_input.txt')
+replace_var_expressions('fol_sentences_gqnli.pl', 'fol_nltk_gqnli.txt')
+extract_line_by_fol_number('fol_nltk_gqnli.txt', 'gqnli_fr_input.txt')
