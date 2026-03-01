@@ -38,6 +38,9 @@ def normalize_sentence(s):
     s = re.sub(r"\s?\s([.,!?;:%-\)])", r"\1", s)
     s = re.sub(r"([\'\(])\s\s?", r"\1", s)
     s = s.replace("œ", "oe")
+    s = re.sub(r'(?<=\')(\")\s', r'\1', s)    # Collapse spaces around double quotes: " word " -> "word"
+    s = re.sub(r'\s+"', '"', s)
+    s = re.sub(r'"\s+', '"', s)    
     # Normalize number separators: 20.000 / 20 000 / 20,000 -> 20000
     s = re.sub(r'(\d)[.\s,](\d{3})(?!\d)', r'\1\2', s)
     # Strip trailing punctuation for comparison
@@ -68,10 +71,10 @@ def extract_sen_info(sen_path, fol_map, fol_sentences):
             line = line.strip()
             if line.startswith("sen_id("):
                 # Example line: sen_id(1, 1, 'p', 'TEST', 'yes', '...')
-                match = re.match(r"sen_id\((\d+),\s*(\d+),\s*'([ph])',\s*'([A-Z]+)',\s*'(yes|no|unknown|undef)',\s*'(.*)'\)\.$", line)
+                match = re.match(r"sen_id\((\d+),\s*([a-z]\d+),\s*'([ph])',\s*'([A-Z]+)',\s*'(yes|no|unknown|undef)',\s*'(.*)'\)\.$", line)
                 if match:
                     sen_id = int(match.group(1))
-                    problem_id = int(match.group(2))
+                    problem_id = match.group(2)
                     label = match.group(3)
                     subset = match.group(4)
                     nli_label = match.group(5)
@@ -85,6 +88,8 @@ def extract_sen_info(sen_path, fol_map, fol_sentences):
         sen_by_sentence[norm].append(sid)
 
     # Step 3: Pre-compute candidate SEN IDs for every FOL sentence
+    # Only search within a ±100 window around fol_id to avoid false distant matches
+    WINDOW = 100
     all_candidates = {}  # fol_id -> set of candidate SEN IDs
     sorted_fol_ids = sorted(fol_sentences.keys())
 
@@ -92,16 +97,19 @@ def extract_sen_info(sen_path, fol_map, fol_sentences):
         fol_sentence = fol_sentences[fol_id]
         fol_norm = normalize_sentence(fol_sentence)
         candidates = set()
+        lo, hi = fol_id - WINDOW, fol_id + WINDOW
 
-        # a) Exact normalized match via reverse index
+        # a) Exact normalized match via reverse index (filtered to window)
         if fol_norm in sen_by_sentence:
-            candidates.update(sen_by_sentence[fol_norm])
+            candidates.update(s for s in sen_by_sentence[fol_norm] if lo <= s <= hi)
 
-        # b) Approximate matches (startswith/endswith) across all SEN
+        # b) Approximate matches (startswith/endswith) within window
         if not candidates:
-            for sid, (pid, lbl, sen_sentence, subset, nli) in sen_info.items():
-                if sentences_match(fol_sentence, sen_sentence):
-                    candidates.add(sid)
+            for sid in range(lo, hi + 1):
+                if sid in sen_info:
+                    _, _, sen_sentence, _, _ = sen_info[sid]
+                    if sentences_match(fol_sentence, sen_sentence):
+                        candidates.add(sid)
 
         all_candidates[fol_id] = candidates
 
@@ -238,15 +246,15 @@ def write_tsv(rows, max_p, max_h, output_path):
 
             p_nl = row['p_nl'] + [""] * (max_p - len(row['p_nl']))
             h_nl = row['h_nl'] + [""] * (max_h - len(row['h_nl']))
-            writer.writerow([row['problem_id']] + p_exprs + p_nl + h_exprs + h_nl + [row['label']] + ['XNLI'] + [row['subset']])
+            writer.writerow([row['problem_id']] + p_exprs + p_nl + h_exprs + h_nl + [row['label']] + ['DACCORD'] + [row['subset']])
 
     print(f"TSV file written to: {output_path}")
 
 # ==== Run the process ====
 
-fol_path = 'fol_nltk_xnli_dev.txt'        # Your FOL expressions file path
-sen_path = 'xnli_dev_id_sentences_split.pl'     # Your sen_id file path
-output_path = 'output_fol_xnli_dev.tsv'       # Output TSV file path
+fol_path = 'fol_nltk_daccord.txt'        # Your FOL expressions file path
+sen_path = 'daccord_id_sentences_split.pl'     # Your sen_id file path
+output_path = 'output_fol_daccord.tsv'       # Output TSV file path
 
 fol_map, fol_sentences = extract_fol_expressions(fol_path)
 problem_labels, sen_info, aligned_id = extract_sen_info(sen_path, fol_map, fol_sentences)
