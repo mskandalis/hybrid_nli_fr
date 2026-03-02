@@ -6276,8 +6276,8 @@ L'homme marche dans les bois
 L'homme ne marche pas dans les bois
 L'homme est joyeusement randonnée dans les bois
 Un homme marche dans les bois
-Un homme marche dans les bois
-L'homme ne marche pas dans les bois
+Un homme fait un trek dans les bois
+L'homme ne fait pas de randonnée dans les bois
 Un homme marche lentement dans les bois
 L'homme marche dans les bois
 Un homme est assis dans les bois
