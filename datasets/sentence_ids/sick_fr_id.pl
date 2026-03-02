@@ -9416,8 +9416,8 @@ sen_id(6276, 3179, 'h', 'TEST', 'no', 'L\'homme ne marche pas dans les bois').
 sen_id(6277, 3180, 'p', 'TEST', 'yes', 'L\'homme est joyeusement randonnée dans les bois').
 sen_id(6278, 3180, 'h', 'TEST', 'yes', 'Un homme marche dans les bois').
 %problem id = 3181
-sen_id(6279, 3181, 'p', 'TRIAL', 'unknown', 'Un homme marche dans les bois').
-sen_id(6280, 3181, 'h', 'TRIAL', 'unknown', 'L\'homme ne marche pas dans les bois').
+sen_id(6279, 3181, 'p', 'TRIAL', 'unknown', 'Un homme fait un trek dans les bois').
+sen_id(6280, 3181, 'h', 'TRIAL', 'unknown', 'L\'homme ne fait pas de randonnée dans les bois').
 %problem id = 3182
 sen_id(6281, 3182, 'p', 'TRAIN', 'yes', 'Un homme marche lentement dans les bois').
 sen_id(6282, 3182, 'h', 'TRAIN', 'yes', 'L\'homme marche dans les bois').
