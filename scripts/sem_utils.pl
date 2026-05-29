@@ -164,7 +164,11 @@ reduce_drs1(drs(V,L0), presup(P, drs(V,[Q|L]))) :-
 reduce_drs1(drs(V,L0), presup(P, drs(V,[drs_label(X,Q)|L]))) :-
 	select(drs_label(X,presup(P, Q)), L0, L).
 
-% recursive cases - reduce contents of presup (with cut to prevent infinite loop)
+% recursive cases - reduce contents before trying the outer reduction again
+reduce_drs1(merge(D0,D1), merge(D2,D3)) :-
+	!,
+	reduce_drs1(D0, D2),
+	reduce_drs1(D1, D3).
 reduce_drs1(presup(D0,D1), presup(D2,D3)) :-
 	!,
 	reduce_drs1(D0, D2),
