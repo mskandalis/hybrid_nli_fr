@@ -30,14 +30,13 @@ def extract_fol_expressions(fol_path):
 
     return fol_map, fol_sentences
 
-
 def normalize_sentence(s):
     """Normalize quotes, whitespace, and punctuation."""
     s = s.replace("\\'", "'").replace("’", "'")
     s = re.sub(r"\s?\\%", "%", s)
     s = re.sub(r"\s?\s([.,!?;:%-\)])", r"\1", s)
     s = re.sub(r"([\'\(])\s\s?", r"\1", s)
-    s = s.replace("œ", "oe")
+    s = s.replace("oe", "œ")
     s = re.sub(r'(?<=\')(\")\s', r'\1', s)    # Collapse spaces around double quotes: " word " -> "word"
     s = re.sub(r'\s+"', '"', s)
     s = re.sub(r'"\s+', '"', s)    
@@ -71,7 +70,7 @@ def extract_sen_info(sen_path, fol_map, fol_sentences):
             line = line.strip()
             if line.startswith("sen_id("):
                 # Example line: sen_id(1, 1, 'p', 'TEST', 'yes', '...')
-                match = re.match(r"sen_id\((\d+),\s*([a-z]\d+),\s*'([ph])',\s*'([A-Z]+)',\s*'(yes|no|unknown|undef)',\s*'(.*)'\)\.$", line)
+                match = re.match(r"sen_id\((\d+),\s*([a-z]?\d+),\s*'([ph])',\s*'([A-Z]+)',\s*'(yes|no|unknown|undef)',\s*'(.*)'\)\.$", line)
                 if match:
                     sen_id = int(match.group(1))
                     problem_id = match.group(2)
@@ -210,7 +209,7 @@ def build_rows(fol_map, problem_labels, sen_info, aligned_id):
     max_p = 0
     max_h = 0
 
-    for problem_id, labels in sorted(problem_labels.items()):
+    for problem_id, labels in sorted(problem_labels.items(), key=lambda x: int(x[0]) if str(x[0]).isdigit() else str(x[0])):
         p_exprs = [fol_map.get(sid, "") for sid in labels['p']]
         h_exprs = [fol_map.get(sid, "") for sid in labels['h']]
 
@@ -246,15 +245,15 @@ def write_tsv(rows, max_p, max_h, output_path):
 
             p_nl = row['p_nl'] + [""] * (max_p - len(row['p_nl']))
             h_nl = row['h_nl'] + [""] * (max_h - len(row['h_nl']))
-            writer.writerow([row['problem_id']] + p_exprs + p_nl + h_exprs + h_nl + [row['label']] + ['DACCORD'] + [row['subset']])
+            writer.writerow([row['problem_id']] + p_exprs + p_nl + h_exprs + h_nl + [row['label']] + ['FraCaS'] + [row['subset']])
 
     print(f"TSV file written to: {output_path}")
 
 # ==== Run the process ====
 
-fol_path = 'fol_nltk_daccord.txt'        # Your FOL expressions file path
-sen_path = 'daccord_id_sentences_split.pl'     # Your sen_id file path
-output_path = 'output_fol_daccord.tsv'       # Output TSV file path
+fol_path = 'fol_nltk_fracas.txt'        # Your FOL expressions file path
+sen_path = 'fracas_fr_id.pl'     # Your sen_id file path
+output_path = 'output_fol_fracas.tsv'       # Output TSV file path
 
 fol_map, fol_sentences = extract_fol_expressions(fol_path)
 problem_labels, sen_info, aligned_id = extract_sen_info(sen_path, fol_map, fol_sentences)
