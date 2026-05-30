@@ -2122,6 +2122,17 @@ add_quantifier('$VAR'(X), Q, F, quant(Q,'$VAR'(X),F)).
 add_quantifier(event('$VAR'(X)), Q, F, quant(Q,'$VAR'(X),F)).
 add_quantifier(variable('$VAR'(X)), Q, F, quant(Q,'$VAR'(X),F)).
 
+% convert_subformula(+Term, -FOL)
+% Single dispatcher used everywhere a sub-formula may be either a DRS box
+% (drs/merge/presup) or a plain DRS condition (bool, not, appl, atom, ...).
+% Routes box-like terms through drs_to_fol/2 and everything else through
+% drs_condition_to_fol/2, so atomic operands of bool/not no longer cause
+% silent failure of the enclosing conversion.
+convert_subformula(drs(V,C), F)    :- !, drs_to_fol(drs(V,C), F).
+convert_subformula(merge(A,B), F)  :- !, drs_to_fol(merge(A,B), F).
+convert_subformula(presup(A,B), F) :- !, drs_to_fol(presup(A,B), F).
+convert_subformula(Cond, F)        :- drs_condition_to_fol(Cond, F).
+
 % drs_to_fol_body(+DRS, -Vars, -BodyFOL)
 % Extracts referent variables and body FOL separately
 % (for use in implication antecedents where vars need forall quantification)
@@ -2155,7 +2166,7 @@ drs_to_fol_body(presup(B, M), Vars, Form) :-
 	    Form = bool(CondsFol, &, ComplexFol)
 	).
 drs_to_fol_body(Other, [], Form) :-
-	drs_to_fol(Other, Form).
+	convert_subformula(Other, Form).
 
 drs_conditions_to_fol([], true).
 drs_conditions_to_fol([C|Cs], F) :-
@@ -2174,46 +2185,63 @@ drs_condition_to_fol(presup(Background, Main), Form) :-
     !,
     drs_to_fol_merged(presup(Background, Main), Form).
 
-% Generic bool handlers - work with any content types (merge, presup, drs, etc)
-% The generic handlers correctly handle presup by delegating to drs_to_fol,
-% which calls drs_to_fol_merged for presup/merge, ensuring proper variable scoping.
+% Generic bool handlers - work with any content types (merge, presup, drs,
+% bool, not, or atomic conditions). convert_subformula/2 dispatches the
+% operand to the right converter; in particular it stops the silent failure
+% that occurred when an operand was an atomic appl/_, =/_, etc.
 drs_condition_to_fol(bool(D1, \/, D2), bool(F1, \/, F2)) :-
 	!,
-	drs_to_fol(D1, F1),
-	drs_to_fol(D2, F2).
+	convert_subformula(D1, F1),
+	convert_subformula(D2, F2).
 drs_condition_to_fol(bool(D1, &, D2), bool(F1, &, F2)) :-
 	!,
-	drs_to_fol(D1, F1),
-	drs_to_fol(D2, F2).
-% Generic implication handler - must handle presup specially for correct projection
-% Antecedent variables get forall quantification (standard DRS semantics)
+	convert_subformula(D1, F1),
+	convert_subformula(D2, F2).
+% Implication handler.
+%
+% Standard DRT projection of presuppositions inside an implication:
+%   - a presupposed background floats to the top, with its referents
+%     existentially scoped over BOTH the background formula AND the
+%     remainder (the body where those referents may be reused).
+%   - the main DRS of the antecedent contributes universally quantified
+%     variables binding occurrences in the consequent (classic donkey
+%     anaphora pattern).
+%
+% Important: drs_to_fol_body/3 returns the background referents SEPARATELY
+% from the converted body (no inner existentials). We then wrap the whole
+% bool(FB, &, Rest) under exists for those referents, so any later
+% reference to them in Rest remains bound. The previous version called
+% drs_to_fol/2 on the background, which closed the referents inside FB
+% and left their occurrences in Rest free.
 drs_condition_to_fol(bool(D1, ->, D2), Form) :-
 	!,
 	(   D1 = presup(B1, M1), D2 = presup(B2, M2)
-	->  % Both sides presup: B1 & B2 & forall M1_vars. (M1_body -> M2)
-	    drs_to_fol(B1, FB1),
+	->  % Both sides presup. Project both backgrounds over the implication.
+	    drs_to_fol_body(B1, VarsB1, FB1),
+	    drs_to_fol_body(B2, VarsB2, FB2),
 	    drs_to_fol_body(M1, MVars, FM1),
-	    drs_to_fol(B2, FB2),
-	    drs_to_fol(M2, FM2),
-	    add_quantifiers(MVars, forall, bool(FM1, ->, FM2), ImpForm),
-	    Form = bool(FB1, &, bool(FB2, &, ImpForm))
+	    convert_subformula(M2, FM2),
+	    add_quantifiers(MVars, forall, bool(FM1, ->, FM2), Imp),
+	    add_quantifiers(VarsB2, exists, bool(FB2, &, Imp), Imp1),
+	    add_quantifiers(VarsB1, exists, bool(FB1, &, Imp1), Form)
 	;   D1 = presup(B1, M1)
-	->  % Left side presup: B & forall M_vars. (M_body -> D2)
-	    drs_to_fol(B1, FB1),
+	->  % LHS presup. Background floats out; main becomes the antecedent.
+	    drs_to_fol_body(B1, VarsB, FB),
 	    drs_to_fol_body(M1, MVars, FM1),
-	    drs_to_fol(D2, F2),
-	    add_quantifiers(MVars, forall, bool(FM1, ->, F2), ImpForm),
-	    Form = bool(FB1, &, ImpForm)
+	    convert_subformula(D2, F2),
+	    add_quantifiers(MVars, forall, bool(FM1, ->, F2), Imp),
+	    add_quantifiers(VarsB, exists, bool(FB, &, Imp), Form)
 	;   D2 = presup(B2, M2)
-	->  % Right side presup: B & forall D1_vars. (D1_body -> M)
+	->  % RHS presup. Background floats over the whole implication so its
+	    % referents stay in scope for occurrences in M2.
+	    drs_to_fol_body(B2, VarsB, FB),
 	    drs_to_fol_body(D1, Vars1, F1),
-	    drs_to_fol(B2, FB2),
-	    drs_to_fol(M2, FM2),
-	    add_quantifiers(Vars1, forall, bool(F1, ->, FM2), ImpForm),
-	    Form = bool(FB2, &, ImpForm)
-	;   % No presup - standard: forall D1_vars. (D1_body -> D2)
+	    convert_subformula(M2, FM2),
+	    add_quantifiers(Vars1, forall, bool(F1, ->, FM2), Imp),
+	    add_quantifiers(VarsB, exists, bool(FB, &, Imp), Form)
+	;   % No presup. Standard DRT implication.
 	    drs_to_fol_body(D1, Vars1, F1),
-	    drs_to_fol(D2, F2),
+	    convert_subformula(D2, F2),
 	    add_quantifiers(Vars1, forall, bool(F1, ->, F2), Form)
 	).
 % Handle drs([],[...]) appearing as a condition - convert its contents  
@@ -2235,11 +2263,16 @@ drs_condition_to_fol(not(drs(Vars,Conds)), not(Form)) :-
 	!,
 	drs_conditions_to_fol(Conds, Form0),
 	add_quantifiers(Vars, exists, Form0, Form).
-% Handle not(presup(...)) - presupposition survives negation: not(presup(P,Q)) = P & not(Q)
-drs_condition_to_fol(not(presup(B,M)), bool(F1, &, not(F2))) :-
+% Handle not(presup(...)) - presupposition survives negation. Standard DRT
+% projection: not(presup(B,M)) becomes exists B_vars. (B_body & not(M)),
+% so B-referents reused inside M remain bound. The previous version closed
+% B-vars inside FB via drs_to_fol/2, leaving the same indices free in
+% not(F2) — i.e. a different (free) variable in the FOL semantics.
+drs_condition_to_fol(not(presup(B,M)), Form) :-
 	!,
-	drs_to_fol(B, F1),
-	drs_to_fol(M, F2).
+	drs_to_fol_body(B, VarsB, FB),
+	convert_subformula(M, FM),
+	add_quantifiers(VarsB, exists, bool(FB, &, not(FM)), Form).
 % Handle not(bool(...)) - for disjunctions etc inside not
 drs_condition_to_fol(not(bool(D1,Op,D2)), not(Form)) :-
 	!,
@@ -2253,7 +2286,8 @@ drs_condition_to_fol(merge(D1,D2), Form) :-
 drs_condition_to_fol(drs_label(Label, drs([], [appl(Pred, Arg)])), Form) :-
 	atom(Pred),
 	!,
-	Form =.. [Pred, Label, Arg].
+	atom_concat(Pred, '_event', PredEvent),
+	Form =.. [PredEvent, Label, Arg].
 % Handle drs_label containing merge or presup - flatten then convert
 % Collect all vars and conditions, replace event var with label.
 drs_condition_to_fol(drs_label(Label, Body), Form) :-
