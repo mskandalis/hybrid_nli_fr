@@ -3,6 +3,11 @@
 pp(X) :-
     pp_term(X).
 
+% pp/1 followed by a newline (exported for callers that want a terminated line).
+ppnl(X) :-
+    pp_term(X),
+    nl.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% MAIN DISPATCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

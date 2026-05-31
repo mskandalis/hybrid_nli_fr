@@ -27,6 +27,8 @@
 		       melt_bound_variables/2,
 		       relabel_sem_vars/2,
 		       get_drs_types/2,
+		       drs_to_fol/2,
+		       drs_to_fol_top/2,
 		       translate_dynamics/3]).
 
 % =
@@ -151,18 +153,78 @@ reduce_drs1(drs(V,L0), drs(V, [drs_label(X,merge(Q1,Q2))|L])) :-
 reduce_drs1(drs(V,L0), presup(P,drs(V,[not(Q)|L]))) :-
 	select(not(presup(P,Q)), L0, L).
 % TODO: add trapping conditions
+% Presupposition inside an implication CONSEQUENT.
+% Donkey-anaphora move: a presupposition triggered in the consequent may be
+% moved to the antecedent only when none of its free discourse referents are
+% bound *inside* the consequent box R.  bound_variables/2 under
+% drs_binding(sloppy) ignores R's universe, so a predicate-nominal presup such
+% as nommé(scandinave,C) — whose referent C is declared in R's universe
+% (exists C) — was wrongly judged free and projected past its binder.  We use
+% box_bound_numbers/2 so the universe is counted.
+%   * not trapped -> donkey move to the antecedent.
+%   * trapped     -> locally accommodate P into the consequent box (merge(P,R)),
+%                    keeping C inside the existential that binds it.
 reduce_drs1(drs(V,L0), drs(V,[bool(presup(P,Q),->,R)|L])) :-
 	select(bool(Q,->,presup(P,R)), L0, L),
 	free_vars(P, FV),
-	bound_variables(R, BV),
+	box_bound_numbers(R, BV),
 	ord_intersect(FV, BV, []).
+reduce_drs1(drs(V,L0), drs(V,[bool(Q,->,merge(P,R))|L])) :-
+	select(bool(Q,->,presup(P,R)), L0, L),
+	free_vars(P, FV),
+	box_bound_numbers(R, BV),
+	ord_intersect(FV, BV, [_|_]).
+% Presupposition inside an implication ANTECEDENT.
+% DRT trapping constraint: a presupposition may only be projected out of the
+% implication when none of its free discourse referents are bound by the
+% universal quantifier — i.e. when they are not declared in the antecedent's
+% universe Q.  Projecting a trapped referent would leave it free outside the
+% scope of the forall it belongs to (e.g. nommé(européen,B) floated above
+% forall B), which is exactly the bug this guard prevents.
+%   * not trapped  -> project P to the enclosing box (global accommodation).
+%   * trapped      -> locally accommodate P into the antecedent restrictor
+%                     (merge(P,Q)), giving forall B.((restrictor & P) -> R).
 reduce_drs1(drs(V,L0), presup(P,drs(V,[bool(Q,->,R)|L]))) :-
-	select(bool(presup(P,Q),->,R), L0, L).
+	select(bool(presup(P,Q),->,R), L0, L),
+	free_vars(P, FV),
+	antecedent_universe_numbers(Q, QN),
+	ord_intersect(FV, QN, []).
+reduce_drs1(drs(V,L0), drs(V,[bool(merge(P,Q),->,R)|L])) :-
+	select(bool(presup(P,Q),->,R), L0, L),
+	free_vars(P, FV),
+	antecedent_universe_numbers(Q, QN),
+	ord_intersect(FV, QN, [_|_]).
 	
 reduce_drs1(drs(V,L0), presup(P, drs(V,[Q|L]))) :-
 	select(presup(P, Q), L0, L).
-reduce_drs1(drs(V,L0), presup(P, drs(V,[drs_label(X,Q)|L]))) :-
-	select(drs_label(X,presup(P, Q)), L0, L).
+% Projecting a presupposition OUT of a drs_label.
+% The presupposed background P (e.g. a proper-name condition nommé('Europe',F))
+% is lifted to the enclosing box, but its referent F is declared in the
+% drs_label's subordinate universe Q.  Lifting only the condition would strand
+% F below the box that now hosts P, violating DRT accessibility (a superordinate
+% condition referring to a subordinate referent).  We therefore hoist exactly
+% those referents of Q that occur free in P up into the enclosing universe V,
+% keeping the binding intact.  This widens the scope of an existential referent
+% across a conjunctive box boundary, which is meaning-preserving.
+reduce_drs1(drs(V0,L0), presup(P, drs(V,[drs_label(X,Q1)|L]))) :-
+	select(drs_label(X,presup(P, Q)), L0, L),
+	free_vars(P, PNums),
+	event_universe_numbers(Q, ENums),
+	ord_intersect(PNums, ENums, []),
+	hoist_presup_referents(P, Q, Q1, Moved),
+	append(V0, Moved, V).
+% Trapped event presupposition inside a drs_label.
+% The presupposition P (e.g. a tense condition temps(G) overlaps maintenant)
+% mentions an EVENT referent G declared in the drs_label's universe.  Event
+% referents are never hoisted out of a drs_label (they are identified with the
+% label), so P cannot be projected without stranding G.  We therefore locally
+% accommodate P into the drs_label by merging it into the labelled box, keeping
+% P within the scope that binds G.
+reduce_drs1(drs(V0,L0), drs(V0,[drs_label(X,merge(P,Q))|L])) :-
+	select(drs_label(X,presup(P, Q)), L0, L),
+	free_vars(P, PNums),
+	event_universe_numbers(Q, ENums),
+	ord_intersect(PNums, ENums, [_|_]).
 
 % recursive cases - reduce contents before trying the outer reduction again
 reduce_drs1(merge(D0,D1), merge(D2,D3)) :-
@@ -221,6 +283,131 @@ reduce_condition(C, C).
 drs_bool(->).
 drs_bool(\/).
 drs_bool(&).
+
+% = hoist_presup_referents(+Presup, +InnerDRS, -InnerDRS1, -MovedReferents)
+% When a presupposition is projected out of a drs_label, lift the inner DRS's
+% discourse referents that occur free in the presupposition Presup up to the
+% enclosing universe, so they remain accessible to the projected condition.
+% The inner part may still be an unreduced conjunctive tree (merge/presup of
+% drs boxes); we walk that conjunctive spine, removing the referenced entity
+% referents from wherever they are declared.  We deliberately do NOT descend
+% into bool/not/drs_label sub-structures, so no referent is lifted across a
+% quantifier (implication / negation) boundary.  Only entity referents
+% (variable/_) are moved; event referents stay in place.  We reuse the
+% existing free_vars/2 predicate, which returns precisely the referent indices
+% that Presup mentions but does not itself bind — so a referent Presup binds
+% locally is correctly left untouched.
+hoist_presup_referents(Presup, Q, Q1, Moved) :-
+	free_vars(Presup, PNums),
+	strip_free_referents(Q, PNums, Q1, Moved).
+
+strip_free_referents(drs(V, C), PNums, drs(V1, C), Moved) :-
+	!,
+	split_referents_by_occurrence(V, PNums, Moved, V1).
+strip_free_referents(merge(A, B), PNums, merge(A1, B1), Moved) :-
+	!,
+	strip_free_referents(A, PNums, A1, MA),
+	strip_free_referents(B, PNums, B1, MB),
+	append(MA, MB, Moved).
+strip_free_referents(presup(A, B), PNums, presup(A1, B1), Moved) :-
+	!,
+	strip_free_referents(A, PNums, A1, MA),
+	strip_free_referents(B, PNums, B1, MB),
+	append(MA, MB, Moved).
+strip_free_referents(Other, _, Other, []).
+
+split_referents_by_occurrence([], _, [], []).
+split_referents_by_occurrence([variable('$VAR'(N))|T], PNums, [variable('$VAR'(N))|M], K) :-
+	memberchk(N, PNums),
+	!,
+	split_referents_by_occurrence(T, PNums, M, K).
+split_referents_by_occurrence([Ref|T], PNums, M, [Ref|K]) :-
+	split_referents_by_occurrence(T, PNums, M, K).
+
+% = antecedent_universe_numbers(+AntecedentDRS, -ReferentNumbers)
+% Discourse-referent indices universally bound by an implication antecedent,
+% i.e. those declared in its universe.  A presupposition whose free referents
+% intersect this set is trapped by the quantifier and must not be projected
+% past it.  We walk the conjunctive spine (drs/merge/presup) so the antecedent
+% may still be unreduced; we do NOT descend through bool/not, since those open
+% a new (inaccessible) scope.
+antecedent_universe_numbers(drs(V,_), N) :-
+	!,
+	drs_variable_numbers(V, N).
+antecedent_universe_numbers(merge(A,B), N) :-
+	!,
+	antecedent_universe_numbers(A, NA),
+	antecedent_universe_numbers(B, NB),
+	ord_union(NA, NB, N).
+antecedent_universe_numbers(presup(_,B), N) :-
+	!,
+	antecedent_universe_numbers(B, N).
+antecedent_universe_numbers(_, []).
+
+% = event_universe_numbers(+DRS, -EventReferentNumbers)
+% Indices of the EVENT referents declared in a box's universe (walking the
+% drs/merge/presup conjunctive spine).  Event referents are never hoisted out
+% of a drs_label (they identify with the label), so a presupposition that
+% mentions such an event is trapped inside the drs_label and must be
+% accommodated locally rather than projected past it.
+event_universe_numbers(drs(V,_), N) :-
+	!,
+	event_referent_numbers(V, N).
+event_universe_numbers(merge(A,B), N) :-
+	!,
+	event_universe_numbers(A, NA),
+	event_universe_numbers(B, NB),
+	ord_union(NA, NB, N).
+event_universe_numbers(presup(_,B), N) :-
+	!,
+	event_universe_numbers(B, N).
+event_universe_numbers(_, []).
+
+event_referent_numbers([], []).
+event_referent_numbers([event('$VAR'(X))|T], N) :-
+	!,
+	event_referent_numbers(T, N0),
+	ord_insert(N0, X, N).
+event_referent_numbers([_|T], N) :-
+	event_referent_numbers(T, N).
+
+% = box_bound_numbers(+DRS, -ReferentNumbers)
+% All discourse-referent indices that a box binds: the condition-level binders
+% computed by bound_variables/2 PLUS every universe declared anywhere inside the
+% box.  Needed because, under drs_binding(sloppy), bound_variables/2 omits DRS
+% universes, so a presupposition whose free referent is bound by a (possibly
+% nested) universe of R is wrongly seen as projectable.  We must not flip the
+% global sloppy flag (it governs accidental capture elsewhere), so we recover
+% the universe numbers locally and union them in.
+box_bound_numbers(T, N) :-
+	bound_variables(T, BV),
+	all_universe_numbers(T, UN),
+	ord_union(BV, UN, N).
+
+% = all_universe_numbers(+Term, -ReferentNumbers)
+% Recursively collect referent indices declared in every DRS/drs_label universe
+% reachable inside Term (descending through merge/presup/bool/not and the
+% generic compound spine).
+all_universe_numbers(drs(V,L), N) :-
+	!,
+	drs_variable_numbers(V, NV),
+	all_universe_numbers_list(L, NL),
+	ord_union(NV, NL, N).
+all_universe_numbers(drs_label(_,D), N) :-
+	!,
+	all_universe_numbers(D, N).
+all_universe_numbers(T, N) :-
+	compound(T),
+	!,
+	T =.. [_|As],
+	all_universe_numbers_list(As, N).
+all_universe_numbers(_, []).
+
+all_universe_numbers_list([], []).
+all_universe_numbers_list([X|Xs], N) :-
+	all_universe_numbers(X, N0),
+	all_universe_numbers_list(Xs, N1),
+	ord_union(N0, N1, N).
 
 merge_lists([], Ls2, Ls2).
 merge_lists([L1|Ls1], Ls2, [L1|Ls]) :-
@@ -1570,25 +1757,41 @@ sem_to_fol(quant(Q,V,X0), X, Pol, NPol, U0, T0, T) :-
 % --- PRESUP -> conjunction in sem_to_fol ---
 sem_to_fol(presup(Background, Main), Term, Pol, NPol, U, T0, T) :-
     !,
-    % convert background (if it's a drs this will produce a quantified FOL term)
-    ( Background = drs(_,_) ->
-        drs_to_fol(Background, FB), T1 = T0
-    ;
-        sem_to_fol(Background, FB, Pol, NPol, U, T0, T1)
-    ),
-    % convert main
-    ( Main = drs(_,_) ->
-        drs_to_fol(Main, FM), T = T1
-    ;
-        sem_to_fol(Main, FM, Pol, NPol, U, T1, T)
-    ),
-    Term = bool(FB, &, FM).
+    (   % If the whole presup is built only from plain drs/merge/presup boxes
+        % (no lambda/query residue), accommodate the presupposition by merging
+        % background and main into ONE shared quantifier scope, exactly as
+        % drs_to_fol(presup(...)) does. Converting the two sides separately
+        % (the old behaviour) leaves background referents outside the main
+        % DRS's quantifiers, producing stranded/captured variables in the
+        % prenex form (e.g. "nommé(b,...) & forall b[...]").
+        flatten_merge_all(presup(Background, Main), _FV, _FC, [])
+    ->  drs_to_fol(presup(Background, Main), Term),
+        T = T0
+    ;   % Fallback for query/lambda contexts: convert each side separately.
+        ( Background = drs(_,_) ->
+            drs_to_fol(Background, FB), T1 = T0
+        ;
+            sem_to_fol(Background, FB, Pol, NPol, U, T0, T1)
+        ),
+        ( Main = drs(_,_) ->
+            drs_to_fol(Main, FM), T = T1
+        ;
+            sem_to_fol(Main, FM, Pol, NPol, U, T1, T)
+        ),
+        Term = bool(FB, &, FM)
+    ).
 % --- end PRESUP ---
 % --- MERGE -> proper DRS merge if both are DRS, otherwise reduce/fallback ---
 sem_to_fol(merge(X,Y), Term, Pol, NPol, U, T0, T) :-
     !,
-    % First try proper DRS merge if both are DRS (preserves shared scope)
-    (   X = drs(VarsX, CondsX), Y = drs(VarsY, CondsY)
+    (   % Fully DRS-reducible (no lambda/query residue): convert the whole
+        % merge tree in one shared quantifier scope, mirroring
+        % drs_to_fol(merge(...)). Prevents stranded/captured variables that
+        % arise when nested merge/presup parts are converted separately.
+        flatten_merge_all(merge(X,Y), _FV, _FC, [])
+    ->  drs_to_fol(merge(X,Y), Term),
+        T = T0
+    ;   X = drs(VarsX, CondsX), Y = drs(VarsY, CondsY)
     ->  % Proper merge: combine referents and conditions into single DRS
         merge_lists(VarsX, VarsY, Vars),
         merge_lists(CondsX, CondsY, Conds),
@@ -2027,8 +2230,10 @@ get_arguments_result(A->B, R, [A|As]) :-
 
 :- discontiguous drs_to_fol/2.
 
-drs_to_fol(drs(Vars,Conds), Fol) :-
+drs_to_fol(drs(Vars0,Conds0), Fol) :-
 	!,
+	hoist_label_referents(Conds0, Conds, ExtraVars),
+	union_referents(Vars0, ExtraVars, Vars),
 	add_quantifiers(Vars, exists, Fol0, Fol),
 	drs_conditions_to_fol(Conds, Fol0).
 
@@ -2044,10 +2249,116 @@ drs_to_fol(merge(D1,D2), Form) :-
 	!,
 	drs_to_fol_merged(merge(D1,D2), Form).
 
+% = drs_to_fol_top(+DRS, -ClosedFol)
+% Public top-level entry point for the generator.  It converts the DRS and then
+% applies existential closure of the GLOBAL discourse box: any discourse
+% referent that is still free in the resulting formula (used in a condition but
+% never declared in an accessible universe — e.g. a motion verb's path argument
+% that the upstream lexical construction failed to add to the universe, or an
+% unresolved interrogative/anaphora referent) is bound by an existential
+% quantifier at the outermost scope.
+%
+% This is the standard DRT treatment of the main box (unselective existential
+% closure) and is the reason a complete DRS denotes a closed proposition.  It is
+% meaning-preserving for formulas that are already closed (no free referent =>
+% no quantifier added), and it only ever wraps the WHOLE formula, so it never
+% alters the internal scope of an implication universal or a negation.  It is a
+% converter-side closure of free referents; it does not (and cannot) repair the
+% upstream universe-declaration defect that produced them.
+drs_to_fol_top(DRS, Closed) :-
+	drs_to_fol(DRS, Fol),
+	fol_binder_terms(Fol, Bound),
+	fol_referent_terms(Fol, Used),
+	exclude_eq(Used, Bound, Free0),
+	dedup_eq(Free0, Free),
+	add_quantifiers(Free, exists, Fol, Closed).
+
+% Collect the '$VAR'(X) terms bound by a quant/3 in the formula.  X may be a
+% plain (unbound) Prolog variable — referents keep their original notation
+% '$VAR'(_NNN); they are NOT grounded with numbervars/3.  Identity is therefore
+% tested with ==, never with unification.
+%
+% NOTE: a bare, unbound argument must be matched with var/1 BEFORE the quant/3
+% head; otherwise unifying an unbound variable with the quant(_, '$VAR'(_), _)
+% template would destructively bind it to a fresh quant structure and recurse
+% forever.  A '$VAR'(_) term is also a LEAF: its inner argument is the referent
+% identity (an unbound variable in the '$VAR'(_NNN) notation) and must never be
+% decomposed with =.., for the same reason.
+fol_binder_terms(T, []) :-
+	var(T),
+	!.
+fol_binder_terms(quant(_, '$VAR'(X), B), ['$VAR'(X)|Ns]) :-
+	!,
+	fol_binder_terms(B, Ns).
+fol_binder_terms('$VAR'(_), []) :-
+	!.
+fol_binder_terms(T, Ns) :-
+	compound(T),
+	!,
+	T =.. [_|Args],
+	foldl_binder_terms(Args, Ns).
+fol_binder_terms(_, []).
+
+foldl_binder_terms([], []).
+foldl_binder_terms([A|As], Ns) :-
+	fol_binder_terms(A, N1),
+	foldl_binder_terms(As, N2),
+	append(N1, N2, Ns).
+
+% Collect every '$VAR'(X) occurrence (the binder slot of a quant/3 is skipped so
+% a quantifier does not count as a "use" of its own variable).  As above, an
+% unbound argument is matched with var/1 first so it cannot be destructively
+% unified with the quant/3 template, and '$VAR'(X) is returned directly (its
+% inner referent argument is never decomposed with =..).
+fol_referent_terms(T, []) :-
+	var(T),
+	!.
+fol_referent_terms(quant(_, _, B), Ns) :-
+	!,
+	fol_referent_terms(B, Ns).
+fol_referent_terms('$VAR'(X), ['$VAR'(X)]) :-
+	!.
+fol_referent_terms(T, Ns) :-
+	compound(T),
+	!,
+	T =.. [_|Args],
+	foldl_referent_terms(Args, Ns).
+fol_referent_terms(_, []).
+
+foldl_referent_terms([], []).
+foldl_referent_terms([A|As], Ns) :-
+	fol_referent_terms(A, N1),
+	foldl_referent_terms(As, N2),
+	append(N1, N2, Ns).
+
+% ==-based set difference / dedup (safe for unbound-variable referents, unlike
+% subtract/3 and sort/2 which use unification and would wrongly merge distinct
+% free variables).
+exclude_eq([], _, []).
+exclude_eq([X|Xs], Ys, Out) :-
+	(   member_eq(X, Ys)
+	->  Out = Out1
+	;   Out = [X|Out1]
+	),
+	exclude_eq(Xs, Ys, Out1).
+
+dedup_eq([], []).
+dedup_eq([X|Xs], Out) :-
+	(   member_eq(X, Xs)
+	->  Out = Out1
+	;   Out = [X|Out1]
+	),
+	dedup_eq(Xs, Out1).
+
+member_eq(X, [Y|_]) :- X == Y, !.
+member_eq(X, [_|Ys]) :- member_eq(X, Ys).
+
 % = drs_to_fol_merged(+MergeOrPresupTerm, -Form)
 % Shared handler for merge and presup at the FOL conversion level.
 drs_to_fol_merged(Term, Form) :-
-	flatten_merge_all(Term, Vars, Conds, Complex),
+	flatten_merge_all(Term, Vars0, Conds0, Complex),
+	hoist_label_referents(Conds0, Conds, ExtraVars),
+	union_referents(Vars0, ExtraVars, Vars),
 	(   Complex = []
 	->  % All parts are plain drs/presup - combine into single quantified formula
 	    add_quantifiers(Vars, exists, Fol0, Form),
@@ -2105,6 +2416,80 @@ fol_conjunction([F], F) :- !.
 fol_conjunction([F|Fs], bool(F, &, Rest)) :-
 	fol_conjunction(Fs, Rest).
 
+% = hoist_label_referents(+Conds0, -Conds, -HoistedVars)
+% A drs_label(L, drs(Vi,Ci)) condition introduces a sub-event description that
+% is conjoined into the SAME existential/discourse scope as its sibling
+% conditions. Its non-event discourse referents (e.g. the entity introduced by
+% a proper name) are therefore accessible to those siblings and MUST be bound
+% by the enclosing box's quantifier — not closed locally inside the drs_label.
+% This pass lifts those non-event referents up to the enclosing universe while
+% keeping the event referent(s) inside the drs_label so that the
+% label<->event identification performed by drs_condition_to_fol/2 is preserved.
+% It is sound: a drs_label inner DRS is existential and conjunctive within the
+% box, so widening the scope of its existential referents across the
+% conjunction is meaning-preserving.  It deliberately does NOT descend through
+% bool/not/implication operands, so no referent is ever lifted across a
+% quantifier boundary (e.g. out of an implication antecedent).
+hoist_label_referents([], [], []).
+hoist_label_referents([Cnd0|Cs0], [Cnd|Cs], Vars) :-
+	hoist_label_cond(Cnd0, Cnd, V1),
+	hoist_label_referents(Cs0, Cs, V2),
+	append(V1, V2, Vars).
+
+hoist_label_cond(drs_label(L, drs(Vi, Ci0)), drs_label(L, drs(Events, Ci)), Hoisted) :-
+	!,
+	% Normalise deeper drs_labels first; their non-event referents bubble up
+	% to this same enclosing scope (all existential-conjunctive along the way).
+	hoist_label_referents(Ci0, Ci, Deep),
+	split_event_referents(Vi, Events, Others),
+	% The label L itself is a reified event/proposition referent: the converter
+	% (drs_condition_to_fol/2) identifies it with the drs_label's inner event and
+	% uses it as a free term (e.g. Pred_event(L,Arg), or by replacing the inner
+	% event with L).  It is therefore an existential referent of THIS enclosing,
+	% conjunctive scope and must be bound here; otherwise it is stranded free in
+	% the output FOL.  Binding it at the enclosing box is meaning-preserving
+	% (existential widening across a conjunction), and is logically equivalent to
+	% local existential closure even inside an implication restrictor.
+	append([L|Others], Deep, Hoisted).
+hoist_label_cond(Cnd, Cnd, []).
+
+% Keep event referents in place (for label identification); lift the rest.
+split_event_referents([], [], []).
+split_event_referents([event(X)|T], [event(X)|Es], Os) :-
+	!,
+	split_event_referents(T, Es, Os).
+split_event_referents([V|T], Es, [V|Os]) :-
+	split_event_referents(T, Es, Os).
+
+% = union_referents(+Base, +Extra, -Out)
+% Append the Extra referents to Base, skipping any that already denote a
+% referent occurring in Base.  Referents may be written as event(R),
+% variable(R) or bare R, where R is the underlying discourse-referent term
+% (a '$VAR'(N) after numbervars, or a plain Prolog variable when the input
+% has not been numbered yet); all three wrappers denote the same referent R,
+% so a label hoisted as bare R is not bound twice when it is already declared
+% (e.g. as event(R)) in the enclosing universe.
+%
+% referent_core/2 strips the wrapper and yields the underlying referent term.
+% Comparison below uses ==/2 (structural identity) and NEVER unifies, so an
+% unbound referent variable is never destructively bound to a template such as
+% event('$VAR'(N)) — the bug that previously corrupted non-numbervar'd input
+% into event(event('$VAR'(_))) and broke add_quantifier/4.
+referent_core(event(R), R) :- !.
+referent_core(variable(R), R) :- !.
+referent_core(R, R).
+
+union_referents(Base, [], Base).
+union_referents(Base, [R|Rs], Out) :-
+	referent_core(R, RC),
+	(   member(B, Base),
+	    referent_core(B, BC),
+	    BC == RC
+	->  union_referents(Base, Rs, Out)
+	;   append(Base, [R], Base1),
+	    union_referents(Base1, Rs, Out)
+	).
+
 % Handle bare DRS conditions appearing where a DRS box is expected
 % (ill-formed DRS from upstream parser/reducer — treat as conditions)
 drs_to_fol(bool(D1, Op, D2), Form) :-
@@ -2136,12 +2521,16 @@ convert_subformula(Cond, F)        :- drs_condition_to_fol(Cond, F).
 % drs_to_fol_body(+DRS, -Vars, -BodyFOL)
 % Extracts referent variables and body FOL separately
 % (for use in implication antecedents where vars need forall quantification)
-drs_to_fol_body(drs(Vars, Conds), Vars, BodyFOL) :-
+drs_to_fol_body(drs(Vars0, Conds0), Vars, BodyFOL) :-
 	!,
+	hoist_label_referents(Conds0, Conds, ExtraVars),
+	union_referents(Vars0, ExtraVars, Vars),
 	drs_conditions_to_fol(Conds, BodyFOL).
 drs_to_fol_body(merge(D1, D2), Vars, Form) :-
 	!,
-	flatten_merge_all(merge(D1,D2), Vars, Conds, Complex),
+	flatten_merge_all(merge(D1,D2), Vars1, Conds0, Complex),
+	hoist_label_referents(Conds0, Conds, ExtraVars),
+	append(Vars1, ExtraVars, Vars),
 	(   Complex = []
 	->  drs_conditions_to_fol(Conds, Form)
 	;   Conds = []
@@ -2154,7 +2543,9 @@ drs_to_fol_body(merge(D1, D2), Vars, Form) :-
 	).
 drs_to_fol_body(presup(B, M), Vars, Form) :-
 	!,
-	flatten_merge_all(presup(B,M), Vars, Conds, Complex),
+	flatten_merge_all(presup(B,M), Vars1, Conds0, Complex),
+	hoist_label_referents(Conds0, Conds, ExtraVars),
+	append(Vars1, ExtraVars, Vars),
 	(   Complex = []
 	->  drs_conditions_to_fol(Conds, Form)
 	;   Conds = []
@@ -2245,12 +2636,19 @@ drs_condition_to_fol(bool(D1, ->, D2), Form) :-
 	    add_quantifiers(Vars1, forall, bool(F1, ->, F2), Form)
 	).
 % Handle drs([],[...]) appearing as a condition - convert its contents  
-drs_condition_to_fol(drs([],Conds), Form) :-
+drs_condition_to_fol(drs([],Conds0), Form) :-
 	!,
-	drs_conditions_to_fol(Conds, Form).
-drs_condition_to_fol(drs(Vars,Conds), Form) :-
-	Vars \= [],
+	hoist_label_referents(Conds0, Conds, ExtraVars),
+	(   ExtraVars == []
+	->  drs_conditions_to_fol(Conds, Form)
+	;   drs_conditions_to_fol(Conds, Form0),
+	    add_quantifiers(ExtraVars, exists, Form0, Form)
+	).
+drs_condition_to_fol(drs(Vars0,Conds0), Form) :-
+	Vars0 \= [],
 	!,
+	hoist_label_referents(Conds0, Conds, ExtraVars),
+	append(Vars0, ExtraVars, Vars),
 	drs_conditions_to_fol(Conds, Form0),
 	add_quantifiers(Vars, exists, Form0, Form).
 % Handle not(merge(...)) by flattening the merge and converting directly.

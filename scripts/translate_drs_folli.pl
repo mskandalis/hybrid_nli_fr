@@ -1,6 +1,6 @@
 :- use_module(library(ape)).
 
-:- use_module(sem_utils,  [drs_to_fol/2]).
+:- use_module(sem_utils,  [drs_to_fol_top/2, drs_to_fol/2]).
 
 
 :- use_module('print_fol.pl').
@@ -27,9 +27,22 @@ process_reduced_semantics :-
     % Process each semantics fact
     forall(semantics(Number, reduced, ReducedSemantics),
         (   format('Processing semantics ~w...~n', [Number]),
-            
+
+            % Wrap each discourse referent (a plain Prolog variable in the
+            % cached fact) as '$VAR'(Var), keeping the inner variable UNBOUND.
+            % This is the referent form drs_to_fol/2 and the prenex printer pp/1
+            % expect, and it is the ORIGINAL naming notation: an unbound inner
+            % variable prints as '$VAR'(_NNN) (e.g. '$VAR'(_46164)), which the
+            % downstream graillight_to_nltk.py regex '\$VAR'\(_\d+\) relies on.
+            % We deliberately do NOT use numbervars/3 here, because that would
+            % ground referents to '$VAR'(0),'$VAR'(1),... changing the notation
+            % and breaking the downstream consumer.  Wrapping preserves variable
+            % identity (sharing), so the reduced-semantics printout and the FOL
+            % keep consistent names.
+            wrap_referent_variables(ReducedSemantics),
+
             % Convert the reduced semantics to Prenex form
-            (   catch(drs_to_fol(ReducedSemantics, PrenexForm), Error, 
+            (   catch(drs_to_fol_top(ReducedSemantics, PrenexForm), Error, 
                      (format('Error in conversion for ~w: ~w~n', [Number, Error]), fail)) ->
                 (   format('Conversion successful for ~w!~n', [Number]),
                     
@@ -64,6 +77,20 @@ process_reduced_semantics :-
         )
     ),
     format('Processed all ~w semantics facts~n', [Count]).
+
+% wrap_referent_variables(+Term)
+% Bind every unbound Prolog variable in Term to '$VAR'(Fresh) with Fresh left
+% unbound.  Shared variables stay shared (each distinct source variable maps to
+% one distinct '$VAR'(Fresh)), so referent identity is preserved.  The unbound
+% inner variable prints as '$VAR'(_NNN), the established naming notation.
+wrap_referent_variables(Term) :-
+    term_variables(Term, Vars),
+    wrap_each_variable(Vars).
+
+wrap_each_variable([]).
+wrap_each_variable([V|Vs]) :-
+    V = '$VAR'(_),
+    wrap_each_variable(Vs).
 
 % Add a simple test predicate for a specific number
 test_specific(Number) :-
