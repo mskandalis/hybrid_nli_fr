@@ -758,6 +758,14 @@ def get_wn_axioms(p_preds, h_preds, lang='fra'):
         frozenset({'ami', 'homme'}),          # friend ≠ man (WOLF polysemy)
         frozenset({'jouer', 'danser'}),       # play ≠ dance
         frozenset({'jouer', 'regarder'}),     # play ≠ watch
+        # FP-audit blocks (semantically false WN bridges; each verified to
+        # serve ZERO correct proofs in the full SICK log):
+        frozenset({'arbre', 'plante'}),       # enforce the validated JDM block
+                                              # consistently on the WN path
+        frozenset({'espace', 'zone'}),        # space ≠ area (false bicond)
+        frozenset({'sauter_dans', 'sauter_de'}),  # into ≠ from (converses)
+        frozenset({'couper_en', 'faire'}),    # cut-into-pieces ≠ light-verb faire
+                                              # ("faire fondre" melt collapse)
         # balle/boule block REMOVED in v38b — it cost 3 TPs (1075, 2919, 9552) for 0 FP savings
         frozenset({'fille', 'femme'}),        # girl ≠ woman (WN polysemy causes FP)
         frozenset({'sable', 'plage'}),        # sand ≠ beach (WN polysemy causes FP)
@@ -1137,7 +1145,12 @@ FRENCH_HYPERNYMS = [
     ('marcher_sur', 'marcher'),
     ('marcher_dans', 'marcher'),
     ('danser_sur', 'danser'),
-    ('sauter_sur', 'sauter'),
+    # ('sauter_sur', 'sauter') REMOVED: with the parser's same-arity frames
+    # this transfers the PREP OBJECT into the bare verb's direct-object slot:
+    # sauter_sur(e,x,mur) ["jump onto the wall"] -> sauter(e,x,mur) ["jump
+    # (over) the wall"], a different relation to the wall. False proof on
+    # SICK; zero correct proofs depended on it (blast-radius scan). The
+    # event-only decomposition path handles the sound part (the jumping).
     ('sauter_de', 'sauter'),
     ('sauter_par_dessus', 'sauter'),
     ('rouler_sur', 'rouler'),
@@ -1173,7 +1186,10 @@ FRENCH_HYPERNYMS = [
     ('chapeau', 'vetement'),
     # v29: location hypernyms
     ('plage', 'rivage'),
-    ('trottoir', 'route'),
+    # ('trottoir', 'route') REMOVED: semantically false (a sidewalk is not a
+    # roadway; FR 'route' = the carriageway). Caused SICK false proof
+    # "court sur le trottoir" -> "court sur la route"; zero correct proofs
+    # depended on it (full-log blast-radius scan).
     # v29: action hypernyms
     ('verifier', 'regarder'),
     ('examiner', 'regarder'),
@@ -2987,13 +3003,17 @@ def get_structural_axioms(
         # actually appears in the formulas. Otherwise introducing c_lower(x)
         # when c_lower only appears as a bare constant inside nomme(x, c_lower)
         # causes a Prover9 arity collision (symbol used at both arity 0 and 1).
-        if c_lower + '(' in all_text:
+        # NOTE: the check must be word-boundary anchored.  A plain substring
+        # test matches INSIDE longer predicate names (e.g. ``europeen(`` inside
+        # ``plupart_de_nomme_europeen(``), emitting an axiom whose unary symbol
+        # exists nowhere standalone -> Prover9 FATAL multiple-arity error.
+        if re.search(r'\b' + re.escape(c_lower) + r'\(', all_text):
             axioms.append(f'all x.(nomme(x, {c}) -> {c_lower}(x))')
             if c_lower != c:
                 axioms.append(f'all x.(nomme(x, {c}) <-> {c_lower}(x))')
 
         # Handle when original case concept is used as a predicate
-        if c + '(' in all_text:
+        if re.search(r'\b' + re.escape(c) + r'\(', all_text):
             axioms.append(f'all x.(nomme(x, {c}) <-> {c}(x))')
 
     # --- Case-variant name-tag bridge ---
@@ -3848,10 +3868,31 @@ def get_structural_axioms(
 
     # --- Unique Name Assumption for year constants ---
     # Different year constants are distinct. Required for temporal contradiction detection.
+    # FORM-AWARE: a year can occur as a CONSTANT (``(b = 1992)``, ``en(d, 1993)``)
+    # or as a unary PREDICATE (``1993(c)``).  Emitting the constant-form
+    # inequality ``-(1992 = 1993)`` when 1993 exists ONLY as a predicate makes
+    # Prover9 see 1993 at arities 0 and 1 -> FATAL, killing the whole row.
+    # Emit each pair's UNA in the syntactic category it actually occurs in.
     import itertools as _it
     year_constants = sorted(set(int(m) for m in re.findall(r'(?<![0-9])(\d{4})(?![0-9])', all_text)))
+
+    def _year_const_form(y):
+        return bool(re.search(r'(?<![0-9A-Za-z_])' + str(y) + r'(?!\d)(?!\s*\()', all_text))
+
+    def _year_pred_form(y):
+        return bool(re.search(r'(?<![0-9A-Za-z_])' + str(y) + r'\s*\(', all_text))
+
     for y1, y2 in _it.combinations(year_constants, 2):
-        axioms.append(f'-({y1} = {y2})')
+        c1, c2 = _year_const_form(y1), _year_const_form(y2)
+        p1, p2 = _year_pred_form(y1), _year_pred_form(y2)
+        if c1 and c2:
+            axioms.append(f'-({y1} = {y2})')
+        if p1 and p2:
+            axioms.append(f'all x.({y1}(x) -> -{y2}(x))')
+        if p1 and c2 and not c1:
+            axioms.append(f'all x.({y1}(x) -> -(x = {y2}))')
+        if p2 and c1 and not c2:
+            axioms.append(f'all x.({y2}(x) -> -(x = {y1}))')
 
     # --- Year constant <-> predicate bridge ---
     # Some FOL encodings use (x = 1994) (year as constant) while others
@@ -7864,6 +7905,17 @@ def get_numeric_axioms(all_text, formula_texts=None, n_premises=None):
                         f'all e x y.(({ep}(e, x, y) & (num(y) = {n})) -> exists t.(subseteq(t, y) & (num(t) = {m}) & plus_de(t) & {ep}(e, x, t)))'
                     )
 
+        # NOTE: a percent (DOT) analog of the count lifting above ("whole
+        # group of n does E -> more than M% of it does E, M<100") was
+        # implemented and EMPIRICALLY REJECTED.  Although arithmetically
+        # valid relative to the witness group, H's percentage cell ``DOT(t) &
+        # de(t, c)`` leaves the reference population c existential, so the
+        # constructed witness (a share of the premise's own event-group)
+        # satisfies hypotheses whose intended share is over a LARGER
+        # population: it false-proved "Plus de 36% de la population vit dans
+        # la pauvreté" (gold=no, premise says exactly 36%) and broke the
+        # share-arithmetic contradiction proofs on its near-duplicates.
+
         for m in sorted(moins_target_numbers):
             if n < m and not moins_de_is_func:
                 # Guard: skip when m matches a premise "total" count.
@@ -8037,6 +8089,9 @@ def get_numeric_axioms(all_text, formula_texts=None, n_premises=None):
                         )
 
     # --- Year constant inequality (distinct years) ---
+    # FORM-AWARE (see the structural-site comment): never emit constant-form
+    # ``-(Y1 = Y2)`` for a year that occurs only as a unary predicate, else
+    # Prover9 FATALs on the 0/1 arity collision and the row loses its proof.
     year_constants = set()
     search_text = all_text if formula_texts is None else ' '.join(formula_texts) + ' ' + all_text
     for ym in re.finditer(r'(?:=\s*|(?:en|depuis)\(\w+,\s*)(\d{4})\b', search_text):
@@ -8048,9 +8103,26 @@ def get_numeric_axioms(all_text, formula_texts=None, n_premises=None):
         if 1900 <= y <= 2100:
             year_constants.add(y)
     year_list = sorted(year_constants)
+
+    def _yr_const_form(y):
+        return bool(re.search(r'(?<![0-9A-Za-z_])' + str(y) + r'(?!\d)(?!\s*\()', search_text))
+
+    def _yr_pred_form(y):
+        return bool(re.search(r'(?<![0-9A-Za-z_])' + str(y) + r'\s*\(', search_text))
+
     for i in range(len(year_list)):
         for j in range(i + 1, len(year_list)):
-            add_axiom(f'-({year_list[i]} = {year_list[j]})')
+            _y1, _y2 = year_list[i], year_list[j]
+            _c1, _c2 = _yr_const_form(_y1), _yr_const_form(_y2)
+            _p1, _p2 = _yr_pred_form(_y1), _yr_pred_form(_y2)
+            if _c1 and _c2:
+                add_axiom(f'-({_y1} = {_y2})')
+            if _p1 and _p2:
+                add_axiom(f'all x.({_y1}(x) -> -{_y2}(x))')
+            if _p1 and _c2 and not _c1:
+                add_axiom(f'all x.({_y1}(x) -> -(x = {_y2}))')
+            if _p2 and _c1 and not _c2:
+                add_axiom(f'all x.({_y2}(x) -> -(x = {_y1}))')
     # --- Exhaustive fraction partition -> tout + whole-group porter ---
     # When P has fraction markers whose derived counts sum to the group total,
     # and H contains tout(...), emit a direct axiom that establishes both
@@ -8248,7 +8320,7 @@ def get_arity_lifting_axioms(all_preds, lowest_arities, blocked_entity_lifts=Non
     return axioms
 
 
-def get_morphological_axioms(p_preds, h_preds):
+def get_morphological_axioms(p_preds, h_preds, all_text=None):
     """Generate equivalence axioms for singular/plural predicate variants.
 
     Detects predicate names that are morphological variants (e.g., ténor/ténors,
@@ -8258,6 +8330,14 @@ def get_morphological_axioms(p_preds, h_preds):
     This is semantically correct: the singular and plural forms of a predicate
     name refer to the same concept; the cardinality is encoded separately via
     num() and quantifier predicates.
+
+    ``all_text`` (the FINAL formula text, after intensional/opaque rewrites)
+    supplements the extracted predicate inventories: rewrites such as
+    ``tenor_event -> tenor_event_opaque`` happen AFTER predicate extraction,
+    so pairs among rewritten names would otherwise be invisible here.
+    Restricted to derived ``_event``/``_opaque`` names — exactly the names
+    the rewrites produce — so the supplement cannot introduce pairs beyond
+    the rewrite gap it repairs.
     """
     axioms = []
 
@@ -8268,6 +8348,18 @@ def get_morphological_axioms(p_preds, h_preds):
     h_dict = {}
     for name, arity in h_preds:
         h_dict.setdefault(name, set()).add(arity)
+
+    if all_text:
+        for m in re.finditer(r'\b([a-z][A-Za-z0-9_]*)\(([^()]*)\)', all_text):
+            name, args = m.group(1), m.group(2)
+            if '_event' not in name and '_opaque' not in name:
+                continue
+            if is_function_usage(all_text, m.start(), m.end()):
+                continue
+            arity = len([a for a in args.split(',') if a.strip()])
+            if arity:
+                p_dict.setdefault(name, set()).add(arity)
+                h_dict.setdefault(name, set()).add(arity)
 
     all_names = set(p_dict.keys()) | set(h_dict.keys())
 
@@ -8298,6 +8390,18 @@ def get_morphological_axioms(p_preds, h_preds):
             candidates.append((name, name[:-3] + 'euse'))
         if name.endswith('euse') and name[:-4] + 'eur' in all_names:
             candidates.append((name[:-4] + 'eur', name))
+        # Derived-event predicates: the parser derives BASE_event /
+        # BASE_event_opaque predicates from the SAME lexeme as BASE.  The
+        # singular/plural identity of the base noun carries over unchanged to
+        # the derivation (tenor_event_opaque <-> tenors_event_opaque), since
+        # number is inflectional and the derivational suffix is identical.
+        if '_event' in name:
+            _base, _sep, _rest = name.partition('_event')
+            _tail = _sep + _rest
+            if _base and _base + 's' + _tail in all_names:
+                candidates.append((name, _base + 's' + _tail))
+            if _base.endswith('s') and len(_base) > 3 and _base[:-1] + _tail in all_names:
+                candidates.append((_base[:-1] + _tail, name))
 
         for singular, plural in candidates:
             if (singular, plural) in checked:
@@ -8531,6 +8635,13 @@ _JDM_BLOCK_PAIRS = frozenset({
     frozenset({'sur', 'en'}),
     # Substance / place
     frozenset({'sable', 'sol'}),
+    # FP-audit blocks (semantically false JDM isa edges; zero correct proofs
+    # depended on any of them in the full SICK log):
+    frozenset({'rocher', 'falaise'}),     # a rock is not a cliff (curated
+                                          # falaise->rocher direction is the
+                                          # sound one and is unaffected)
+    frozenset({'air', 'zone'}),           # air ≠ area (en plein air artifact)
+    frozenset({'exterieur', 'zone'}),     # outdoors-adj ≠ area noun
     # Compound verb specificity drop
     frozenset({'jouer_de', 'jouer'}),
     # --- Tier-B (post-JDM SICK audit, 106 remaining unsound rows) ---
@@ -9082,6 +9193,70 @@ def _premises_are_vacuous(full_premises, premises, background_axioms):
         _probe = read_expr('zzc_vac_probe(zzc_a) & -zzc_vac_probe(zzc_a)')
         if timed_prove(Prover9(timeout=5), _probe, full_premises,
                        timeout_seconds=7):
+            return True
+    except Exception:
+        pass
+    return False
+
+
+def _hypothesis_is_vacuous(hypothesis, background_axioms):
+    """Sound vacuity guard, hypothesis side (dual of `_premises_are_vacuous`).
+
+    A contradiction verdict ``P ⊢ ¬H`` is vacuous when ``¬H`` is already a
+    theorem of the H-independent lexicon alone — i.e. the hypothesis FOL is
+    self-inconsistent under static disjointness knowledge (e.g. FOL generation
+    fused two participants onto one variable: ``enfant(g) & adulte(g)`` with
+    the sound ``adulte -> -enfant``).  The premises then play no role in the
+    proof, so it is not a *genuine* NLI contradiction and must be downgraded
+    to ``unknown``.  A satisfiable NL hypothesis can only acquire an
+    unsatisfiable FOL through a generation artefact, so no genuine
+    contradiction is ever lost by this guard.
+
+    Probe set restriction (critical for soundness of the guard itself): only
+    background axioms with a NEGATIVE consequent (``-> -...``) and WITHOUT
+    ``$F`` are admitted.  ``$F`` axioms (e.g. cross-DOT percentage
+    contradictions) and positive premise-derived axioms (tout
+    universalizations) legitimately encode PREMISE content — an inconsistency
+    of H with those is a genuine premise-driven contradiction and must keep
+    its ``no`` verdict.  Under-detection is acceptable (guard stays
+    conservative); over-detection is impossible because H+lexicon ⊢ ⊥ makes
+    ¬H premise-independent regardless of which axioms the actual proof used.
+
+    Returns ``True`` only on a POSITIVE Prover9 refutation of the probe set
+    (Mace4 model of H+lexicon proves satisfiability and returns ``False``
+    early; timeouts never downgrade).
+    """
+    if os.getenv('HYP_VACUITY_GUARD_DISABLE') == '1':
+        return False
+    try:
+        _lex_neg = []
+        for ax in background_axioms:
+            ax_s = str(ax)
+            if '$F' in ax_s:
+                continue
+            if re.search(r'->\s*-', ax_s):
+                _lex_neg.append(ax)
+        if not _lex_neg:
+            return False
+        _probe_set = [hypothesis] + _lex_neg
+    except Exception:
+        return False
+    # Fast path: a finite model of H + negative lexicon proves satisfiability.
+    try:
+        from nltk.inference.mace import Mace
+        _mb = MaceCommand(None, assumptions=_probe_set,
+                          model_builder=Mace(end_size=20))
+        if timed_build_model(_mb, timeout_seconds=5):
+            return False
+    except Exception:
+        pass
+    try:
+        _probe = read_expr('zzc_vac_probe(zzc_a) & -zzc_vac_probe(zzc_a)')
+        if timed_prove(Prover9(timeout=5), _probe, _probe_set,
+                       timeout_seconds=7):
+            print("  Hypothesis-vacuity guard: H is inconsistent with the "
+                  "static lexicon alone -> contradiction proof is "
+                  "premise-independent (vacuous), downgrading to unknown")
             return True
     except Exception:
         pass
@@ -11337,7 +11512,7 @@ def perform_inference_on_row(row):
     new_axioms_strs.extend(policy_program_strs)
 
     # --- Enhancement: Morphological axioms (singular/plural bridging) ---
-    morpho_strs = get_morphological_axioms(p_preds_found, h_preds_found)
+    morpho_strs = get_morphological_axioms(p_preds_found, h_preds_found, all_text=all_text)
     for ax in morpho_strs:
         print(f"Adding Morphological Axiom: {ax}")
     new_axioms_strs.extend(morpho_strs)
@@ -11463,6 +11638,12 @@ def perform_inference_on_row(row):
     # No NL, no row IDs, no dataset names; purely FOL-shape and lexicon driven.
     _compound_decomp_strs = []
     _compound_decomp_done = set()
+    # Collect candidates first, then emit only base-arity-CONSISTENT groups:
+    # two compounds of the same base verb (e.g. coucher_sur/3, coucher_dans/4)
+    # can imply DIFFERENT base arities when the bare base never occurs in P/H
+    # (base_ar is then guessed per-compound).  Emitting both makes Prover9 see
+    # the base at two arities -> FATAL, killing the row's whole proof attempt.
+    _decomp_candidates = []  # (base, base_ar, [axiom strs], log msg)
     for pred_name in sorted(_all_pn):
         if '_' not in pred_name:
             continue
@@ -11491,21 +11672,34 @@ def perform_inference_on_row(row):
             all_q = ' '.join(comp_vars)
             ba = ', '.join(base_vars)
             ca = ', '.join(comp_vars)
+            _axs = []
             # Entity-sharing: prep relates last base-arg to the suffix arg.
             prep_vars_en = [base_vars[-1]] + comp_vars[base_ar:]
             pa_en = ', '.join(prep_vars_en)
-            _compound_decomp_strs.append(
+            _axs.append(
                 f'all {all_q}.({pred_name}({ca}) -> ({base}({ba}) & {prep_pred}({pa_en})))'
             )
             # Event-sharing: prep relates the event variable to the suffix arg.
             prep_vars_ev = [comp_vars[0]] + comp_vars[base_ar:]
             pa_ev = ', '.join(prep_vars_ev)
             if pa_ev != pa_en:
-                _compound_decomp_strs.append(
+                _axs.append(
                     f'all {all_q}.({pred_name}({ca}) -> ({base}({ba}) & {prep_pred}({pa_ev})))'
                 )
-            print(f"Adding Compound Decomposition: {pred_name}({ca}) -> {base}({ba}) & {prep_pred}(...)")
+            _decomp_candidates.append(
+                (base, base_ar, _axs,
+                 f"Adding Compound Decomposition: {pred_name}({ca}) -> {base}({ba}) & {prep_pred}(...)"))
             break  # only first valid split
+    _decomp_base_arities = {}
+    for _b, _ba, _, _ in _decomp_candidates:
+        _decomp_base_arities.setdefault(_b, set()).add(_ba)
+    for _b, _ba, _axs, _msg in _decomp_candidates:
+        if len(_decomp_base_arities[_b]) > 1:
+            print(f"Skipping Compound Decomposition (arity conflict on base '{_b}': "
+                  f"{sorted(_decomp_base_arities[_b])})")
+            continue
+        _compound_decomp_strs.extend(_axs)
+        print(_msg)
     new_axioms_strs.extend(_compound_decomp_strs)
 
     # v42: Axioms for normal Prover9 path ONLY (excluded from stripped fallback).
@@ -12197,7 +12391,8 @@ def perform_inference_on_row(row):
         _n_all_user >= 2 and len(premises) >= 3
     )
     _entail_p9_timeout = 35 if _fol_heavy_syllogism else PROVER9_TIMEOUT_SECONDS
-    _entail_join_timeout = 40 if _fol_heavy_syllogism else 15
+    _entail_join_timeout = 40 if _fol_heavy_syllogism else (
+        15 if PROVER9_TIMEOUT_SECONDS <= 15 else PROVER9_TIMEOUT_SECONDS + 5)
     if _fol_heavy_syllogism:
         print(f"  FOL-heavy syllogism detected (all={_n_all_user}, "
               f"is_at={_n_is_at_user}, premises={len(premises)}); "
@@ -12220,6 +12415,14 @@ def perform_inference_on_row(row):
                 print("  Vacuity guard: premises proven inconsistent "
                       "-> proof is vacuous, downgrading verdict to unknown")
         return _vac_cache[0]
+
+    _hyp_vac_cache = {}
+
+    def _hyp_is_vacuous(hyp):
+        _k = id(hyp)
+        if _k not in _hyp_vac_cache:
+            _hyp_vac_cache[_k] = _hypothesis_is_vacuous(hyp, background_axioms)
+        return _hyp_vac_cache[_k]
 
     for hypothesis in hypotheses:
         # 1. Standard Entailment (Premises -> Hypothesis)
@@ -12549,10 +12752,19 @@ def perform_inference_on_row(row):
 
             # 2. Standard Contradiction (Premises -> Not Hypothesis)
             print("Checking Contradiction...")
+            # NOTE: a conditional 35s budget extension (mirroring the
+            # heavy-syllogism entailment case) was evaluated and rejected:
+            # across all three datasets the rows hitting the 15s contradiction
+            # timeout are predominantly gold=unknown/yes, so extra search time
+            # could only create false proofs, and the single gold=no candidate
+            # (universal-negation premise) dies of MAX_MEGS on a goal that is
+            # structurally unprovable (the negation scopes a premise-local
+            # skolem event).
             contradiction_proof = False
             try:
                 neg_hypothesis = read_expr('-(' + str(hypothesis) + ')')
-                contradiction_proof = timed_prove(Prover9(timeout=PROVER9_TIMEOUT_SECONDS), neg_hypothesis, full_premises, timeout_seconds=15)
+                _contra_join_timeout = 15 if PROVER9_TIMEOUT_SECONDS <= 15 else PROVER9_TIMEOUT_SECONDS + 5
+                contradiction_proof = timed_prove(Prover9(timeout=PROVER9_TIMEOUT_SECONDS), neg_hypothesis, full_premises, timeout_seconds=_contra_join_timeout)
             except Exception as e:
                 print(f"Prover9 Error on contradiction: {e}")
 
@@ -12577,7 +12789,7 @@ def perform_inference_on_row(row):
 
             if contradiction_proof:
                 print(f"Proof with Prover9 (Contradiction): Success (NO)")
-                if _row_is_vacuous():
+                if _row_is_vacuous() or _hyp_is_vacuous(hypothesis):
                     if PROOF_ONLY_LABELS:
                         return ("unknown", "unknown", "unknown")
                     contradiction_proof = False
@@ -13553,8 +13765,11 @@ def perform_inference_on_row(row):
                     neg_h_gb = read_expr('-(' + str(hypothesis) + ')')
                     contra_gb = timed_prove(Prover9(timeout=PROVER9_TIMEOUT_SECONDS), neg_h_gb, full_premises, timeout_seconds=15)
                     if contra_gb:
-                        print(f"Proof with Prover9 (Post-guard Contradiction): Success (NO)")
-                        prover9_result = "no"
+                        if _row_is_vacuous() or _hyp_is_vacuous(hypothesis):
+                            print(f"Post-guard Contradiction: vacuous -> unknown")
+                        else:
+                            print(f"Proof with Prover9 (Post-guard Contradiction): Success (NO)")
+                            prover9_result = "no"
                     else:
                         print(f"Post-guard Contradiction: Failure")
                 except Exception as e:
