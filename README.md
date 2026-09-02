@@ -69,7 +69,7 @@ python scripts/convert_grail_output_to_langpro_input.py
 
 ### Predicting the label (two options)
 
-1. LangPro in Prolog
+1. LangPro in Prolog ([Notebook script to run LangPro on SICK-FR](https://github.com/mskandalis/hybrid_nli_fr/blob/main/scripts/SICK_FR_LangPro.ipynb))
 
 2. Prover9/Mace4 in Python
    
