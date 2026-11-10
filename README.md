@@ -35,7 +35,7 @@ For the Python Wrapper,
 Please ensure that you comply with the licence terms of each component needed for the pipeline:
 - Bi-LSTM version of DeepGrail, and GrailLight: GNU Lesser General Public License v2.1 (LGPL-2.1).
 - CamemBERT-based DeepGrail TLG Supertagger: CeCILL Free Software License Agreement v1.0 (CECILL-1.0).
-- LangPro theorem prover for SICK: MIT License (MIT).
+- LangPro theorem prover for SICK: MIT License.
 
 Refer to the respective repositories and licence files for the full licence terms.
 
