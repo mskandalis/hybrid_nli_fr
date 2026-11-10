@@ -31,6 +31,12 @@ For the Python Wrapper,
   - [Stanza](https://stanfordnlp.github.io/stanza) (advised), or
   - [TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) (not advised nowadays), or [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger) (see above for these two).
 
+Please ensure that you comply with the licence terms of each component needed for the pipeline:
+- Bi-LSTM version of DeepGrail, and GrailLight: GNU Lesser General Public License v2.1 (LGPL-2.1).
+- CamemBERT-based DeepGrail TLG Supertagger: CeCILL Free Software License Agreement v1.0 (CECILL-1.0).
+- LangPro theorem prover for SICK: MIT License (MIT).
+Refer to the respective repositories and licence files for the full licence terms.
+
 ## Instructions
 ### Preparing the data and obtaining the lambda-terms (half deep learning, half prolog programme)
 The steps you need to follow in order to obtain the input for [LangPro theorem Prover](https://github.com/kovvalsky/LangPro/tree/nl) are the following:
