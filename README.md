@@ -37,7 +37,7 @@ Please ensure that you comply with the licence terms of each component needed fo
 - CamemBERT-based DeepGrail TLG Supertagger: CeCILL Free Software License Agreement v1.0 (CECILL-1.0).
 - LangPro theorem prover for SICK: MIT License.
 
-Refer to the respective repositories and licence files for the full licence terms.
+Refer to the respective repositories and their licence files for the full licence terms.
 
 ## Instructions
 ### Preparing the data and obtaining the lambda-terms (half deep learning, half prolog programme)
